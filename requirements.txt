@@ -88,7 +88,6 @@ screen==1.0.1
 setuptools==67.8.0
 six==1.16.0
 soupsieve==2.4.1
-sqlite==3.41.2
 sqlparse==0.4.4
 stack_data==0.6.2
 sympy==1.12
