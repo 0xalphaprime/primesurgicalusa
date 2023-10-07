@@ -1,0 +1,1 @@
+web: gunicorn prime_surgical_usa.wsgi
