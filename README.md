@@ -1,5 +1,10 @@
 ## Prime Surgical Website
 
+### Resources
+
+- Hosting - Heroku (subscription is live) 
+  - 100823 having issues 
+
 #### converting Conda environment to pip
 
 To generate a `requirements.txt` file from a Conda environment, you can use the `conda list --export` command, which will provide a list of all packages installed in the active Conda environment. However, note that the format is slightly different from the standard `requirements.txt` format used by `pip`. Here's a step-by-step guide:
