@@ -5,3 +5,6 @@ from django.http import HttpResponse
 
 def index(request):
     return render(request, 'training_resources/new_teammate_training.html')
+
+def anatomy_fundamentals(request):
+    return render(request, 'training_resources/anatomy_fundamentals.html')

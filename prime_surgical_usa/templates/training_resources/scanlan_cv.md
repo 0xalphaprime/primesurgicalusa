@@ -1,25 +1,6 @@
-# Prime Surgical Training
-
-Included is a rubric to help acquire the necessary knowledge to excel in this role. Be patient, as there is a lot to learn. This is a living document and will be updated as we go. As you explore the topics suggested below more broadly please develop a system for keeping notes. The learning curve is much more manageable if you take the extra time up front. Synthesize the information you are learning, and take useful notes that you can refer back to. The objective is to develop a system that allows you to quickly and easily find the information you need, when you need it. I'll continue to assist in making sure you have the necessary information and resources to succeed.
-
-I highly suggest getting familiar with chatGPT ([Link](https://chat.openai.com/)) and Bard ([Link](https://bard.google.com/chat)) from google. They will be impactful tools to help you with your understanding. 
-
-## 1. Resources 
-
-These are the primary resources we will use to communicate and collaborate. Please make sure you have access to all of these resources. If you do not, please let me know.
-
-```
-1. Microsoft Outlook (email client & calendar)
-2. Slack (internal messaging)
-3. iCloud Drive (field sales file storage)
-4. Google Drive (file storage)
-5. Office365 (word, excel)
-6. Google Sheets (excel)
-7. Airtable (project management)
-8. Loop (Zimmer Portal)
-9. Prime Surgical Internal Site
-```
-## 2. Foundation
+# Prime Surgical - Scanlan CV 
+## Knowledge & Training 
+### Foundational Anatomy
 
 In the foundation section, we will cover the basics of the human body. This will include the anatomy, physiology, and pathophysiology - mainly focused on the heart and broader thoracic cavity. The goal is to develop a solid understanding of the cadiovascular system & skeletal systems. This will help you understand the technical product specifics, and how they relate to the human body.
 
@@ -415,9 +396,7 @@ We will not focus early on congenital defects, as they are not the focus of our 
 ##### Summary
 Congenital heart defects embody a spectrum of disorders, each with its unique pathophysiology and clinical implications. A robust understanding of their intricacies provides the substrate for impeccable diagnosis, management, and overall holistic care, guiding affected individuals through potential challenges throughout their lifespan. 
 
-
-___
-#### Surgical Interventions in Cardiac Diseases: CABG, Valve Replacements, Transcatheter Interventions
+### Surgical Interventions in Cardiac Diseases: CABG, Valve Replacements, Transcatheter Interventions
 
 The realm of cardiac surgery has evolved significantly, with a spectrum of surgical interventions available to manage and treat various cardiac diseases. In this module, we will delve into three pivotal procedures: Coronary Artery Bypass Grafting (CABG), Valve Replacements, and Transcatheter Interventions.
 
@@ -466,26 +445,6 @@ The realm of cardiac surgery has evolved significantly, with a spectrum of surgi
 
 Understanding the intricacies, indications, and outcomes of these surgical interventions is foundational for future learning.
 
-
-
-___
-
-## 3. Prime Portfolio (Zimmer Biomet)
-
-A large part of the Zimmer portfolio comes from the broader category of `sternal closure`, which is the process of closing the sternum after a sternotomy. A sternotomy is a surgical procedure that involves cutting through the sternum (breastbone) to access the thoracic cavity. This is a common procedure for heart surgery, and is the most commonly done with a CABG (coronary artery bypass grafting).
-
-Traditionally, cardiac surgeons used stainless steel sternal wires to close the sternum. More recently, new technologies have been released to optimize the patients recovery, and reduce the risk of complications. These new technologies include sternal plating systems, sternal cable systems, and double wire.
-
-
-
-- **Khan Academy** - Suggest for a quick overview of the bone anatomy and function
-  - Important to know the difference between cortical and cancellous bone, and how they relate to the sternum. Also that reduction and compression are the main goals of sternal closure for new bone growth.
-  - Skeletal System Intro (https://www.khanacademy.org/science/health-and-medicine/advanced-muscular-system/skeletal-system-introduction/v/skeletal-structure-and-function)
-  - 30 min content
-  - Skeletal system: Bone Development
-    - https://www.khanacademy.org/test-prep/mcat/biological-sciences-practice/x04f6bc56:mcat-bio-biochem-foundation-3-passages/e/skeletal-system---passage-2
-    - 
-
 #### Key Concept: **Anatomy of the Sternum**
 
 The sternum, also known as the breastbone, is a flat bone that forms the anterior portion of the chest wall. It is a T-shaped bone that is divided into three parts: the manubrium, the body, and the xiphoid process.
@@ -522,88 +481,6 @@ The sternum has a number of important functions, including:
 
 * **Fracture:** A fracture of the sternum can occur due to a traumatic injury, such as a car accident or a fall from a height.
 
-___
-
-####Zimmer Biomet Product Categories:
-
-**1. Sternal Wire** (`sternal closure`)
-
-- wire cerclage is a traditional method of sternal closure. We offer solutions in this category, which are often used in conjuction with our sternal plating systems.
-- single sternal wire, most often referred to as "sternal wire" is the most commonly used modality
-- You'll notice different needles on the left had side of the photos (taekn from our ZB Cardiac Brochure)
-- #6 wire is the most common size wire used. The larger the number the larger the wire. 
-
-___
-
-**2. Double Wire** (`sternal closure`)
-
-- Double wire - a more advanced system that traditional sternal wire, but still simple and low cost conpared to sternal plates.
-
-<embed src="../../static/pdf/zb_cardiac_catalog.pdf" type="application/pdf" width="800px" height="800px">
-
-____________
-
-**3. Sternal Cable** (`sternal closure`)
-
-<embed src="../../static/pdf/sternal_cable_system.pdf" type="application/pdf" width="800px" height="800px">
-
-________________________
-
-**4. Sternal Plating** (`sternal closure`) (`rigid fixation`)
-
-   **The Sternalock Blu Study**
-
-   This is a very important paper to understand. It is a great resource to understand the benefits of sternal plating. The white paper lays out the arguments with nice visualization. Plan to revist this, and it will continue to give you more as you progress with your understanding. 
-
-   <embed src="pdf/white_paper_the_sternalock_blu.pdf" type="application/pdf" width="1000px" height="800px">
-
-
-   **The Restore Study**
-
-   <embed src="../../static/pdf/restore_study_2012.pdf" type="application/pdf" width="1000px" height="800px">
-
-   **Key Differences Between Sternalock Blu Study & Restore Study**
-
-   <embed src="../../static/pdf/restore_v_sternalock_blu_study.pdf" type="application/pdf" width="1000px" height="800px">
-
-   Follow this path to the studies on our Loop portal provided by Zimmer Biomet. The study can also be found in the shared iCloud folder.
-   - `Sign onto Loop >> Content Tab >> 2. Thoracic >> Sternal Closure >> Sternalock Blue >> SternaLock Blu Research >> (various papers)`
-   
-
-   **Current Sternal Plating Systems**
-   1. __Sternalock Blu:__ (Original system - Anterior fixation only - most flexibile on pricing)
-   <embed src="../../static/pdf/sl_blu_brochure.pdf" type="application/pdf" width="800px" height="800px">
-   2. __Sternalock EZ:__  (Former Competitor - Anterior fixation only - fastest to implant)
-   <embed src="../../static/pdf/ez_surgical_technique.pdf" type="application/pdf" width="800px" height="800px">
-   3. __Sternalock 360:__ (Anterior fixation with an integrated cerclage, utilizing 3-plates with titanium bands - sold as 3-plate-kit)
-   <embed src="../../static/pdf/360_technique_guide.pdf" type="application/pdf" width="800px" height="800px">
-   4. __Sternalock XP:__ (Anterior fixation with an integrated cerclage, utilizing a variety of a-la-carte plates with an integrated cable)
-   <embed src="../../static/pdf/xp_surgical_technique.pdf" type="application/pdf" width="800px" height="800px">
-
- * technical specifics of the systems included below in the `technical product specifics` section 
-
-___________
-
-**Pacing Wires** (temporary pacing)
-**Pacing Cables (MyoLead)** (temporary pacing)
-**Aortic Punch** (aortic punch)
-
-<embed src="../../static/pdf/zb_cardiac_catalog.pdf" type="application/pdf" width="700px" height="800px">
-
-_________
-
-- **Loop** - online ZB portal
-  - Material to Review:
-      1. A&E Product Training Pre-Work
-         - once set up with Loop, assign this course, and complete all 31 modules
-         - ~ 3 Hours to complete
-      2. Thorecon Training >> A&E Rigid Fixation Product Overview - Slide Deck
-         - Ignore the "Tritium" product line (Section 2), as it is being discontinued in a few months
-
-_____  
-
-### Other Key Concepts in Cardiac Surgery Representation
-
 #### Key Concept: Temporary Pacing
 
 Temporary pacing involves the insertion of a pacing wire into the heart to regulate the heart rate. It is a common procedure in cardiac surgery, where it is used to maintain a normal heart rate during and after surgery.
@@ -624,7 +501,19 @@ Temporary pacing is used in cardiac surgery to maintain a normal heart rate duri
 ____
 
 #### Key Concept: Proximal and Distal Anastomosis (CABG)
+____
 
+#### Key Concept: Surgical Access & Sternal Closure
+
+___
+
+#### Key Concept: Percutaneous Access (Femoral)
+____
+
+#### Key Concept: Off-Pump Procedures
+___
+
+#### Key Concept: Aortic Dissections & Induced Hypothermia
 
 ____
 
@@ -734,6 +623,9 @@ Cardiopulmonary bypass (CPB), often referred to as heart-lung bypass, is a funda
 
 ___
 
+#### Key Concept: Post-Op Drainage - Chest Tubes
+___
+
 #### Key Concept: Cardioplegia
 
 **Introduction**
@@ -784,18 +676,9 @@ Cardioplegia is a technique used in cardiac surgery to induce cardiac arrest, al
     - Blood is often added to cardioplegic solution to provide oxygen to the myocardium during cardiac arrest.
 
 
-___
+### Open Heart Instruments
 
-### Prime Surgical Cardiac Portfolio in Action
+#### Needle Holders
 
-
-_NOTE: This is meant to be an example, showing how a surgeon could complete a procedure. There is a lot of nuance not captured in what I outline below. It is meant to help you frame the products we sell through a live OR setting._
-
-`all blocks formatted like this below are product categories currently sold by Prime Surgical through our various Device Manufacturer partners`
-
-**Sternotomy** - The case begins with the patient supine on the OR Table, prepped and drapped, with arms abducted. A midline incision is made in the chest wall, extending from the suprasternal notch to the xiphoid process. The subcutaneous tissues and pectoralis major muscles are dissected, exposing the sternum. The sternum is then divided at the midline using a saw, and the two halves are retracted using sternal retractors. 
-**Dissection & Exposure** - The pericardium is opened, and the heart is exposed via blunt dissection. The pericardium is then retracted using pericardial stay sutures. The diseased coronary arteries are identified, and the heart is prepared for cardiopulmonary bypass. If the surgeon is using an aterial graft, (often the left internal mammary artery), the LIMA is harvested at this time. The IMA arteries run along the inside of the chest wall, and are often used as a graft for CABG. Specialized instrumentation is used to harvest the IMA(s) - delicate `forceps` and `scissors` are used to dissect the IMA from the chest wall. The IMA is then clamped off (temporarily) using a `single-use bulldog clamp` until it is ready to be grafted.
-**Cardiopulmonary Bypass** - The patient is then placed on cardiopulmonary bypass. Bypass is acheived using an `arterial cannula` and a `venous cannula` as a circuit to the heart-lung machine. The heart is arrested and protected using cardioplegia, which can be delived as antegrate cardioplegia or `retrograde cardioplegia`. 
-**The Coronary Artery Bypass Graft (CABG)** - The diseased coronary arteries are bypassed using autologous (from one's own body) vessels. This is most often done by taking the saphenous vein out of the patient at the start of the case. When you hear "vein graft" it is referring to a saphenous vein. In younger patients, and for other clinical considerations, arterial grafts are preferred, as their long-term patency performs better than veins. For vein grafts, the surgeon performs a distal coronary anastamoses with his `distal coronary needle holder` and his proximal anastamoses with his `proximal coronary needle holder`. For an IMA graft the surgoen only performs a distal anastamoses (as the proximal is still attached to arterial flow). For proximal anastamoses the surgeon uses a `punch` to make a circular sewing site in the aorta. The blood then moves from the aorta, through the graft, and into the coronary artery downstream of the blockage. 
-**Coming Off Pump** - The heart is then defibrillated, and the patient is weaned off CPB. Often times, the surgeon will use a temporary pacing wire to help pace the heart as it comes off pump. Most often surgeons use `ventricular pacing wires`, while the use of `atrial pacing wires` is more selective.
-
+##### Anclote Leading Needle Holders
+`create and embed datastream showing the leading needle holders by volume`
