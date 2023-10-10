@@ -8,3 +8,6 @@ def index(request):
 
 def anatomy_fundamentals(request):
     return render(request, 'training_resources/anatomy_fundamentals.html')
+
+def cardiac_surgical_intervention(request):
+    return render(request, 'training_resources/cardiac_surgical_intervention.html')

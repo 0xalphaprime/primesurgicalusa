@@ -191,7 +191,7 @@ Cardiothoracic surgical access refers to the methods and approaches used by surg
 
   ![Sternotomy](../../static/img/full_sternotomy_3.png)
 
-  <embed src="pdf/white_paper_the_sternalock_blu.pdf" type="application/pdf" width="1000px" height="800px">
+  <embed src="../../static/pdf/white_paper_the_sternalock_blu.pdf" type="application/pdf" width="1000px" height="800px">
 
 
 

@@ -1,0 +1,755 @@
+<!DOCTYPE html><html><head>
+      <title>cardiac_surgical_intervention</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////Users/alphaprime/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.8.1/crossnote/dependencies/katex/katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      <h1 id="prime-surgical" data-source-line="2">Prime Surgical </h1>
+<h2 id="knowledge--training" data-source-line="3">Knowledge &amp; Training </h2>
+<h3 id="surgical-interventions-in-cardiac-diseases-cabg-valve-replacements-transcatheter-interventions" data-source-line="4">Surgical Interventions in Cardiac Diseases: CABG, Valve Replacements, Transcatheter Interventions </h3>
+<p data-source-line="6">The realm of cardiac surgery has evolved significantly, with a spectrum of surgical interventions available to manage and treat various cardiac diseases. In this module, we will delve into three pivotal procedures: Coronary Artery Bypass Grafting (CABG), Valve Replacements, and Transcatheter Interventions.</p>
+<p data-source-line="8">As we covered in the anatomy module, the heart is a complex system composed of two pumps. It uses coordinated electrical impulses to more blood through the pressure-valve system. Ischemic diseases require intervention of the pipes, or blood vessels. Valvular diseases require intervention of the valves.</p>
+<p data-source-line="10">As the procedural protocol has evolved throughout the last few decades, surgeons have often partnered with industry to develop the tools and methods to perform specifed aspects of the procedures. In this section I will highlight some of the key concepts in cardiac surgery and the products that are used to perform the procedures.</p>
+<p data-source-line="12">This is a percursor to the next section, where we will explore our portfolio, and get more into the specifics, strategy, and prefrence profiles of the surgeons and teams we work with.</p>
+<p data-source-line="14"><img src="../../static/img/circulatory_system.png" alt="heart anatomy"></p>
+<h4 id="overview-common-procedures" data-source-line="16">Overview: Common Procedures </h4>
+<ol data-source-line="18">
+<li data-source-line="18">
+<p data-source-line="18"><strong>Coronary Artery Bypass Grafting (CABG)</strong>:</p>
+<ul data-source-line="19">
+<li data-source-line="19"><strong>Objective</strong>: CABG aims to restore blood flow to ischemic myocardium by bypassing obstructed coronary arteries.</li>
+<li data-source-line="20"><strong>Procedure</strong>:
+<ul data-source-line="21">
+<li data-source-line="21">Autologous vessels, usually the internal mammary artery or saphenous vein, are harvested.</li>
+<li data-source-line="22">The patient is often placed on cardiopulmonary bypass (CPB).</li>
+<li data-source-line="23">The harvested vessel is grafted to the aorta and the site past the obstruction, bypassing the stenotic areas.</li>
+</ul>
+</li>
+<li data-source-line="24"><strong>Indications</strong>: Significant obstruction in the coronary arteries, particularly in patients with left main coronary disease or severe triple-vessel disease.</li>
+<li data-source-line="25"><strong>Outcomes</strong>: CABG has been shown to improve survival and quality of life in individuals with advanced coronary artery disease.<br>
+<img src="../../static/img/cabg_2.png" alt="cabg"></li>
+</ul>
+</li>
+<li data-source-line="28">
+<p data-source-line="28"><strong>Valve Replacements &amp; Repairs</strong>:</p>
+<ul data-source-line="29">
+<li data-source-line="29"><strong>Objective</strong>: To replace dysfunctional heart valves that are either stenotic or regurgitant, restoring normal hemodynamics.</li>
+<li data-source-line="30"><strong>Procedure</strong>:
+<ul data-source-line="31">
+<li data-source-line="31"><strong>Mechanical Valves</strong>: Known for durability but require lifelong anticoagulation to prevent thromboembolic events.</li>
+<li data-source-line="32"><strong>Bioprosthetic Valves</strong>: Have lower thrombogenicity but are less durable than mechanical valves.</li>
+<li data-source-line="33"><strong>Valve Repair</strong>: Involves various techniques to repair the native valve, such as commissurotomy, annuloplasty, or chordal reconstruction.</li>
+</ul>
+</li>
+<li data-source-line="34"><strong>Indications</strong>: Severe valvular stenosis or regurgitation affecting the patient's quality of life and cardiac function.</li>
+<li data-source-line="35"><strong>Outcomes</strong>: Valve replacements significantly alleviate symptoms and improve survival, although they may require re-operation over time, especially bioprosthetic valves.<br>
+<img src="../../static/img/mini_mitral.png" alt="valve repair mini"></li>
+</ul>
+</li>
+<li data-source-line="38">
+<p data-source-line="38"><strong>Transcatheter Interventions</strong>:</p>
+<ul data-source-line="39">
+<li data-source-line="39"><strong>Transcatheter Aortic Valve Replacement (TAVR)</strong>:
+<ul data-source-line="40">
+<li data-source-line="40"><strong>Objective</strong>: A less invasive alternative to surgical aortic valve replacement, especially beneficial for high-risk surgical candidates.</li>
+<li data-source-line="41"><strong>Procedure</strong>: A bioprosthetic valve is delivered via a catheter, usually through the femoral artery, and is deployed in the position of the native aortic valve.<br>
+<img src="../../static/img/tavr.png" alt="tavr"></li>
+</ul>
+</li>
+<li data-source-line="43"><strong>Transcatheter Mitral Valve Repair (TMVr)</strong>:
+<ul data-source-line="44">
+<li data-source-line="44"><strong>Objective</strong>: To repair the mitral valve in a less invasive manner compared to traditional surgery.</li>
+<li data-source-line="45"><strong>Procedure</strong>: Devices like the MitraClip are utilized to create a double-orifice valve, improving leaflet coaptation and reducing regurgitation.</li>
+</ul>
+</li>
+<li data-source-line="46"><strong>Percutaneous Coronary Interventions (PCI)</strong>:
+<ul data-source-line="47">
+<li data-source-line="47"><strong>Objective</strong>: To alleviate coronary artery obstructions, improving myocardial perfusion.</li>
+<li data-source-line="48"><strong>Procedure</strong>: A stent is delivered to the site of obstruction and deployed to keep the artery open.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li data-source-line="51">
+<p data-source-line="51"><strong>Post-operative Care</strong>:</p>
+<ul data-source-line="52">
+<li data-source-line="52"><strong>Monitoring</strong>: Continuous monitoring in the initial post-operative period is essential to identify and manage complications like arrhythmias, infections, or bleeding.</li>
+<li data-source-line="53"><strong>Rehabilitation</strong>: Cardiac rehabilitation is pivotal for optimizing recovery, educating the patient on lifestyle modifications, and monitoring for any signs of disease recurrence or post-operative complications.</li>
+</ul>
+</li>
+<li data-source-line="54">
+<p data-source-line="54"><strong>Future Trends</strong>:</p>
+<ul data-source-line="55">
+<li data-source-line="55">The advent of minimally invasive surgical techniques, robotic-assisted surgeries, and continuous advancements in transcatheter interventions herald an exciting era in cardiac surgery.</li>
+</ul>
+</li>
+</ol>
+<p data-source-line="57">Understanding the intricacies, indications, and outcomes of these surgical interventions is foundational for future learning.</p>
+<hr>
+<h4 id="key-concept-suturing-in-surgical-practice" data-source-line="61">Key Concept: <strong>Suturing in Surgical Practice</strong> </h4>
+<p data-source-line="63">Suturing, a fundamental skill in surgical practice, involves using a needle and thread to close incisions, repair tissues, and facilitate healing. In the context of cardiothoracic surgery, suturing is pivotal in ensuring the stability and integrity of repaired structures, such as vessels, heart valves, and tissue layers.</p>
+<p data-source-line="65"><img src="../../static/img/suturing_techniques.png" alt="Suturing Techniques"></p>
+<p data-source-line="67"><strong>Types of Sutures</strong></p>
+<ul data-source-line="69">
+<li data-source-line="69"><strong>Absorbable vs. Non-absorbable:</strong> Absorbable sutures are broken down by the body over time, while non-absorbable ones remain indefinitely and may require removal.</li>
+<li data-source-line="70"><strong>Monofilament vs. Multifilament:</strong> Monofilament sutures consist of a single thread, while multifilament sutures are braided. Monofilament sutures are less prone to infection, while multifilament sutures provide better knot security.</li>
+<li data-source-line="71"><strong>Natural vs. Synthetic:</strong> Sutures can be made from natural materials, like silk or catgut, or from synthetic materials, such as polypropylene or nylon.</li>
+</ul>
+<p data-source-line="73"><img src="../../static/img/suture_types.png" alt="sutures"></p>
+<p data-source-line="75"><strong>Suture Sizing</strong></p>
+<p data-source-line="77"><img src="../../static/img/suture_sizing.png" alt="suture sizing"></p>
+<p data-source-line="79">With suture Size 0 is the baseline. Moving to the left (1, 2, 3, etc.) the suture gets larger. Moving to the right (1-0, 2-0, 3-0, etc.) the suture gets smaller.</p>
+<p data-source-line="81">For reference size 0 represents the "stay" sutures used for pericardial retraction, or the closure of large skin incisions. Size 2-0 is typically used to sew in biprosthetic valves. Size 7-0 is used to do a distal anastomosis in CABG. Size 5-0 or 6-0 is typically used to do a proximal anaostomosis in CABG.</p>
+<p data-source-line="83">The same sizing methodology works for the stainless steel sternal wires we will cover thoughout this curriculum. The most common size for sternal wire used is size 6, which is on the other side of the spectrum.</p>
+<p data-source-line="87"><strong>Key Suturing Techniques</strong></p>
+<ol data-source-line="89">
+<li data-source-line="89">
+<p data-source-line="89"><strong>Simple Interrupted Suture:</strong></p>
+<ul data-source-line="90">
+<li data-source-line="90"><strong>Usage:</strong> Widely used for closing incisions and wound edges.</li>
+<li data-source-line="91"><strong>Process:</strong> Individual stitches are placed and tied separately.</li>
+<li data-source-line="92"><strong>Advantages:</strong> If one suture fails, the others remain intact.</li>
+</ul>
+</li>
+<li data-source-line="94">
+<p data-source-line="94"><strong>Running or Continuous Suture:</strong></p>
+<ul data-source-line="95">
+<li data-source-line="95"><strong>Usage:</strong> Useful for long incisions where speed is crucial.</li>
+<li data-source-line="96"><strong>Process:</strong> A single suture thread is used to sew along the length of the wound without tying individual knots.</li>
+<li data-source-line="97"><strong>Advantages:</strong> Quick and uses less suture material.</li>
+<li data-source-line="98"><strong>Disadvantages:</strong> If the suture breaks, the entire line may fail.</li>
+</ul>
+</li>
+<li data-source-line="100">
+<p data-source-line="100"><strong>Mattress Suture:</strong></p>
+<ul data-source-line="101">
+<li data-source-line="101"><strong>Usage:</strong> Employed to approximate wound edges and distribute tension.</li>
+<li data-source-line="102"><strong>Process:</strong> The suture is passed perpendicular to the wound, encompassing larger amounts of tissue.</li>
+<li data-source-line="103"><strong>Advantages:</strong> Reduces tension across the wound and promotes healing.</li>
+</ul>
+</li>
+<li data-source-line="105">
+<p data-source-line="105"><strong>Purse-String Suture:</strong></p>
+<ul data-source-line="106">
+<li data-source-line="106"><strong>Usage:</strong> Commonly used in cardiovascular surgeries, such as securing heart valves or closing openings in vessels, such as the aorta following direct aortic cannulation.</li>
+<li data-source-line="107"><strong>Process:</strong> A continuous circular suture is placed, which can be tightened like a drawstring.</li>
+<li data-source-line="108"><strong>Advantages:</strong> Enables closure of circular defects or openings.</li>
+</ul>
+</li>
+</ol>
+<p data-source-line="110"><img src="../../static/img/purse_string.png" alt="purse string"><br>
+<strong>Suturing in Cardiothoracic Surgery</strong></p>
+<ul data-source-line="113">
+<li data-source-line="113"><strong>Vascular Anastomosis:</strong> Suturing is vital in creating secure and patent connections between vessels, such as in CABG.</li>
+<li data-source-line="114"><strong>Valve Replacement:</strong> Sutures are used to anchor prosthetic heart valves securely in place.</li>
+<li data-source-line="115"><strong>Tissue Repair:</strong> Suturing facilitates the repair of damaged tissues, ensuring they heal appropriately.</li>
+<li data-source-line="116"><strong>Closing Incisions:</strong> Ensuring that thoracic and sternotomy incisions are closed securely and neatly to promote healing and minimize scarring.</li>
+</ul>
+<p data-source-line="118"><strong>Considerations in Suturing</strong></p>
+<ul data-source-line="120">
+<li data-source-line="120"><strong>Tissue Handling:</strong> Gentle and precise handling of tissues is crucial to minimize trauma and promote healing.</li>
+<li data-source-line="121"><strong>Knot Tying:</strong> Secure and appropriately tensioned knots ensure the stability of the suture and prevent leakage, especially in vascular anastomoses.</li>
+<li data-source-line="122"><strong>Suture Selection:</strong> Choosing the appropriate suture material and size is pivotal, considering the tissue type and desired duration of support.</li>
+</ul>
+<p data-source-line="124">In summary, suturing is an indispensable skill in surgery, with various techniques and materials tailored to the specific requirements of the procedure and tissue type. Mastery of suturing techniques is vital for surgeons to ensure optimal patient outcomes, particularly in the intricate and high-stakes context of cardiothoracic surgery.</p>
+<hr>
+<h4 id="key-concept-anatomy-of-the-sternum" data-source-line="130">Key Concept: <strong>Anatomy of the Sternum</strong> </h4>
+<p data-source-line="132">The sternum, also known as the breastbone, is a flat bone that forms the anterior portion of the chest wall. It is a T-shaped bone that is divided into three parts: the manubrium, the body, and the xiphoid process.</p>
+<p data-source-line="134"><img src="../../static/img/sternum_anterior_overview.png" alt="stenrum"></p>
+<p data-source-line="136"><strong>Manubrium</strong></p>
+<p data-source-line="138">The manubrium is the broad, superior segment of the sternum. It articulates with the clavicles at the sternoclavicular joints and with the costal cartilages of the first pair of ribs. The manubrium also has a number of important landmarks, including the jugular notch, which is located at the superior margin of the manubrium and lies between the two clavicles.</p>
+<p data-source-line="140"><img src="../../static/img/sternum_side_profile.png" alt="sternum manubrium anatomy"></p>
+<p data-source-line="142"><strong>Body</strong></p>
+<p data-source-line="144">The body of the sternum is the middle portion of the bone. It articulates with the costal cartilages of the second to seventh pairs of ribs. The body of the sternum is also the site of attachment for a number of muscles, including the pectoralis major, pectoralis minor, and sternocleidomastoid muscles.</p>
+<p data-source-line="146"><img src="../../static/img/sternum_with_ribs.png" alt="sternum with ribs"></p>
+<p data-source-line="148"><strong>Xiphoid process</strong></p>
+<p data-source-line="150">The xiphoid process is the narrow, inferior segment of the sternum. It is a cartilaginous structure in children and young adults, but it ossifies (hardens) with age. The xiphoid process is the site of attachment for the diaphragm and the rectus abdominis muscles.</p>
+<p data-source-line="152">[Image of Xiphoid process anatomy]</p>
+<p data-source-line="154"><strong>Functions of the sternum</strong></p>
+<p data-source-line="156">The sternum has a number of important functions, including:</p>
+<ul data-source-line="158">
+<li data-source-line="158"><strong>Protection:</strong> The sternum helps to protect the vital organs of the chest, including the heart, lungs, and major blood vessels.</li>
+<li data-source-line="159"><strong>Support:</strong> The sternum provides support for the rib cage and helps to maintain the shape of the chest.</li>
+<li data-source-line="160"><strong>Muscle attachment:</strong> The sternum is the site of attachment for a number of important muscles, including the pectoralis major, pectoralis minor, sternocleidomastoid, diaphragm, and rectus abdominis muscles.</li>
+</ul>
+<p data-source-line="162"><strong>Common injuries of the sternum</strong></p>
+<ul data-source-line="164">
+<li data-source-line="164"><strong>Fracture:</strong> A fracture of the sternum can occur due to a traumatic injury, such as a car accident or a fall from a height.</li>
+</ul>
+<hr>
+<h4 id="key-concept-cardiothoracic-surgical-access" data-source-line="170">Key Concept: <strong>Cardiothoracic Surgical Access</strong> </h4>
+<p data-source-line="172">Cardiothoracic surgical access refers to the methods and approaches used by surgeons to gain access to the heart and surrounding structures within the thoracic cavity. The choice of surgical access is determined by various factors, including the type of cardiac surgery being performed, the patient's anatomy, and the surgeon's expertise. Below are some of the common approaches used in cardiothoracic surgery:</p>
+<p data-source-line="176"><strong>Relevant Procuct Catagories:</strong> <code>sternal saws</code>, <code>sternal retractors</code>,  <code>sternal closure wires</code>, <code>sternal closure cables</code>, <code>sternal closure plates</code>, <code>soft-tissue retractor</code></p>
+<p data-source-line="178"><img src="../../static/img/cardiac_approaches.png" alt="approaches"></p>
+<p data-source-line="180"><strong>1. Sternotomy</strong></p>
+<ul data-source-line="181">
+<li data-source-line="181"><strong>Process:</strong> A full sternotomy involves making a vertical incision along the midline of the chest, followed by the division of the sternum, to provide wide access to the heart and lungs.</li>
+<li data-source-line="182"><strong>Usage:</strong> This approach is commonly used for various cardiac surgeries, such as coronary artery bypass grafting (CABG), valve replacements, and heart transplants.</li>
+<li data-source-line="183"><strong>Advantages:</strong> It provides extensive visibility and access to the thoracic structures.</li>
+<li data-source-line="184"><strong>Disadvantages:</strong> It involves a larger incision and can be associated with more pain and a longer recovery period post-surgery.</li>
+</ul>
+<p data-source-line="187"><img src="../../static/img/full_sternotomy.png" alt="Full Sternotomy"><br>
+<img src="../../static/img/full_sternotomy_2.png" alt="Sternotomy"></p>
+<p data-source-line="190">In a standard procedure, following the sternotomy, the sternum is divided using a sternal saw. The sternum is then retracted using a sternal retractor. The surgeon dissects down to the pericardium, which is a fibrous sac that surrounds the heart. The pericardium is opened and retracted using a "stay" suture (<em>seen in image below</em>) for visaibility and access to the heart. The surgeon then performs the surgical procedure on the heart. Following the procedure, the pericardium is closed, the sternum is approximated, and the sternum is closed using sternal closure wires, cables, or plates.</p>
+<p data-source-line="192"><img src="../../static/img/full_sternotomy_3.png" alt="Sternotomy"></p>
+  <embed src="../../static/pdf/white_paper_the_sternalock_blu.pdf" type="application/pdf" width="1000px" height="800px">
+<p data-source-line="198"><strong>2. Partial or Mini-Sternotomy:</strong></p>
+<ul data-source-line="199">
+<li data-source-line="199"><strong>Process:</strong> A partial or mini-sternotomy involves making a smaller incision and dividing only a portion of the sternum, either the upper or lower part.</li>
+<li data-source-line="200"><strong>Usage:</strong> It is often utilized for minimally invasive valve surgery or CABG.</li>
+<li data-source-line="201"><strong>Advantages:</strong> It is associated with less pain, reduced blood loss, and a shorter recovery period compared to a full sternotomy.</li>
+<li data-source-line="202"><strong>Disadvantages:</strong> It may provide limited visibility and access compared to a full sternotomy.</li>
+<li data-source-line="203"><strong>Types:</strong></li>
+</ul>
+<p data-source-line="205"><img src="../../static/img/mini_sternotomy.png" alt="Mini Sternotomy"></p>
+<p data-source-line="208"><strong>3. Mini-Thoracotomy</strong></p>
+<ul data-source-line="210">
+<li data-source-line="210">
+<p data-source-line="210"><strong>Process:</strong> A mini-thoracotomy involves making a small incision between the ribs, without dividing the sternum, to access the heart.</p>
+</li>
+<li data-source-line="211">
+<p data-source-line="211"><strong>Usage:</strong> This approach is commonly used for minimally invasive valve surgeries, particularly for the aortic and mitral valves.</p>
+</li>
+<li data-source-line="212">
+<p data-source-line="212"><strong>Advantages:</strong> It is associated with less pain and a quicker recovery compared to a sternotomy. It also avoids the need to divide the sternum.</p>
+</li>
+<li data-source-line="213">
+<p data-source-line="213"><strong>Disadvantages:</strong> It provides limited access and visibility, and may not be suitable for more complex cardiac procedures.</p>
+<p data-source-line="215"><img src="../../static/img/mini_approaches.png" alt="Mini Thoracotomy"></p>
+</li>
+</ul>
+<p data-source-line="217"><strong>Considerations for Surgical Access</strong></p>
+<ul data-source-line="219">
+<li data-source-line="219"><strong>Patient Factors:</strong> The patient’s anatomy, medical history, and the presence of any co-morbidities are considered when choosing the surgical approach.</li>
+<li data-source-line="220"><strong>Surgical Factors:</strong> The type of surgery, the need for visibility and access, and the surgeon’s expertise influence the choice of access.</li>
+<li data-source-line="221"><strong>Recovery:</strong> Minimally invasive approaches tend to be associated with less pain and a quicker recovery, but are not suitable for all types of surgeries.</li>
+</ul>
+<p data-source-line="223">In conclusion, the choice of cardiothoracic surgical access is multifaceted and tailored to each individual patient and surgical procedure. The surgeon will weigh the benefits and drawbacks of each approach to determine the most suitable method of access.</p>
+<hr>
+<h4 id="key-concept-endoscopic-vessel-harvesting-evh" data-source-line="227">Key Concept: Endoscopic Vessel Harvesting (EVH) </h4>
+<p data-source-line="229">Endoscopic Vessel Harvesting (EVH) is a minimally invasive technique used to harvest the saphenous vein for use as a graft in coronary artery bypass grafting (CABG) surgery. EVH is a preferred alternative to the traditional open vein harvesting (OVH) technique, which involves making a long incision along the length of the leg to access the saphenous vein (<em>everything I have ever seen has has been EVH. If the team has trouble getting the vein they switch to another vessel before pursuing an open harvest</em>).</p>
+<h5 id="how-the-evh-is-performed-in-a-cabg" data-source-line="231">How the EVH is performed in a CABG: </h5>
+<ol data-source-line="233">
+<li data-source-line="233"><strong>Accessing the Saphenous Vein:</strong>
+<ul data-source-line="234">
+<li data-source-line="234">The surgeon makes a small incision in the leg, usually in the groin or the knee, to access the saphenous vein.</li>
+<li data-source-line="235">A special endoscopic device is inserted through the incision and guided along the length of the vein.</li>
+<li data-source-line="236">The endoscope provides a magnified view of the vein and surrounding tissue, allowing the surgeon to identify and isolate the saphenous vein.</li>
+</ul>
+</li>
+</ol>
+<p data-source-line="238"><img src="../../static/img/evh_live.png" alt="evh live"><br>
+<img src="../../static/img/evh.png" alt="evh"></p>
+<hr>
+<h4 id="key-concept-internal-mammory-artery-ima" data-source-line="241">Key Concept: Internal Mammory Artery (IMA): </h4>
+<p data-source-line="243">The <strong>Internal Mammary Artery (IMA)</strong> is commonly used in Coronary Artery Bypass Grafting (CABG) surgery, which aims to restore blood flow to the heart muscle when the coronary arteries are obstructed due to coronary artery disease.</p>
+<h5 id="why-ima-in-cabg" data-source-line="245">Why IMA in CABG: </h5>
+<p data-source-line="246">The IMA is a preferred vessel for grafting due to its proven long-term patency and positive clinical outcomes in CABG patients. When used as a graft, the IMA has demonstrated a better resistance to atherosclerosis and a longer survival rate compared to other graft types, such as saphenous vein grafts.</p>
+<p data-source-line="248"><img src="../../static/img/ima.png" alt="ima"></p>
+<h5 id="how-ima-is-used-in-cabg" data-source-line="250">How IMA is used in CABG: </h5>
+<ol data-source-line="252">
+<li data-source-line="252">
+<p data-source-line="252"><strong>Harvesting the IMA:</strong></p>
+<ul data-source-line="253">
+<li data-source-line="253">The surgeon usually accesses the IMA through a median sternotomy, where the sternum is split open to provide access to the heart and the internal mammary artery.</li>
+<li data-source-line="254">The left internal mammary artery (LIMA) is most commonly used, although the right IMA can also be utilized depending on the surgeon's preference and the patient's anatomy.</li>
+<li data-source-line="255">The IMA is carefully dissected and released from its position alongside the inside of the chest wall.</li>
+</ul>
+</li>
+<li data-source-line="257">
+<p data-source-line="257"><strong>Choosing the Target Vessel:</strong></p>
+<ul data-source-line="258">
+<li data-source-line="258">The surgeon identifies which of the coronary arteries will be bypassed. The choice often falls on the left anterior descending artery (LAD) if the LIMA is used due to its proximity and superior long-term patency rates.</li>
+</ul>
+</li>
+<li data-source-line="260">
+<p data-source-line="260"><strong>Performing the Bypass:</strong></p>
+<ul data-source-line="261">
+<li data-source-line="261">The distal end of the harvested IMA is attached to the identified coronary artery beyond the site of the blockage.</li>
+<li data-source-line="262">The proximal end of the IMA (closer to the origin of the artery) is left attached to the subclavian artery, providing blood flow to the graft and subsequently to the coronary artery.</li>
+<li data-source-line="263">Through this bypass, the blood can flow around the blocked segment of the coronary artery, thus re-establishing perfusion to the heart muscle.</li>
+</ul>
+</li>
+</ol>
+<p data-source-line="265"><img src="../../static/img/ima_graft.png" alt="ima bypass"></p>
+<h5 id="advantages-of-using-the-ima-in-cabg" data-source-line="267">Advantages of using the IMA in CABG: </h5>
+<ul data-source-line="269">
+<li data-source-line="269"><strong>Superior Patency Rates:</strong> IMA grafts tend to remain open and functional for a longer time compared to saphenous vein grafts.</li>
+<li data-source-line="270"><strong>Reduced Atherosclerosis:</strong> The IMA is less prone to developing atherosclerosis, which is a common cause of graft failure.</li>
+<li data-source-line="271"><strong>Improved Survival:</strong> Several studies have demonstrated improved long-term survival in patients who received an IMA graft during CABG.</li>
+</ul>
+<hr>
+<h4 id="key-concept-cardioplegia" data-source-line="275">Key Concept: Cardioplegia </h4>
+<p data-source-line="277"><strong>Introduction</strong></p>
+<p data-source-line="279">Cardioplegia is a technique used in cardiac surgery to induce cardiac arrest, allowing surgeons to operate on a still heart. This document elucidates the principles, mechanics, and considerations related to cardioplegia within the context of open-heart surgery.</p>
+<h5 id="1-the-mechanism-of-cardioplegia" data-source-line="281">1. The Mechanism of Cardioplegia </h5>
+<ul data-source-line="283">
+<li data-source-line="283"><strong>Primary Components</strong>
+<ul data-source-line="284">
+<li data-source-line="284"><strong>Cardioplegic Solution</strong>: A specialized solution that is infused into the heart to induce cardiac arrest.</li>
+<li data-source-line="285"><strong>Delivery System</strong>: A device that delivers the cardioplegic solution to the heart.</li>
+</ul>
+</li>
+</ul>
+<h5 id="2-implementation-of-cardioplegia-in-surgery" data-source-line="287">2. Implementation of Cardioplegia in Surgery </h5>
+<ul data-source-line="289">
+<li data-source-line="289"><strong>Initiation</strong>
+<ul data-source-line="290">
+<li data-source-line="290">The delivery system is connected to the heart, and the cardioplegic solution is infused.</li>
+<li data-source-line="291">The heart is arrested, and the surgeon can operate on a still heart.</li>
+</ul>
+</li>
+</ul>
+<h5 id="3-antegrade-vs-retrograde-cardioplegia" data-source-line="293">3. Antegrade vs. Retrograde Cardioplegia </h5>
+<ul data-source-line="295">
+<li data-source-line="295"><strong>Antegrade Cardioplegia</strong>
+<ul data-source-line="296">
+<li data-source-line="296">The cardioplegic solution is infused into the coronary arteries, usually via the aortic root.</li>
+<li data-source-line="297">The solution flows in the same direction as the blood, hence the term “antegrade.”</li>
+</ul>
+</li>
+</ul>
+<p data-source-line="299"><img src="../../static/img/antegrade.png" alt="antegrade"></p>
+<ul data-source-line="301">
+<li data-source-line="301"><strong>Retrograde Cardioplegia</strong>
+<ul data-source-line="302">
+<li data-source-line="302">The cardioplegic solution is infused into the coronary sinus, which is located on the posterior side of the heart.</li>
+<li data-source-line="303">The solution flows in the opposite direction of the blood, hence the term “retrograde.”</li>
+</ul>
+</li>
+</ul>
+<p data-source-line="305"><img src="../../static/img/retrograde.png" alt="retrograde"><br>
+<img src="../../static/img/plegia.png" alt="plegia"></p>
+<h5 id="4-physiological-and-pathophysiological-considerations" data-source-line="308">4. Physiological and Pathophysiological Considerations </h5>
+<ul data-source-line="310">
+<li data-source-line="310"><strong>Myocardial Protection</strong>
+<ul data-source-line="311">
+<li data-source-line="311">Cardioplegia protects the myocardium from ischemic damage during cardiac arrest.</li>
+</ul>
+</li>
+</ul>
+<h5 id="5-components-of-cardioplegic-solution" data-source-line="313">5. Components of Cardioplegic Solution </h5>
+<ul data-source-line="315">
+<li data-source-line="315"><strong>Potassium</strong>
+<ul data-source-line="316">
+<li data-source-line="316">Potassium is the primary component of cardioplegic solution, as it is the primary ion responsible for depolarization of cardiac cells.</li>
+<li data-source-line="317"><strong>Magnesium</strong>
+<ul data-source-line="318">
+<li data-source-line="318">Magnesium is often added to cardioplegic solution, as it enhances the effects of potassium.</li>
+</ul>
+</li>
+<li data-source-line="319"><strong>Other Components</strong>
+<ul data-source-line="320">
+<li data-source-line="320">Other components of cardioplegic solution include calcium, sodium, and glucose.</li>
+</ul>
+</li>
+<li data-source-line="321"><strong>Blood</strong>
+<ul data-source-line="322">
+<li data-source-line="322">Blood is often added to cardioplegic solution to provide oxygen to the myocardium during cardiac arrest.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="key-concept-cardiopulmonary-bypass-cpb" data-source-line="328">Key Concept: Cardiopulmonary Bypass (CPB) </h4>
+<p data-source-line="330"><strong>Introduction</strong></p>
+<p data-source-line="332">Cardiopulmonary bypass (CPB), often referred to as heart-lung bypass, is a fundamental technique in cardiac surgery, facilitating a still and bloodless operative field. It performs the physiological roles of the heart and lungs, thereby permitting surgeons to operate on the heart while normal circulatory and respiratory functions are suspended. This document elucidates the principles, mechanics, and considerations related to CPB within the context of open-heart surgery.</p>
+<h5 id="1-the-mechanism-of-cardiopulmonary-bypass" data-source-line="334">1. The Mechanism of Cardiopulmonary Bypass </h5>
+<ul data-source-line="336">
+<li data-source-line="336"><strong>Primary Components</strong>
+<ul data-source-line="337">
+<li data-source-line="337"><strong>Oxygenator</strong>: Replaces pulmonary function by oxygenating blood and removing carbon dioxide.<br>
+<img src="../../static/img/oxygenator.png" alt="oxygenator"></li>
+<li data-source-line="339"><strong>Pump</strong>: Mimics the heart by propelling blood through the CPB circuit and into the patient’s circulatory system.<br>
+<img src="../../static/img/cp_pump.png" alt="pump"></li>
+<li data-source-line="341"><strong>Heat Exchanger</strong>: Regulates the patient’s temperature during surgery, which may involve hypothermic techniques.</li>
+</ul>
+</li>
+<li data-source-line="342"><strong>Functionality</strong>
+<ul data-source-line="343">
+<li data-source-line="343">Blood is diverted from the heart to the CPB machine.</li>
+<li data-source-line="344">The pump propels the blood through the oxygenator and back into the patient’s circulation, bypassing the heart and lungs.</li>
+</ul>
+</li>
+</ul>
+<h5 id="2-implementation-of-cardiopulmonary-bypass-in-surgery" data-source-line="346">2. Implementation of Cardiopulmonary Bypass in Surgery </h5>
+<ul data-source-line="348">
+<li data-source-line="348"><strong>Initiation</strong>
+<ul data-source-line="349">
+<li data-source-line="349">Cannulation of the major vessels, typically the aorta and venae cavae, to divert blood from the heart.</li>
+<li data-source-line="350">Heparin is administered to prevent coagulation.<br>
+<img src="../../static/img/cannulation.png" alt="cannulation"></li>
+</ul>
+</li>
+<li data-source-line="352"><strong>Maintenance</strong>
+<ul data-source-line="353">
+<li data-source-line="353">Constant monitoring of parameters such as blood pressure, temperature, and oxygenation is crucial.</li>
+<li data-source-line="354">Hemodilution and temperature management strategies are employed to protect organs during the bypass.</li>
+</ul>
+</li>
+<li data-source-line="355"><strong>Termination</strong>
+<ul data-source-line="356">
+<li data-source-line="356">Gradual weaning off CPB while restoring independent cardiac function.</li>
+<li data-source-line="357">Reversal of anticoagulation, frequently using protamine.</li>
+</ul>
+</li>
+</ul>
+<h5 id="3-open-heart-surgery-synchronized-with-cpb" data-source-line="359">3. Open-Heart Surgery: Synchronized with CPB </h5>
+<ul data-source-line="361">
+<li data-source-line="361"><strong>Valve Surgeries and Repairs</strong>
+<ul data-source-line="362">
+<li data-source-line="362">Facilitates operations on valves, enabling repairs or replacements.</li>
+</ul>
+</li>
+<li data-source-line="363"><strong>Coronary Artery Bypass Grafting (CABG)</strong>
+<ul data-source-line="364">
+<li data-source-line="364">Allows for the grafting of vessels to bypass coronary obstructions without the interference of circulating blood.</li>
+</ul>
+</li>
+<li data-source-line="365"><strong>Congenital Defect Repairs</strong>
+<ul data-source-line="366">
+<li data-source-line="366">Vital for addressing structural heart defects present from birth.</li>
+</ul>
+</li>
+<li data-source-line="367"><strong>Heart Transplant</strong>
+<ul data-source-line="368">
+<li data-source-line="368">A pivotal role in maintaining systemic perfusion during organ replacement.</li>
+</ul>
+</li>
+</ul>
+<h5 id="4-physiological-and-pathophysiological-considerations-1" data-source-line="370">4. Physiological and Pathophysiological Considerations </h5>
+<ul data-source-line="372">
+<li data-source-line="372"><strong>Systemic Inflammatory Response</strong>
+<ul data-source-line="373">
+<li data-source-line="373">CPB can induce an inflammatory response, implicating in post-operative complications.</li>
+</ul>
+</li>
+<li data-source-line="374"><strong>Organ Perfusion</strong>
+<ul data-source-line="375">
+<li data-source-line="375">Adequate perfusion and oxygenation of vital organs must be meticulously managed.</li>
+</ul>
+</li>
+<li data-source-line="376"><strong>Coagulation</strong>
+<ul data-source-line="377">
+<li data-source-line="377">The management of hemostasis and coagulation is paramount to prevent excessive bleeding or thrombotic events.</li>
+</ul>
+</li>
+</ul>
+<p data-source-line="379"><img src="../../static/img/heart_lung_animation.png" alt="heart lung animation"><br>
+<img src="../../static/img/heart_lung_live.png" alt="heart lung"></p>
+<hr>
+<hr>
+<h4 id="key-concept-femoral-access-for-open-heart-surgery-and-femoral-cannulation" data-source-line="386">Key Concept: <strong>Femoral Access for Open Heart Surgery and Femoral Cannulation</strong> </h4>
+<p data-source-line="388">Femoral access, particularly femoral cannulation, is a pivotal technique in open heart surgeries and procedures that require cardiopulmonary bypass (CPB). This approach allows for the circulation of blood via a heart-lung machine, bypassing the heart and maintaining perfusion to the rest of the body during surgery. It is often utilized in various cardiac interventions, including certain open heart surgeries, where direct aortic cannulation might be contraindicated or high-risk.</p>
+<p data-source-line="390"><strong>Relevant Procuct Catagories:</strong> <code>femoral arterial cannula</code>, <code>femoral venous cannula</code></p>
+<p data-source-line="392"><img src="../../static/img/femoral_access_3.png" alt="Femoral Cannulation"><br>
+<img src="../../static/img/femoral_access_2.png" alt="Femoral Cannulation"><br>
+<strong>Procedure of Femoral Cannulation</strong></p>
+<ol data-source-line="396">
+<li data-source-line="396">
+<p data-source-line="396"><strong>Preparation:</strong></p>
+<ul data-source-line="397">
+<li data-source-line="397"><strong>Positioning:</strong> The patient is placed in a supine position, ensuring comfortable and safe access to the femoral region.</li>
+<li data-source-line="398"><strong>Sterilization:</strong> The groin area is cleaned and sterilized to prevent infection.</li>
+<li data-source-line="399"><strong>Anesthesia:</strong> Local or general anesthesia is administered based on the procedure.</li>
+</ul>
+</li>
+<li data-source-line="401">
+<p data-source-line="401"><strong>Femoral Vessel Access:</strong></p>
+<ul data-source-line="402">
+<li data-source-line="402"><strong>Exposure:</strong> The femoral artery and vein are exposed via a small incision in the groin area.</li>
+<li data-source-line="403"><strong>Cannulation:</strong> Cannulas are inserted into the femoral artery and vein. The arterial cannula is utilized to deliver oxygenated blood from the heart-lung machine to the systemic circulation, while the venous cannula drains deoxygenated blood from the body to the machine.</li>
+</ul>
+</li>
+<li data-source-line="405">
+<p data-source-line="405"><strong>Cardiopulmonary Bypass (CPB):</strong></p>
+<ul data-source-line="406">
+<li data-source-line="406"><strong>Initiation:</strong> Once cannulation is secured, CPB is initiated, diverting blood away from the heart and lungs, allowing for a still and bloodless surgical field.</li>
+<li data-source-line="407"><strong>Maintenance:</strong> The patient’s hemodynamics, including blood pressure, oxygenation, and acid-base balance, are meticulously monitored and managed during CPB.</li>
+</ul>
+</li>
+<li data-source-line="409">
+<p data-source-line="409"><strong>Surgical Procedure:</strong></p>
+<ul data-source-line="410">
+<li data-source-line="410"><strong>Intervention:</strong> With the heart isolated from the systemic circulation, surgical interventions, such as valve repairs or coronary bypass, are performed.</li>
+<li data-source-line="411"><strong>De-airing:</strong> Before weaning from CPB, the heart is de-aired to prevent air embolism.</li>
+</ul>
+</li>
+<li data-source-line="413">
+<p data-source-line="413"><strong>Decannulation and Closure:</strong></p>
+<ul data-source-line="414">
+<li data-source-line="414"><strong>Weaning from CPB:</strong> The patient is gradually weaned off the heart-lung machine, and the heart resumes its function.</li>
+<li data-source-line="415"><strong>Decannulation:</strong> The cannulas are removed, and the femoral vessels are repaired, typically with sutures.</li>
+<li data-source-line="416"><strong>Closure:</strong> The incision is closed meticulously to minimize infection risk and ensure optimal healing.</li>
+</ul>
+</li>
+</ol>
+<p data-source-line="421"><strong>Applications</strong></p>
+<ul data-source-line="423">
+<li data-source-line="423"><strong>Emergent Situations:</strong> Rapid establishment of CPB in emergencies, such as acute aortic dissection.</li>
+<li data-source-line="424"><strong>Minimally Invasive Cardiac Surgery:</strong> Enabling procedures without the need for sternotomy.</li>
+<li data-source-line="425"><strong>High-Risk Patients:</strong> Utilized when aortic cannulation is deemed risky due to calcification or other pathologies.</li>
+</ul>
+<p data-source-line="427"><strong>Advantages</strong></p>
+<ul data-source-line="429">
+<li data-source-line="429"><strong>Minimized Surgical Trauma:</strong> Especially in minimally invasive cardiac surgeries.</li>
+<li data-source-line="430"><strong>Rapid Access:</strong> Quick establishment of CPB in emergent situations.</li>
+<li data-source-line="431"><strong>Alternative Access:</strong> Useful when other cannulation sites are not viable.</li>
+</ul>
+<p data-source-line="433"><strong>Challenges and Risks</strong></p>
+<ul data-source-line="435">
+<li data-source-line="435"><strong>Vascular Injury:</strong> Risk of damage to the femoral vessels during cannulation.</li>
+<li data-source-line="436"><strong>Limb Ischemia:</strong> Prolonged femoral artery cannulation may compromise limb perfusion.</li>
+<li data-source-line="437"><strong>Aortic Dissection:</strong> Rare but serious complication, particularly during decannulation.</li>
+</ul>
+<p data-source-line="439"><strong>Considerations</strong></p>
+<ul data-source-line="441">
+<li data-source-line="441"><strong>Anatomical and Pathological Assessment:</strong> Evaluating vessel size, patency, and the presence of atherosclerosis.</li>
+<li data-source-line="442"><strong>Technique Proficiency:</strong> Ensuring skillful and gentle cannulation to minimize vascular trauma.</li>
+<li data-source-line="443"><strong>Patient Monitoring:</strong> Continuous monitoring of limb perfusion and neurological status during CPB.</li>
+</ul>
+<p data-source-line="445">In essence, femoral access and cannulation serve as vital techniques in the armamentarium of cardiac surgeons and perfusionists, enabling safe and effective management of patients during complex cardiac procedures. The method demands a thorough understanding of the anatomy, meticulous technique, and vigilant patient monitoring to ensure optimal outcomes and minimize associated risks.</p>
+<hr>
+<h4 id="key-concept-proximal-and-distal-anastomosis-in-coronary-artery-bypass-grafting-cabg" data-source-line="450">Key Concept: <strong>Proximal and Distal Anastomosis in Coronary Artery Bypass Grafting (CABG)</strong> </h4>
+<p data-source-line="452">Coronary Artery Bypass Grafting (CABG) is a surgical procedure aimed at improving blood flow to the myocardium by bypassing occluded coronary arteries. This is achieved by creating new pathways for blood flow using grafts, which are often vessels harvested from other parts of the patient's body. The process of attaching the graft involves creating connections, or anastomoses, at two points: proximal and distal to the occlusion.</p>
+<p data-source-line="454"><strong>Relevant Procuct Catagories:</strong> <code>coronary needle holders - proximal</code>, <code>coronary needle holders - distal</code>, <code>coronary scissors</code>, <code>delicate forceps</code>, <code>aortic punch</code></p>
+<p data-source-line="456"><img src="../../static/img/anastomoses.png" alt="CABG Anastomosis"></p>
+<p data-source-line="458"><strong>1. Proximal Anastomosis</strong></p>
+<ul data-source-line="460">
+<li data-source-line="460">
+<p data-source-line="460"><strong>Definition:</strong> Proximal anastomosis refers to the connection of the graft to a major artery, which is typically the aorta, to ensure a robust and oxygen-rich blood supply to the graft.</p>
+</li>
+<li data-source-line="462">
+<p data-source-line="462"><strong>Procedure:</strong></p>
+<ul data-source-line="463">
+<li data-source-line="463"><strong>Location Identification:</strong> A suitable site on the aorta is identified for anastomosis.</li>
+<li data-source-line="464"><strong>Arteriotomy:</strong> A small incision is made in the wall of the aorta, often using a surgical aortic punch.</li>
+<li data-source-line="465"><strong>Graft Attachment:</strong> The graft (like the saphenous vein) is sutured to the aorta, establishing the proximal anastomosis.</li>
+</ul>
+</li>
+<li data-source-line="467">
+<p data-source-line="467"><strong>Considerations:</strong></p>
+<ul data-source-line="468">
+<li data-source-line="468"><strong>Aortic Health:</strong> The health and calcification level of the aorta must be considered to ensure a secure anastomosis.</li>
+<li data-source-line="469"><strong>Hemodynamic Stability:</strong> Maintaining patient stability during clamping and suturing on the aorta.</li>
+</ul>
+</li>
+</ul>
+<p data-source-line="471"><strong>2. Distal Anastomosis</strong></p>
+<ul data-source-line="473">
+<li data-source-line="473">
+<p data-source-line="473"><strong>Definition:</strong> Distal anastomosis involves connecting the other end of the graft to the coronary artery, beyond the point of occlusion, to restore blood flow to the myocardium.</p>
+</li>
+<li data-source-line="475">
+<p data-source-line="475"><strong>Procedure:</strong></p>
+<ul data-source-line="476">
+<li data-source-line="476"><strong>Target Artery Identification:</strong> The occluded coronary artery segment is identified.</li>
+<li data-source-line="477"><strong>Arteriotomy:</strong> A small incision is made in the coronary artery, distal to the blockage.</li>
+<li data-source-line="478"><strong>Graft Attachment:</strong> The graft is sutured to the coronary artery, forming the distal anastomosis.</li>
+</ul>
+</li>
+<li data-source-line="480">
+<p data-source-line="480"><strong>Considerations:</strong></p>
+<ul data-source-line="481">
+<li data-source-line="481"><strong>Coronary Artery Condition:</strong> Ensuring the target site is free from extensive disease to secure the anastomosis.</li>
+<li data-source-line="482"><strong>Blood Flow Restoration:</strong> Confirming successful restoration of blood flow to the myocardium post-anastomosis.</li>
+</ul>
+</li>
+</ul>
+<p data-source-line="484"><strong>Challenges and Risks</strong></p>
+<ul data-source-line="486">
+<li data-source-line="486"><strong>Graft Patency:</strong> Ensuring the graft remains open and functional over time.</li>
+<li data-source-line="487"><strong>Technical Precision:</strong> Ensuring accurate and secure suturing to prevent complications like bleeding or graft failure.</li>
+<li data-source-line="488"><strong>Myocardial Protection:</strong> Safeguarding the myocardium during the procedure, especially during periods of ischemia.</li>
+</ul>
+<p data-source-line="490"><strong>Postoperative Considerations</strong></p>
+<ul data-source-line="492">
+<li data-source-line="492"><strong>Graft Surveillance:</strong> Monitoring graft patency and cardiac function using imaging studies postoperatively.</li>
+<li data-source-line="493"><strong>Patient Recovery:</strong> Managing pain, monitoring for complications, and facilitating rehabilitation.</li>
+<li data-source-line="494"><strong>Long-Term Management:</strong> Addressing risk factors and implementing lifestyle and pharmacological interventions to optimize graft longevity and cardiac health.</li>
+</ul>
+<p data-source-line="496">In CABG, both proximal and distal anastomoses are critical steps that require surgical precision and expertise to ensure the successful re-establishment of blood flow to the myocardium, thereby enhancing cardiac function and patient outcomes. The procedure demands meticulous planning, technical proficiency, and comprehensive postoperative management to optimize long-term graft patency and overall cardiac health.</p>
+<hr>
+<h4 id="key-concept-off-pump-coronary-artery-bypass-opcab-procedures" data-source-line="500">Key Concept: <strong>Off-Pump Coronary Artery Bypass (OPCAB) Procedures</strong> </h4>
+<p data-source-line="502">Off-Pump Coronary Artery Bypass (OPCAB), often referred to as "beating heart surgery," is a technique of performing coronary artery bypass grafting (CABG) without the use of cardiopulmonary bypass (CPB) – the heart-lung machine. This approach allows surgeons to perform bypass surgery while the heart is still beating, thereby avoiding potential complications associated with CPB. Typically the perfusion team is still there, on site, ready to go on pump if needed.</p>
+<p data-source-line="504">The most common consideration for doing an off-pump CABG is due to heavy calcification in the Aorta. The surgeon factors that variable in, amongst a host of others, and makes a decsision. Sometimes the risk of calcium embolism is too high and the surgeon will opt for an off-pump CABG. An embolism occures wehn a piece of calcium breaks off and travels to the brain or other organs. This can cause a stroke or other ischemic complications.</p>
+<p data-source-line="507"><strong>Relevant Procuct Catagories:</strong> <code>coronary needle holders - proximal</code>, <code>coronary needle holders - distal</code>, <code>coronary scissors</code>, <code>delicate forceps</code>, <code>aortic punch</code>, <code>stabilizer</code>, <code>saphenous vein harvester</code>, <code>proximal anastomosis assist device</code></p>
+<p data-source-line="510"><img src="../../static/img/off_pump_1.png" alt="OPCAB Procedure"></p>
+<p data-source-line="512"><strong>Procedure of OPCAB</strong></p>
+<ol data-source-line="514">
+<li data-source-line="514">
+<p data-source-line="514"><strong>Preparation:</strong></p>
+<ul data-source-line="515">
+<li data-source-line="515"><strong>Access:</strong> The heart is accessed typically through a median sternotomy, providing a direct view of the heart.</li>
+<li data-source-line="516"><strong>Stabilization:</strong> A stabilizer is used to steady the portion of the heart where the grafting is to be performed, while the rest of the heart continues to beat and circulate blood.</li>
+</ul>
+</li>
+<li data-source-line="518">
+<p data-source-line="518"><strong>Graft Harvesting:</strong></p>
+<ul data-source-line="519">
+<li data-source-line="519"><strong>Vessel Selection:</strong> Suitable vessels (like the saphenous vein or internal mammary artery) are harvested to serve as grafts.</li>
+</ul>
+</li>
+<li data-source-line="521">
+<p data-source-line="521"><strong>Performing Anastomoses:</strong></p>
+<ul data-source-line="522">
+<li data-source-line="522"><strong>Distal Anastomosis:</strong> The graft is attached to the coronary artery beyond the blockage while the heart is beating.</li>
+<li data-source-line="523"><strong>Proximal Anastomosis:</strong> The other end of the graft is connected to a major artery, often the aorta.</li>
+</ul>
+</li>
+<li data-source-line="525">
+<p data-source-line="525"><strong>Graft Verification:</strong></p>
+<ul data-source-line="526">
+<li data-source-line="526"><strong>Flow Measurement:</strong> The flow through the newly placed graft is measured to ensure it is functioning adequately.</li>
+<li data-source-line="527"><strong>Visual Inspection:</strong> The graft and anastomoses are inspected for any issues like bleeding.</li>
+</ul>
+</li>
+</ol>
+<p data-source-line="529"><img src="../../static/img/off_pump_2.png" alt="Anastomosis OPCAB"></p>
+<p data-source-line="531"><strong>Applications</strong></p>
+<ul data-source-line="533">
+<li data-source-line="533"><strong>High-Risk Patients:</strong> It may be preferred in patients where CPB might pose significant risks, such as in individuals with renal dysfunction, pulmonary issues, or atheromatous aortic disease.</li>
+</ul>
+<p data-source-line="535"><strong>Advantages</strong></p>
+<ul data-source-line="537">
+<li data-source-line="537"><strong>Reduced Complications:</strong> OPCAB often associates with fewer neurological complications, less renal impairment, and lower mortality in specific patient subsets.</li>
+<li data-source-line="538"><strong>Avoidance of CPB:</strong> Eliminates complications related to the use of the heart-lung machine, such as systemic inflammatory response and potential air or particle embolism.</li>
+<li data-source-line="539"><strong>Shorter Recovery:</strong> Often, patients experience a quicker recovery and shorter hospital stay compared to on-pump CABG.</li>
+</ul>
+<p data-source-line="541"><strong>Challenges and Risks</strong></p>
+<ul data-source-line="543">
+<li data-source-line="543"><strong>Technical Difficulty:</strong> Performing anastomoses on a beating heart demands high surgical skill and expertise.</li>
+<li data-source-line="544"><strong>Limited Revascularization:</strong> In some cases, it might be challenging to achieve complete revascularization, especially in patients with multiple vessel disease.</li>
+<li data-source-line="545"><strong>Hemodynamic Instability:</strong> Manipulating the heart during surgery can sometimes lead to hemodynamic instability, which must be meticulously managed.</li>
+</ul>
+<p data-source-line="547"><strong>Considerations</strong></p>
+<ul data-source-line="549">
+<li data-source-line="549"><strong>Patient Selection:</strong> Careful selection of suitable candidates for OPCAB is crucial to optimize outcomes.</li>
+<li data-source-line="550"><strong>Surgical Expertise:</strong> Surgeons must be adept at performing precise anastomoses on the beating heart.</li>
+<li data-source-line="551"><strong>Intraoperative Management:</strong> Ensuring stable hemodynamics and adequate myocardial protection during the procedure.</li>
+</ul>
+<p data-source-line="553">In summary, OPCAB offers a viable alternative to conventional on-pump CABG, particularly for certain patient populations, providing the benefits of reduced complications and quicker recovery. The approach, while technically demanding, can yield excellent outcomes with meticulous surgical technique, thorough patient selection, and comprehensive intraoperative management.</p>
+<hr>
+<h4 id="key-concept-temporary-pacing" data-source-line="556">Key Concept: Temporary Pacing </h4>
+<p data-source-line="558">Temporary pacing involves the insertion of a pacing wire into the heart to regulate the heart rate. It is a common procedure in cardiac surgery, where it is used to maintain a normal heart rate during and after surgery.</p>
+<h5 id="why-temporary-pacing-is-used-in-cardiac-surgery" data-source-line="560">Why Temporary Pacing is used in Cardiac Surgery: </h5>
+<p data-source-line="562">Temporary pacing is used in cardiac surgery to maintain a normal heart rate during and after surgery. It is often used in conjunction with cardiopulmonary bypass (CPB), which is a technique that temporarily takes over the function of the heart and lungs during surgery. CPB is used in cardiac surgery to provide a still and bloodless operative field, facilitating the surgical procedure. However, CPB can cause arrhythmias, which are abnormal heart rhythms. Temporary pacing is used to regulate the heart rate and prevent arrhythmias during and after CPB.</p>
+<h5 id="atrial-pacing-vs-ventricular-pacing" data-source-line="564">Atrial Pacing vs. Ventricular Pacing: </h5>
+<p data-source-line="566"><strong>Atrial Pacing Wires</strong> - are typically placed epicardially on the right atrium. They are used to pace the atrium, which is the upper chamber of the heart. Atrial pacing wires are used to maintain a normal heart rate during and after surgery. Many surgeons are more selective on the utilization of atrial pacing, and often only use atrial pacing on a patient who is "pacing dependent". That said, other surgeons use atrial pacing wires in their standard protocol.</p>
+<p data-source-line="568"><img src="../../static/img/atrial_pacing.png" alt="atrial pacing"></p>
+<p data-source-line="570"><strong>Ventricular Pacing Wires</strong> - are typically placed in the myocardium of the right ventricle. They are used to pace the ventricle, which is the lower chamber of the heart. Ventricular pacing wires are used to maintain a normal heart rate during and after surgery. Ventricular pacing is more commonly used than atrial pacing, as it is more effective at maintaining a normal heart rate.</p>
+<p data-source-line="572"><img src="../../static/img/ventricular_pacing.png" alt="ventricular pacing"></p>
+<hr>
+<h4 id="key-concept-hemostasis-products-used-in-cardiac-surgery" data-source-line="574">Key Concept: Hemostasis Products used in Cardiac Surgery </h4>
+<p data-source-line="576">Hemostasis is a very complex topic. It is not an immediate focus of our current products, but should be understood at the surface level to understand what is happening in the room.</p>
+<p data-source-line="578">The patient is often given a dose of Heparin to prevent blood clots from forming during the procedure. This is a very important step. The patient is then given a dose of Protamine to reverse the effects of the Heparin.</p>
+<p data-source-line="580">The nuance and complexities of the patient and the case can cause bleeding issues sometimes with patients. Depending on the severity, different products are used to assist with hemostasis.</p>
+<p data-source-line="582">Blood products from the OR blood bank are often used to assist with hemostasis. These will often be units of blood, platelets, and less frequently factor 7 (a specific catalyst in the clotting cascade).</p>
+<p data-source-line="584">Other products used to assist with hemostasis are topical hemostatic agents. These are products that are applied to the surgical site to assist with hemostasis. These products are often used in conjunction with the blood products from the blood bank.</p>
+<p data-source-line="587"><img src="../../static/img/hemostatis_ethicon.png" alt="Hemostatic Agents"></p>
+<p data-source-line="589"><strong>1. Topical Hemostatic Agents</strong></p>
+<ul data-source-line="591">
+<li data-source-line="591"><strong>Gelatin-Based Hemostats:</strong>
+<ul data-source-line="592">
+<li data-source-line="592"><strong>Mechanism:</strong> Provide a porous matrix that accelerates clot formation and platelet activation.</li>
+<li data-source-line="593"><strong>Usage:</strong> Often used in surface oozing and bleeding from raw tissue surfaces.</li>
+</ul>
+</li>
+<li data-source-line="594"><strong>Collagen-Based Hemostats:</strong>
+<ul data-source-line="595">
+<li data-source-line="595"><strong>Mechanism:</strong> Act as a scaffold for platelet adhesion and aggregation, initiating the intrinsic clotting pathway.</li>
+<li data-source-line="596"><strong>Usage:</strong> Applied to bleeding surfaces, especially where coagulation might be suboptimal.</li>
+</ul>
+</li>
+<li data-source-line="597"><strong>Fibrin Sealants:</strong>
+<ul data-source-line="598">
+<li data-source-line="598"><strong>Mechanism:</strong> Mimic the final stages of the coagulation cascade, providing a fibrin clot at the site of application.</li>
+<li data-source-line="599"><strong>Usage:</strong> Used to seal suture lines, adhere tissues, and provide targeted hemostasis.</li>
+</ul>
+</li>
+</ul>
+<p data-source-line="602"><strong>2. Hemostatic Patches and Dressings</strong></p>
+<ul data-source-line="604">
+<li data-source-line="604"><strong>Oxidized Regenerated Cellulose:</strong>
+<ul data-source-line="605">
+<li data-source-line="605"><strong>Mechanism:</strong> Provides a matrix for clot formation and possesses antibacterial properties.</li>
+<li data-source-line="606"><strong>Usage:</strong> Applied to bleeding surfaces, especially in areas difficult to suture.</li>
+</ul>
+</li>
+<li data-source-line="607"><strong>Polyethylene Glycol (PEG) Sealants:</strong>
+<ul data-source-line="608">
+<li data-source-line="608"><strong>Mechanism:</strong> Form a synthetic, hydrogel barrier to control bleeding.</li>
+<li data-source-line="609"><strong>Usage:</strong> Used to seal suture lines and provide a barrier to oozing surfaces.</li>
+</ul>
+</li>
+</ul>
+<p data-source-line="611"><strong>3. Flowable Hemostats</strong></p>
+<ul data-source-line="613">
+<li data-source-line="613"><strong>Flowable Gelatin:</strong>
+<ul data-source-line="614">
+<li data-source-line="614"><strong>Mechanism:</strong> Gelatin particles suspended in a thrombin solution, providing a matrix and enzymatic action to promote clotting.</li>
+<li data-source-line="615"><strong>Usage:</strong> Used in irregular or deep surgical sites where standard hemostats may be ineffective.</li>
+</ul>
+</li>
+<li data-source-line="616"><strong>Cyanoacrylate Glues:</strong>
+<ul data-source-line="617">
+<li data-source-line="617"><strong>Mechanism:</strong> Rapid polymerization upon contact with blood or tissue, providing a physical barrier to bleeding.</li>
+<li data-source-line="618"><strong>Usage:</strong> Used to seal suture lines and control bleeding from small vessels.</li>
+</ul>
+</li>
+</ul>
+<p data-source-line="620"><strong>Applications and Considerations</strong></p>
+<ul data-source-line="622">
+<li data-source-line="622"><strong>Surgical Application:</strong> Hemostatic agents are utilized to control bleeding from suture lines, graft anastomoses, and tissue surfaces.</li>
+</ul>
+<hr>
+<h4 id="key-concept-post-operative-drainage-in-cardiac-surgery---chest-tubes" data-source-line="626">Key Concept: <strong>Post-Operative Drainage in Cardiac Surgery - Chest Tubes</strong> </h4>
+<p data-source-line="628">Following a cardiac operation, chest tubes are often placed to drain fluid and air from the chest cavity. Chest tubes are typically connected to a drainage system, which allows for the collection of fluid and air from the chest cavity. The drainage system is often connected to a suction device, which helps to remove fluid and air from the chest cavity.</p>
+<p data-source-line="630">Tubes are placed in the chest cavity near the end of the procedure, the one end of the tube being passed through the pateints skin.</p>
+<p data-source-line="632"><strong>Relevant Procuct Catagories:</strong> <code>chest tube</code>, <code>chest tube drainage system</code></p>
+<p data-source-line="634"><img src="../../static/img/chest_tubes.png" alt="Chest Tube"><br>
+<img src="../../static/img/chest_tuube_drainage_system.png" alt="drainage"></p>
+<p data-source-line="637">Chest tubes are typically placed in the pleural space, which is the space between the lungs and the chest wall.</p>
+<p data-source-line="639">The chest tubes stay with the patient, and are removed in the ICU during the recovery period. The chest tubes are removed when the drainage is minimal and the patient is stable.</p>
+<hr>
+<h4 id="key-concept-sternal-closure" data-source-line="644">Key Concept: Sternal Closure </h4>
+<hr>
+<h4 id="key-concept-aortic-dissections--induced-hypothermia" data-source-line="647">Key Concept: Aortic Dissections &amp; Induced Hypothermia </h4>
+<hr>
+<h4 id="key-concept-minimally-invasive-aortic-valve-replacement-mini-avr" data-source-line="653">Key Concept: Minimally Invasive Aortic Valve Replacement (Mini-AVR) </h4>
+<hr>
+<h4 id="key-concept-minimally-invasive-mitral-valve-repair-mini-mvr" data-source-line="657">Key Concept: Minimally Invasive Mitral Valve Repair (Mini-MVR) </h4>
+<hr>
+<h4 id="key-concept-minimally-invasive-coronary-artery-bypass-grafting-mini-cabg" data-source-line="661">Key Concept: Minimally Invasive Coronary Artery Bypass Grafting (Mini-CABG) </h4>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
