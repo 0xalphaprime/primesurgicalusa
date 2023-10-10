@@ -5,6 +5,16 @@
 
 The realm of cardiac surgery has evolved significantly, with a spectrum of surgical interventions available to manage and treat various cardiac diseases. In this module, we will delve into three pivotal procedures: Coronary Artery Bypass Grafting (CABG), Valve Replacements, and Transcatheter Interventions.
 
+As we covered in the anatomy module, the heart is a complex system composed of two pumps. It uses coordinated electrical impulses to more blood through the pressure-valve system. Ischemic diseases require intervention of the pipes, or blood vessels. Valvular diseases require intervention of the valves. 
+
+As the procedural protocol has evolved throughout the last few decades, surgeons have often partnered with industry to develop the tools and methods to perform specifed aspects of the procedures. In this section I will highlight some of the key concepts in cardiac surgery and the products that are used to perform the procedures.
+
+This is a percursor to the next section, where we will explore our portfolio, and get more into the specifics, strategy, and prefrence profiles of the surgeons and teams we work with. 
+
+![heart anatomy](../../static/img/circulatory_system.png)
+
+#### Overview: Common Procedures
+
 1. **Coronary Artery Bypass Grafting (CABG)**:
     - **Objective**: CABG aims to restore blood flow to ischemic myocardium by bypassing obstructed coronary arteries.
     - **Procedure**:
@@ -41,16 +51,80 @@ The realm of cardiac surgery has evolved significantly, with a spectrum of surgi
 4. **Post-operative Care**:
     - **Monitoring**: Continuous monitoring in the initial post-operative period is essential to identify and manage complications like arrhythmias, infections, or bleeding.
     - **Rehabilitation**: Cardiac rehabilitation is pivotal for optimizing recovery, educating the patient on lifestyle modifications, and monitoring for any signs of disease recurrence or post-operative complications.
-
-5. **Ethical Considerations**:
-    - Informed consent, patient education about the risks, benefits, and alternatives are essential components of pre-operative planning.
-
-6. **Future Trends**:
+5. **Future Trends**:
     - The advent of minimally invasive surgical techniques, robotic-assisted surgeries, and continuous advancements in transcatheter interventions herald an exciting era in cardiac surgery.
 
 Understanding the intricacies, indications, and outcomes of these surgical interventions is foundational for future learning.
 
 ___
+
+#### Key Concept: **Suturing in Surgical Practice**
+
+Suturing, a fundamental skill in surgical practice, involves using a needle and thread to close incisions, repair tissues, and facilitate healing. In the context of cardiothoracic surgery, suturing is pivotal in ensuring the stability and integrity of repaired structures, such as vessels, heart valves, and tissue layers.
+
+![Suturing Techniques](../../static/img/suturing_techniques.png)
+
+**Types of Sutures**
+
+- **Absorbable vs. Non-absorbable:** Absorbable sutures are broken down by the body over time, while non-absorbable ones remain indefinitely and may require removal.
+- **Monofilament vs. Multifilament:** Monofilament sutures consist of a single thread, while multifilament sutures are braided. Monofilament sutures are less prone to infection, while multifilament sutures provide better knot security.
+- **Natural vs. Synthetic:** Sutures can be made from natural materials, like silk or catgut, or from synthetic materials, such as polypropylene or nylon.
+
+![sutures](../../static/img/suture_types.png)
+
+**Suture Sizing**
+
+![suture sizing](../../static/img/suture_sizing.png)
+
+With suture Size 0 is the baseline. Moving to the left (1, 2, 3, etc.) the suture gets larger. Moving to the right (1-0, 2-0, 3-0, etc.) the suture gets smaller.
+
+For reference size 0 represents the "stay" sutures used for pericardial retraction, or the closure of large skin incisions. Size 2-0 is typically used to sew in biprosthetic valves. Size 7-0 is used to do a distal anastomosis in CABG. Size 5-0 or 6-0 is typically used to do a proximal anaostomosis in CABG.
+
+The same sizing methodology works for the stainless steel sternal wires we will cover thoughout this curriculum. The most common size for sternal wire used is size 6, which is on the other side of the spectrum.  
+
+
+
+**Key Suturing Techniques**
+
+1. **Simple Interrupted Suture:**
+   - **Usage:** Widely used for closing incisions and wound edges.
+   - **Process:** Individual stitches are placed and tied separately.
+   - **Advantages:** If one suture fails, the others remain intact.
+
+2. **Running or Continuous Suture:**
+   - **Usage:** Useful for long incisions where speed is crucial.
+   - **Process:** A single suture thread is used to sew along the length of the wound without tying individual knots.
+   - **Advantages:** Quick and uses less suture material.
+   - **Disadvantages:** If the suture breaks, the entire line may fail.
+
+3. **Mattress Suture:**
+   - **Usage:** Employed to approximate wound edges and distribute tension.
+   - **Process:** The suture is passed perpendicular to the wound, encompassing larger amounts of tissue.
+   - **Advantages:** Reduces tension across the wound and promotes healing.
+
+4. **Purse-String Suture:**
+   - **Usage:** Commonly used in cardiovascular surgeries, such as securing heart valves or closing openings in vessels, such as the aorta following direct aortic cannulation.
+   - **Process:** A continuous circular suture is placed, which can be tightened like a drawstring.
+   - **Advantages:** Enables closure of circular defects or openings.
+
+![purse string](../../static/img/purse_string.png)
+**Suturing in Cardiothoracic Surgery**
+
+- **Vascular Anastomosis:** Suturing is vital in creating secure and patent connections between vessels, such as in CABG.
+- **Valve Replacement:** Sutures are used to anchor prosthetic heart valves securely in place.
+- **Tissue Repair:** Suturing facilitates the repair of damaged tissues, ensuring they heal appropriately.
+- **Closing Incisions:** Ensuring that thoracic and sternotomy incisions are closed securely and neatly to promote healing and minimize scarring.
+
+**Considerations in Suturing**
+
+- **Tissue Handling:** Gentle and precise handling of tissues is crucial to minimize trauma and promote healing.
+- **Knot Tying:** Secure and appropriately tensioned knots ensure the stability of the suture and prevent leakage, especially in vascular anastomoses.
+- **Suture Selection:** Choosing the appropriate suture material and size is pivotal, considering the tissue type and desired duration of support.
+
+In summary, suturing is an indispensable skill in surgery, with various techniques and materials tailored to the specific requirements of the procedure and tissue type. Mastery of suturing techniques is vital for surgeons to ensure optimal patient outcomes, particularly in the intricate and high-stakes context of cardiothoracic surgery.
+
+___
+
 
 
 #### Key Concept: **Anatomy of the Sternum**
@@ -91,45 +165,79 @@ The sternum has a number of important functions, including:
 
 
 ___
-#### Key Concept: Surgical Access & Sternal Closure
+
+
+#### Key Concept: **Cardiothoracic Surgical Access**
+
+Cardiothoracic surgical access refers to the methods and approaches used by surgeons to gain access to the heart and surrounding structures within the thoracic cavity. The choice of surgical access is determined by various factors, including the type of cardiac surgery being performed, the patient's anatomy, and the surgeon's expertise. Below are some of the common approaches used in cardiothoracic surgery:
 
 
 
+**Relevant Procuct Catagories:** `sternal saws`, `sternal retractors`,  `sternal closure wires`, `sternal closure cables`, `sternal closure plates`, `soft-tissue retractor`
+
+![approaches](../../static/img/cardiac_approaches.png)
+
+**1. Sternotomy**
+  - **Process:** A full sternotomy involves making a vertical incision along the midline of the chest, followed by the division of the sternum, to provide wide access to the heart and lungs.
+  - **Usage:** This approach is commonly used for various cardiac surgeries, such as coronary artery bypass grafting (CABG), valve replacements, and heart transplants.
+  - **Advantages:** It provides extensive visibility and access to the thoracic structures.
+  - **Disadvantages:** It involves a larger incision and can be associated with more pain and a longer recovery period post-surgery.
+  
+  
+  ![Full Sternotomy](../../static/img/full_sternotomy.png)
+  ![Sternotomy](../../static/img/full_sternotomy_2.png)
+    
+  In a standard procedure, following the sternotomy, the sternum is divided using a sternal saw. The sternum is then retracted using a sternal retractor. The surgeon dissects down to the pericardium, which is a fibrous sac that surrounds the heart. The pericardium is opened and retracted using a "stay" suture (_seen in image below_) for visaibility and access to the heart. The surgeon then performs the surgical procedure on the heart. Following the procedure, the pericardium is closed, the sternum is approximated, and the sternum is closed using sternal closure wires, cables, or plates.
+
+  ![Sternotomy](../../static/img/full_sternotomy_3.png)
+
+  <embed src="pdf/white_paper_the_sternalock_blu.pdf" type="application/pdf" width="1000px" height="800px">
+
+
+
+**2. Partial or Mini-Sternotomy:**
+  - **Process:** A partial or mini-sternotomy involves making a smaller incision and dividing only a portion of the sternum, either the upper or lower part.
+  - **Usage:** It is often utilized for minimally invasive valve surgery or CABG.
+  - **Advantages:** It is associated with less pain, reduced blood loss, and a shorter recovery period compared to a full sternotomy.
+  - **Disadvantages:** It may provide limited visibility and access compared to a full sternotomy.
+  - **Types:**
+
+  ![Mini Sternotomy](../../static/img/mini_sternotomy.png)
+  
+
+**3. Mini-Thoracotomy**
+
+- **Process:** A mini-thoracotomy involves making a small incision between the ribs, without dividing the sternum, to access the heart.
+- **Usage:** This approach is commonly used for minimally invasive valve surgeries, particularly for the aortic and mitral valves.
+- **Advantages:** It is associated with less pain and a quicker recovery compared to a sternotomy. It also avoids the need to divide the sternum.
+- **Disadvantages:** It provides limited access and visibility, and may not be suitable for more complex cardiac procedures.
+
+  ![Mini Thoracotomy](../../static/img/mini_approaches.png)
+
+**Considerations for Surgical Access**
+
+- **Patient Factors:** The patient’s anatomy, medical history, and the presence of any co-morbidities are considered when choosing the surgical approach.
+- **Surgical Factors:** The type of surgery, the need for visibility and access, and the surgeon’s expertise influence the choice of access.
+- **Recovery:** Minimally invasive approaches tend to be associated with less pain and a quicker recovery, but are not suitable for all types of surgeries.
+
+In conclusion, the choice of cardiothoracic surgical access is multifaceted and tailored to each individual patient and surgical procedure. The surgeon will weigh the benefits and drawbacks of each approach to determine the most suitable method of access.
 
 ___
-#### Key Concept: Temporary Pacing
 
-Temporary pacing involves the insertion of a pacing wire into the heart to regulate the heart rate. It is a common procedure in cardiac surgery, where it is used to maintain a normal heart rate during and after surgery.
+#### Key Concept: Endoscopic Vessel Harvesting (EVH)
 
-##### Why Temporary Pacing is used in Cardiac Surgery:
+Endoscopic Vessel Harvesting (EVH) is a minimally invasive technique used to harvest the saphenous vein for use as a graft in coronary artery bypass grafting (CABG) surgery. EVH is a preferred alternative to the traditional open vein harvesting (OVH) technique, which involves making a long incision along the length of the leg to access the saphenous vein (_everything I have ever seen has has been EVH. If the team has trouble getting the vein they switch to another vessel before pursuing an open harvest_).
 
-Temporary pacing is used in cardiac surgery to maintain a normal heart rate during and after surgery. It is often used in conjunction with cardiopulmonary bypass (CPB), which is a technique that temporarily takes over the function of the heart and lungs during surgery. CPB is used in cardiac surgery to provide a still and bloodless operative field, facilitating the surgical procedure. However, CPB can cause arrhythmias, which are abnormal heart rhythms. Temporary pacing is used to regulate the heart rate and prevent arrhythmias during and after CPB.
+##### How the EVH is performed in a CABG:
 
-##### Atrial Pacing vs. Ventricular Pacing:
+1. **Accessing the Saphenous Vein:**
+   - The surgeon makes a small incision in the leg, usually in the groin or the knee, to access the saphenous vein.
+   - A special endoscopic device is inserted through the incision and guided along the length of the vein.
+   - The endoscope provides a magnified view of the vein and surrounding tissue, allowing the surgeon to identify and isolate the saphenous vein.
 
-**Atrial Pacing Wires** - are typically placed epicardially on the right atrium. They are used to pace the atrium, which is the upper chamber of the heart. Atrial pacing wires are used to maintain a normal heart rate during and after surgery. Many surgeons are more selective on the utilization of atrial pacing, and often only use atrial pacing on a patient who is "pacing dependent". That said, other surgeons use atrial pacing wires in their standard protocol.
-
-![atrial pacing](../../static/img/atrial_pacing.png)
-
-**Ventricular Pacing Wires** - are typically placed in the myocardium of the right ventricle. They are used to pace the ventricle, which is the lower chamber of the heart. Ventricular pacing wires are used to maintain a normal heart rate during and after surgery. Ventricular pacing is more commonly used than atrial pacing, as it is more effective at maintaining a normal heart rate.
-
-![ventricular pacing](../../static/img/ventricular_pacing.png)
-____
-
-#### Key Concept: Proximal and Distal Anastomosis (CABG)
-____
-
-
-#### Key Concept: Percutaneous Access (Femoral)
-____
-
-#### Key Concept: Off-Pump Procedures
+![evh live](../../static/img/evh_live.png)
+![evh](../../static/img/evh.png)
 ___
-
-#### Key Concept: Aortic Dissections & Induced Hypothermia
-
-____
-
 #### Key Concept: Internal Mammory Artery (IMA):
 
 The **Internal Mammary Artery (IMA)** is commonly used in Coronary Artery Bypass Grafting (CABG) surgery, which aims to restore blood flow to the heart muscle when the coronary arteries are obstructed due to coronary artery disease.
@@ -162,23 +270,60 @@ The IMA is a preferred vessel for grafting due to its proven long-term patency a
 - **Reduced Atherosclerosis:** The IMA is less prone to developing atherosclerosis, which is a common cause of graft failure.
 - **Improved Survival:** Several studies have demonstrated improved long-term survival in patients who received an IMA graft during CABG.
 
-_____
-
-#### Key Concept: Endoscopic Vessel Harvesting (EVH)
-
-Endoscopic Vessel Harvesting (EVH) is a minimally invasive technique used to harvest the saphenous vein for use as a graft in coronary artery bypass grafting (CABG) surgery. EVH is a preferred alternative to the traditional open vein harvesting (OVH) technique, which involves making a long incision along the length of the leg to access the saphenous vein (_everything I have ever seen has has been EVH. If the team has trouble getting the vein they switch to another vessel before pursuing an open harvest_).
-
-##### How the EVH is performed in a CABG:
-
-1. **Accessing the Saphenous Vein:**
-   - The surgeon makes a small incision in the leg, usually in the groin or the knee, to access the saphenous vein.
-   - A special endoscopic device is inserted through the incision and guided along the length of the vein.
-   - The endoscope provides a magnified view of the vein and surrounding tissue, allowing the surgeon to identify and isolate the saphenous vein.
-
-![evh live](../../static/img/evh_live.png)
-![evh](../../static/img/evh.png)
 
 ____
+#### Key Concept: Cardioplegia
+
+**Introduction**
+
+Cardioplegia is a technique used in cardiac surgery to induce cardiac arrest, allowing surgeons to operate on a still heart. This document elucidates the principles, mechanics, and considerations related to cardioplegia within the context of open-heart surgery.
+
+##### 1. The Mechanism of Cardioplegia
+
+- **Primary Components**
+    - **Cardioplegic Solution**: A specialized solution that is infused into the heart to induce cardiac arrest.
+    - **Delivery System**: A device that delivers the cardioplegic solution to the heart.
+
+##### 2. Implementation of Cardioplegia in Surgery
+
+- **Initiation**
+    - The delivery system is connected to the heart, and the cardioplegic solution is infused.
+    - The heart is arrested, and the surgeon can operate on a still heart.
+
+##### 3. Antegrade vs. Retrograde Cardioplegia
+
+- **Antegrade Cardioplegia**
+    - The cardioplegic solution is infused into the coronary arteries, usually via the aortic root.
+    - The solution flows in the same direction as the blood, hence the term “antegrade.”  
+
+![antegrade](../../static/img/antegrade.png)
+
+- **Retrograde Cardioplegia**
+    - The cardioplegic solution is infused into the coronary sinus, which is located on the posterior side of the heart.
+    - The solution flows in the opposite direction of the blood, hence the term “retrograde.”
+
+![retrograde](../../static/img/retrograde.png)
+![plegia](../../static/img/plegia.png)
+
+##### 4. Physiological and Pathophysiological Considerations
+
+- **Myocardial Protection**
+    - Cardioplegia protects the myocardium from ischemic damage during cardiac arrest.
+
+##### 5. Components of Cardioplegic Solution
+
+- **Potassium**
+    - Potassium is the primary component of cardioplegic solution, as it is the primary ion responsible for depolarization of cardiac cells.
+  - **Magnesium**
+    - Magnesium is often added to cardioplegic solution, as it enhances the effects of potassium.
+  - **Other Components**
+    - Other components of cardioplegic solution include calcium, sodium, and glucose.
+  - **Blood**
+    - Blood is often added to cardioplegic solution to provide oxygen to the myocardium during cardiac arrest.
+
+_____
+
+
 
 #### Key Concept: Cardiopulmonary Bypass (CPB)
 
@@ -236,54 +381,282 @@ Cardiopulmonary bypass (CPB), often referred to as heart-lung bypass, is a funda
 
 ___
 
-#### Key Concept: Post-Op Drainage - Chest Tubes
 ___
 
-#### Key Concept: Cardioplegia
+#### Key Concept: **Femoral Access for Open Heart Surgery and Femoral Cannulation**
 
-**Introduction**
+Femoral access, particularly femoral cannulation, is a pivotal technique in open heart surgeries and procedures that require cardiopulmonary bypass (CPB). This approach allows for the circulation of blood via a heart-lung machine, bypassing the heart and maintaining perfusion to the rest of the body during surgery. It is often utilized in various cardiac interventions, including certain open heart surgeries, where direct aortic cannulation might be contraindicated or high-risk.
 
-Cardioplegia is a technique used in cardiac surgery to induce cardiac arrest, allowing surgeons to operate on a still heart. This document elucidates the principles, mechanics, and considerations related to cardioplegia within the context of open-heart surgery.
+**Relevant Procuct Catagories:** `femoral arterial cannula`, `femoral venous cannula`
 
-##### 1. The Mechanism of Cardioplegia
+![Femoral Cannulation](../../static/img/femoral_access_3.png)
+![Femoral Cannulation](../../static/img/femoral_access_2.png)
+**Procedure of Femoral Cannulation**
 
-- **Primary Components**
-    - **Cardioplegic Solution**: A specialized solution that is infused into the heart to induce cardiac arrest.
-    - **Delivery System**: A device that delivers the cardioplegic solution to the heart.
+1. **Preparation:**
+   - **Positioning:** The patient is placed in a supine position, ensuring comfortable and safe access to the femoral region.
+   - **Sterilization:** The groin area is cleaned and sterilized to prevent infection.
+   - **Anesthesia:** Local or general anesthesia is administered based on the procedure.
 
-##### 2. Implementation of Cardioplegia in Surgery
+2. **Femoral Vessel Access:**
+   - **Exposure:** The femoral artery and vein are exposed via a small incision in the groin area.
+   - **Cannulation:** Cannulas are inserted into the femoral artery and vein. The arterial cannula is utilized to deliver oxygenated blood from the heart-lung machine to the systemic circulation, while the venous cannula drains deoxygenated blood from the body to the machine.
 
-- **Initiation**
-    - The delivery system is connected to the heart, and the cardioplegic solution is infused.
-    - The heart is arrested, and the surgeon can operate on a still heart.
+3. **Cardiopulmonary Bypass (CPB):**
+   - **Initiation:** Once cannulation is secured, CPB is initiated, diverting blood away from the heart and lungs, allowing for a still and bloodless surgical field.
+   - **Maintenance:** The patient’s hemodynamics, including blood pressure, oxygenation, and acid-base balance, are meticulously monitored and managed during CPB.
 
-##### 3. Antegrade vs. Retrograde Cardioplegia
+4. **Surgical Procedure:**
+   - **Intervention:** With the heart isolated from the systemic circulation, surgical interventions, such as valve repairs or coronary bypass, are performed.
+   - **De-airing:** Before weaning from CPB, the heart is de-aired to prevent air embolism.
 
-- **Antegrade Cardioplegia**
-    - The cardioplegic solution is infused into the coronary arteries, usually via the aortic root.
-    - The solution flows in the same direction as the blood, hence the term “antegrade.”  
+5. **Decannulation and Closure:**
+   - **Weaning from CPB:** The patient is gradually weaned off the heart-lung machine, and the heart resumes its function.
+   - **Decannulation:** The cannulas are removed, and the femoral vessels are repaired, typically with sutures.
+   - **Closure:** The incision is closed meticulously to minimize infection risk and ensure optimal healing.
 
-![antegrade](../../static/img/antegrade.png)
 
-- **Retrograde Cardioplegia**
-    - The cardioplegic solution is infused into the coronary sinus, which is located on the posterior side of the heart.
-    - The solution flows in the opposite direction of the blood, hence the term “retrograde.”
 
-![retrograde](../../static/img/retrograde.png)
-![plegia](../../static/img/plegia.png)
 
-##### 4. Physiological and Pathophysiological Considerations
+**Applications**
 
-- **Myocardial Protection**
-    - Cardioplegia protects the myocardium from ischemic damage during cardiac arrest.
+- **Emergent Situations:** Rapid establishment of CPB in emergencies, such as acute aortic dissection.
+- **Minimally Invasive Cardiac Surgery:** Enabling procedures without the need for sternotomy.
+- **High-Risk Patients:** Utilized when aortic cannulation is deemed risky due to calcification or other pathologies.
 
-##### 5. Components of Cardioplegic Solution
+**Advantages**
 
-- **Potassium**
-    - Potassium is the primary component of cardioplegic solution, as it is the primary ion responsible for depolarization of cardiac cells.
-  - **Magnesium**
-    - Magnesium is often added to cardioplegic solution, as it enhances the effects of potassium.
-  - **Other Components**
-    - Other components of cardioplegic solution include calcium, sodium, and glucose.
-  - **Blood**
-    - Blood is often added to cardioplegic solution to provide oxygen to the myocardium during cardiac arrest.
+- **Minimized Surgical Trauma:** Especially in minimally invasive cardiac surgeries.
+- **Rapid Access:** Quick establishment of CPB in emergent situations.
+- **Alternative Access:** Useful when other cannulation sites are not viable.
+
+**Challenges and Risks**
+
+- **Vascular Injury:** Risk of damage to the femoral vessels during cannulation.
+- **Limb Ischemia:** Prolonged femoral artery cannulation may compromise limb perfusion.
+- **Aortic Dissection:** Rare but serious complication, particularly during decannulation.
+
+**Considerations**
+
+- **Anatomical and Pathological Assessment:** Evaluating vessel size, patency, and the presence of atherosclerosis.
+- **Technique Proficiency:** Ensuring skillful and gentle cannulation to minimize vascular trauma.
+- **Patient Monitoring:** Continuous monitoring of limb perfusion and neurological status during CPB.
+
+In essence, femoral access and cannulation serve as vital techniques in the armamentarium of cardiac surgeons and perfusionists, enabling safe and effective management of patients during complex cardiac procedures. The method demands a thorough understanding of the anatomy, meticulous technique, and vigilant patient monitoring to ensure optimal outcomes and minimize associated risks.
+
+
+____
+
+#### Key Concept: **Proximal and Distal Anastomosis in Coronary Artery Bypass Grafting (CABG)**
+
+Coronary Artery Bypass Grafting (CABG) is a surgical procedure aimed at improving blood flow to the myocardium by bypassing occluded coronary arteries. This is achieved by creating new pathways for blood flow using grafts, which are often vessels harvested from other parts of the patient's body. The process of attaching the graft involves creating connections, or anastomoses, at two points: proximal and distal to the occlusion.
+
+**Relevant Procuct Catagories:** `coronary needle holders - proximal`, `coronary needle holders - distal`, `coronary scissors`, `delicate forceps`, `aortic punch`
+
+![CABG Anastomosis](../../static/img/anastomoses.png)
+
+**1. Proximal Anastomosis**
+
+- **Definition:** Proximal anastomosis refers to the connection of the graft to a major artery, which is typically the aorta, to ensure a robust and oxygen-rich blood supply to the graft.
+  
+- **Procedure:**
+  - **Location Identification:** A suitable site on the aorta is identified for anastomosis.
+  - **Arteriotomy:** A small incision is made in the wall of the aorta, often using a surgical aortic punch.
+  - **Graft Attachment:** The graft (like the saphenous vein) is sutured to the aorta, establishing the proximal anastomosis.
+  
+- **Considerations:**
+  - **Aortic Health:** The health and calcification level of the aorta must be considered to ensure a secure anastomosis.
+  - **Hemodynamic Stability:** Maintaining patient stability during clamping and suturing on the aorta.
+
+**2. Distal Anastomosis**
+
+- **Definition:** Distal anastomosis involves connecting the other end of the graft to the coronary artery, beyond the point of occlusion, to restore blood flow to the myocardium.
+
+- **Procedure:**
+  - **Target Artery Identification:** The occluded coronary artery segment is identified.
+  - **Arteriotomy:** A small incision is made in the coronary artery, distal to the blockage.
+  - **Graft Attachment:** The graft is sutured to the coronary artery, forming the distal anastomosis.
+  
+- **Considerations:**
+  - **Coronary Artery Condition:** Ensuring the target site is free from extensive disease to secure the anastomosis.
+  - **Blood Flow Restoration:** Confirming successful restoration of blood flow to the myocardium post-anastomosis.
+
+**Challenges and Risks**
+
+- **Graft Patency:** Ensuring the graft remains open and functional over time.
+- **Technical Precision:** Ensuring accurate and secure suturing to prevent complications like bleeding or graft failure.
+- **Myocardial Protection:** Safeguarding the myocardium during the procedure, especially during periods of ischemia.
+
+**Postoperative Considerations**
+
+- **Graft Surveillance:** Monitoring graft patency and cardiac function using imaging studies postoperatively.
+- **Patient Recovery:** Managing pain, monitoring for complications, and facilitating rehabilitation.
+- **Long-Term Management:** Addressing risk factors and implementing lifestyle and pharmacological interventions to optimize graft longevity and cardiac health.
+
+In CABG, both proximal and distal anastomoses are critical steps that require surgical precision and expertise to ensure the successful re-establishment of blood flow to the myocardium, thereby enhancing cardiac function and patient outcomes. The procedure demands meticulous planning, technical proficiency, and comprehensive postoperative management to optimize long-term graft patency and overall cardiac health.
+
+___
+
+#### Key Concept: **Off-Pump Coronary Artery Bypass (OPCAB) Procedures**
+
+Off-Pump Coronary Artery Bypass (OPCAB), often referred to as "beating heart surgery," is a technique of performing coronary artery bypass grafting (CABG) without the use of cardiopulmonary bypass (CPB) – the heart-lung machine. This approach allows surgeons to perform bypass surgery while the heart is still beating, thereby avoiding potential complications associated with CPB. Typically the perfusion team is still there, on site, ready to go on pump if needed.
+
+The most common consideration for doing an off-pump CABG is due to heavy calcification in the Aorta. The surgeon factors that variable in, amongst a host of others, and makes a decsision. Sometimes the risk of calcium embolism is too high and the surgeon will opt for an off-pump CABG. An embolism occures wehn a piece of calcium breaks off and travels to the brain or other organs. This can cause a stroke or other ischemic complications.
+
+
+**Relevant Procuct Catagories:** `coronary needle holders - proximal`, `coronary needle holders - distal`, `coronary scissors`, `delicate forceps`, `aortic punch`, `stabilizer`, `saphenous vein harvester`, `proximal anastomosis assist device`
+
+
+![OPCAB Procedure](../../static/img/off_pump_1.png)
+
+**Procedure of OPCAB**
+
+1. **Preparation:**
+   - **Access:** The heart is accessed typically through a median sternotomy, providing a direct view of the heart.
+   - **Stabilization:** A stabilizer is used to steady the portion of the heart where the grafting is to be performed, while the rest of the heart continues to beat and circulate blood.
+
+2. **Graft Harvesting:**
+   - **Vessel Selection:** Suitable vessels (like the saphenous vein or internal mammary artery) are harvested to serve as grafts.
+   
+3. **Performing Anastomoses:**
+   - **Distal Anastomosis:** The graft is attached to the coronary artery beyond the blockage while the heart is beating.
+   - **Proximal Anastomosis:** The other end of the graft is connected to a major artery, often the aorta.
+
+4. **Graft Verification:**
+   - **Flow Measurement:** The flow through the newly placed graft is measured to ensure it is functioning adequately.
+   - **Visual Inspection:** The graft and anastomoses are inspected for any issues like bleeding.
+
+![Anastomosis OPCAB](../../static/img/off_pump_2.png)
+
+**Applications**
+
+- **High-Risk Patients:** It may be preferred in patients where CPB might pose significant risks, such as in individuals with renal dysfunction, pulmonary issues, or atheromatous aortic disease.
+
+**Advantages**
+
+- **Reduced Complications:** OPCAB often associates with fewer neurological complications, less renal impairment, and lower mortality in specific patient subsets.
+- **Avoidance of CPB:** Eliminates complications related to the use of the heart-lung machine, such as systemic inflammatory response and potential air or particle embolism.
+- **Shorter Recovery:** Often, patients experience a quicker recovery and shorter hospital stay compared to on-pump CABG.
+
+**Challenges and Risks**
+
+- **Technical Difficulty:** Performing anastomoses on a beating heart demands high surgical skill and expertise.
+- **Limited Revascularization:** In some cases, it might be challenging to achieve complete revascularization, especially in patients with multiple vessel disease.
+- **Hemodynamic Instability:** Manipulating the heart during surgery can sometimes lead to hemodynamic instability, which must be meticulously managed.
+
+**Considerations**
+
+- **Patient Selection:** Careful selection of suitable candidates for OPCAB is crucial to optimize outcomes.
+- **Surgical Expertise:** Surgeons must be adept at performing precise anastomoses on the beating heart.
+- **Intraoperative Management:** Ensuring stable hemodynamics and adequate myocardial protection during the procedure.
+
+In summary, OPCAB offers a viable alternative to conventional on-pump CABG, particularly for certain patient populations, providing the benefits of reduced complications and quicker recovery. The approach, while technically demanding, can yield excellent outcomes with meticulous surgical technique, thorough patient selection, and comprehensive intraoperative management.
+
+____
+#### Key Concept: Temporary Pacing
+
+Temporary pacing involves the insertion of a pacing wire into the heart to regulate the heart rate. It is a common procedure in cardiac surgery, where it is used to maintain a normal heart rate during and after surgery.
+
+##### Why Temporary Pacing is used in Cardiac Surgery:
+
+Temporary pacing is used in cardiac surgery to maintain a normal heart rate during and after surgery. It is often used in conjunction with cardiopulmonary bypass (CPB), which is a technique that temporarily takes over the function of the heart and lungs during surgery. CPB is used in cardiac surgery to provide a still and bloodless operative field, facilitating the surgical procedure. However, CPB can cause arrhythmias, which are abnormal heart rhythms. Temporary pacing is used to regulate the heart rate and prevent arrhythmias during and after CPB.
+
+##### Atrial Pacing vs. Ventricular Pacing:
+
+**Atrial Pacing Wires** - are typically placed epicardially on the right atrium. They are used to pace the atrium, which is the upper chamber of the heart. Atrial pacing wires are used to maintain a normal heart rate during and after surgery. Many surgeons are more selective on the utilization of atrial pacing, and often only use atrial pacing on a patient who is "pacing dependent". That said, other surgeons use atrial pacing wires in their standard protocol.
+
+![atrial pacing](../../static/img/atrial_pacing.png)
+
+**Ventricular Pacing Wires** - are typically placed in the myocardium of the right ventricle. They are used to pace the ventricle, which is the lower chamber of the heart. Ventricular pacing wires are used to maintain a normal heart rate during and after surgery. Ventricular pacing is more commonly used than atrial pacing, as it is more effective at maintaining a normal heart rate.
+
+![ventricular pacing](../../static/img/ventricular_pacing.png)
+____
+#### Key Concept: Hemostasis Products used in Cardiac Surgery
+
+Hemostasis is a very complex topic. It is not an immediate focus of our current products, but should be understood at the surface level to understand what is happening in the room. 
+
+The patient is often given a dose of Heparin to prevent blood clots from forming during the procedure. This is a very important step. The patient is then given a dose of Protamine to reverse the effects of the Heparin.
+
+The nuance and complexities of the patient and the case can cause bleeding issues sometimes with patients. Depending on the severity, different products are used to assist with hemostasis.
+
+Blood products from the OR blood bank are often used to assist with hemostasis. These will often be units of blood, platelets, and less frequently factor 7 (a specific catalyst in the clotting cascade).
+
+Other products used to assist with hemostasis are topical hemostatic agents. These are products that are applied to the surgical site to assist with hemostasis. These products are often used in conjunction with the blood products from the blood bank.
+
+
+![Hemostatic Agents](../../static/img/hemostatis_ethicon.png)
+
+**1. Topical Hemostatic Agents**
+
+- **Gelatin-Based Hemostats:**
+  - **Mechanism:** Provide a porous matrix that accelerates clot formation and platelet activation.
+  - **Usage:** Often used in surface oozing and bleeding from raw tissue surfaces.
+- **Collagen-Based Hemostats:**
+  - **Mechanism:** Act as a scaffold for platelet adhesion and aggregation, initiating the intrinsic clotting pathway.
+  - **Usage:** Applied to bleeding surfaces, especially where coagulation might be suboptimal.
+- **Fibrin Sealants:**
+  - **Mechanism:** Mimic the final stages of the coagulation cascade, providing a fibrin clot at the site of application.
+  - **Usage:** Used to seal suture lines, adhere tissues, and provide targeted hemostasis.
+
+
+**2. Hemostatic Patches and Dressings**
+
+- **Oxidized Regenerated Cellulose:**
+  - **Mechanism:** Provides a matrix for clot formation and possesses antibacterial properties.
+  - **Usage:** Applied to bleeding surfaces, especially in areas difficult to suture.
+- **Polyethylene Glycol (PEG) Sealants:**
+  - **Mechanism:** Form a synthetic, hydrogel barrier to control bleeding.
+  - **Usage:** Used to seal suture lines and provide a barrier to oozing surfaces.
+
+**3. Flowable Hemostats**
+
+- **Flowable Gelatin:**
+  - **Mechanism:** Gelatin particles suspended in a thrombin solution, providing a matrix and enzymatic action to promote clotting.
+  - **Usage:** Used in irregular or deep surgical sites where standard hemostats may be ineffective.
+- **Cyanoacrylate Glues:**
+  - **Mechanism:** Rapid polymerization upon contact with blood or tissue, providing a physical barrier to bleeding.
+  - **Usage:** Used to seal suture lines and control bleeding from small vessels.
+
+**Applications and Considerations**
+
+- **Surgical Application:** Hemostatic agents are utilized to control bleeding from suture lines, graft anastomoses, and tissue surfaces.
+
+___
+
+#### Key Concept: **Post-Operative Drainage in Cardiac Surgery - Chest Tubes**
+
+Following a cardiac operation, chest tubes are often placed to drain fluid and air from the chest cavity. Chest tubes are typically connected to a drainage system, which allows for the collection of fluid and air from the chest cavity. The drainage system is often connected to a suction device, which helps to remove fluid and air from the chest cavity.
+
+Tubes are placed in the chest cavity near the end of the procedure, the one end of the tube being passed through the pateints skin.
+
+**Relevant Procuct Catagories:** `chest tube`, `chest tube drainage system`
+
+![Chest Tube](../../static/img/chest_tubes.png)
+![drainage](../../static/img/chest_tuube_drainage_system.png)
+
+Chest tubes are typically placed in the pleural space, which is the space between the lungs and the chest wall.
+
+The chest tubes stay with the patient, and are removed in the ICU during the recovery period. The chest tubes are removed when the drainage is minimal and the patient is stable.
+
+
+___
+
+#### Key Concept: Sternal Closure
+___
+
+#### Key Concept: Aortic Dissections & Induced Hypothermia
+
+____
+
+
+
+#### Key Concept: Minimally Invasive Aortic Valve Replacement (Mini-AVR)
+
+____
+
+#### Key Concept: Minimally Invasive Mitral Valve Repair (Mini-MVR)
+
+____
+
+#### Key Concept: Minimally Invasive Coronary Artery Bypass Grafting (Mini-CABG)
+
