@@ -78,7 +78,7 @@ Suturing, a fundamental skill in surgical practice, involves using a needle and 
 
 With suture Size 0 is the baseline. Moving to the left (1, 2, 3, etc.) the suture gets larger. Moving to the right (1-0, 2-0, 3-0, etc.) the suture gets smaller.
 
-For reference size 0 represents the "stay" sutures used for pericardial retraction, or the closure of large skin incisions. Size 2-0 is typically used to sew in biprosthetic valves. Size 7-0 is used to do a distal anastomosis in CABG. Size 5-0 or 6-0 is typically used to do a proximal anaostomosis in CABG.
+For reference size 0 represents the "stay" sutures used for pericardial retraction, or the closure of large skin incisions. Size 2-0 is typically used to sew in boprosthetic valves. Size 7-0 is used to do a distal anastomosis in CABG. Size 5-0 or 6-0 is typically used to do a proximal anaostomosis in CABG.
 
 The same sizing methodology works for the stainless steel sternal wires we will cover thoughout this curriculum. The most common size for sternal wire used is size 6, which is on the other side of the spectrum.  
 
@@ -191,7 +191,7 @@ Cardiothoracic surgical access refers to the methods and approaches used by surg
 
   ![Sternotomy](../../static/img/full_sternotomy_3.png)
 
-  <embed src="../../static/pdf/white_paper_the_sternalock_blu.pdf" type="application/pdf" width="1000px" height="800px">
+  
 
 
 
@@ -641,22 +641,252 @@ The chest tubes stay with the patient, and are removed in the ICU during the rec
 
 ___
 
-#### Key Concept: Sternal Closure
+#### Key Concept: **Sternal Closure in Cardiac Surgery**
+
+Sternal closure is a critical phase in cardiac surgery, following intrathoracic procedures, where the sternum, which has been surgically divided or entered, is securely closed to ensure stability, promote healing, and prevent complications. This process is vital for protecting underlying structures like the heart and lungs and providing structural integrity during the recovery period.
+
+![Sternal Closure](../../static/img/sternal_closure.png)
+
+**Procedure of Sternal Closure**
+
+1. **Alignment (Approximation):**
+   - **Positioning:** The two halves of the sternum are aligned accurately to ensure proper healing and to minimize the risk of non-union or malunion.
+   - **Stability:** Ensuring that the sternum is stable and that there is no excessive movement at the closure site.
+
+2. **Fixation:**
+   - **Wire Placement:** Traditional method. Stainless steel wires are commonly used to approximate and stabilize the sternum. The wires are passed around the sternum and tightened to secure the two halves together.
+   - **Sternal Plating:** More recently, additional fixation devices like sternal plates may be used, especially in patients with associated risk factors.
+
+##### Benefits of Sternal Plates in Cardiac Surgery
+
+Sternal plates are utilized in cardiac surgery as a method for sternal closure and stabilization, particularly in situations where traditional wire closure may not be optimal. These plates, often made from titanium, are designed to provide rigid fixation of the sternum, facilitating healing and providing stability. Here are some of the notable benefits of using sternal plates:
+
+##### 1. Enhanced Stability
+- **Rigid Fixation:** Sternal plates provide a more rigid fixation compared to wires, reducing sternal micromotion.
+- **Support:** They offer robust structural support, especially in patients with compromised bone quality.
+
+##### 2. Improved Healing
+- **Alignment:** Plates ensure accurate alignment of the sternal edges, promoting optimal healing.
+- **Reduced Stress:** By providing stable fixation, sternal plates may reduce stress on the healing bone, minimizing the risk of non-union or malunion.
+
+##### 3. Reduced Post-Operative Pain
+- **Stability Minimizes Pain:** The stability offered by sternal plates can potentially minimize post-operative pain caused by sternal instability.
+- **Improved Respiratory Mechanics:** Reduced pain may facilitate better respiratory mechanics, enabling patients to breathe deeply and cough more effectively after surgery, which is crucial for preventing post-operative pneumonia.
+
+##### 4. Beneficial in High-Risk Populations
+- **Osteoporotic Patients:** In patients with osteoporosis or poor bone quality, sternal plates can provide enhanced stability and support.
+- **Obese Patients:** In obese patients, where increased mechanical stress is placed on the sternum, plates can offer additional stability.
+- **Re-Operations:** In cases of re-operation, where the sternum may be compromised, sternal plates can provide secure closure.
+
+##### 5. Potential for Reduced Complications
+- **Decreased Risk of Sternal Dehiscence:** The rigid fixation provided by sternal plates may reduce the risk of sternal dehiscence.
+- **Lower Infection Rates:** Some studies suggest that the use of sternal plates may be associated with lower rates of deep sternal wound infections, particularly in high-risk populations.
+
+##### 6. Facilitation of Early Mobilization
+- **Confidence in Movement:** The stability provided by sternal plates may give patients confidence in moving and mobilizing early post-operation.
+- **Physical Therapy:** It may facilitate physical therapy and rehabilitation by providing a stable sternum, allowing patients to engage more effectively in exercises and activities.
+
+##### Conclusion
+While sternal plates offer numerous benefits, especially in specific patient populations, it's crucial to weigh these against the potential risks and costs associated with their use. The decision to utilize sternal plates should be based on a comprehensive assessment of the patient’s risk factors, the surgical context, and the potential advantages they offer in each specific case.
+
+![Wire Fixation](../../static/img/wire_cerclage.png)
+## VS
+![Sternal Plate](../../static/img/slb_v_xp.png)
+
+
+<embed src="../../static/pdf/white_paper_the_sternalock_blu.pdf" type="application/pdf" width="1000px" height="800px">
+
+
+**Challenges and Risks**
+
+- **Infection:** Sternal wound infections are a significant concern and can have serious implications.
+- **Non-Union:** Inadequate closure or patient factors may lead to non-union of the sternum, requiring further intervention.
+- **Chronic Pain:** Some patients may experience chronic pain at the sternal closure site.
+
+**Considerations**
+
+- **Patient Factors:** Considering factors like diabetes, obesity, and osteoporosis which may affect healing and stability.
+- **Technique:** Ensuring that the closure technique is appropriate for the patient and the procedure.
+- **Post-Operative Care:** Providing adequate pain management, monitoring for signs of infection, and ensuring stability of the sternum during recovery.
+
+In essence, sternal closure is a fundamental component of cardiac surgery, providing both a protective barrier for intrathoracic structures and structural stability during the post-operative period. The technique demands execution and thorough post-operative care to minimize complications and optimize patient recovery and outcomes.
+
+
 ___
 
-#### Key Concept: Aortic Dissections & Induced Hypothermia
+
+#### Key Concept: **Aortic Dissections & Induced Hypothermia**
+
+Aortic dissection is a serious condition where the inner layer of the aorta tears, allowing blood to flow between the layers of the aortic wall, forcing the layers apart. In the context of surgical repair of aortic dissections, induced hypothermia is often utilized as a protective strategy to safeguard organ function, particularly the brain and spinal cord, during periods of reduced or interrupted blood flow.
+
+![Aortic Dissection](../../static/img/aortic_dissection.png)
+![Aortic Dissection](../../static/img/type_dissection_aorta.png)
+
+**Aortic Dissections: An Overview**
+
+- **Type A:** Involves the ascending aorta and possibly the descending aorta. It's typically treated surgically due to its high risk of rupture.
+- **Type B:** Involves only the descending aorta and is often managed medically unless complications arise.
+  
+**Induced Hypothermia: A Protective Strategy**
+
+1. **Mechanism:**
+   - **Metabolic Reduction:** Lowering the body temperature reduces metabolic demand, particularly of the central nervous system.
+   - **Protective Effect:** Provides protection against ischemic injury during periods of reduced blood flow.
+
+2. **Procedure:**
+   - **Cooling:** The patient’s body temperature is lowered using cooling blankets, ice packs, or other specialized devices.
+   - **Monitoring:** Continuous monitoring of core body temperature, ensuring it is maintained at the desired level.
+   - **Rewarming:** Gradual rewarming post-procedure to prevent complications associated with rapid temperature changes.
+
+![Induced Hypothermia](../../static/img/root_repair.png)
+
+**Applications in Aortic Dissection Repair**
+
+- **Cerebral Protection:** During repair of Type A dissections, especially involving the arch, hypothermia is used to protect the brain during periods of circulatory arrest.
+- **Spinal Cord Protection:** In Type B dissections, particularly during endovascular repair, hypothermia may be used to protect the spinal cord from ischemia.
+  
+**Advantages**
+
+- **Organ Protection:** Minimizes ischemic injury to vital organs, particularly the brain and spinal cord, during surgery.
+- **Extended Tolerance:** Allows for longer periods of circulatory arrest or reduced blood flow during complex repairs.
+
+**Challenges and Risks**
+
+- **Coagulation Impact:** Hypothermia can impact coagulation, potentially increasing the risk of bleeding.
+- **Arrhythmias:** The risk of cardiac arrhythmias may be elevated during cooling and rewarming phases.
+- **Metabolic Effects:** Electrolyte imbalances and metabolic alterations can occur during induced hypothermia.
+
+In summary, induced hypothermia is a valuable tool in the surgical management of aortic dissections, providing crucial protection to vital organs during periods of reduced or interrupted blood flow. 
 
 ____
 
 
+#### Key Concept: **Minimally Invasive Aortic Valve Replacement (Mini-AVR)**
 
-#### Key Concept: Minimally Invasive Aortic Valve Replacement (Mini-AVR)
+Minimally Invasive Aortic Valve Replacement (Mini-AVR) represents a paradigm shift in cardiac surgery, prioritizing smaller incisions and specialized techniques to replace the aortic valve with reduced surgical trauma. This approach aims to offer a viable alternative to traditional open-heart surgery, potentially minimizing recovery times and post-operative complications.
 
-____
+![Mini-AVR](../../static/img/mini_approaches.png)
 
-#### Key Concept: Minimally Invasive Mitral Valve Repair (Mini-MVR)
+**Procedure Overview**
 
-____
+1. **Accessing the Heart:**
+   - **Incision:** A smaller incision, often between 2-4 inches, is made, typically through a mini-sternotomy or a right anterior mini-thoracotomy.
+   - **Visualization:** Enhanced visualization is often achieved through specialized instruments and endoscopic assistance.
 
-#### Key Concept: Minimally Invasive Coronary Artery Bypass Grafting (Mini-CABG)
+2. **Valve Replacement:**
+   - **Exposure:** The aortic valve is exposed while ensuring minimal disruption to surrounding structures.
+   - **Removal:** The diseased aortic valve is carefully excised.
+   - **Implantation:** A prosthetic valve is implanted in place of the native valve.
+
+3. **Closure:**
+   - **Verification:** Proper placement and function of the new valve are verified.
+   - **Closing:** The incision is meticulously closed, ensuring structural integrity.
+
+
+
+
+![Prosthetic Valve](../../static/img/bioprosthetic_valve.png)
+![Prosthetic Valve](../../static/img/mini_avr.png)
+
+
+**Applications**
+
+- **Aortic Stenosis:** Mini-AVR can be utilized to replace a narrowed aortic valve.
+- **Aortic Regurgitation:** It may also be applied to address a valve that is leaking or not closing properly.
+
+**Advantages**
+
+- **Reduced Trauma:** Smaller incisions and reduced tissue disruption minimize surgical trauma.
+- **Shorter Recovery:** Patients often experience quicker recovery and shorter hospital stays.
+- **Less Pain:** Typically, patients report less post-operative pain compared to traditional approaches.
+- **Improved Cosmesis:** Smaller, more strategically placed incisions offer better cosmetic outcomes.
+- **Lower Blood Loss:** Minimally invasive approaches often result in reduced intraoperative bleeding.
+
+**Challenges and Risks**
+
+- **Technical Demands:** The procedure demands advanced surgical skills and familiarity with specialized instruments.
+- **Limited Exposure:** The smaller incision provides limited visual and physical access to the surgical field.
+- **Patient Selection:** Not all patients are suitable candidates for Mini-AVR, and thorough pre-operative assessment is crucial.
+- **Complication Management:** Managing complications may be challenging due to the restricted surgical field.
+
+**Considerations**
+
+- **Surgical Expertise:** Ensuring the surgical team is proficient in minimally invasive techniques.
+- **Equipment:** Availability and familiarity with specialized instruments and equipment.
+- **Patient Factors:** Comprehensive assessment to ensure the patient is a suitable candidate for Mini-AVR.
+- **Post-Operative Care:** Ensuring that post-operative care protocols are optimized for recovery from minimally invasive surgery.
+
+In essence, Mini-AVR offers a less invasive alternative for aortic valve replacement, potentially providing numerous benefits in terms of recovery, pain, and cosmesis. However, the approach demands specific surgical expertise, equipment, and careful patient selection to ensure optimal outcomes and manage inherent challenges.
+
+___
+
+#### Key Concept: **Minimally Invasive Mitral Valve Repair (Mini-MVR)**
+
+Minimally Invasive Mitral Valve Repair (Mini-MVR) is an advanced surgical technique that aims to repair a dysfunctional mitral valve through smaller incisions and specialized instruments, minimizing surgical trauma and potentially offering a range of patient benefits compared to traditional open-heart approaches.
+
+![Mini-MVR](../../static/img/mini_mitral.png)
+
+![Mini-MVR](../../static/img/mini_mvr.png)
+
+**Procedure Overview**
+
+1. **Accessing the Mitral Valve:**
+   - **Incision:** A small incision, often in the right lateral thorax, is made to access the heart while avoiding a full sternotomy.
+   - **Visualization:** Endoscopic or robotic assistance is utilized to enhance visualization of the mitral valve through the smaller incision.
+
+2. **Valve Repair:**
+   - **Exposure:** The mitral valve is exposed, often utilizing specialized retractors and instruments.
+   - **Repair Techniques:** Depending on the pathology, various repair techniques such as annuloplasty, leaflet repair, or chordal replacement might be employed.
+   - **Testing:** The repair is tested intraoperatively using saline or echocardiography to ensure valve competence.
+
+3. **Closure:**
+   - **Verification:** Ensuring the stability and functionality of the repair.
+   - **Closing:** The incision is closed, prioritizing structural integrity and cosmetic appearance.
+
+![Mitral Valve Repair](../../static/img/mitral_valve_repair.png)
+
+**Applications**
+
+- **Mitral Regurgitation:** Addressing backward flow of blood due to a leaking mitral valve.
+- **Mitral Stenosis:** Repairing or modifying a narrowed mitral valve to enhance blood flow.
+
+**Advantages**
+
+- **Reduced Surgical Trauma:** Smaller incisions and minimized tissue disruption reduce overall surgical trauma.
+- **Quicker Recovery:** Often associated with shorter hospital stays and quicker return to normal activities.
+- **Less Post-Operative Pain:** Typically, patients experience less pain and require fewer analgesics post-operatively.
+- **Improved Cosmesis:** Smaller, more strategically placed incisions result in better cosmetic outcomes.
+- **Reduced Blood Loss:** The minimally invasive approach tends to involve less blood loss and lower transfusion requirements.
+
+**Challenges and Risks**
+
+- **Technical Complexity:** Mini-MVR demands advanced surgical skills and proficiency with specialized instruments.
+- **Limited Visualization:** The restricted surgical field can limit direct visualization and access.
+- **Patient Suitability:** Thorough pre-operative assessment is crucial to determine patient suitability for a minimally invasive approach.
+- **Complication Management:** Addressing intraoperative complications can be challenging due to limited access.
+
+___
+
+#### Key Concept: **Minimally Invasive Coronary Artery Bypass Grafting (Mini-CABG)**
+
+Minimally Invasive Coronary Artery Bypass Grafting (Mini-CABG) is a refined approach to traditional CABG surgery, aiming to revascularize the myocardium through smaller incisions and without the need for cardiopulmonary bypass (off-pump) in certain cases, thereby reducing surgical trauma and potentially offering a spectrum of benefits to the patient.
+
+![Mini-CABG](../../static/img/mics_cabg.png)
+
+**Procedure Overview**
+
+1. **Accessing the Heart:**
+   - **Incision:** A smaller incision, often through a mini-thoracotomy, is made to access the heart, avoiding a full sternotomy.
+   - **Visualization:** Enhanced visualization is achieved through endoscopic or robotic assistance.
+
+2. **Graft Harvesting and Preparation:**
+   - **Harvesting:** Conduits for bypass, such as the internal mammary artery or saphenous vein, are harvested, potentially using endoscopic techniques.
+   - **Preparation:** The grafts are prepared for anastomosis to the coronary arteries.
+
+3. **Performing the Bypass:**
+   - **Target Vessel Identification:** The coronary artery to be bypassed is identified and prepared.
+   - **Anastomosis:** The graft is anastomosed to the coronary artery, bypassing the occlusion.
+   - **Flow Verification:** Intraoperative assessment, often using flowmetry or imaging, ensures graft patency and adequate revascularization.
+
+![Graft Anastomosis](../../static/img/mics_cabg_distal.png)
 
