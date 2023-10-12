@@ -381,8 +381,6 @@ Cardiopulmonary bypass (CPB), often referred to as heart-lung bypass, is a funda
 
 ___
 
-___
-
 #### Key Concept: **Femoral Access for Open Heart Surgery and Femoral Cannulation**
 
 Femoral access, particularly femoral cannulation, is a pivotal technique in open heart surgeries and procedures that require cardiopulmonary bypass (CPB). This approach allows for the circulation of blood via a heart-lung machine, bypassing the heart and maintaining perfusion to the rest of the body during surgery. It is often utilized in various cardiac interventions, including certain open heart surgeries, where direct aortic cannulation might be contraindicated or high-risk.
@@ -469,6 +467,8 @@ Coronary Artery Bypass Grafting (CABG) is a surgical procedure aimed at improvin
   - **Hemodynamic Stability:** Maintaining patient stability during clamping and suturing on the aorta.
 
 **2. Distal Anastomosis**
+
+![distals](../../static/img/distal_needle_holder.png)
 
 - **Definition:** Distal anastomosis involves connecting the other end of the graft to the coronary artery, beyond the point of occlusion, to restore blood flow to the myocardium.
 
