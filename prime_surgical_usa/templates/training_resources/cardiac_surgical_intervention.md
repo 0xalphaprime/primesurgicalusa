@@ -5,7 +5,7 @@
 
 The realm of cardiac surgery has evolved significantly, with a spectrum of surgical interventions available to manage and treat various cardiac diseases. In this module, we will delve into three pivotal procedures: Coronary Artery Bypass Grafting (CABG), Valve Replacements, and Transcatheter Interventions.
 
-As we covered in the anatomy module, the heart is a complex system composed of two pumps. It uses coordinated electrical impulses to more blood through the pressure-valve system. Ischemic diseases require intervention of the pipes, or blood vessels. Valvular diseases require intervention of the valves. 
+As we covered in the anatomy module, the heart is a complex system composed of two pumps. It uses coordinated electrical impulses to more blood through the pressure-valve system. Ischemic diseases require intervention of the pipes, or blood vessels. Valvular diseases require intervention of one of the 4 main the valves (aortic and mitral primarily). 
 
 As the procedural protocol has evolved throughout the last few decades, surgeons have often partnered with industry to develop the tools and methods to perform specifed aspects of the procedures. In this section I will highlight some of the key concepts in cardiac surgery and the products that are used to perform the procedures.
 
@@ -171,10 +171,6 @@ ___
 
 Cardiothoracic surgical access refers to the methods and approaches used by surgeons to gain access to the heart and surrounding structures within the thoracic cavity. The choice of surgical access is determined by various factors, including the type of cardiac surgery being performed, the patient's anatomy, and the surgeon's expertise. Below are some of the common approaches used in cardiothoracic surgery:
 
-
-
-**Relevant Procuct Catagories:** `sternal saws`, `sternal retractors`,  `sternal closure wires`, `sternal closure cables`, `sternal closure plates`, `soft-tissue retractor`
-
 ![approaches](../../static/img/cardiac_approaches.png)
 
 **1. Sternotomy**
@@ -231,7 +227,7 @@ Endoscopic Vessel Harvesting (EVH) is a minimally invasive technique used to har
 ##### How the EVH is performed in a CABG:
 
 1. **Accessing the Saphenous Vein:**
-   - The surgeon makes a small incision in the leg, usually in the groin or the knee, to access the saphenous vein.
+   - The Physicians Assistant (PA) makes a small incision in the leg, usually in the groin or the knee, to access the saphenous vein.
    - A special endoscopic device is inserted through the incision and guided along the length of the vein.
    - The endoscope provides a magnified view of the vein and surrounding tissue, allowing the surgeon to identify and isolate the saphenous vein.
 
@@ -385,7 +381,6 @@ ___
 
 Femoral access, particularly femoral cannulation, is a pivotal technique in open heart surgeries and procedures that require cardiopulmonary bypass (CPB). This approach allows for the circulation of blood via a heart-lung machine, bypassing the heart and maintaining perfusion to the rest of the body during surgery. It is often utilized in various cardiac interventions, including certain open heart surgeries, where direct aortic cannulation might be contraindicated or high-risk.
 
-**Relevant Procuct Catagories:** `femoral arterial cannula`, `femoral venous cannula`
 
 ![Femoral Cannulation](../../static/img/femoral_access_3.png)
 ![Femoral Cannulation](../../static/img/femoral_access_2.png)
@@ -449,7 +444,6 @@ ____
 
 Coronary Artery Bypass Grafting (CABG) is a surgical procedure aimed at improving blood flow to the myocardium by bypassing occluded coronary arteries. This is achieved by creating new pathways for blood flow using grafts, which are often vessels harvested from other parts of the patient's body. The process of attaching the graft involves creating connections, or anastomoses, at two points: proximal and distal to the occlusion.
 
-**Relevant Procuct Catagories:** `coronary needle holders - proximal`, `coronary needle holders - distal`, `coronary scissors`, `delicate forceps`, `aortic punch`
 
 ![CABG Anastomosis](../../static/img/anastomoses.png)
 
@@ -502,9 +496,6 @@ ___
 Off-Pump Coronary Artery Bypass (OPCAB), often referred to as "beating heart surgery," is a technique of performing coronary artery bypass grafting (CABG) without the use of cardiopulmonary bypass (CPB) – the heart-lung machine. This approach allows surgeons to perform bypass surgery while the heart is still beating, thereby avoiding potential complications associated with CPB. Typically the perfusion team is still there, on site, ready to go on pump if needed.
 
 The most common consideration for doing an off-pump CABG is due to heavy calcification in the Aorta. The surgeon factors that variable in, amongst a host of others, and makes a decsision. Sometimes the risk of calcium embolism is too high and the surgeon will opt for an off-pump CABG. An embolism occures wehn a piece of calcium breaks off and travels to the brain or other organs. This can cause a stroke or other ischemic complications.
-
-
-**Relevant Procuct Catagories:** `coronary needle holders - proximal`, `coronary needle holders - distal`, `coronary scissors`, `delicate forceps`, `aortic punch`, `stabilizer`, `saphenous vein harvester`, `proximal anastomosis assist device`
 
 
 ![OPCAB Procedure](../../static/img/off_pump_1.png)
@@ -629,8 +620,6 @@ Following a cardiac operation, chest tubes are often placed to drain fluid and a
 
 Tubes are placed in the chest cavity near the end of the procedure, the one end of the tube being passed through the pateints skin.
 
-**Relevant Procuct Catagories:** `chest tube`, `chest tube drainage system`
-
 ![Chest Tube](../../static/img/chest_tubes.png)
 ![drainage](../../static/img/chest_tuube_drainage_system.png)
 
@@ -645,7 +634,7 @@ ___
 
 Sternal closure is a critical phase in cardiac surgery, following intrathoracic procedures, where the sternum, which has been surgically divided or entered, is securely closed to ensure stability, promote healing, and prevent complications. This process is vital for protecting underlying structures like the heart and lungs and providing structural integrity during the recovery period.
 
-![Sternal Closure](../../static/img/sternal_closure.png)
+![Sternal Closure](../../static/img/wire_v_plates.png)
 
 **Procedure of Sternal Closure**
 
@@ -721,6 +710,10 @@ Aortic dissection is a serious condition where the inner layer of the aorta tear
 
 ![Aortic Dissection](../../static/img/aortic_dissection.png)
 ![Aortic Dissection](../../static/img/type_dissection_aorta.png)
+
+To better undertand the anatomy of the thoracic vascular system, please see the image below:
+
+![Thoracic Vascular System](../../static/img/thoracic_vascular_system.png)
 
 **Aortic Dissections: An Overview**
 
@@ -890,3 +883,102 @@ Minimally Invasive Coronary Artery Bypass Grafting (Mini-CABG) is a refined appr
 
 ![Graft Anastomosis](../../static/img/mics_cabg_distal.png)
 
+____
+
+### Key Concept: **Atrial Fibrillation (AFib) and the Maze Procedure**
+
+Atrial fibrillation (AFib) is a common cardiac arrhythmia that involves irregular and often rapid heart rate, which can increase the risk of stroke, heart failure, and other heart-related complications. Management of AFib may involve various strategies, including medication, cardioversion, catheter ablation, and surgical interventions like the Maze procedure.
+
+![AFib](../../static/img/afib.png)
+
+#### **Atrial Fibrillation (AFib)**
+
+**Characteristics:**
+- **Irregular Heartbeat:** Rapid and irregular beating of the atria.
+- **Symptoms:** Palpitations, shortness of breath, weakness, and potentially asymptomatic.
+- **Risk Factors:** Age, hypertension, diabetes, previous heart surgery, and more.
+- **Complications:** Stroke, heart failure, and additional heart-related issues.
+
+**Management:**
+- **Anticoagulation:** To prevent stroke.
+- **Rate Control:** Using medications like beta-blockers.
+- **Rhythm Control:** Medications, cardioversion, or ablation to maintain normal rhythm.
+
+#### **The Maze Procedure**
+
+**Definition:** The Maze procedure is a surgical intervention aimed at managing AFib by creating a “maze” of new electrical pathways to guide the heart’s electrical signals.
+
+**Procedure Steps:**
+1. **Creating Lesions:** Surgical incisions (or ablations) are made in the atria.
+2. **Forming a Maze:** The lesions form a pattern or "maze" which directs the electrical signals along a defined pathway to the ventricles.
+3. **Preventing AFib:** The maze disrupts the disorganized electrical signals causing AFib, allowing the heart to beat effectively.
+
+**Types:**
+- **Cut-and-Sew Maze:** Traditional method involving actual incisions in the heart tissue.
+- **Catheter Ablation:** Using catheters to create lesions via radiofrequency energy.
+- **Hybrid Procedure:** Combining catheter ablation and a minimally invasive surgical approach.
+
+**Advantages:**
+- Potentially curative for AFib.
+- May reduce the need for long-term anticoagulation.
+- Can be performed alongside other cardiac surgeries.
+
+**Challenges:**
+- Technically demanding and requires specialized expertise.
+- Risk of complications, including bleeding, infection, and pacemaker requirement.
+
+#### **Patient Selection for the Maze Procedure**
+
+- **Persistent or Long-Standing AFib:** Especially when resistant to medications or catheter ablation.
+- **Undergoing Other Cardiac Surgeries:** Such as valve repair or coronary artery bypass grafting.
+- **Tolerable Surgical Risk:** Adequate overall health to undergo the procedure.
+
+#### **Conclusion**
+
+Atrial fibrillation is a prevalent and potentially dangerous condition, requiring strategic management to mitigate risks and manage symptoms. The Maze procedure offers a surgical option to manage AFib, especially in patients who are refractory to other treatments or are undergoing concurrent cardiac surgery. Patient selection, thorough pre-operative assessment, and specialized surgical expertise are pivotal for optimizing outcomes in the Maze procedure.
+
+<embed src="../../static/pdf/afib_ov_ninja.pdf" type="application/pdf" width="1000px" height="800px">
+___
+
+
+### Key Concept: **Infective Endocarditis and Surgical Management**
+
+Infective endocarditis is an infection of the endocardial surface of the heart, which may involve heart valves, mural endocardium, or a septal defect. Its complex nature and potential to cause severe complications necessitate a comprehensive understanding of its management, including when and how to employ surgical strategies.
+
+![Infective Endocarditis](../../static/img/endocarditis.png)
+
+#### **Infective Endocarditis**
+
+**Characteristics:**
+- **Infection Source:** Typically bacterial, but can also be fungal or due to other microorganisms.
+- **Affected Areas:** Often affects heart valves but can involve other endocardial surfaces.
+- **Symptoms:** Fever, murmur, Osler nodes, Janeway lesions, and others.
+- **Risk Factors:** Pre-existing heart conditions, intravenous drug use, and certain procedures.
+
+**Complications:**
+- Heart failure.
+- Systemic embolization.
+- Abscess formation.
+- Valve destruction.
+
+**Management:**
+- **Antimicrobial Therapy:** Prolonged, often intravenous, antibiotic treatment.
+- **Monitoring:** Regular imaging to assess disease progression and treatment response.
+- **Surgery:** In certain cases, to manage complications or eradicate the infection.
+
+#### **Surgical Management of IE**
+
+**Indications for Surgery:**
+- Heart failure due to valvular dysfunction.
+- Uncontrolled infection (abscess, persistent bacteremia, etc.).
+- Prevention of embolization in certain cases.
+- Infection caused by fungi or resistant bacteria.
+
+**Surgical Procedures:**
+- **Valve Repair or Replacement:** To restore valve function and prevent heart failure. This is often done using a homograft (donated human tissue), due to their resistance to infection.
+- **Debridement:** Removal of infected tissue and abscesses.
+- **Reconstruction:** Repairing or reconstructing damaged structures.
+
+
+
+<embed src="../../static/pdf/endocarditis_ov_ninja.pdf" type="application/pdf" width="1000px" height="800px">

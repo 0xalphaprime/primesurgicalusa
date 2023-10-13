@@ -6,9 +6,11 @@ In the foundation section, we will cover the basics of the human body. This will
 
 #### Anatomical Positioning & Types of Movement
 
-Certainly! Understanding anatomical positions and types of movement is crucial in the medical field as it provides a standardized way of describing the human body and its movements, ensuring clear communication among healthcare professionals.
+Understanding anatomical positions and types of movement is crucial in the medical field as it provides a standardized way of describing the human body and its movements, ensuring clear communication among healthcare professionals.
 
 ##### Anatomical Positions
+
+![anatomical position](../../static/img/anatomical_position_2.png)
 
 1. **Standard Anatomical Position**: 
    - The body is standing upright.
@@ -16,6 +18,10 @@ Certainly! Understanding anatomical positions and types of movement is crucial i
    - Arms are at the sides.
    - Palms face forward.
    - The head is level, and eyes are looking forward.
+
+- **Sagittal Plane**: Divides the body into left and right halves.
+- **Frontal (Coronal) Plane**: Divides the body into front (anterior) and back (posterior) halves.
+- **Transverse (Horizontal) Plane**: Divides the body into upper (superior) and lower (inferior) halves.
 
 2. **Prone Position**: 
    - The body is lying face down.
@@ -25,14 +31,7 @@ Certainly! Understanding anatomical positions and types of movement is crucial i
 
 ![anatomical position](../../static/img/anatomical_position.png)
 
-##### Planes of the Body
 
-Understanding the planes of the body is also crucial:
-- **Sagittal Plane**: Divides the body into left and right halves.
-- **Frontal (Coronal) Plane**: Divides the body into front (anterior) and back (posterior) halves.
-- **Transverse (Horizontal) Plane**: Divides the body into upper (superior) and lower (inferior) halves.
-
-![anatomical position](../../static/img/anatomical_position_2.png)
 
 ##### Types of Movements
 
@@ -207,6 +206,9 @@ ____
 
 ### CV
 
+<embed src="../../static/pdf/cv_physiology_ov_ninja.pdf" type="application/pdf" width="1000px" height="800px">
+
+
 ####Overview of Cardiovascular Anatomy and Physiology
 
 The cardiovascular system, also known as the circulatory system, is a complex network consisting of the heart, blood vessels, and blood. It performs the vital function of delivering oxygen and nutrients to tissues, while removing carbon dioxide and other waste products.
@@ -236,6 +238,9 @@ The cardiovascular system, also known as the circulatory system, is a complex ne
 5. **Cardiac Output and Blood Pressure**:
    - Cardiac output (CO) is the amount of blood pumped by the heart per minute and is a product of heart rate (HR) and stroke volume (SV). Blood pressure (BP) is crucial for perfusion to organs and is regulated by various factors including CO, blood volume, and vascular resistance.
 ![cardiac output](../../static/img/cardiac_output.png)
+
+<embed src="../../static/pdf/blood_vessels_ninja.pdf" type="application/pdf" width="1000px" height="800px">
+
 ___
 ####Circulatory Pathways - Pulmonary and Systemic Circulation
 
@@ -253,15 +258,19 @@ The human circulatory system operates via two interdependent pathways: the Pulmo
    - **Return to Heart**: After gas and nutrient exchange, deoxygenated blood collects into venules, which coalesce into veins, eventually forming the superior and inferior vena cava that return blood to the right atrium, marking the commencement of another pulmonary circulation cycle.
 ![systemic circuit](../../static/img/circulatory_system.png)
 
-3. **Key Regulatory Mechanisms**:
+Blood leaves the heart through the aortic valve, through the ascending aorta, and out to the body. The subclavian arteries branch off the aorta, and supply blood to the arms. The carotid arteries branch off the aorta, and supply blood to the head. The descending aorta supplies blood to the rest of the body. 
+
+![Thoracic Vascular System](../../static/img/thoracic_vascular_system.png)
+
+1. **Key Regulatory Mechanisms**:
    - **Cardiac Cycle Coordination**: The coordination between the heart chambers ensures an efficient circulatory process. This coordination is governed by the heart’s electrical conduction system, involving the sinoatrial (SA) node, atrioventricular (AV) node, and the His-Purkinje system.
    - **Vascular Tone**: Vascular smooth muscle tone in arteries and arterioles plays a crucial role in regulating blood pressure and, consequently, blood flow to different body parts.
    - **Capillary Dynamics**: Capillary permeability and pre-capillary sphincters manage blood flow through capillary beds, aiding in tissue perfusion and nutrient exchange.
 
-4. **Physiological Variables**:
+2. **Physiological Variables**:
    - Variables like heart rate, stroke volume, and systemic vascular resistance are essential determinants of systemic and pulmonary circulation efficacy. Understanding these variables provides insight into pathological states and therapeutic interventions.
 
-5. **Pathophysiological Implications**:
+3. **Pathophysiological Implications**:
    - Disruptions in either circulation pathway can result in pathological conditions. For example, obstruction in pulmonary circulation can lead to pulmonary hypertension, while systemic circulation disruptions can result in conditions like peripheral artery disease.
 
 This overview elucidates the core structural and functional facets of pulmonary and systemic circulatory pathways, foundational knowledge for comprehending the broader cardiovascular physiology and pathology.
@@ -305,8 +314,12 @@ Ischemic Heart Disease (IHD), also known as Coronary Artery Disease (CAD) or Cor
 ![cabg](../../static/img/cabg.png)
 
 This summary delineates the critical concepts surrounding ischemic heart disease, offering an essential foundation for further exploration into its diagnosis, management, and the broader implications for cardiovascular health and disease.
-___
-####Acquired Valvular Heart Diseases: Stenosis and Regurgitation
+
+<embed src="../../static/pdf/ischemic_disease_ninja.pdf" type="application/pdf" width="1000px" height="800px">
+
+____
+
+#### Acquired Valvular Heart Diseases: Stenosis and Regurgitation
 
 Valvular heart diseases, predominantly manifesting as Stenosis or Regurgitation, are pathologies involving one or more of the heart’s valves (**aortic**, **mitral**, tricuspid, and pulmonary). Acquired as opposed to congenital valvular diseases arise due to various factors such as aging, infections or other cardiac diseases. Understanding these diseases is pivotal for a burgeoning medical practitioner.
 * aortic and mitral are the most commonly treated valves, as they're the valves on the left side of the heart, which is the side that pumps blood to the body.
@@ -340,6 +353,8 @@ Valvular heart diseases, predominantly manifesting as Stenosis or Regurgitation,
 
 6. **Prognosis and Follow-Up**:
     - Early detection and intervention are crucial for a favorable prognosis. Regular follow-up with echocardiographic assessments is necessary to monitor disease progression and treatment efficacy.
+
+<embed src="../../static/pdf/valve_disease_ov_ninja.pdf" type="application/pdf" width="1000px" height="800px">
 
 ___
 
@@ -395,10 +410,13 @@ We will not focus her early on, as they are not the focus of our business. Howev
 
 ##### Summary
 Congenital heart defects embody a spectrum of disorders, each with its unique pathophysiology and clinical implications. A robust understanding of their intricacies provides the substrate for impeccable diagnosis, management, and overall holistic care, guiding affected individuals through potential challenges throughout their lifespan. 
+
+
+
 ___
 ### The Rest of the Thoracic Cavity
 
-VIDEO: The Sternum and Ribs - Anatomy Tutorial
+VIDEO: The Sternum and Ribs - Anatomy Tutorial (just watch the first section on sternum and ribs)
 
 <iframe width="700" height="420" src="https://www.youtube.com/embed/ggJCoxOdv8c" frameborder="0" allowfullscreen></iframe>
 
