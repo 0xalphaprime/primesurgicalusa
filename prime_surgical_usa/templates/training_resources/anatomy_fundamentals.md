@@ -123,7 +123,7 @@ This was the primary resource I used to learn the basics of the human body and c
 - Thermoregulation in the circulatory system:
 <iframe width="500" height="315" src="https://www.youtube.com/embed/C_LiAEjuIIc" frameborder="0" allowfullscreen></iframe>
 
-##### Heart Dieseases and Heart Attacks (https://www.khanacademy.org/science/health-and-medicine/circulatory-system-diseases/coronary-artery-disease/v/heart-disease-and-heart-attacks)
+##### Heart Dieseases and Heart Attacks 
 
 - Heart disease and heart attacks:
 <iframe width="500" height="315" src="https://www.youtube.com/embed/vYnreB1duro" frameborder="0" allowfullscreen></iframe>
@@ -156,7 +156,7 @@ This was the primary resource I used to learn the basics of the human body and c
 <iframe width="500" height="315" src="https://www.youtube.com/embed/dLtFP6t99yo" frameborder="0" allowfullscreen></iframe>
   
   
-##### Section 11: Heart valve disease (https://www.khanacademy.org/science/health-and-medicine/circulatory-system-diseases/heart-valve-diseases/v/what-is-valvular-heart-disease)
+##### Section 11: Heart valve disease 
 - ~ 95 minutes of content
 
 - What is valvular heart disease?:
@@ -214,7 +214,7 @@ ____
       ></iframe>
 
 
-####Overview of Cardiovascular Anatomy and Physiology
+#### Overview of Cardiovascular Anatomy and Physiology
 
 The cardiovascular system, also known as the circulatory system, is a complex network consisting of the heart, blood vessels, and blood. It performs the vital function of delivering oxygen and nutrients to tissues, while removing carbon dioxide and other waste products.
 
@@ -286,7 +286,8 @@ Blood leaves the heart through the aortic valve, through the ascending aorta, an
 
 This overview elucidates the core structural and functional facets of pulmonary and systemic circulatory pathways, foundational knowledge for comprehending the broader cardiovascular physiology and pathology.
 ___
-####Definition and Pathology of Ischemic Heart Disease
+
+#### Definition and Pathology of Ischemic Heart Disease
 
 Ischemic Heart Disease (IHD), also known as Coronary Artery Disease (CAD) or Coronary Heart Disease (CHD), is a pathological condition characterized by reduced blood supply to the heart muscle, primarily due to obstruction or spasm of the coronary arteries. It is a leading cause of mortality and morbidity worldwide, and understanding its pathophysiology is paramount for the aspiring medical practitioner.
 ![myocardial ischemia](../../static/img/myocardial-ischemia.png)
@@ -334,6 +335,7 @@ This summary delineates the critical concepts surrounding ischemic heart disease
         height="800"
         allow="autoplay"
       ></iframe>
+
 ____
 
 #### Acquired Valvular Heart Diseases: Stenosis and Regurgitation
@@ -377,6 +379,7 @@ Valvular heart diseases, predominantly manifesting as Stenosis or Regurgitation,
         height="800"
         allow="autoplay"
       ></iframe>
+
 ___
 
 #### Congenital Heart Defects: ASD, VSD, PDA, Tetralogy of Fallot**
@@ -441,7 +444,6 @@ VIDEO: The Sternum and Ribs - Anatomy Tutorial (just watch the first section on 
 
 <iframe width="700" height="420" src="https://www.youtube.com/embed/ggJCoxOdv8c" frameborder="0" allowfullscreen></iframe>
 
-___
 #### Key Concept: **Anatomy of the Sternum**
 
 The sternum, also known as the breastbone, is a flat bone that forms the anterior portion of the chest wall. It is a T-shaped bone that is divided into three parts: the manubrium, the body, and the xiphoid process.
