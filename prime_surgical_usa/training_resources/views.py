@@ -17,3 +17,6 @@ def cardiac_surgical_intervention(request):
 
 def zb_cv_portfolio(request):
     return render(request, 'training_resources/zimmer_biomet_cv.html')
+
+def intro_videos(request):
+    return render(request, 'training_resources/anatomy_videos.html')
