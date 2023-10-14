@@ -189,24 +189,29 @@ This was the primary resource I used to learn the basics of the human body and c
 #### Nerd Ninja 
 
 - **Nerd Ninja** - Video series with great visualization. Another great source of getting to know the funamentals
-  - valvular diease (https://www.youtube.com/watch?v=NUB7HBQP-SI)
-  <iframe width="500" height="315" src="https://www.youtube.com/embed/NUB7HBQP-SI" frameborder="0" allowfullscreen></iframe>
+- valvular diease (https://www.youtube.com/watch?v=NUB7HBQP-SI)
+<iframe width="500" height="315" src="https://www.youtube.com/embed/NUB7HBQP-SI" frameborder="0" allowfullscreen></iframe>
 
-  - ischemic heart disease (heart attacks) (https://www.youtube.com/watch?v=pUxH_oVRcm4)
-  <iframe width="500" height="315" src="https://www.youtube.com/embed/pUxH_oVRcm4" frameborder="0" allowfullscreen></iframe>
+- ischemic heart disease (heart attacks) (https://www.youtube.com/watch?v=pUxH_oVRcm4)
+<iframe width="500" height="315" src="https://www.youtube.com/embed/pUxH_oVRcm4" frameborder="0" allowfullscreen></iframe>
 
-  - the aortic valve - (https://www.youtube.com/watch?v=9QKVeA6h-bI)
-  <iframe width="500" height="315" src="https://www.youtube.com/embed/9QKVeA6h-bI" frameborder="0" allowfullscreen></iframe>
+- the aortic valve - (https://www.youtube.com/watch?v=9QKVeA6h-bI)
+<iframe width="500" height="315" src="https://www.youtube.com/embed/9QKVeA6h-bI" frameborder="0" allowfullscreen></iframe>
 
-  - the mitral valve - (https://www.youtube.com/watch?v=HhIQVLFxXSY)
-  <iframe width="500" height="315" src="https://www.youtube.com/embed/HhIQVLFxXSY" frameborder="0" allowfullscreen></iframe>
+- the mitral valve - (https://www.youtube.com/watch?v=HhIQVLFxXSY)
+<iframe width="500" height="315" src="https://www.youtube.com/embed/HhIQVLFxXSY" frameborder="0" allowfullscreen></iframe>
 
 
 ____
 
 ### CV
 
-<embed src="../../static/pdf/cv_physiology_ov_ninja.pdf" type="application/pdf" width="1000px" height="800px">
+<iframe
+        src="https://drive.google.com/file/d/11-CR2ZICZS6SsuI0EmKAPAX48qtllfxI/preview"
+        width="600"
+        height="800"
+        allow="autoplay"
+      ></iframe>
 
 
 ####Overview of Cardiovascular Anatomy and Physiology
@@ -239,8 +244,12 @@ The cardiovascular system, also known as the circulatory system, is a complex ne
    - Cardiac output (CO) is the amount of blood pumped by the heart per minute and is a product of heart rate (HR) and stroke volume (SV). Blood pressure (BP) is crucial for perfusion to organs and is regulated by various factors including CO, blood volume, and vascular resistance.
 ![cardiac output](../../static/img/cardiac_output.png)
 
-<embed src="../../static/pdf/blood_vessels_ninja.pdf" type="application/pdf" width="1000px" height="800px">
-
+<iframe
+        src="https://drive.google.com/file/d/10nwfy-hNmu5RqWbuCeWxRTyHk2-5gnM4/preview"
+        width="600"
+        height="800"
+        allow="autoplay"
+      ></iframe>
 ___
 ####Circulatory Pathways - Pulmonary and Systemic Circulation
 
@@ -319,7 +328,7 @@ This summary delineates the critical concepts surrounding ischemic heart disease
 
  <iframe
         src="https://drive.google.com/file/d/10tXU2EWWcach721eQaTZvougHX7kiefG/preview"
-        width="500"
+        width="600"
         height="800"
         allow="autoplay"
       ></iframe>
@@ -360,8 +369,12 @@ Valvular heart diseases, predominantly manifesting as Stenosis or Regurgitation,
 6. **Prognosis and Follow-Up**:
     - Early detection and intervention are crucial for a favorable prognosis. Regular follow-up with echocardiographic assessments is necessary to monitor disease progression and treatment efficacy.
 
-<embed src="../../static/pdf/valve_disease_ov_ninja.pdf" type="application/pdf" width="1000px" height="800px">
-
+<iframe
+        src="https://drive.google.com/file/d/10fwzm2Smdvfw99Z1A0YJLlGGjWHr5n25/preview"
+        width="600"
+        height="800"
+        allow="autoplay"
+      ></iframe>
 ___
 
 #### Congenital Heart Defects: ASD, VSD, PDA, Tetralogy of Fallot**

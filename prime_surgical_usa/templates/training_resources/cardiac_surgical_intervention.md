@@ -185,7 +185,7 @@ Cardiothoracic surgical access refers to the methods and approaches used by surg
     
   In a standard procedure, following the sternotomy, the sternum is divided using a sternal saw. The sternum is then retracted using a sternal retractor. The surgeon dissects down to the pericardium, which is a fibrous sac that surrounds the heart. The pericardium is opened and retracted using a "stay" suture (_seen in image below_) for visaibility and access to the heart. The surgeon then performs the surgical procedure on the heart. Following the procedure, the pericardium is closed, the sternum is approximated, and the sternum is closed using sternal closure wires, cables, or plates.
 
-  ![Sternotomy](../../static/img/full_sternotomy_3.png)
+![Sternotomy](../../static/img/full_sternotomy_3.png)
 
   
 
@@ -683,8 +683,12 @@ While sternal plates offer numerous benefits, especially in specific patient pop
 ![Sternal Plate](../../static/img/slb_v_xp.png)
 
 
-<embed src="../../static/pdf/white_paper_the_sternalock_blu.pdf" type="application/pdf" width="1000px" height="800px">
-
+<iframe
+        src="https://drive.google.com/file/d/10XfX_wBaqIW4KGB7PkiVHGwT4ze9ctFJ/preview"
+        width="600"
+        height="800"
+        allow="autoplay"
+      ></iframe>
 
 **Challenges and Risks**
 
@@ -937,7 +941,12 @@ Atrial fibrillation (AFib) is a common cardiac arrhythmia that involves irregula
 
 Atrial fibrillation is a prevalent and potentially dangerous condition, requiring strategic management to mitigate risks and manage symptoms. The Maze procedure offers a surgical option to manage AFib, especially in patients who are refractory to other treatments or are undergoing concurrent cardiac surgery. Patient selection, thorough pre-operative assessment, and specialized surgical expertise are pivotal for optimizing outcomes in the Maze procedure.
 
-<embed src="../../static/pdf/afib_ov_ninja.pdf" type="application/pdf" width="1000px" height="800px">
+<iframe
+        src="https://drive.google.com/file/d/103pZXz-h8b70UFU-cY8T0bZ179Zkwou6/preview"
+        width="600"
+        height="800"
+        allow="autoplay"
+      ></iframe>
 ___
 
 
@@ -981,4 +990,10 @@ Infective endocarditis is an infection of the endocardial surface of the heart, 
 
 
 
-<embed src="../../static/pdf/endocarditis_ov_ninja.pdf" type="application/pdf" width="1000px" height="800px">
+<iframe
+        src="https://drive.google.com/file/d/10ZbNvl-7UmN7tNGqu_ptrS6E4N1Fp0IM/preview"
+        width="600"
+        height="800"
+        allow="autoplay"
+      ></iframe>
+___

@@ -177,7 +177,7 @@ While sternal plates offer numerous benefits, especially in specific patient pop
 Dr. Marc Gerdisch, cariothoracic surgeon, and industry consultant giving a presentation on the merits of sternal plating. 
 
 
-<iframe width="750" height="450" src="https://www.youtube.com/embed/nNE9mnJwq0k" frameborder="0" allowfullscreen></iframe>
+<iframe width="700" height="450" src="https://www.youtube.com/embed/nNE9mnJwq0k" frameborder="0" allowfullscreen></iframe>
 
 
 ____
@@ -186,12 +186,27 @@ ____
 
 ##### Highlighting the Sternalock Blu Study & the Restore Study:
 
-<embed src="../../static/pdf/white_paper_the_sternalock_blu.pdf" type="application/pdf" width="1000px" height="800px">
+<iframe
+        src="https://drive.google.com/file/d/10XfX_wBaqIW4KGB7PkiVHGwT4ze9ctFJ/preview"
+        width="600"
+        height="800"
+        allow="autoplay"
+      ></iframe>
 
-<embed src="../../static/pdf/restore_study_2012.pdf" type="application/pdf" width="1000px" height="800px">
+<iframe
+        src="https://drive.google.com/file/d/10TmZ1qkoyax3idLkBmY8u6qQu58DOJ9H/preview"
+        width="600"
+        height="800"
+        allow="autoplay"
+      ></iframe>
 
 ##### Comparing the studies:
-<embed src="../../static/pdf/restore_v_sternalock_blu_study.pdf" type="application/pdf" width="1000px" height="800px">
+<iframe
+        src="https://drive.google.com/file/d/10TngR2xS_vlizMvcapOa3OqT6uOS1nlA/preview"
+        width="600"
+        height="800"
+        allow="autoplay"
+      ></iframe>
 
 
 ____
@@ -246,19 +261,34 @@ Our other systems have attributres likely to speak to surgeon preferences. Stern
 
 
 
-<embed src="../../static/pdf/product_overview_sternalock_bl.pdf" type="application/pdf" width="1000px" height="1000px">
+<iframe
+        src="https://drive.google.com/file/d/10a-C3crsP1WwplgvGx1SqJqNqNzVI8KF/preview"
+        width="600"
+        height="500"
+        allow="autoplay"
+      ></iframe>
 
-<embed src="../../static/pdf/sternalock_blu_product_trainin.pdf" type="application/pdf" width="1000px" height="1000px">
+<iframe
+        src="https://drive.google.com/file/d/10GsO84_3nwC3HsTLCzO4XLpvkWFFena6/preview"
+        width="600"
+        height="500"
+        allow="autoplay"
+      ></iframe>
 
 
 
 ##### Video Demo
 
-<iframe width="750" height="450" src="https://www.youtube.com/embed/DrVLPeDLZn0" frameborder="0" allowfullscreen></iframe>
+<iframe width="700" height="450" src="https://www.youtube.com/embed/DrVLPeDLZn0" frameborder="0" allowfullscreen></iframe>
 
 ##### Primary Brochures
 
-<embed src="../../static/pdf/sl_blu_brochure.pdf" type="application/pdf" width="1000px" height="1000px">
+<iframe
+        src="https://drive.google.com/file/d/10oWHtoo9b8eONFqmmtwJ0dgs4FZ9vCAS/preview"
+        width="600"
+        height="800"
+        allow="autoplay"
+      ></iframe>
 
 ##### The Procedure
 
@@ -271,9 +301,12 @@ Our other systems have attributres likely to speak to surgeon preferences. Stern
 
 ##### Charge Sheet
 
-<embed src="../../static/pdf/sternalock_blu_charge_sheet.pdf" type="application/pdf" width="1000px" height="1000px">
-
-____
+<iframe
+        src="https://drive.google.com/file/d/10kr6YqFoUGNfU-t3rJ5TF9s_RMzKXW4l/preview"
+        width="600"
+        height="800"
+        allow="autoplay"
+      ></iframe>
 
 #### Sternalock EZ (previously Jace)
 
@@ -283,15 +316,34 @@ Sternalock EZ focused on making the procedure fast and streamlined. It utilized 
 
 ##### Technicial Prodcut Specifics
 
-<embed src="../../static/pdf/sternalock_ez_first_cases.pdf" type="application/pdf" width="1000px" height="1000px">
+<iframe
+        src="https://drive.google.com/file/d/10q4F63LMz5uwpWyDdgBWpn-i38Wl0eRf/preview"
+        width="600"
+        height="500"
+        allow="autoplay"
+      ></iframe>
 
 ##### Video Demo
 
-<iframe width="750" height="450" src="https://www.youtube.com/embed/Svi1YhPjl40" frameborder="0" allowfullscreen></iframe>
+<iframe width="700" height="450" src="https://www.youtube.com/embed/Svi1YhPjl40" frameborder="0" allowfullscreen></iframe>
 
 ##### Primary Brochures
 
-<embed src="../../static/pdf/ez_surgical_technique.pdf" type="application/pdf" width="1000px" height="1000px">
+<iframe
+        src="https://drive.google.com/file/d/10H40eglo4PwLbmElrJw7txwsi7K9ruxq/preview"
+        width="600"
+        height="500"
+        allow="autoplay"
+      ></iframe>
+
+##### Charge Sheet
+
+<iframe
+        src="https://drive.google.com/file/d/1RUmg_wwqSONQjH-JnY05Z0_ANa2zL7bs/preview"
+        width="600"
+        height="800"
+        allow="autoplay"
+      ></iframe>
 
 ____
 
