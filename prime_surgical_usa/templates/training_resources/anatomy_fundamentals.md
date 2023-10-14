@@ -374,11 +374,11 @@ Valvular heart diseases, predominantly manifesting as Stenosis or Regurgitation,
     - Early detection and intervention are crucial for a favorable prognosis. Regular follow-up with echocardiographic assessments is necessary to monitor disease progression and treatment efficacy.
 
 <iframe
-        src="https://drive.google.com/file/d/10fwzm2Smdvfw99Z1A0YJLlGGjWHr5n25/preview"
-        width="600"
-        height="800"
-        allow="autoplay"
-      ></iframe>
+   src="https://drive.google.com/file/d/10fwzm2Smdvfw99Z1A0YJLlGGjWHr5n25/preview"
+   width="600"
+   height="800"
+   allow="autoplay"
+   ></iframe>
 
 ___
 
