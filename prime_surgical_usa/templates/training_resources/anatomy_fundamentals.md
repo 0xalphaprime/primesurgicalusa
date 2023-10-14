@@ -250,8 +250,10 @@ The cardiovascular system, also known as the circulatory system, is a complex ne
         height="800"
         allow="autoplay"
       ></iframe>
-___
-####Circulatory Pathways - Pulmonary and Systemic Circulation
+
+_____
+
+#### Circulatory Pathways - Pulmonary and Systemic Circulation
 
 The human circulatory system operates via two interdependent pathways: the Pulmonary and Systemic Circulation. These pathways are crucial for transporting blood to and from the heart, thereby facilitating the exchange of gases, nutrients, and waste products throughout the body.
 
