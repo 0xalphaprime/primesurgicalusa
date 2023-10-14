@@ -32,7 +32,7 @@ Traditionally, cardiac surgeons used stainless steel sternal wires to close the 
 
 Additionaly, the growing portfolio includes a number of single-use items, such as `atrial and ventricular pacing wires`, `temporary pacing cables`, and a `punch`.
 
-### Foundational Review
+### Sternal Closure
 
 ##### Key Concept: **Cardiothoracic Surgical Access**
 
@@ -52,7 +52,7 @@ Cardiothoracic surgical access refers to the methods and approaches used by surg
     
   In a standard procedure, following the sternotomy, the sternum is divided using a sternal saw. The sternum is then retracted using a sternal retractor. The surgeon dissects down to the pericardium, which is a fibrous sac that surrounds the heart. The pericardium is opened and retracted using a "stay" suture (_seen in image below_) for visaibility and access to the heart. The surgeon then performs the surgical procedure on the heart. Following the procedure, the pericardium is closed, the sternum is approximated, and the sternum is closed using sternal closure wires, cables, or plates.
 
-  ![Sternotomy](../../static/img/full_sternotomy_3.png)
+![Sternotomy](../../static/img/full_sternotomy_3.png)
 
   
 
@@ -122,24 +122,6 @@ The sternum has a number of important functions, including:
 
 * **Fracture:** A fracture of the sternum can occur due to a traumatic injury, such as a car accident or a fall from a height.
 
-#### Key Concept: Temporary Pacing
-
-Temporary pacing involves the insertion of a pacing wire into the heart to regulate the heart rate. It is a common procedure in cardiac surgery, where it is used to maintain a normal heart rate during and after surgery.
-
-##### Why Temporary Pacing is used in Cardiac Surgery:
-
-Temporary pacing is used in cardiac surgery to maintain a normal heart rate during and after surgery. It is often used in conjunction with cardiopulmonary bypass (CPB), which is a technique that temporarily takes over the function of the heart and lungs during surgery. CPB is used in cardiac surgery to provide a still and bloodless operative field, facilitating the surgical procedure. However, CPB can cause arrhythmias, which are abnormal heart rhythms. Temporary pacing is used to regulate the heart rate and prevent arrhythmias during and after CPB.
-
-##### Atrial Pacing vs. Ventricular Pacing:
-
-**Atrial Pacing Wires** - are typically placed epicardially on the right atrium. They are used to pace the atrium, which is the upper chamber of the heart. Atrial pacing wires are used to maintain a normal heart rate during and after surgery. Many surgeons are more selective on the utilization of atrial pacing, and often only use atrial pacing on a patient who is "pacing dependent". That said, other surgeons use atrial pacing wires in their standard protocol.
-
-![atrial pacing](../../static/img/atrial_pacing.png)
-
-**Ventricular Pacing Wires** - are typically placed in the myocardium of the right ventricle. They are used to pace the ventricle, which is the lower chamber of the heart. Ventricular pacing wires are used to maintain a normal heart rate during and after surgery. Ventricular pacing is more commonly used than atrial pacing, as it is more effective at maintaining a normal heart rate.
-
-![ventricular pacing](../../static/img/ventricular_pacing.png)
-
 #### Key Concept: **Sternal Closure in Cardiac Surgery**
 
 Sternal closure is a critical phase in cardiac surgery, following intrathoracic procedures, where the sternum, which has been surgically divided or entered, is securely closed to ensure stability, promote healing, and prevent complications. This process is vital for protecting underlying structures like the heart and lungs and providing structural integrity during the recovery period.
@@ -192,17 +174,130 @@ While sternal plates offer numerous benefits, especially in specific patient pop
 ## VS
 ![Sternal Plate](../../static/img/slb_v_xp.png)
 
+Dr. Marc Gerdisch, cariothoracic surgeon, and industry consultant giving a presentation on the merits of sternal plating. 
 
-<embed src="../../static/pdf/white_paper_the_sternalock_blu.pdf" type="application/pdf" width="1000px" height="800px">
 
+<iframe width="750" height="450" src="https://www.youtube.com/embed/nNE9mnJwq0k" frameborder="0" allowfullscreen></iframe>
 
 
 ____
 
+### Clinical Evidence Review
 
-### Portfolio Overview
+##### Highlighting the Sternalock Blu Study & the Restore Study:
 
-#### Sternal Plating
+<embed src="../../static/pdf/white_paper_the_sternalock_blu.pdf" type="application/pdf" width="1000px" height="800px">
 
-##### Sternalock Blu
+<embed src="../../static/pdf/restore_study_2012.pdf" type="application/pdf" width="1000px" height="800px">
+
+##### Comparing the studies:
+<embed src="../../static/pdf/restore_v_sternalock_blu_study.pdf" type="application/pdf" width="1000px" height="800px">
+
+
+____
+
+### Portfolio Overview 
+
+### Sternal Plating
+
+`sternal plating` is the largest single category of the portfolio. Roughly `$` 1.45 Million  of the `$` 2.2 Million in Zimmer Biomet expectedd revenue will come from that product category. 
+
+We are very well penetrated in our market. That said there are still multiple vectors to outpace our expected level of growth. This will be subject to change, but expect a 12-15% growth target. 
+
+**Growth Vectors:**
+
+1. New Business 
+   1. competitive conversions
+   2. method conversions (wires -> plates, etc.)
+2. Technology Progression 
+   1. Steralock Blu -> Sternalock EZ
+   2. Sternalock XP (new tech conversions)
+3. Increased Utilization Rates
+   1. Core Relationship Management (Surgeons, OR Staff, etc.)
+   2. Increased Sales Bandwidth 
+      1. Scale with new business (new team members)
+      2. specialized roles (project management, implant logistics, etc.)
+      3. developed processes (airTable Bill Only Protocol, Inventory & Tray Management, etc.)
+      4. effective operations (resource management)
+4. Cross-Selling
+   1. Sternal Closure - `sternal wires` `double wire` `sternal cable` 
+   2. Temporary Pacing - `tempoarary pacing cables` `atrial pacing wires (monopolar)``atrial pacing wires (bipolar)` `ventricular pacing wires (bipolar)` `ventricular pacing wires (monopolar)` 
+   3. Proximal Coronary Anastamosis - `punch`
+   4. The rest of the Prime Surgical CV Portfolio
+
+If we are maximally effective, Prime Surgical will serve as a proxy for quality products in the cardiovascular space. We'll be known for delivering outstanding service, and in time becoming a trusted parter of the surgeons and teams that we work with. As we integrate further into the programs we serve, we'll be able to provide more value when the right opportunities present themselves. We're then able to sell that added value upstream to strategic device manufacturer parters to further drive our growth. I believe we can acheive this flywheel, and deliver value to all stakeholders. 
+
+This next section will lay out the various products that make up our cardiac portfolio with Zimmer Biomet. We will then transtion to our framework on the sales process. High-level categories include (1) **Targeting**, (2) **Sales Pipeline Execution**, (3) **Account Management**, and (4) **Processes & Operations**.
+
+We have 4 different sternal plating systems to position and sell, depending on the preference profile(s) of the stakeholders across each opportunity. Each of our systems have individual attributes that dictate which is the optimal system to position with a potential customer. Although it is fine to influence the process, the correct product needs to be presented to the correct surgeon if clearly deduced. 
+
+Our systems fall into two primary categories: (1) **Anterior Rigid Fixation** and (2) **Rigid Fixation with Integrated Cerclage**.
+
+#### Sternalock Blu
+
+**Anterior Rigid Fixation**
+
+Sternalock Blu is the original sternal plating product of Zimmer Biomer. This is the system that was utilizied in both the Restore Study and the Sternalock Blu Study. This tray also serves as the base tray and system for Sternalock 360 (covered below).
+
+Our other systems have attributres likely to speak to surgeon preferences. Sternalock Blu is the most basic system, and is the most likely to be utilized by a surgeon who is most concerned on pricing. 
+
+
+##### Technicial Prodcut Specifics
+
+
+
+<embed src="../../static/pdf/product_overview_sternalock_bl.pdf" type="application/pdf" width="1000px" height="1000px">
+
+<embed src="../../static/pdf/sternalock_blu_product_trainin.pdf" type="application/pdf" width="1000px" height="1000px">
+
+
+
+##### Video Demo
+
+<iframe width="750" height="450" src="https://www.youtube.com/embed/DrVLPeDLZn0" frameborder="0" allowfullscreen></iframe>
+
+##### Primary Brochures
+
+<embed src="../../static/pdf/sl_blu_brochure.pdf" type="application/pdf" width="1000px" height="1000px">
+
+##### The Procedure
+
+![procedure](../../static/img/slb_procedure.png)
+![procedure](../../static/img/measure_screw.png)
+![procedure](../../static/img/reduce_sternum.png)
+![procedure](../../static/img/select.png)
+
+<iframe width="750" height="450" src="https://www.youtube.com/embed/woWLR2T3vuc" frameborder="0" allowfullscreen></iframe>
+
+##### Charge Sheet
+
+<embed src="../../static/pdf/sternalock_blu_charge_sheet.pdf" type="application/pdf" width="1000px" height="1000px">
+
+____
+
+#### Sternalock EZ (previously Jace)
+
+**Anterior Rigid Fixation**
+
+Sternalock EZ focused on making the procedure fast and streamlined. It utilized a carteridge with a preloaded plate and associated screws. This system is the most likely to be utilized by a surgeon who is most concerned on speed and efficiency.
+
+##### Technicial Prodcut Specifics
+
+<embed src="../../static/pdf/sternalock_ez_first_cases.pdf" type="application/pdf" width="1000px" height="1000px">
+
+##### Video Demo
+
+<iframe width="750" height="450" src="https://www.youtube.com/embed/Svi1YhPjl40" frameborder="0" allowfullscreen></iframe>
+
+##### Primary Brochures
+
+<embed src="../../static/pdf/ez_surgical_technique.pdf" type="application/pdf" width="1000px" height="1000px">
+
+____
+
+### South Florida
+
+#### Performance & Overview
+
+#### Prefence Profiles
 

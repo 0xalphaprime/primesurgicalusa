@@ -15,4 +15,20 @@ These are the primary resources we will use to communicate and collaborate. Plea
 7. Airtable (project management)
 8. Loop (Zimmer Portal)
 9. Prime Surgical Internal Site
+10. chatGPT (AI chatbot)
+11. Bard (AI chatbot)
+
 ```
+
+____
+
+## Large Language Models (LLM)
+
+Large Language Models (LLM) have emerged as an instrument for leverage in business. The space is moving fast, and it is imperative everyone pick at the basics, at minimum.
+
+[chatGPT Link](https://chat.openai.com/)
+[bard Link](https://bard.google.com/)
+
+
+
+**Prompting** - The concept of prompting is the most important aspect of using chatGPT. The prompt is the first sentence or two that you use to start the conversation. A constructive prompt will frame the question for the LLM to optimize performance. Fundamentally, all an LLM does is make predictons based on the prompt. The more specific the prompt, the more specific the response.

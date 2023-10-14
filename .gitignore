@@ -3,3 +3,4 @@ __pycache__
 node_modules
 
 prime_surgical_usa/staticfiles
+prime_surgical_usa/.env
