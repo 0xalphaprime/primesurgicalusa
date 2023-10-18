@@ -1,608 +1,2128 @@
-<!DOCTYPE html><html><head>
-      <title>anatomy_fundamentals</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      
-      <link rel="stylesheet" href="file:////Users/alphaprime/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.8.6/crossnote/dependencies/katex/katex.min.css">
-      
-      
-      
-      
-      
-      <style>
-      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
-/* Please visit the URL below for more information: */
-/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <title>anatomy_fundamentals</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      </style>
-      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
-  document.addEventListener("DOMContentLoaded", function () {
-    // your code here
-  });
-</script></head><body for="html-export">
-    
-    
-      <div class="crossnote markdown-preview  ">
-      
-<h1 id="prime-surgical">Prime Surgical </h1>
-<h2 id="knowledge--training">Knowledge &amp; Training </h2>
-<h3 id="foundational-anatomy">Foundational Anatomy </h3>
-<p>In the foundation section, we will cover the basics of the human body. This will include the anatomy, physiology, and pathophysiology - mainly focused on the heart and broader thoracic cavity. The goal is to develop a solid understanding of the cadiovascular system &amp; skeletal systems. This will help you understand the technical product specifics, and how they relate to the human body.</p>
-<h4 id="anatomical-positioning--types-of-movement">Anatomical Positioning &amp; Types of Movement </h4>
-<p>Understanding anatomical positions and types of movement is crucial in the medical field as it provides a standardized way of describing the human body and its movements, ensuring clear communication among healthcare professionals.</p>
-<h5 id="anatomical-positions">Anatomical Positions </h5>
-<p><img src="../../static/img/anatomical_position_2.png" alt="anatomical position"></p>
-<ol>
-<li><strong>Standard Anatomical Position</strong>:
-<ul>
-<li>The body is standing upright.</li>
-<li>Feet are parallel and close together.</li>
-<li>Arms are at the sides.</li>
-<li>Palms face forward.</li>
-<li>The head is level, and eyes are looking forward.</li>
-</ul>
-</li>
-</ol>
-<ul>
-<li><strong>Sagittal Plane</strong>: Divides the body into left and right halves.</li>
-<li><strong>Frontal (Coronal) Plane</strong>: Divides the body into front (anterior) and back (posterior) halves.</li>
-<li><strong>Transverse (Horizontal) Plane</strong>: Divides the body into upper (superior) and lower (inferior) halves.</li>
-</ul>
-<ol start="2">
-<li>
-<p><strong>Prone Position</strong>:</p>
-<ul>
-<li>The body is lying face down.</li>
-</ul>
-</li>
-<li>
-<p><strong>Supine Position</strong>:</p>
-<ul>
-<li>The body is lying face up.</li>
-</ul>
-</li>
-</ol>
-<p><img src="../../static/img/anatomical_position.png" alt="anatomical position"></p>
-<h5 id="types-of-movements">Types of Movements </h5>
-<ol>
-<li>
-<p><strong>Flexion and Extension</strong>:</p>
-<ul>
-<li><strong>Flexion</strong>: Decreasing the angle between two body parts, like bending the elbow.</li>
-<li><strong>Extension</strong>: Increasing the angle, like straightening the elbow.</li>
-</ul>
-</li>
-<li>
-<p><strong>Abduction and Adduction</strong>:</p>
-<ul>
-<li><strong>Abduction</strong>: Movement away from the midline of the body, like lifting the arm sideways.</li>
-<li><strong>Adduction</strong>: Movement towards the midline, like bringing the arm back to the side.</li>
-</ul>
-</li>
-<li>
-<p><strong>Medial and Lateral Rotation</strong>:</p>
-<ul>
-<li><strong>Medial Rotation</strong>: Turning towards the midline, like turning the head to face forward.</li>
-<li><strong>Lateral Rotation</strong>: Turning away from the midline, like turning the head to the side.</li>
-</ul>
-</li>
-<li>
-<p><strong>Elevation and Depression</strong>:</p>
-<ul>
-<li><strong>Elevation</strong>: Moving a body part upwards, like shrugging the shoulders.</li>
-<li><strong>Depression</strong>: Moving a body part downwards, like relaxing the shoulders.</li>
-</ul>
-</li>
-<li>
-<p><strong>Protraction and Retraction</strong>:</p>
-<ul>
-<li><strong>Protraction</strong>: Moving a body part forward, like jutting the jaw forward.</li>
-<li><strong>Retraction</strong>: Moving it backward, like pulling the jaw back.</li>
-</ul>
-</li>
-<li>
-<p><strong>Supination and Pronation</strong>:</p>
-<ul>
-<li><strong>Supination</strong>: Rotating the forearm so the palm faces up.</li>
-<li><strong>Pronation</strong>: Rotating it so the palm faces down.</li>
-</ul>
-</li>
-<li>
-<p><strong>Dorsiflexion and Plantarflexion</strong> (pertaining to the foot):</p>
-<ul>
-<li><strong>Dorsiflexion</strong>: Bending the foot upwards, decreasing the angle between the foot and the shin.</li>
-<li><strong>Plantarflexion</strong>: Bending the foot downwards, increasing the angle.</li>
-</ul>
-</li>
-<li>
-<p><strong>Inversion and Eversion</strong> (pertaining to the foot):</p>
-<ul>
-<li><strong>Inversion</strong>: Turning the sole of the foot inward.</li>
-<li><strong>Eversion</strong>: Turning the sole of the foot outward.</li>
-</ul>
-</li>
-<li>
-<p><strong>Opposition and Reposition</strong> (pertaining to the thumb and little finger):</p>
-<ul>
-<li><strong>Opposition</strong>: Bringing the thumb and little finger towards each other.</li>
-<li><strong>Reposition</strong>: Moving them away from each other.</li>
-</ul>
-</li>
-<li>
-<p><strong>Circumduction</strong>:</p>
-<ul>
-<li>A conical movement involving sequential flexion, abduction, extension, and adduction, creating a circular or conical motion, like moving the arm in a circle.</li>
-</ul>
-</li>
-</ol>
-<p><img src="../../static/img/body_movement.png" alt="body movement"></p>
-<h5 id="proximal-and-distal">Proximal and Distal </h5>
-<ol>
-<li>
-<p><strong>Proximal</strong>:</p>
-<ul>
-<li>Closer to the point of attachment or origin.</li>
-<li>For example, the elbow is proximal to the wrist.</li>
-</ul>
-</li>
-<li>
-<p><strong>Distal</strong>:</p>
-<ul>
-<li>Farther from the point of attachment or origin.</li>
-<li>For example, the wrist is distal to the elbow.</li>
-</ul>
-</li>
-</ol>
-<p><img src="../../static/img/proximal_and_distal.png" alt="proximal and distal"></p>
-<p>Understanding these positions and movements allows medical professionals to accurately describe and interpret physical examinations, radiographs, and surgical procedures. It's essential to be familiar with these terms to communicate effectively in clinical practice.</p>
-<hr>
-<h3 id="cv">CV </h3>
-<iframe src="https://drive.google.com/file/d/11-CR2ZICZS6SsuI0EmKAPAX48qtllfxI/preview" width="600" height="800" allow="autoplay"></iframe>
-<h4 id="overview-of-cardiovascular-anatomy-and-physiology">Overview of Cardiovascular Anatomy and Physiology </h4>
-<p>The cardiovascular system, also known as the circulatory system, is a complex network consisting of the heart, blood vessels, and blood. It performs the vital function of delivering oxygen and nutrients to tissues, while removing carbon dioxide and other waste products.</p>
-<ol>
-<li>
-<p><strong>Heart</strong>:</p>
-<ul>
-<li><strong>Anatomy</strong>: The heart is a four-chambered muscular organ divided into two atria and two ventricles. The right side receives deoxygenated blood and pumps it to the lungs, while the left side receives oxygenated blood from the lungs and pumps it to the systemic circulation.<br>
-<img src="../../static/img/heart_diagram.png" alt="heart anatomy"></li>
-<li><strong>Physiology</strong>: The cardiac cycle comprises three major stages: atrial systole, ventricular systole, and diastole. These stages are coordinated by electrical signals originating from the sinoatrial (SA) node and traveling through the atrioventricular (AV) node and the His-Purkinje system.<br>
-<img src="../../static/img/diastole_systole.png" alt="systole &amp; diastole"></li>
-</ul>
-</li>
-<li>
-<p><strong>Blood Vessels</strong>:</p>
-<ul>
-<li><strong>Anatomy</strong>: Blood vessels are categorized into arteries, veins, and capillaries. Arteries transport blood away from the heart, veins carry blood towards the heart, and capillaries facilitate the exchange of nutrients, gases, and waste between blood and tissues.<br>
-<img src="../../static/img/structure_blood_vessel.png" alt="blood vessel"></li>
-<li><strong>Physiology</strong>: The smooth muscle in the arterial walls enables vasoconstriction and vasodilation, crucial for regulating blood pressure and distribution. Veins have valves to prevent backflow, ensuring unidirectional flow towards the heart.</li>
-</ul>
-</li>
-<li>
-<p><strong>Blood</strong>:</p>
-<ul>
-<li>
-<p><strong>Composition</strong>: Blood comprises red blood cells (RBCs) for oxygen transport, white blood cells (WBCs) for immunity, platelets for clotting, and plasma as the fluid medium carrying hormones, nutrients, and gases.</p>
-</li>
-<li>
-<p><strong>Hemodynamics</strong>: This refers to the physical principles governing the flow and pressure of blood, essential for understanding various pathological conditions and the action of numerous cardiovascular drugs.</p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>Microcirculation and Gas Exchange</strong>:</p>
-<ul>
-<li>In capillary beds, the exchange of oxygen, carbon dioxide, nutrients, and waste products occurs through diffusion, driven by concentration gradients.</li>
-</ul>
-</li>
-<li>
-<p><strong>Regulatory Mechanisms</strong>:</p>
-<ul>
-<li><strong>Neural Regulation</strong>: The cardiovascular center in the medulla oblongata modulates heart rate and blood vessel diameter in response to various stimuli.</li>
-<li><strong>Hormonal Regulation</strong>: Hormones like adrenaline, noradrenaline, and angiotensin II play significant roles in cardiovascular regulation.</li>
-</ul>
-</li>
-<li>
-<p><strong>Cardiac Output and Blood Pressure</strong>:</p>
-<ul>
-<li>Cardiac output (CO) is the amount of blood pumped by the heart per minute and is a product of heart rate (HR) and stroke volume (SV). Blood pressure (BP) is crucial for perfusion to organs and is regulated by various factors including CO, blood volume, and vascular resistance.<br>
-<img src="../../static/img/cardiac_output.png" alt="cardiac output"></li>
-</ul>
-</li>
-</ol>
-<iframe src="https://drive.google.com/file/d/10nwfy-hNmu5RqWbuCeWxRTyHk2-5gnM4/preview" width="600" height="800" allow="autoplay"></iframe>
-<hr>
-<h4 id="circulatory-pathways---pulmonary-and-systemic-circulation">Circulatory Pathways - Pulmonary and Systemic Circulation </h4>
-<p>The human circulatory system operates via two interdependent pathways: the Pulmonary and Systemic Circulation. These pathways are crucial for transporting blood to and from the heart, thereby facilitating the exchange of gases, nutrients, and waste products throughout the body.</p>
-<ol>
-<li>
-<p><strong>Pulmonary Circulation</strong>:</p>
-<ul>
-<li><strong>Objective</strong>: The primary aim of pulmonary circulation is to oxygenate the blood while expelling carbon dioxide.</li>
-<li><strong>Pathway</strong>: Deoxygenated blood from the body enters the right atrium via the superior and inferior vena cava. It then moves to the right ventricle, which pumps the blood through the pulmonary arteries to the lungs. Here, blood gets oxygenated during gas exchange in the alveoli.</li>
-<li><strong>Return to Heart</strong>: Oxygen-rich blood returns to the heart via the pulmonary veins, entering the left atrium, marking the transition from pulmonary to systemic circulation.<br>
-<img src="../../static/img/pulmonary_circuit.png" alt="pulmonary circuit"></li>
-</ul>
-</li>
-<li>
-<p><strong>Systemic Circulation</strong>:</p>
-<ul>
-<li><strong>Objective</strong>: Systemic circulation aims to deliver oxygenated blood to various body tissues, ensuring the delivery of nutrients, hormones, and oxygen while removing waste products like carbon dioxide.</li>
-<li><strong>Pathway</strong>: From the left atrium, oxygen-enriched blood moves into the left ventricle, which pumps it into the aorta. The aorta branches into numerous smaller arteries and arterioles, which further subdivide into capillaries where the exchange of gases, nutrients, and waste occurs.</li>
-<li><strong>Return to Heart</strong>: After gas and nutrient exchange, deoxygenated blood collects into venules, which coalesce into veins, eventually forming the superior and inferior vena cava that return blood to the right atrium, marking the commencement of another pulmonary circulation cycle.<br>
-<img src="../../static/img/circulatory_system.png" alt="systemic circuit"></li>
-</ul>
-</li>
-</ol>
-<p>Blood leaves the heart through the aortic valve, through the ascending aorta, and out to the body. The subclavian arteries branch off the aorta, and supply blood to the arms. The carotid arteries branch off the aorta, and supply blood to the head. The descending aorta supplies blood to the rest of the body.</p>
-<p><img src="../../static/img/thoracic_vascular_system.png" alt="Thoracic Vascular System"></p>
-<ol>
-<li>
-<p><strong>Key Regulatory Mechanisms</strong>:</p>
-<ul>
-<li><strong>Cardiac Cycle Coordination</strong>: The coordination between the heart chambers ensures an efficient circulatory process. This coordination is governed by the heart’s electrical conduction system, involving the sinoatrial (SA) node, atrioventricular (AV) node, and the His-Purkinje system.</li>
-<li><strong>Vascular Tone</strong>: Vascular smooth muscle tone in arteries and arterioles plays a crucial role in regulating blood pressure and, consequently, blood flow to different body parts.</li>
-<li><strong>Capillary Dynamics</strong>: Capillary permeability and pre-capillary sphincters manage blood flow through capillary beds, aiding in tissue perfusion and nutrient exchange.</li>
-</ul>
-</li>
-<li>
-<p><strong>Physiological Variables</strong>:</p>
-<ul>
-<li>Variables like heart rate, stroke volume, and systemic vascular resistance are essential determinants of systemic and pulmonary circulation efficacy. Understanding these variables provides insight into pathological states and therapeutic interventions.</li>
-</ul>
-</li>
-<li>
-<p><strong>Pathophysiological Implications</strong>:</p>
-<ul>
-<li>Disruptions in either circulation pathway can result in pathological conditions. For example, obstruction in pulmonary circulation can lead to pulmonary hypertension, while systemic circulation disruptions can result in conditions like peripheral artery disease.</li>
-</ul>
-</li>
-</ol>
-<p>This overview elucidates the core structural and functional facets of pulmonary and systemic circulatory pathways, foundational knowledge for comprehending the broader cardiovascular physiology and pathology.</p>
-<hr>
-<h4 id="definition-and-pathology-of-ischemic-heart-disease">Definition and Pathology of Ischemic Heart Disease </h4>
-<p>Ischemic Heart Disease (IHD), also known as Coronary Artery Disease (CAD) or Coronary Heart Disease (CHD), is a pathological condition characterized by reduced blood supply to the heart muscle, primarily due to obstruction or spasm of the coronary arteries. It is a leading cause of mortality and morbidity worldwide, and understanding its pathophysiology is paramount for the aspiring medical practitioner.<br>
-<img src="../../static/img/myocardial-ischemia.png" alt="myocardial ischemia"></p>
-<ol>
-<li>
-<p><strong>Atherosclerosis</strong>:</p>
-<ul>
-<li>The fundamental pathology underlying IHD is atherosclerosis, a process characterized by the accumulation of cholesterol-laden plaques within the walls of coronary arteries. Over time, these plaques narrow the arteries, reducing blood flow to the myocardium.<br>
-<img src="../../static/img/atherosclerosis.png" alt="Atherosclerosis"></li>
-</ul>
-</li>
-<li>
-<p><strong>Endothelial Dysfunction</strong>:</p>
-<ul>
-<li>Endothelial dysfunction often precedes atherosclerosis, where the inner lining of the arteries (endothelium) loses its normal functioning, impairing vasodilation, and promoting inflammation and plaque formation.<br>
-<img src="../../static/img/vasoconstrict_vasodilate.png" alt="vaso"></li>
-</ul>
-</li>
-<li>
-<p><strong>Plaque Rupture and Thrombosis</strong>:</p>
-<ul>
-<li>An acute coronary event often occurs when a plaque ruptures, triggering blood clot formation (thrombosis). This can further occlude the artery, leading to a significant reduction or cessation of blood flow downstream.</li>
-</ul>
-</li>
-<li>
-<p><strong>Ischemia and Myocardial Infarction (MI)</strong>:</p>
-<ul>
-<li>The consequence of reduced blood flow (ischemia) can range from angina pectoris (chest pain) to myocardial infarction (MI), where prolonged ischemia causes necrosis of the myocardial tissue.</li>
-</ul>
-</li>
-<li>
-<p><strong>Compensatory Mechanisms</strong>:</p>
-<ul>
-<li>Initially, the heart tries to compensate for reduced blood supply through various mechanisms like collateral circulation, where small blood vessels remodel themselves to bypass blockages. However, these compensations are often insufficient during increased demand, such as exercise.</li>
-</ul>
-</li>
-<li>
-<p><strong>Electrical Instability</strong>:</p>
-<ul>
-<li>Ischemia can disrupt the electrical activity of the heart, leading to arrhythmias, which are a significant cause of morbidity in IHD.</li>
-</ul>
-</li>
-<li>
-<p><strong>Heart Failure</strong>:</p>
-<ul>
-<li>Chronic IHD can lead to heart failure, a condition where the heart is unable to pump blood effectively to meet the body's needs.</li>
-</ul>
-</li>
-<li>
-<p><strong>Diagnosing Ischemic Heart Disease</strong>:</p>
-<ul>
-<li>Diagnosis is usually based on a combination of clinical history, physical examination, electrocardiogram (ECG), stress testing, and imaging studies like coronary angiography.</li>
-</ul>
-</li>
-<li>
-<p><strong>Risk Factors</strong>:</p>
-<ul>
-<li>Identifiable risk factors include hypertension, hyperlipidemia, smoking, diabetes, obesity, and a family history of cardiovascular disease.</li>
-</ul>
-</li>
-<li>
-<p><strong>Clinical Management</strong>:</p>
-</li>
-</ol>
-<ul>
-<li>Management strategies aim to restore coronary perfusion, alleviate symptoms, and prevent future cardiac events. These include lifestyle modifications, pharmacotherapy (e.g., antiplatelets, statins), and interventional procedures like angioplasty and coronary artery bypass grafting (CABG).<br>
-<img src="../../static/img/cabg.png" alt="cabg"></li>
-</ul>
-<p>This summary delineates the critical concepts surrounding ischemic heart disease, offering an essential foundation for further exploration into its diagnosis, management, and the broader implications for cardiovascular health and disease.</p>
- <iframe src="https://drive.google.com/file/d/10tXU2EWWcach721eQaTZvougHX7kiefG/preview" width="600" height="800" allow="autoplay"></iframe>
-<hr>
-<h4 id="acquired-valvular-heart-diseases-stenosis-and-regurgitation">Acquired Valvular Heart Diseases: Stenosis and Regurgitation </h4>
-<p>Valvular heart diseases, predominantly manifesting as Stenosis or Regurgitation, are pathologies involving one or more of the heart’s valves (<strong>aortic</strong>, <strong>mitral</strong>, tricuspid, and pulmonary). Acquired as opposed to congenital valvular diseases arise due to various factors such as aging, infections or other cardiac diseases. Understanding these diseases is pivotal for a burgeoning medical practitioner.</p>
-<ul>
-<li>aortic and mitral are the most commonly treated valves, as they're the valves on the left side of the heart, which is the side that pumps blood to the body.</li>
-</ul>
-<ol>
-<li>
-<p><strong>Stenosis</strong>:</p>
-<ul>
-<li><strong>Definition</strong>: Stenosis refers to the narrowing of the valvular orifice, impeding blood flow.</li>
-<li><strong>Pathophysiology</strong>: Common causes include calcific degeneration, rheumatic heart disease, or radiation therapy. The obstruction forces the heart to pump harder, leading to hypertrophy and potentially heart failure.</li>
-<li><strong>Clinical Presentation</strong>: Symptoms like fatigue, dyspnea, and chest discomfort are common. On examination, a harsh ejection systolic murmur is often discernible.<br>
-<img src="../../static/img/stenotic_aorta.png" alt="stenotic aorta"></li>
-</ul>
-</li>
-<li>
-<p><strong>Regurgitation (Insufficiency)</strong>:</p>
-<ul>
-<li><strong>Definition</strong>: Regurgitation involves the backflow of blood due to incomplete valve closure.</li>
-<li><strong>Pathophysiology</strong>: Causes encompass mitral valve prolapse, infective endocarditis, or dilation of the valve annulus. The volume overload can lead to dilatation and eventual failure of the associated chamber.</li>
-<li><strong>Clinical Presentation</strong>: Patients may present with palpitations, fatigue, and a blowing holosystolic murmur on examination.<br>
-<img src="../../static/img/mitral_valve_regurgitation_1.png" alt="mitral regurgitation"></li>
-</ul>
-</li>
-<li>
-<p><strong>Common Acquired Valvular Disorders</strong>:</p>
-<ul>
-<li><strong>Aortic Stenosis</strong>: Often due to calcification in the elderly or rheumatic heart disease.</li>
-<li><strong>Mitral Regurgitation</strong>: Mitral valve prolapse or ischemic heart disease are common culprits.</li>
-<li><strong>Aortic Regurgitation</strong>: Typically arises from hypertension, endocarditis, or congenital aortic root diseases, like Marfan syndrome or a bicuspid valve.</li>
-<li><strong>Mitral Stenosis</strong>: Mostly associated with rheumatic heart disease.</li>
-</ul>
-</li>
-<li>
-<p><strong>Diagnosis</strong>:</p>
-<ul>
-<li><strong>Physical Examination</strong>: Auscultation can reveal characteristic murmurs.</li>
-<li><strong>Imaging</strong>: Echocardiography is the cornerstone for diagnosis, providing insight into the valve anatomy and function. Other modalities include cardiac MRI and CT.</li>
-<li><strong>Cardiac Catheterization</strong>: Helps in assessing the severity and in planning for surgical intervention.</li>
-</ul>
-</li>
-<li>
-<p><strong>Management</strong>:</p>
-<ul>
-<li><strong>Medical Management</strong>: Aims at symptom relief using diuretics, beta-blockers, or ACE inhibitors.</li>
-<li><strong>Surgical Management</strong>: Includes valve repair or replacement via open surgery, minimally invasive surgery or transcatheter techniques.</li>
-</ul>
-</li>
-<li>
-<p><strong>Prognosis and Follow-Up</strong>:</p>
-<ul>
-<li>Early detection and intervention are crucial for a favorable prognosis. Regular follow-up with echocardiographic assessments is necessary to monitor disease progression and treatment efficacy.</li>
-</ul>
-</li>
-</ol>
-<iframe src="https://drive.google.com/file/d/10fwzm2Smdvfw99Z1A0YJLlGGjWHr5n25/preview" width="600" height="800" allow="autoplay"></iframe>
-<hr>
-<h4 id="congenital-heart-defects-asd-vsd-pda-tetralogy-of-fallot">Congenital Heart Defects: ASD, VSD, PDA, Tetralogy of Fallot** </h4>
-<p>Congenital heart defects (CHDs) are intrinsic abnormalities in the heart's structure that occur from birth. Such anomalies significantly impact hemodynamics and necessitate intricate understanding and management. This overview synthesizes critical insights into four prevalent congenital heart defects: Atrial Septal Defect (ASD), Ventricular Septal Defect (VSD), Patent Ductus Arteriosus (PDA), and Tetralogy of Fallot (TOF).</p>
-<p>Congenital heart programs are isolated specialized centers, at children's hospitals. The centers in South Florida are Holtz Children's (Jackson Health System), Joe DiMaggio Children's (Memorial Healthcare System), and Nicklaus Children's (Miami Children's Health System).</p>
-<p>We will not focus her early on, as they are not the focus of our business. However, it is important to understand the basics of these defects, as they are the foundation for understanding the broader cardiovascular system.</p>
-<h5 id="1-atrial-septal-defect-asd">1. Atrial Septal Defect (ASD) </h5>
-<ul>
-<li><strong>Definition</strong>: ASD involves an opening in the septum between the atria, enabling blood flow between them.</li>
-<li><strong>Pathophysiology</strong>:
-<ul>
-<li>Left-to-right shunt leads to right atrial and ventricular volume overload.</li>
-<li>Potential risk for atrial arrhythmias and, rarely, Eisenmenger syndrome.</li>
-</ul>
-</li>
-<li><strong>Clinical Presentation</strong>:
-<ul>
-<li>May be asymptomatic or present with dyspnea, fatigue, and palpitations.</li>
-</ul>
-</li>
-<li><strong>Diagnosis</strong>:
-<ul>
-<li>Echocardiography chiefly identifies ASD.</li>
-</ul>
-</li>
-<li><strong>Management</strong>:
-<ul>
-<li>Small ASDs may close spontaneously; larger defects might require percutaneous closure or surgery.</li>
-</ul>
-</li>
-</ul>
-<h5 id="2-ventricular-septal-defect-vsd">2. Ventricular Septal Defect (VSD) </h5>
-<ul>
-<li><strong>Definition</strong>: VSD encompasses an opening in the interventricular septum.</li>
-<li><strong>Pathophysiology</strong>:
-<ul>
-<li>Shunting of blood from the left to the right ventricle.</li>
-<li>Can cause heart failure and predispose to infective endocarditis.</li>
-</ul>
-</li>
-<li><strong>Clinical Presentation</strong>:
-<ul>
-<li>Failure to thrive, recurrent respiratory infections, or asymptomatic.</li>
-</ul>
-</li>
-<li><strong>Diagnosis</strong>:
-<ul>
-<li>Recognized through echocardiography.</li>
-</ul>
-</li>
-<li><strong>Management</strong>:
-<ul>
-<li>Small defects may not necessitate intervention, while significant shunting or symptoms may require surgical repair.</li>
-</ul>
-</li>
-</ul>
-<h5 id="4-tetralogy-of-fallot-tof">4. Tetralogy of Fallot (TOF) </h5>
-<ul>
-<li><strong>Definition</strong>: TOF consists of four anomalies: VSD, overriding aorta, pulmonary stenosis, and right ventricular hypertrophy.</li>
-<li><strong>Pathophysiology</strong>:
-<ul>
-<li>Blood bypasses the pulmonary circulation, resulting in cyanosis.</li>
-</ul>
-</li>
-<li><strong>Clinical Presentation</strong>:
-<ul>
-<li>"Tet" spells (hypoxic spells), cyanosis, and dyspnea on exertion.</li>
-</ul>
-</li>
-<li><strong>Diagnosis</strong>:
-<ul>
-<li>Echocardiography and cardiac catheterization are essential for diagnosis.</li>
-</ul>
-</li>
-<li><strong>Management</strong>:
-<ul>
-<li>Total repair surgery, typically involving VSD closure and relief of pulmonary obstruction, is the mainstay.</li>
-</ul>
-</li>
-</ul>
-<h5 id="shared-considerations-for-chds">Shared Considerations for CHDs </h5>
-<ul>
-<li><strong>Perioperative Care</strong>: Vital in surgical interventions to optimize outcomes.</li>
-<li><strong>Long-term Management</strong>: Lifelong follow-up to monitor for complications such as arrhythmias, heart failure, and other sequelae.</li>
-<li><strong>Genetic Counseling</strong>: Given the genetic components of CHDs, counseling is pivotal.</li>
-<li><strong>Preventive Care</strong>:
-<ul>
-<li>Vaccinations and endocarditis prophylaxis are crucial in CHDs.</li>
-</ul>
-</li>
-</ul>
-<h5 id="summary">Summary </h5>
-<p>Congenital heart defects embody a spectrum of disorders, each with its unique pathophysiology and clinical implications. A robust understanding of their intricacies provides the substrate for impeccable diagnosis, management, and overall holistic care, guiding affected individuals through potential challenges throughout their lifespan.</p>
-<hr>
-<h3 id="the-rest-of-the-thoracic-cavity">The Rest of the Thoracic Cavity </h3>
-<p>VIDEO: The Sternum and Ribs - Anatomy Tutorial (just watch the first section on sternum and ribs)</p>
-<iframe width="700" height="420" src="https://www.youtube.com/embed/ggJCoxOdv8c" frameborder="0" allowfullscreen=""></iframe>
-<h4 id="key-concept-anatomy-of-the-sternum">Key Concept: <strong>Anatomy of the Sternum</strong> </h4>
-<p>The sternum, also known as the breastbone, is a flat bone that forms the anterior portion of the chest wall. It is a T-shaped bone that is divided into three parts: the manubrium, the body, and the xiphoid process.</p>
-<p><img src="../../static/img/sternum_anterior_overview.png" alt="stenrum"></p>
-<p><strong>Manubrium</strong></p>
-<p>The manubrium is the broad, superior segment of the sternum. It articulates with the clavicles at the sternoclavicular joints and with the costal cartilages of the first pair of ribs. The manubrium also has a number of important landmarks, including the jugular notch, which is located at the superior margin of the manubrium and lies between the two clavicles.</p>
-<p><img src="../../static/img/sternum_side_profile.png" alt="sternum manubrium anatomy"></p>
-<p><strong>Body</strong></p>
-<p>The body of the sternum is the middle portion of the bone. It articulates with the costal cartilages of the second to seventh pairs of ribs. The body of the sternum is also the site of attachment for a number of muscles, including the pectoralis major, pectoralis minor, and sternocleidomastoid muscles.</p>
-<p><img src="../../static/img/sternum_with_ribs.png" alt="sternum with ribs"></p>
-<p><strong>Xiphoid process</strong></p>
-<p>The xiphoid process is the narrow, inferior segment of the sternum. It is a cartilaginous structure in children and young adults, but it ossifies (hardens) with age. The xiphoid process is the site of attachment for the diaphragm and the rectus abdominis muscles.</p>
-<p>[Image of Xiphoid process anatomy]</p>
-<p><strong>Functions of the sternum</strong></p>
-<p>The sternum has a number of important functions, including:</p>
-<ul>
-<li><strong>Protection:</strong> The sternum helps to protect the vital organs of the chest, including the heart, lungs, and major blood vessels.</li>
-<li><strong>Support:</strong> The sternum provides support for the rib cage and helps to maintain the shape of the chest.</li>
-<li><strong>Muscle attachment:</strong> The sternum is the site of attachment for a number of important muscles, including the pectoralis major, pectoralis minor, sternocleidomastoid, diaphragm, and rectus abdominis muscles.</li>
-</ul>
-<p><strong>Common injuries of the sternum</strong></p>
-<ul>
-<li><strong>Fracture:</strong> A fracture of the sternum can occur due to a traumatic injury, such as a car accident or a fall from a height.</li>
-</ul>
-<hr>
-<h4 id="key-concept---anatomy-of-the-ribs">Key Concept - Anatomy of the Ribs </h4>
-<p>The rib cage is a bony structure that encloses and protects the thoracic organs, including the heart and lungs. It also plays a vital role in the mechanics of breathing. The rib cage is made up of 12 pairs of ribs, which are categorized into true ribs, false ribs, and floating ribs based on their anatomical connections.</p>
-<p><img src="../../static/img/rib_cage.png" alt="ribcage"></p>
-<p><strong>True Ribs</strong></p>
-<p>The first seven pairs of ribs are known as true ribs. They are directly attached to the sternum through their costal cartilages. These ribs are typically more robust and have a more pronounced curve compared to the other ribs.</p>
-<p><strong>False Ribs</strong></p>
-<p>Ribs 8, 9, and 10 are referred to as false ribs. Unlike true ribs, they do not attach directly to the sternum. Instead, their costal cartilages connect to the cartilage of the rib above them, forming an indirect connection to the sternum.</p>
-<p><strong>Floating Ribs</strong></p>
-<p>The 11th and 12th pairs of ribs are known as floating ribs because they do not have any anterior attachment to the sternum. They are much shorter than the other ribs and have a more tapered shape.</p>
-<p><img src="../../static/img/typical_rib.png" alt="ribcage"></p>
-<p><strong>Anatomical Features of a Typical Rib</strong></p>
-<ul>
-<li><strong>Head:</strong> The head of the rib articulates with the vertebral bodies.</li>
-<li><strong>Neck:</strong> The neck is the flattened part that extends laterally from the head.</li>
-<li><strong>Tubercle:</strong> The tubercle of the rib articulates with the transverse process of the vertebra.</li>
-<li><strong>Body (Shaft):</strong> The body or shaft of the rib is the flattened, curved main part of the rib.</li>
-</ul>
-<p><strong>Functions of the Ribs</strong></p>
-<ul>
-<li><strong>Protection:</strong> The ribs serve to protect the vital organs within the thoracic cavity, such as the heart and lungs.</li>
-<li><strong>Support:</strong> The rib cage provides structural support to the thoracic region and maintains the shape of the thoracic cavity.</li>
-<li><strong>Respiration:</strong> The ribs assist in the process of respiration by altering the volume of the thoracic cavity during breathing.</li>
-</ul>
-<p><strong>Common Conditions and Injuries Related to the Ribs</strong></p>
-<p><img src="../../static/img/rib_cortical_bone.png" alt="ribcage"></p>
-<ul>
-<li><strong>Rib Fracture:</strong> A common injury resulting from trauma, such as falls, accidents, or impact during sports.</li>
-<li><strong>Costochondritis:</strong> Inflammation of the rib cartilage, particularly where the ribs attach to the sternum.</li>
-<li><strong>Rib Dislocation:</strong> A condition where the rib or its cartilage moves out of its normal position.</li>
-</ul>
-<hr>
-<h4 id="key-concept-anatomy-of-the-lungs">Key Concept: <strong>Anatomy of the Lungs</strong> </h4>
-<p>The lungs are vital organs in the respiratory system that facilitate the exchange of oxygen and carbon dioxide between the air we breathe and the blood. Located within the thoracic cavity, they are protected by the ribcage and are closely associated with the heart and the blood vessels.</p>
-<p><img src="../../static/img/lungs.png" alt="lungs anatomy"></p>
-<p><strong>Basic Anatomy of the Lungs</strong></p>
-<ul>
-<li><strong>Lobes:</strong> The right lung is divided into three lobes (upper, middle, and lower), while the left lung has two (upper and lower) to accommodate the heart.</li>
-<li><strong>Pleura:</strong> Each lung is enclosed in a pleural sac, which consists of two layers: the visceral pleura (which adheres to the lung) and the parietal pleura (which lines the chest wall).</li>
-<li><strong>Bronchi:</strong> The trachea divides into two primary bronchi, which enter the lungs and further divide into secondary and tertiary bronchi.</li>
-<li><strong>Alveoli:</strong> Tiny, sac-like structures where gas exchange occurs.</li>
-</ul>
-<p><strong>Physiology of the Lungs</strong></p>
-<ul>
-<li><strong>Gas Exchange:</strong> Oxygen from the inhaled air diffuses into the blood in the pulmonary capillaries, while carbon dioxide diffuses from the blood into the alveoli to be exhaled.</li>
-<li><strong>Ventilation:</strong> The process of moving air in and out of the lungs, facilitated by the diaphragm and intercostal muscles.</li>
-</ul>
-<p><strong>Functions of the Lungs</strong></p>
-<ul>
-<li><strong>Respiration:</strong> Facilitating the exchange of gases (oxygen and carbon dioxide) between the atmosphere and the bloodstream.</li>
-<li><strong>Filtering and Humidifying Air:</strong> The lungs help to filter out particles and add moisture to the inhaled air.</li>
-<li><strong>Regulating Blood pH:</strong> Through the exchange of oxygen and carbon dioxide, the lungs play a role in maintaining the pH balance of the blood.</li>
-</ul>
-<p><strong>Common Conditions Affecting the Lungs</strong></p>
-<ul>
-<li><strong>Pneumonia:</strong> Inflammation of the lung tissue, usually caused by infection.</li>
-<li><strong>Chronic Obstructive Pulmonary Disease (COPD):</strong> A group of lung diseases that block airflow and make it difficult to breathe.</li>
-<li><strong>Asthma:</strong> A condition in which the airways narrow and swell, producing extra mucus, which makes breathing difficult.</li>
-<li><strong>Lung Cancer:</strong> A type of cancer that begins in the lungs, often in cells lining the air passages.</li>
-</ul>
-<h5 id="lung-cancer">Lung Cancer </h5>
-<p>Lung cancer, one of the most common malignancies worldwide, often necessitates surgical intervention as a part of its management, especially in the early stages. Various surgical techniques, including minimally invasive approaches like Video-Assisted Thoracic Surgery (VATS) and robotic-assisted thoracic surgery, have been employed to manage lung cancer effectively.</p>
-<p><img src="../../static/img/vats_2.png" alt="lung surgery"><br>
-<img src="../../static/img/vats.png" alt="lung surgery"></p>
-<h4 id="video-assisted-thoracic-surgery-vats"><strong>Video-Assisted Thoracic Surgery (VATS)</strong> </h4>
-<p><strong>Definition:</strong> VATS is a type of minimally invasive surgery that utilizes a small video camera (thoracoscope) to visualize the surgical field inside the thoracic cavity, which is displayed on a monitor, and small incisions are used to access the lungs.</p>
-<p><strong>Common Procedures:</strong></p>
-<ul>
-<li><strong>Lobectomy:</strong> Removal of a lobe of the lung.</li>
-<li><strong>Wedge Resection:</strong> Removal of a small, wedge-shaped portion of the lung.</li>
-<li><strong>Segmentectomy:</strong> Removal of a segment of a lung lobe.</li>
-</ul>
-<p><strong>Advantages:</strong></p>
-<ul>
-<li>Reduced post-operative pain.</li>
-<li>Shorter hospital stay.</li>
-<li>Lower risk of infection.</li>
-<li>Quicker recovery.</li>
-</ul>
-<p><img src="../../static/img/vats_instruments.png" alt="instruments"></p>
-<h4 id="robotic-assisted-thoracic-surgery"><strong>Robotic-Assisted Thoracic Surgery</strong> </h4>
-<p><strong>Definition:</strong> Robotic-assisted thoracic surgery employs a robotic system, which the surgeon controls from a console, to perform surgery through small incisions, providing enhanced visualization and precision.</p>
-<p><strong>Common Procedures:</strong></p>
-<ul>
-<li><strong>Robotic-Assisted Lobectomy:</strong> Removal of a lobe using robotic assistance.</li>
-<li><strong>Robotic-Assisted Pneumonectomy:</strong> Removal of an entire lung using robotic assistance.</li>
-</ul>
-<p><img src="../../static/img/robotic_surgery.png" alt="robotic surgery"></p>
+    <link
+      rel="stylesheet"
+      href="file:////Users/alphaprime/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.8.6/crossnote/dependencies/katex/katex.min.css"
+    />
 
-      </div>
-      
-      
-    
-    
-    
-    
-    
-    
-  
-    </body></html>
+    <link rel="stylesheet" href="{% static 'css/cover.css' %}" />
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" />
+
+    <style>
+      code[class*="language-"],
+      pre[class*="language-"] {
+        color: #333;
+        background: 0 0;
+        font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        text-align: left;
+        white-space: pre;
+        word-spacing: normal;
+        word-break: normal;
+        word-wrap: normal;
+        line-height: 1.4;
+        -moz-tab-size: 8;
+        -o-tab-size: 8;
+        tab-size: 8;
+        -webkit-hyphens: none;
+        -moz-hyphens: none;
+        -ms-hyphens: none;
+        hyphens: none;
+      }
+      pre[class*="language-"] {
+        padding: 0.8em;
+        overflow: auto;
+        border-radius: 3px;
+        background: #f5f5f5;
+      }
+      :not(pre) > code[class*="language-"] {
+        padding: 0.1em;
+        border-radius: 0.3em;
+        white-space: normal;
+        background: #f5f5f5;
+      }
+      .token.blockquote,
+      .token.comment {
+        color: #969896;
+      }
+      .token.cdata {
+        color: #183691;
+      }
+      .token.doctype,
+      .token.macro.property,
+      .token.punctuation,
+      .token.variable {
+        color: #333;
+      }
+      .token.builtin,
+      .token.important,
+      .token.keyword,
+      .token.operator,
+      .token.rule {
+        color: #a71d5d;
+      }
+      .token.attr-value,
+      .token.regex,
+      .token.string,
+      .token.url {
+        color: #183691;
+      }
+      .token.atrule,
+      .token.boolean,
+      .token.code,
+      .token.command,
+      .token.constant,
+      .token.entity,
+      .token.number,
+      .token.property,
+      .token.symbol {
+        color: #0086b3;
+      }
+      .token.prolog,
+      .token.selector,
+      .token.tag {
+        color: #63a35c;
+      }
+      .token.attr-name,
+      .token.class,
+      .token.class-name,
+      .token.function,
+      .token.id,
+      .token.namespace,
+      .token.pseudo-class,
+      .token.pseudo-element,
+      .token.url-reference .token.variable {
+        color: #795da3;
+      }
+      .token.entity {
+        cursor: help;
+      }
+      .token.title,
+      .token.title .token.punctuation {
+        font-weight: 700;
+        color: #1d3e81;
+      }
+      .token.list {
+        color: #ed6a43;
+      }
+      .token.inserted {
+        background-color: #eaffea;
+        color: #55a532;
+      }
+      .token.deleted {
+        background-color: #ffecec;
+        color: #bd2c00;
+      }
+      .token.bold {
+        font-weight: 700;
+      }
+      .token.italic {
+        font-style: italic;
+      }
+      .language-json .token.property {
+        color: #183691;
+      }
+      .language-markup .token.tag .token.punctuation {
+        color: #333;
+      }
+      .language-css .token.function,
+      code.language-css {
+        color: #0086b3;
+      }
+      .language-yaml .token.atrule {
+        color: #63a35c;
+      }
+      code.language-yaml {
+        color: #183691;
+      }
+      .language-ruby .token.function {
+        color: #333;
+      }
+      .language-markdown .token.url {
+        color: #795da3;
+      }
+      .language-makefile .token.symbol {
+        color: #795da3;
+      }
+      .language-makefile .token.variable {
+        color: #183691;
+      }
+      .language-makefile .token.builtin {
+        color: #0086b3;
+      }
+      .language-bash .token.keyword {
+        color: #0086b3;
+      }
+      pre[data-line] {
+        position: relative;
+        padding: 1em 0 1em 3em;
+      }
+      pre[data-line] .line-highlight-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: transparent;
+        display: block;
+        width: 100%;
+      }
+      pre[data-line] .line-highlight {
+        position: absolute;
+        left: 0;
+        right: 0;
+        padding: inherit 0;
+        margin-top: 1em;
+        background: hsla(24, 20%, 50%, 0.08);
+        background: linear-gradient(
+          to right,
+          hsla(24, 20%, 50%, 0.1) 70%,
+          hsla(24, 20%, 50%, 0)
+        );
+        pointer-events: none;
+        line-height: inherit;
+        white-space: pre;
+      }
+      pre[data-line] .line-highlight:before,
+      pre[data-line] .line-highlight[data-end]:after {
+        content: attr(data-start);
+        position: absolute;
+        top: 0.4em;
+        left: 0.6em;
+        min-width: 1em;
+        padding: 0 0.5em;
+        background-color: hsla(24, 20%, 50%, 0.4);
+        color: #f4f1ef;
+        font: bold 65%/1.5 sans-serif;
+        text-align: center;
+        vertical-align: 0.3em;
+        border-radius: 999px;
+        text-shadow: none;
+        box-shadow: 0 1px #fff;
+      }
+      pre[data-line] .line-highlight[data-end]:after {
+        content: attr(data-end);
+        top: auto;
+        bottom: 0.4em;
+      }
+      html body {
+        font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans,
+          sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        color: #333;
+        background-color: #fff;
+        overflow: initial;
+        box-sizing: border-box;
+        word-wrap: break-word;
+      }
+      html body > :first-child {
+        margin-top: 0;
+      }
+      html body h1,
+      html body h2,
+      html body h3,
+      html body h4,
+      html body h5,
+      html body h6 {
+        line-height: 1.2;
+        margin-top: 1em;
+        margin-bottom: 16px;
+        color: #000;
+      }
+      html body h1 {
+        font-size: 2.25em;
+        font-weight: 300;
+        padding-bottom: 0.3em;
+      }
+      html body h2 {
+        font-size: 1.75em;
+        font-weight: 400;
+        padding-bottom: 0.3em;
+      }
+      html body h3 {
+        font-size: 1.5em;
+        font-weight: 500;
+      }
+      html body h4 {
+        font-size: 1.25em;
+        font-weight: 600;
+      }
+      html body h5 {
+        font-size: 1.1em;
+        font-weight: 600;
+      }
+      html body h6 {
+        font-size: 1em;
+        font-weight: 600;
+      }
+      html body h1,
+      html body h2,
+      html body h3,
+      html body h4,
+      html body h5 {
+        font-weight: 600;
+      }
+      html body h5 {
+        font-size: 1em;
+      }
+      html body h6 {
+        color: #5c5c5c;
+      }
+      html body strong {
+        color: #000;
+      }
+      html body del {
+        color: #5c5c5c;
+      }
+      html body a:not([href]) {
+        color: inherit;
+        text-decoration: none;
+      }
+      html body a {
+        color: #08c;
+        text-decoration: none;
+      }
+      html body a:hover {
+        color: #00a3f5;
+        text-decoration: none;
+      }
+      html body img {
+        max-width: 100%;
+      }
+      html body > p {
+        margin-top: 0;
+        margin-bottom: 16px;
+        word-wrap: break-word;
+      }
+      html body > ol,
+      html body > ul {
+        margin-bottom: 16px;
+      }
+      html body ol,
+      html body ul {
+        padding-left: 2em;
+      }
+      html body ol.no-list,
+      html body ul.no-list {
+        padding: 0;
+        list-style-type: none;
+      }
+      html body ol ol,
+      html body ol ul,
+      html body ul ol,
+      html body ul ul {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      html body li {
+        margin-bottom: 0;
+      }
+      html body li.task-list-item {
+        list-style: none;
+      }
+      html body li > p {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      html body .task-list-item-checkbox {
+        margin: 0 0.2em 0.25em -1.8em;
+        vertical-align: middle;
+      }
+      html body .task-list-item-checkbox:hover {
+        cursor: pointer;
+      }
+      html body blockquote {
+        margin: 16px 0;
+        font-size: inherit;
+        padding: 0 15px;
+        color: #5c5c5c;
+        background-color: #f0f0f0;
+        border-left: 4px solid #d6d6d6;
+      }
+      html body blockquote > :first-child {
+        margin-top: 0;
+      }
+      html body blockquote > :last-child {
+        margin-bottom: 0;
+      }
+      html body hr {
+        height: 4px;
+        margin: 32px 0;
+        background-color: #d6d6d6;
+        border: 0 none;
+      }
+      html body table {
+        margin: 10px 0 15px 0;
+        border-collapse: collapse;
+        border-spacing: 0;
+        display: block;
+        width: 100%;
+        overflow: auto;
+        word-break: normal;
+        word-break: keep-all;
+      }
+      html body table th {
+        font-weight: 700;
+        color: #000;
+      }
+      html body table td,
+      html body table th {
+        border: 1px solid #d6d6d6;
+        padding: 6px 13px;
+      }
+      html body dl {
+        padding: 0;
+      }
+      html body dl dt {
+        padding: 0;
+        margin-top: 16px;
+        font-size: 1em;
+        font-style: italic;
+        font-weight: 700;
+      }
+      html body dl dd {
+        padding: 0 16px;
+        margin-bottom: 16px;
+      }
+      html body code {
+        font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+        font-size: 0.85em;
+        color: #000;
+        background-color: #f0f0f0;
+        border-radius: 3px;
+        padding: 0.2em 0;
+      }
+      html body code::after,
+      html body code::before {
+        letter-spacing: -0.2em;
+        content: "\00a0";
+      }
+      html body pre > code {
+        padding: 0;
+        margin: 0;
+        word-break: normal;
+        white-space: pre;
+        background: 0 0;
+        border: 0;
+      }
+      html body .highlight {
+        margin-bottom: 16px;
+      }
+      html body .highlight pre,
+      html body pre {
+        padding: 1em;
+        overflow: auto;
+        line-height: 1.45;
+        border: #d6d6d6;
+        border-radius: 3px;
+      }
+      html body .highlight pre {
+        margin-bottom: 0;
+        word-break: normal;
+      }
+      html body pre code,
+      html body pre tt {
+        display: inline;
+        max-width: initial;
+        padding: 0;
+        margin: 0;
+        overflow: initial;
+        line-height: inherit;
+        word-wrap: normal;
+        background-color: transparent;
+        border: 0;
+      }
+      html body pre code:after,
+      html body pre code:before,
+      html body pre tt:after,
+      html body pre tt:before {
+        content: normal;
+      }
+      html body blockquote,
+      html body dl,
+      html body ol,
+      html body p,
+      html body pre,
+      html body ul {
+        margin-top: 0;
+        margin-bottom: 16px;
+      }
+      html body kbd {
+        color: #000;
+        border: 1px solid #d6d6d6;
+        border-bottom: 2px solid #c7c7c7;
+        padding: 2px 4px;
+        background-color: #f0f0f0;
+        border-radius: 3px;
+      }
+      @media print {
+        html body {
+          background-color: #fff;
+        }
+        html body h1,
+        html body h2,
+        html body h3,
+        html body h4,
+        html body h5,
+        html body h6 {
+          color: #000;
+          page-break-after: avoid;
+        }
+        html body blockquote {
+          color: #5c5c5c;
+        }
+        html body pre {
+          page-break-inside: avoid;
+        }
+        html body table {
+          display: table;
+        }
+        html body img {
+          display: block;
+          max-width: 100%;
+          max-height: 100%;
+        }
+        html body code,
+        html body pre {
+          word-wrap: break-word;
+          white-space: pre;
+        }
+      }
+      .markdown-preview {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+      }
+      .markdown-preview ul {
+        list-style: disc;
+      }
+      .markdown-preview ul ul {
+        list-style: circle;
+      }
+      .markdown-preview ul ul ul {
+        list-style: square;
+      }
+      .markdown-preview ol {
+        list-style: decimal;
+      }
+      .markdown-preview ol ol,
+      .markdown-preview ul ol {
+        list-style-type: lower-roman;
+      }
+      .markdown-preview ol ol ol,
+      .markdown-preview ol ul ol,
+      .markdown-preview ul ol ol,
+      .markdown-preview ul ul ol {
+        list-style-type: lower-alpha;
+      }
+      .markdown-preview .newpage,
+      .markdown-preview .pagebreak {
+        page-break-before: always;
+      }
+      .markdown-preview pre.line-numbers {
+        position: relative;
+        padding-left: 3.8em;
+        counter-reset: linenumber;
+      }
+      .markdown-preview pre.line-numbers > code {
+        position: relative;
+      }
+      .markdown-preview pre.line-numbers .line-numbers-rows {
+        position: absolute;
+        pointer-events: none;
+        top: 1em;
+        font-size: 100%;
+        left: 0;
+        width: 3em;
+        letter-spacing: -1px;
+        border-right: 1px solid #999;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      .markdown-preview pre.line-numbers .line-numbers-rows > span {
+        pointer-events: none;
+        display: block;
+        counter-increment: linenumber;
+      }
+      .markdown-preview pre.line-numbers .line-numbers-rows > span:before {
+        content: counter(linenumber);
+        color: #999;
+        display: block;
+        padding-right: 0.8em;
+        text-align: right;
+      }
+      .markdown-preview .mathjax-exps .MathJax_Display {
+        text-align: center !important;
+      }
+      .markdown-preview:not([data-for="preview"])
+        .code-chunk
+        .code-chunk-btn-group {
+        display: none;
+      }
+      .markdown-preview:not([data-for="preview"]) .code-chunk .status {
+        display: none;
+      }
+      .markdown-preview:not([data-for="preview"]) .code-chunk .output-div {
+        margin-bottom: 16px;
+      }
+      .markdown-preview .md-toc {
+        padding: 0;
+      }
+      .markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link {
+        display: inline;
+        padding: 0.25rem 0;
+      }
+      .markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,
+      .markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p {
+        display: inline;
+      }
+      .markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link {
+        font-weight: 800;
+      }
+      .scrollbar-style::-webkit-scrollbar {
+        width: 8px;
+      }
+      .scrollbar-style::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background-color: transparent;
+      }
+      .scrollbar-style::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background-color: rgba(150, 150, 150, 0.66);
+        border: 4px solid rgba(150, 150, 150, 0.66);
+        background-clip: content-box;
+      }
+      html body[for="html-export"]:not([data-presentation-mode]) {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        overflow: auto;
+      }
+      html
+        body[for="html-export"]:not([data-presentation-mode])
+        .markdown-preview {
+        position: relative;
+        top: 0;
+        min-height: 100vh;
+      }
+      @media screen and (min-width: 914px) {
+        html
+          body[for="html-export"]:not([data-presentation-mode])
+          .markdown-preview {
+          padding: 2em calc(50% - 457px + 2em);
+        }
+      }
+      @media screen and (max-width: 914px) {
+        html
+          body[for="html-export"]:not([data-presentation-mode])
+          .markdown-preview {
+          padding: 2em;
+        }
+      }
+      @media screen and (max-width: 450px) {
+        html
+          body[for="html-export"]:not([data-presentation-mode])
+          .markdown-preview {
+          font-size: 14px !important;
+          padding: 1em;
+        }
+      }
+      @media print {
+        html
+          body[for="html-export"]:not([data-presentation-mode])
+          #sidebar-toc-btn {
+          display: none;
+        }
+      }
+      html
+        body[for="html-export"]:not([data-presentation-mode])
+        #sidebar-toc-btn {
+        position: fixed;
+        bottom: 8px;
+        left: 8px;
+        font-size: 28px;
+        cursor: pointer;
+        color: inherit;
+        z-index: 99;
+        width: 32px;
+        text-align: center;
+        opacity: 0.4;
+      }
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        #sidebar-toc-btn {
+        opacity: 1;
+      }
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        .md-sidebar-toc {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 100%;
+        padding: 32px 0 48px 0;
+        font-size: 14px;
+        box-shadow: 0 0 4px rgba(150, 150, 150, 0.33);
+        box-sizing: border-box;
+        overflow: auto;
+        background-color: inherit;
+      }
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        .md-sidebar-toc::-webkit-scrollbar {
+        width: 8px;
+      }
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        .md-sidebar-toc::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background-color: transparent;
+      }
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        .md-sidebar-toc::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background-color: rgba(150, 150, 150, 0.66);
+        border: 4px solid rgba(150, 150, 150, 0.66);
+        background-clip: content-box;
+      }
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        .md-sidebar-toc
+        a {
+        text-decoration: none;
+      }
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        .md-sidebar-toc
+        .md-toc {
+        padding: 0 16px;
+      }
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        .md-sidebar-toc
+        .md-toc
+        .md-toc-link-wrapper
+        .md-toc-link {
+        display: inline;
+        padding: 0.25rem 0;
+      }
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        .md-sidebar-toc
+        .md-toc
+        .md-toc-link-wrapper
+        .md-toc-link
+        div,
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        .md-sidebar-toc
+        .md-toc
+        .md-toc-link-wrapper
+        .md-toc-link
+        p {
+        display: inline;
+      }
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        .md-sidebar-toc
+        .md-toc
+        .md-toc-link-wrapper.highlighted
+        .md-toc-link {
+        font-weight: 800;
+      }
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        .markdown-preview {
+        left: 300px;
+        width: calc(100% - 300px);
+        padding: 2em calc(50% - 457px - 300px / 2);
+        margin: 0;
+        box-sizing: border-box;
+      }
+      @media screen and (max-width: 1274px) {
+        html
+          body[for="html-export"]:not(
+            [data-presentation-mode]
+          )[html-show-sidebar-toc]
+          .markdown-preview {
+          padding: 2em;
+        }
+      }
+      @media screen and (max-width: 450px) {
+        html
+          body[for="html-export"]:not(
+            [data-presentation-mode]
+          )[html-show-sidebar-toc]
+          .markdown-preview {
+          width: 100%;
+        }
+      }
+      html
+        body[for="html-export"]:not([data-presentation-mode]):not(
+          [html-show-sidebar-toc]
+        )
+        .markdown-preview {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      html
+        body[for="html-export"]:not([data-presentation-mode]):not(
+          [html-show-sidebar-toc]
+        )
+        .md-sidebar-toc {
+        display: none;
+      }
+      /* Please visit the URL below for more information: */
+      /*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+    </style>
+    <!-- The content below will be included at the end of the <head> element. -->
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function () {
+        // your code here
+      });
+    </script>
+  </head>
+  <body for="html-export">
+    <div class="crossnote markdown-preview">
+      <h1 id="prime-surgical">Prime Surgical</h1>
+      <h2 id="knowledge--training">Knowledge &amp; Training</h2>
+      <h3 id="foundational-anatomy">Foundational Anatomy</h3>
+      <p>
+        In the foundation section, we will cover the basics of the human body.
+        This will include the anatomy, physiology, and pathophysiology - mainly
+        focused on the heart and broader thoracic cavity. The goal is to develop
+        a solid understanding of the cadiovascular system &amp; skeletal
+        systems. This will help you understand the technical product specifics,
+        and how they relate to the human body.
+      </p>
+      <h4 id="anatomical-positioning--types-of-movement">
+        Anatomical Positioning &amp; Types of Movement
+      </h4>
+      <p>
+        Understanding anatomical positions and types of movement is crucial in
+        the medical field as it provides a standardized way of describing the
+        human body and its movements, ensuring clear communication among
+        healthcare professionals.
+      </p>
+      <h5 id="anatomical-positions">Anatomical Positions</h5>
+      <p>
+        <img
+          src="../../static/img/anatomical_position_2.png"
+          alt="anatomical position"
+        />
+      </p>
+      <ol>
+        <li>
+          <strong>Standard Anatomical Position</strong>:
+          <ul>
+            <li>The body is standing upright.</li>
+            <li>Feet are parallel and close together.</li>
+            <li>Arms are at the sides.</li>
+            <li>Palms face forward.</li>
+            <li>The head is level, and eyes are looking forward.</li>
+          </ul>
+        </li>
+      </ol>
+      <ul>
+        <li>
+          <strong>Sagittal Plane</strong>: Divides the body into left and right
+          halves.
+        </li>
+        <li>
+          <strong>Frontal (Coronal) Plane</strong>: Divides the body into front
+          (anterior) and back (posterior) halves.
+        </li>
+        <li>
+          <strong>Transverse (Horizontal) Plane</strong>: Divides the body into
+          upper (superior) and lower (inferior) halves.
+        </li>
+      </ul>
+      <ol start="2">
+        <li>
+          <p><strong>Prone Position</strong>:</p>
+          <ul>
+            <li>The body is lying face down.</li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Supine Position</strong>:</p>
+          <ul>
+            <li>The body is lying face up.</li>
+          </ul>
+        </li>
+      </ol>
+      <p>
+        <img
+          src="../../static/img/anatomical_position.png"
+          alt="anatomical position"
+        />
+      </p>
+      <h5 id="types-of-movements">Types of Movements</h5>
+      <ol>
+        <li>
+          <p><strong>Flexion and Extension</strong>:</p>
+          <ul>
+            <li>
+              <strong>Flexion</strong>: Decreasing the angle between two body
+              parts, like bending the elbow.
+            </li>
+            <li>
+              <strong>Extension</strong>: Increasing the angle, like
+              straightening the elbow.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Abduction and Adduction</strong>:</p>
+          <ul>
+            <li>
+              <strong>Abduction</strong>: Movement away from the midline of the
+              body, like lifting the arm sideways.
+            </li>
+            <li>
+              <strong>Adduction</strong>: Movement towards the midline, like
+              bringing the arm back to the side.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Medial and Lateral Rotation</strong>:</p>
+          <ul>
+            <li>
+              <strong>Medial Rotation</strong>: Turning towards the midline,
+              like turning the head to face forward.
+            </li>
+            <li>
+              <strong>Lateral Rotation</strong>: Turning away from the midline,
+              like turning the head to the side.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Elevation and Depression</strong>:</p>
+          <ul>
+            <li>
+              <strong>Elevation</strong>: Moving a body part upwards, like
+              shrugging the shoulders.
+            </li>
+            <li>
+              <strong>Depression</strong>: Moving a body part downwards, like
+              relaxing the shoulders.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Protraction and Retraction</strong>:</p>
+          <ul>
+            <li>
+              <strong>Protraction</strong>: Moving a body part forward, like
+              jutting the jaw forward.
+            </li>
+            <li>
+              <strong>Retraction</strong>: Moving it backward, like pulling the
+              jaw back.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Supination and Pronation</strong>:</p>
+          <ul>
+            <li>
+              <strong>Supination</strong>: Rotating the forearm so the palm
+              faces up.
+            </li>
+            <li>
+              <strong>Pronation</strong>: Rotating it so the palm faces down.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>
+            <strong>Dorsiflexion and Plantarflexion</strong> (pertaining to the
+            foot):
+          </p>
+          <ul>
+            <li>
+              <strong>Dorsiflexion</strong>: Bending the foot upwards,
+              decreasing the angle between the foot and the shin.
+            </li>
+            <li>
+              <strong>Plantarflexion</strong>: Bending the foot downwards,
+              increasing the angle.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>
+            <strong>Inversion and Eversion</strong> (pertaining to the foot):
+          </p>
+          <ul>
+            <li>
+              <strong>Inversion</strong>: Turning the sole of the foot inward.
+            </li>
+            <li>
+              <strong>Eversion</strong>: Turning the sole of the foot outward.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>
+            <strong>Opposition and Reposition</strong> (pertaining to the thumb
+            and little finger):
+          </p>
+          <ul>
+            <li>
+              <strong>Opposition</strong>: Bringing the thumb and little finger
+              towards each other.
+            </li>
+            <li>
+              <strong>Reposition</strong>: Moving them away from each other.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Circumduction</strong>:</p>
+          <ul>
+            <li>
+              A conical movement involving sequential flexion, abduction,
+              extension, and adduction, creating a circular or conical motion,
+              like moving the arm in a circle.
+            </li>
+          </ul>
+        </li>
+      </ol>
+      <p>
+        <img src="../../static/img/body_movement.png" alt="body movement" />
+      </p>
+      <h5 id="proximal-and-distal">Proximal and Distal</h5>
+      <ol>
+        <li>
+          <p><strong>Proximal</strong>:</p>
+          <ul>
+            <li>Closer to the point of attachment or origin.</li>
+            <li>For example, the elbow is proximal to the wrist.</li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Distal</strong>:</p>
+          <ul>
+            <li>Farther from the point of attachment or origin.</li>
+            <li>For example, the wrist is distal to the elbow.</li>
+          </ul>
+        </li>
+      </ol>
+      <p>
+        <img
+          src="../../static/img/proximal_and_distal.png"
+          alt="proximal and distal"
+        />
+      </p>
+      <p>
+        Understanding these positions and movements allows medical professionals
+        to accurately describe and interpret physical examinations, radiographs,
+        and surgical procedures. It's essential to be familiar with these terms
+        to communicate effectively in clinical practice.
+      </p>
+      <hr />
+      <h3 id="cv">CV</h3>
+      <iframe
+        src="https://drive.google.com/file/d/11-CR2ZICZS6SsuI0EmKAPAX48qtllfxI/preview"
+        width="600"
+        height="800"
+        allow="autoplay"
+      ></iframe>
+      <h4 id="overview-of-cardiovascular-anatomy-and-physiology">
+        Overview of Cardiovascular Anatomy and Physiology
+      </h4>
+      <p>
+        The cardiovascular system, also known as the circulatory system, is a
+        complex network consisting of the heart, blood vessels, and blood. It
+        performs the vital function of delivering oxygen and nutrients to
+        tissues, while removing carbon dioxide and other waste products.
+      </p>
+      <ol>
+        <li>
+          <p><strong>Heart</strong>:</p>
+          <ul>
+            <li>
+              <strong>Anatomy</strong>: The heart is a four-chambered muscular
+              organ divided into two atria and two ventricles. The right side
+              receives deoxygenated blood and pumps it to the lungs, while the
+              left side receives oxygenated blood from the lungs and pumps it to
+              the systemic circulation.<br />
+              <img
+                src="../../static/img/heart_diagram.png"
+                alt="heart anatomy"
+              />
+            </li>
+            <li>
+              <strong>Physiology</strong>: The cardiac cycle comprises three
+              major stages: atrial systole, ventricular systole, and diastole.
+              These stages are coordinated by electrical signals originating
+              from the sinoatrial (SA) node and traveling through the
+              atrioventricular (AV) node and the His-Purkinje system.<br />
+              <img
+                src="../../static/img/diastole_systole.png"
+                alt="systole &amp; diastole"
+              />
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Blood Vessels</strong>:</p>
+          <ul>
+            <li>
+              <strong>Anatomy</strong>: Blood vessels are categorized into
+              arteries, veins, and capillaries. Arteries transport blood away
+              from the heart, veins carry blood towards the heart, and
+              capillaries facilitate the exchange of nutrients, gases, and waste
+              between blood and tissues.<br />
+              <img
+                src="../../static/img/structure_blood_vessel.png"
+                alt="blood vessel"
+              />
+            </li>
+            <li>
+              <strong>Physiology</strong>: The smooth muscle in the arterial
+              walls enables vasoconstriction and vasodilation, crucial for
+              regulating blood pressure and distribution. Veins have valves to
+              prevent backflow, ensuring unidirectional flow towards the heart.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Blood</strong>:</p>
+          <ul>
+            <li>
+              <p>
+                <strong>Composition</strong>: Blood comprises red blood cells
+                (RBCs) for oxygen transport, white blood cells (WBCs) for
+                immunity, platelets for clotting, and plasma as the fluid medium
+                carrying hormones, nutrients, and gases.
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>Hemodynamics</strong>: This refers to the physical
+                principles governing the flow and pressure of blood, essential
+                for understanding various pathological conditions and the action
+                of numerous cardiovascular drugs.
+              </p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Microcirculation and Gas Exchange</strong>:</p>
+          <ul>
+            <li>
+              In capillary beds, the exchange of oxygen, carbon dioxide,
+              nutrients, and waste products occurs through diffusion, driven by
+              concentration gradients.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Regulatory Mechanisms</strong>:</p>
+          <ul>
+            <li>
+              <strong>Neural Regulation</strong>: The cardiovascular center in
+              the medulla oblongata modulates heart rate and blood vessel
+              diameter in response to various stimuli.
+            </li>
+            <li>
+              <strong>Hormonal Regulation</strong>: Hormones like adrenaline,
+              noradrenaline, and angiotensin II play significant roles in
+              cardiovascular regulation.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Cardiac Output and Blood Pressure</strong>:</p>
+          <ul>
+            <li>
+              Cardiac output (CO) is the amount of blood pumped by the heart per
+              minute and is a product of heart rate (HR) and stroke volume (SV).
+              Blood pressure (BP) is crucial for perfusion to organs and is
+              regulated by various factors including CO, blood volume, and
+              vascular resistance.<br />
+              <img
+                src="../../static/img/cardiac_output.png"
+                alt="cardiac output"
+              />
+            </li>
+          </ul>
+        </li>
+      </ol>
+      <iframe
+        src="https://drive.google.com/file/d/10nwfy-hNmu5RqWbuCeWxRTyHk2-5gnM4/preview"
+        width="600"
+        height="800"
+        allow="autoplay"
+      ></iframe>
+      <hr />
+      <h4 id="circulatory-pathways---pulmonary-and-systemic-circulation">
+        Circulatory Pathways - Pulmonary and Systemic Circulation
+      </h4>
+      <p>
+        The human circulatory system operates via two interdependent pathways:
+        the Pulmonary and Systemic Circulation. These pathways are crucial for
+        transporting blood to and from the heart, thereby facilitating the
+        exchange of gases, nutrients, and waste products throughout the body.
+      </p>
+      <ol>
+        <li>
+          <p><strong>Pulmonary Circulation</strong>:</p>
+          <ul>
+            <li>
+              <strong>Objective</strong>: The primary aim of pulmonary
+              circulation is to oxygenate the blood while expelling carbon
+              dioxide.
+            </li>
+            <li>
+              <strong>Pathway</strong>: Deoxygenated blood from the body enters
+              the right atrium via the superior and inferior vena cava. It then
+              moves to the right ventricle, which pumps the blood through the
+              pulmonary arteries to the lungs. Here, blood gets oxygenated
+              during gas exchange in the alveoli.
+            </li>
+            <li>
+              <strong>Return to Heart</strong>: Oxygen-rich blood returns to the
+              heart via the pulmonary veins, entering the left atrium, marking
+              the transition from pulmonary to systemic circulation.<br />
+              <img
+                src="../../static/img/pulmonary_circuit.png"
+                alt="pulmonary circuit"
+              />
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Systemic Circulation</strong>:</p>
+          <ul>
+            <li>
+              <strong>Objective</strong>: Systemic circulation aims to deliver
+              oxygenated blood to various body tissues, ensuring the delivery of
+              nutrients, hormones, and oxygen while removing waste products like
+              carbon dioxide.
+            </li>
+            <li>
+              <strong>Pathway</strong>: From the left atrium, oxygen-enriched
+              blood moves into the left ventricle, which pumps it into the
+              aorta. The aorta branches into numerous smaller arteries and
+              arterioles, which further subdivide into capillaries where the
+              exchange of gases, nutrients, and waste occurs.
+            </li>
+            <li>
+              <strong>Return to Heart</strong>: After gas and nutrient exchange,
+              deoxygenated blood collects into venules, which coalesce into
+              veins, eventually forming the superior and inferior vena cava that
+              return blood to the right atrium, marking the commencement of
+              another pulmonary circulation cycle.<br />
+              <img
+                src="../../static/img/circulatory_system.png"
+                alt="systemic circuit"
+              />
+            </li>
+          </ul>
+        </li>
+      </ol>
+      <p>
+        Blood leaves the heart through the aortic valve, through the ascending
+        aorta, and out to the body. The subclavian arteries branch off the
+        aorta, and supply blood to the arms. The carotid arteries branch off the
+        aorta, and supply blood to the head. The descending aorta supplies blood
+        to the rest of the body.
+      </p>
+      <p>
+        <img
+          src="../../static/img/thoracic_vascular_system.png"
+          alt="Thoracic Vascular System"
+        />
+      </p>
+      <ol>
+        <li>
+          <p><strong>Key Regulatory Mechanisms</strong>:</p>
+          <ul>
+            <li>
+              <strong>Cardiac Cycle Coordination</strong>: The coordination
+              between the heart chambers ensures an efficient circulatory
+              process. This coordination is governed by the heart’s electrical
+              conduction system, involving the sinoatrial (SA) node,
+              atrioventricular (AV) node, and the His-Purkinje system.
+            </li>
+            <li>
+              <strong>Vascular Tone</strong>: Vascular smooth muscle tone in
+              arteries and arterioles plays a crucial role in regulating blood
+              pressure and, consequently, blood flow to different body parts.
+            </li>
+            <li>
+              <strong>Capillary Dynamics</strong>: Capillary permeability and
+              pre-capillary sphincters manage blood flow through capillary beds,
+              aiding in tissue perfusion and nutrient exchange.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Physiological Variables</strong>:</p>
+          <ul>
+            <li>
+              Variables like heart rate, stroke volume, and systemic vascular
+              resistance are essential determinants of systemic and pulmonary
+              circulation efficacy. Understanding these variables provides
+              insight into pathological states and therapeutic interventions.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Pathophysiological Implications</strong>:</p>
+          <ul>
+            <li>
+              Disruptions in either circulation pathway can result in
+              pathological conditions. For example, obstruction in pulmonary
+              circulation can lead to pulmonary hypertension, while systemic
+              circulation disruptions can result in conditions like peripheral
+              artery disease.
+            </li>
+          </ul>
+        </li>
+      </ol>
+      <p>
+        This overview elucidates the core structural and functional facets of
+        pulmonary and systemic circulatory pathways, foundational knowledge for
+        comprehending the broader cardiovascular physiology and pathology.
+      </p>
+      <hr />
+      <h4 id="definition-and-pathology-of-ischemic-heart-disease">
+        Definition and Pathology of Ischemic Heart Disease
+      </h4>
+      <p>
+        Ischemic Heart Disease (IHD), also known as Coronary Artery Disease
+        (CAD) or Coronary Heart Disease (CHD), is a pathological condition
+        characterized by reduced blood supply to the heart muscle, primarily due
+        to obstruction or spasm of the coronary arteries. It is a leading cause
+        of mortality and morbidity worldwide, and understanding its
+        pathophysiology is paramount for the aspiring medical practitioner.<br />
+        <img
+          src="../../static/img/myocardial-ischemia.png"
+          alt="myocardial ischemia"
+        />
+      </p>
+      <ol>
+        <li>
+          <p><strong>Atherosclerosis</strong>:</p>
+          <ul>
+            <li>
+              The fundamental pathology underlying IHD is atherosclerosis, a
+              process characterized by the accumulation of cholesterol-laden
+              plaques within the walls of coronary arteries. Over time, these
+              plaques narrow the arteries, reducing blood flow to the
+              myocardium.<br />
+              <img
+                src="../../static/img/atherosclerosis.png"
+                alt="Atherosclerosis"
+              />
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Endothelial Dysfunction</strong>:</p>
+          <ul>
+            <li>
+              Endothelial dysfunction often precedes atherosclerosis, where the
+              inner lining of the arteries (endothelium) loses its normal
+              functioning, impairing vasodilation, and promoting inflammation
+              and plaque formation.<br />
+              <img
+                src="../../static/img/vasoconstrict_vasodilate.png"
+                alt="vaso"
+              />
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Plaque Rupture and Thrombosis</strong>:</p>
+          <ul>
+            <li>
+              An acute coronary event often occurs when a plaque ruptures,
+              triggering blood clot formation (thrombosis). This can further
+              occlude the artery, leading to a significant reduction or
+              cessation of blood flow downstream.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Ischemia and Myocardial Infarction (MI)</strong>:</p>
+          <ul>
+            <li>
+              The consequence of reduced blood flow (ischemia) can range from
+              angina pectoris (chest pain) to myocardial infarction (MI), where
+              prolonged ischemia causes necrosis of the myocardial tissue.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Compensatory Mechanisms</strong>:</p>
+          <ul>
+            <li>
+              Initially, the heart tries to compensate for reduced blood supply
+              through various mechanisms like collateral circulation, where
+              small blood vessels remodel themselves to bypass blockages.
+              However, these compensations are often insufficient during
+              increased demand, such as exercise.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Electrical Instability</strong>:</p>
+          <ul>
+            <li>
+              Ischemia can disrupt the electrical activity of the heart, leading
+              to arrhythmias, which are a significant cause of morbidity in IHD.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Heart Failure</strong>:</p>
+          <ul>
+            <li>
+              Chronic IHD can lead to heart failure, a condition where the heart
+              is unable to pump blood effectively to meet the body's needs.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Diagnosing Ischemic Heart Disease</strong>:</p>
+          <ul>
+            <li>
+              Diagnosis is usually based on a combination of clinical history,
+              physical examination, electrocardiogram (ECG), stress testing, and
+              imaging studies like coronary angiography.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Risk Factors</strong>:</p>
+          <ul>
+            <li>
+              Identifiable risk factors include hypertension, hyperlipidemia,
+              smoking, diabetes, obesity, and a family history of cardiovascular
+              disease.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Clinical Management</strong>:</p>
+        </li>
+      </ol>
+      <ul>
+        <li>
+          Management strategies aim to restore coronary perfusion, alleviate
+          symptoms, and prevent future cardiac events. These include lifestyle
+          modifications, pharmacotherapy (e.g., antiplatelets, statins), and
+          interventional procedures like angioplasty and coronary artery bypass
+          grafting (CABG).<br />
+          <img src="../../static/img/cabg.png" alt="cabg" />
+        </li>
+      </ul>
+      <p>
+        This summary delineates the critical concepts surrounding ischemic heart
+        disease, offering an essential foundation for further exploration into
+        its diagnosis, management, and the broader implications for
+        cardiovascular health and disease.
+      </p>
+      <iframe
+        src="https://drive.google.com/file/d/10tXU2EWWcach721eQaTZvougHX7kiefG/preview"
+        width="600"
+        height="800"
+        allow="autoplay"
+      ></iframe>
+      <hr />
+      <h4 id="acquired-valvular-heart-diseases-stenosis-and-regurgitation">
+        Acquired Valvular Heart Diseases: Stenosis and Regurgitation
+      </h4>
+      <p>
+        Valvular heart diseases, predominantly manifesting as Stenosis or
+        Regurgitation, are pathologies involving one or more of the heart’s
+        valves (<strong>aortic</strong>, <strong>mitral</strong>, tricuspid, and
+        pulmonary). Acquired as opposed to congenital valvular diseases arise
+        due to various factors such as aging, infections or other cardiac
+        diseases. Understanding these diseases is pivotal for a burgeoning
+        medical practitioner.
+      </p>
+      <ul>
+        <li>
+          aortic and mitral are the most commonly treated valves, as they're the
+          valves on the left side of the heart, which is the side that pumps
+          blood to the body.
+        </li>
+      </ul>
+      <ol>
+        <li>
+          <p><strong>Stenosis</strong>:</p>
+          <ul>
+            <li>
+              <strong>Definition</strong>: Stenosis refers to the narrowing of
+              the valvular orifice, impeding blood flow.
+            </li>
+            <li>
+              <strong>Pathophysiology</strong>: Common causes include calcific
+              degeneration, rheumatic heart disease, or radiation therapy. The
+              obstruction forces the heart to pump harder, leading to
+              hypertrophy and potentially heart failure.
+            </li>
+            <li>
+              <strong>Clinical Presentation</strong>: Symptoms like fatigue,
+              dyspnea, and chest discomfort are common. On examination, a harsh
+              ejection systolic murmur is often discernible.<br />
+              <img
+                src="../../static/img/stenotic_aorta.png"
+                alt="stenotic aorta"
+              />
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Regurgitation (Insufficiency)</strong>:</p>
+          <ul>
+            <li>
+              <strong>Definition</strong>: Regurgitation involves the backflow
+              of blood due to incomplete valve closure.
+            </li>
+            <li>
+              <strong>Pathophysiology</strong>: Causes encompass mitral valve
+              prolapse, infective endocarditis, or dilation of the valve
+              annulus. The volume overload can lead to dilatation and eventual
+              failure of the associated chamber.
+            </li>
+            <li>
+              <strong>Clinical Presentation</strong>: Patients may present with
+              palpitations, fatigue, and a blowing holosystolic murmur on
+              examination.<br />
+              <img
+                src="../../static/img/mitral_valve_regurgitation_1.png"
+                alt="mitral regurgitation"
+              />
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Common Acquired Valvular Disorders</strong>:</p>
+          <ul>
+            <li>
+              <strong>Aortic Stenosis</strong>: Often due to calcification in
+              the elderly or rheumatic heart disease.
+            </li>
+            <li>
+              <strong>Mitral Regurgitation</strong>: Mitral valve prolapse or
+              ischemic heart disease are common culprits.
+            </li>
+            <li>
+              <strong>Aortic Regurgitation</strong>: Typically arises from
+              hypertension, endocarditis, or congenital aortic root diseases,
+              like Marfan syndrome or a bicuspid valve.
+            </li>
+            <li>
+              <strong>Mitral Stenosis</strong>: Mostly associated with rheumatic
+              heart disease.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Diagnosis</strong>:</p>
+          <ul>
+            <li>
+              <strong>Physical Examination</strong>: Auscultation can reveal
+              characteristic murmurs.
+            </li>
+            <li>
+              <strong>Imaging</strong>: Echocardiography is the cornerstone for
+              diagnosis, providing insight into the valve anatomy and function.
+              Other modalities include cardiac MRI and CT.
+            </li>
+            <li>
+              <strong>Cardiac Catheterization</strong>: Helps in assessing the
+              severity and in planning for surgical intervention.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Management</strong>:</p>
+          <ul>
+            <li>
+              <strong>Medical Management</strong>: Aims at symptom relief using
+              diuretics, beta-blockers, or ACE inhibitors.
+            </li>
+            <li>
+              <strong>Surgical Management</strong>: Includes valve repair or
+              replacement via open surgery, minimally invasive surgery or
+              transcatheter techniques.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Prognosis and Follow-Up</strong>:</p>
+          <ul>
+            <li>
+              Early detection and intervention are crucial for a favorable
+              prognosis. Regular follow-up with echocardiographic assessments is
+              necessary to monitor disease progression and treatment efficacy.
+            </li>
+          </ul>
+        </li>
+      </ol>
+      <iframe
+        src="https://drive.google.com/file/d/10fwzm2Smdvfw99Z1A0YJLlGGjWHr5n25/preview"
+        width="600"
+        height="800"
+        allow="autoplay"
+      ></iframe>
+      <hr />
+      <h4 id="congenital-heart-defects-asd-vsd-pda-tetralogy-of-fallot">
+        Congenital Heart Defects: ASD, VSD, PDA, Tetralogy of Fallot**
+      </h4>
+      <p>
+        Congenital heart defects (CHDs) are intrinsic abnormalities in the
+        heart's structure that occur from birth. Such anomalies significantly
+        impact hemodynamics and necessitate intricate understanding and
+        management. This overview synthesizes critical insights into four
+        prevalent congenital heart defects: Atrial Septal Defect (ASD),
+        Ventricular Septal Defect (VSD), Patent Ductus Arteriosus (PDA), and
+        Tetralogy of Fallot (TOF).
+      </p>
+      <p>
+        Congenital heart programs are isolated specialized centers, at
+        children's hospitals. The centers in South Florida are Holtz Children's
+        (Jackson Health System), Joe DiMaggio Children's (Memorial Healthcare
+        System), and Nicklaus Children's (Miami Children's Health System).
+      </p>
+      <p>
+        We will not focus her early on, as they are not the focus of our
+        business. However, it is important to understand the basics of these
+        defects, as they are the foundation for understanding the broader
+        cardiovascular system.
+      </p>
+      <h5 id="1-atrial-septal-defect-asd">1. Atrial Septal Defect (ASD)</h5>
+      <ul>
+        <li>
+          <strong>Definition</strong>: ASD involves an opening in the septum
+          between the atria, enabling blood flow between them.
+        </li>
+        <li>
+          <strong>Pathophysiology</strong>:
+          <ul>
+            <li>
+              Left-to-right shunt leads to right atrial and ventricular volume
+              overload.
+            </li>
+            <li>
+              Potential risk for atrial arrhythmias and, rarely, Eisenmenger
+              syndrome.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>Clinical Presentation</strong>:
+          <ul>
+            <li>
+              May be asymptomatic or present with dyspnea, fatigue, and
+              palpitations.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>Diagnosis</strong>:
+          <ul>
+            <li>Echocardiography chiefly identifies ASD.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Management</strong>:
+          <ul>
+            <li>
+              Small ASDs may close spontaneously; larger defects might require
+              percutaneous closure or surgery.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h5 id="2-ventricular-septal-defect-vsd">
+        2. Ventricular Septal Defect (VSD)
+      </h5>
+      <ul>
+        <li>
+          <strong>Definition</strong>: VSD encompasses an opening in the
+          interventricular septum.
+        </li>
+        <li>
+          <strong>Pathophysiology</strong>:
+          <ul>
+            <li>Shunting of blood from the left to the right ventricle.</li>
+            <li>
+              Can cause heart failure and predispose to infective endocarditis.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>Clinical Presentation</strong>:
+          <ul>
+            <li>
+              Failure to thrive, recurrent respiratory infections, or
+              asymptomatic.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>Diagnosis</strong>:
+          <ul>
+            <li>Recognized through echocardiography.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Management</strong>:
+          <ul>
+            <li>
+              Small defects may not necessitate intervention, while significant
+              shunting or symptoms may require surgical repair.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h5 id="4-tetralogy-of-fallot-tof">4. Tetralogy of Fallot (TOF)</h5>
+      <ul>
+        <li>
+          <strong>Definition</strong>: TOF consists of four anomalies: VSD,
+          overriding aorta, pulmonary stenosis, and right ventricular
+          hypertrophy.
+        </li>
+        <li>
+          <strong>Pathophysiology</strong>:
+          <ul>
+            <li>
+              Blood bypasses the pulmonary circulation, resulting in cyanosis.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>Clinical Presentation</strong>:
+          <ul>
+            <li>
+              "Tet" spells (hypoxic spells), cyanosis, and dyspnea on exertion.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>Diagnosis</strong>:
+          <ul>
+            <li>
+              Echocardiography and cardiac catheterization are essential for
+              diagnosis.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>Management</strong>:
+          <ul>
+            <li>
+              Total repair surgery, typically involving VSD closure and relief
+              of pulmonary obstruction, is the mainstay.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h5 id="shared-considerations-for-chds">
+        Shared Considerations for CHDs
+      </h5>
+      <ul>
+        <li>
+          <strong>Perioperative Care</strong>: Vital in surgical interventions
+          to optimize outcomes.
+        </li>
+        <li>
+          <strong>Long-term Management</strong>: Lifelong follow-up to monitor
+          for complications such as arrhythmias, heart failure, and other
+          sequelae.
+        </li>
+        <li>
+          <strong>Genetic Counseling</strong>: Given the genetic components of
+          CHDs, counseling is pivotal.
+        </li>
+        <li>
+          <strong>Preventive Care</strong>:
+          <ul>
+            <li>
+              Vaccinations and endocarditis prophylaxis are crucial in CHDs.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h5 id="summary">Summary</h5>
+      <p>
+        Congenital heart defects embody a spectrum of disorders, each with its
+        unique pathophysiology and clinical implications. A robust understanding
+        of their intricacies provides the substrate for impeccable diagnosis,
+        management, and overall holistic care, guiding affected individuals
+        through potential challenges throughout their lifespan.
+      </p>
+      <hr />
+      <h3 id="the-rest-of-the-thoracic-cavity">
+        The Rest of the Thoracic Cavity
+      </h3>
+      <p>
+        VIDEO: The Sternum and Ribs - Anatomy Tutorial (just watch the first
+        section on sternum and ribs)
+      </p>
+      <iframe
+        width="700"
+        height="420"
+        src="https://www.youtube.com/embed/ggJCoxOdv8c"
+        frameborder="0"
+        allowfullscreen=""
+      ></iframe>
+      <h4 id="key-concept-anatomy-of-the-sternum">
+        Key Concept: <strong>Anatomy of the Sternum</strong>
+      </h4>
+      <p>
+        The sternum, also known as the breastbone, is a flat bone that forms the
+        anterior portion of the chest wall. It is a T-shaped bone that is
+        divided into three parts: the manubrium, the body, and the xiphoid
+        process.
+      </p>
+      <p>
+        <img
+          src="../../static/img/sternum_anterior_overview.png"
+          alt="stenrum"
+        />
+      </p>
+      <p><strong>Manubrium</strong></p>
+      <p>
+        The manubrium is the broad, superior segment of the sternum. It
+        articulates with the clavicles at the sternoclavicular joints and with
+        the costal cartilages of the first pair of ribs. The manubrium also has
+        a number of important landmarks, including the jugular notch, which is
+        located at the superior margin of the manubrium and lies between the two
+        clavicles.
+      </p>
+      <p>
+        <img
+          src="../../static/img/sternum_side_profile.png"
+          alt="sternum manubrium anatomy"
+        />
+      </p>
+      <p><strong>Body</strong></p>
+      <p>
+        The body of the sternum is the middle portion of the bone. It
+        articulates with the costal cartilages of the second to seventh pairs of
+        ribs. The body of the sternum is also the site of attachment for a
+        number of muscles, including the pectoralis major, pectoralis minor, and
+        sternocleidomastoid muscles.
+      </p>
+      <p>
+        <img
+          src="../../static/img/sternum_with_ribs.png"
+          alt="sternum with ribs"
+        />
+      </p>
+      <p><strong>Xiphoid process</strong></p>
+      <p>
+        The xiphoid process is the narrow, inferior segment of the sternum. It
+        is a cartilaginous structure in children and young adults, but it
+        ossifies (hardens) with age. The xiphoid process is the site of
+        attachment for the diaphragm and the rectus abdominis muscles.
+      </p>
+      <p>[Image of Xiphoid process anatomy]</p>
+      <p><strong>Functions of the sternum</strong></p>
+      <p>The sternum has a number of important functions, including:</p>
+      <ul>
+        <li>
+          <strong>Protection:</strong> The sternum helps to protect the vital
+          organs of the chest, including the heart, lungs, and major blood
+          vessels.
+        </li>
+        <li>
+          <strong>Support:</strong> The sternum provides support for the rib
+          cage and helps to maintain the shape of the chest.
+        </li>
+        <li>
+          <strong>Muscle attachment:</strong> The sternum is the site of
+          attachment for a number of important muscles, including the pectoralis
+          major, pectoralis minor, sternocleidomastoid, diaphragm, and rectus
+          abdominis muscles.
+        </li>
+      </ul>
+      <p><strong>Common injuries of the sternum</strong></p>
+      <ul>
+        <li>
+          <strong>Fracture:</strong> A fracture of the sternum can occur due to
+          a traumatic injury, such as a car accident or a fall from a height.
+        </li>
+      </ul>
+      <hr />
+      <h4 id="key-concept---anatomy-of-the-ribs">
+        Key Concept - Anatomy of the Ribs
+      </h4>
+      <p>
+        The rib cage is a bony structure that encloses and protects the thoracic
+        organs, including the heart and lungs. It also plays a vital role in the
+        mechanics of breathing. The rib cage is made up of 12 pairs of ribs,
+        which are categorized into true ribs, false ribs, and floating ribs
+        based on their anatomical connections.
+      </p>
+      <p><img src="../../static/img/rib_cage.png" alt="ribcage" /></p>
+      <p><strong>True Ribs</strong></p>
+      <p>
+        The first seven pairs of ribs are known as true ribs. They are directly
+        attached to the sternum through their costal cartilages. These ribs are
+        typically more robust and have a more pronounced curve compared to the
+        other ribs.
+      </p>
+      <p><strong>False Ribs</strong></p>
+      <p>
+        Ribs 8, 9, and 10 are referred to as false ribs. Unlike true ribs, they
+        do not attach directly to the sternum. Instead, their costal cartilages
+        connect to the cartilage of the rib above them, forming an indirect
+        connection to the sternum.
+      </p>
+      <p><strong>Floating Ribs</strong></p>
+      <p>
+        The 11th and 12th pairs of ribs are known as floating ribs because they
+        do not have any anterior attachment to the sternum. They are much
+        shorter than the other ribs and have a more tapered shape.
+      </p>
+      <p><img src="../../static/img/typical_rib.png" alt="ribcage" /></p>
+      <p><strong>Anatomical Features of a Typical Rib</strong></p>
+      <ul>
+        <li>
+          <strong>Head:</strong> The head of the rib articulates with the
+          vertebral bodies.
+        </li>
+        <li>
+          <strong>Neck:</strong> The neck is the flattened part that extends
+          laterally from the head.
+        </li>
+        <li>
+          <strong>Tubercle:</strong> The tubercle of the rib articulates with
+          the transverse process of the vertebra.
+        </li>
+        <li>
+          <strong>Body (Shaft):</strong> The body or shaft of the rib is the
+          flattened, curved main part of the rib.
+        </li>
+      </ul>
+      <p><strong>Functions of the Ribs</strong></p>
+      <ul>
+        <li>
+          <strong>Protection:</strong> The ribs serve to protect the vital
+          organs within the thoracic cavity, such as the heart and lungs.
+        </li>
+        <li>
+          <strong>Support:</strong> The rib cage provides structural support to
+          the thoracic region and maintains the shape of the thoracic cavity.
+        </li>
+        <li>
+          <strong>Respiration:</strong> The ribs assist in the process of
+          respiration by altering the volume of the thoracic cavity during
+          breathing.
+        </li>
+      </ul>
+      <p><strong>Common Conditions and Injuries Related to the Ribs</strong></p>
+      <p><img src="../../static/img/rib_cortical_bone.png" alt="ribcage" /></p>
+      <ul>
+        <li>
+          <strong>Rib Fracture:</strong> A common injury resulting from trauma,
+          such as falls, accidents, or impact during sports.
+        </li>
+        <li>
+          <strong>Costochondritis:</strong> Inflammation of the rib cartilage,
+          particularly where the ribs attach to the sternum.
+        </li>
+        <li>
+          <strong>Rib Dislocation:</strong> A condition where the rib or its
+          cartilage moves out of its normal position.
+        </li>
+      </ul>
+      <hr />
+      <h4 id="key-concept-anatomy-of-the-lungs">
+        Key Concept: <strong>Anatomy of the Lungs</strong>
+      </h4>
+      <p>
+        The lungs are vital organs in the respiratory system that facilitate the
+        exchange of oxygen and carbon dioxide between the air we breathe and the
+        blood. Located within the thoracic cavity, they are protected by the
+        ribcage and are closely associated with the heart and the blood vessels.
+      </p>
+      <p><img src="../../static/img/lungs.png" alt="lungs anatomy" /></p>
+      <p><strong>Basic Anatomy of the Lungs</strong></p>
+      <ul>
+        <li>
+          <strong>Lobes:</strong> The right lung is divided into three lobes
+          (upper, middle, and lower), while the left lung has two (upper and
+          lower) to accommodate the heart.
+        </li>
+        <li>
+          <strong>Pleura:</strong> Each lung is enclosed in a pleural sac, which
+          consists of two layers: the visceral pleura (which adheres to the
+          lung) and the parietal pleura (which lines the chest wall).
+        </li>
+        <li>
+          <strong>Bronchi:</strong> The trachea divides into two primary
+          bronchi, which enter the lungs and further divide into secondary and
+          tertiary bronchi.
+        </li>
+        <li>
+          <strong>Alveoli:</strong> Tiny, sac-like structures where gas exchange
+          occurs.
+        </li>
+      </ul>
+      <p><strong>Physiology of the Lungs</strong></p>
+      <ul>
+        <li>
+          <strong>Gas Exchange:</strong> Oxygen from the inhaled air diffuses
+          into the blood in the pulmonary capillaries, while carbon dioxide
+          diffuses from the blood into the alveoli to be exhaled.
+        </li>
+        <li>
+          <strong>Ventilation:</strong> The process of moving air in and out of
+          the lungs, facilitated by the diaphragm and intercostal muscles.
+        </li>
+      </ul>
+      <p><strong>Functions of the Lungs</strong></p>
+      <ul>
+        <li>
+          <strong>Respiration:</strong> Facilitating the exchange of gases
+          (oxygen and carbon dioxide) between the atmosphere and the
+          bloodstream.
+        </li>
+        <li>
+          <strong>Filtering and Humidifying Air:</strong> The lungs help to
+          filter out particles and add moisture to the inhaled air.
+        </li>
+        <li>
+          <strong>Regulating Blood pH:</strong> Through the exchange of oxygen
+          and carbon dioxide, the lungs play a role in maintaining the pH
+          balance of the blood.
+        </li>
+      </ul>
+      <p><strong>Common Conditions Affecting the Lungs</strong></p>
+      <ul>
+        <li>
+          <strong>Pneumonia:</strong> Inflammation of the lung tissue, usually
+          caused by infection.
+        </li>
+        <li>
+          <strong>Chronic Obstructive Pulmonary Disease (COPD):</strong> A group
+          of lung diseases that block airflow and make it difficult to breathe.
+        </li>
+        <li>
+          <strong>Asthma:</strong> A condition in which the airways narrow and
+          swell, producing extra mucus, which makes breathing difficult.
+        </li>
+        <li>
+          <strong>Lung Cancer:</strong> A type of cancer that begins in the
+          lungs, often in cells lining the air passages.
+        </li>
+      </ul>
+      <h5 id="lung-cancer">Lung Cancer</h5>
+      <p>
+        Lung cancer, one of the most common malignancies worldwide, often
+        necessitates surgical intervention as a part of its management,
+        especially in the early stages. Various surgical techniques, including
+        minimally invasive approaches like Video-Assisted Thoracic Surgery
+        (VATS) and robotic-assisted thoracic surgery, have been employed to
+        manage lung cancer effectively.
+      </p>
+      <p>
+        <img src="../../static/img/vats_2.png" alt="lung surgery" /><br />
+        <img src="../../static/img/vats.png" alt="lung surgery" />
+      </p>
+      <h4 id="video-assisted-thoracic-surgery-vats">
+        <strong>Video-Assisted Thoracic Surgery (VATS)</strong>
+      </h4>
+      <p>
+        <strong>Definition:</strong> VATS is a type of minimally invasive
+        surgery that utilizes a small video camera (thoracoscope) to visualize
+        the surgical field inside the thoracic cavity, which is displayed on a
+        monitor, and small incisions are used to access the lungs.
+      </p>
+      <p><strong>Common Procedures:</strong></p>
+      <ul>
+        <li><strong>Lobectomy:</strong> Removal of a lobe of the lung.</li>
+        <li>
+          <strong>Wedge Resection:</strong> Removal of a small, wedge-shaped
+          portion of the lung.
+        </li>
+        <li>
+          <strong>Segmentectomy:</strong> Removal of a segment of a lung lobe.
+        </li>
+      </ul>
+      <p><strong>Advantages:</strong></p>
+      <ul>
+        <li>Reduced post-operative pain.</li>
+        <li>Shorter hospital stay.</li>
+        <li>Lower risk of infection.</li>
+        <li>Quicker recovery.</li>
+      </ul>
+      <p>
+        <img src="../../static/img/vats_instruments.png" alt="instruments" />
+      </p>
+      <h4 id="robotic-assisted-thoracic-surgery">
+        <strong>Robotic-Assisted Thoracic Surgery</strong>
+      </h4>
+      <p>
+        <strong>Definition:</strong> Robotic-assisted thoracic surgery employs a
+        robotic system, which the surgeon controls from a console, to perform
+        surgery through small incisions, providing enhanced visualization and
+        precision.
+      </p>
+      <p><strong>Common Procedures:</strong></p>
+      <ul>
+        <li>
+          <strong>Robotic-Assisted Lobectomy:</strong> Removal of a lobe using
+          robotic assistance.
+        </li>
+        <li>
+          <strong>Robotic-Assisted Pneumonectomy:</strong> Removal of an entire
+          lung using robotic assistance.
+        </li>
+      </ul>
+      <p>
+        <img src="../../static/img/robotic_surgery.png" alt="robotic surgery" />
+      </p>
+    </div>
+  </body>
+</html>

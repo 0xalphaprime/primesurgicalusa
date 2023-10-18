@@ -1,0 +1,1537 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <title>zimmer_biomet_cv</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="file:////Users/alphaprime/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.8.6/crossnote/dependencies/katex/katex.min.css"
+    />
+    <link rel="stylesheet" href="{% static 'css/cover.css' %}" />
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" />
+
+    <style>
+      code[class*="language-"],
+      pre[class*="language-"] {
+        color: #333;
+        background: 0 0;
+        font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        text-align: left;
+        white-space: pre;
+        word-spacing: normal;
+        word-break: normal;
+        word-wrap: normal;
+        line-height: 1.4;
+        -moz-tab-size: 8;
+        -o-tab-size: 8;
+        tab-size: 8;
+        -webkit-hyphens: none;
+        -moz-hyphens: none;
+        -ms-hyphens: none;
+        hyphens: none;
+      }
+      pre[class*="language-"] {
+        padding: 0.8em;
+        overflow: auto;
+        border-radius: 3px;
+        background: #f5f5f5;
+      }
+      :not(pre) > code[class*="language-"] {
+        padding: 0.1em;
+        border-radius: 0.3em;
+        white-space: normal;
+        background: #f5f5f5;
+      }
+      .token.blockquote,
+      .token.comment {
+        color: #969896;
+      }
+      .token.cdata {
+        color: #183691;
+      }
+      .token.doctype,
+      .token.macro.property,
+      .token.punctuation,
+      .token.variable {
+        color: #333;
+      }
+      .token.builtin,
+      .token.important,
+      .token.keyword,
+      .token.operator,
+      .token.rule {
+        color: #a71d5d;
+      }
+      .token.attr-value,
+      .token.regex,
+      .token.string,
+      .token.url {
+        color: #183691;
+      }
+      .token.atrule,
+      .token.boolean,
+      .token.code,
+      .token.command,
+      .token.constant,
+      .token.entity,
+      .token.number,
+      .token.property,
+      .token.symbol {
+        color: #0086b3;
+      }
+      .token.prolog,
+      .token.selector,
+      .token.tag {
+        color: #63a35c;
+      }
+      .token.attr-name,
+      .token.class,
+      .token.class-name,
+      .token.function,
+      .token.id,
+      .token.namespace,
+      .token.pseudo-class,
+      .token.pseudo-element,
+      .token.url-reference .token.variable {
+        color: #795da3;
+      }
+      .token.entity {
+        cursor: help;
+      }
+      .token.title,
+      .token.title .token.punctuation {
+        font-weight: 700;
+        color: #1d3e81;
+      }
+      .token.list {
+        color: #ed6a43;
+      }
+      .token.inserted {
+        background-color: #eaffea;
+        color: #55a532;
+      }
+      .token.deleted {
+        background-color: #ffecec;
+        color: #bd2c00;
+      }
+      .token.bold {
+        font-weight: 700;
+      }
+      .token.italic {
+        font-style: italic;
+      }
+      .language-json .token.property {
+        color: #183691;
+      }
+      .language-markup .token.tag .token.punctuation {
+        color: #333;
+      }
+      .language-css .token.function,
+      code.language-css {
+        color: #0086b3;
+      }
+      .language-yaml .token.atrule {
+        color: #63a35c;
+      }
+      code.language-yaml {
+        color: #183691;
+      }
+      .language-ruby .token.function {
+        color: #333;
+      }
+      .language-markdown .token.url {
+        color: #795da3;
+      }
+      .language-makefile .token.symbol {
+        color: #795da3;
+      }
+      .language-makefile .token.variable {
+        color: #183691;
+      }
+      .language-makefile .token.builtin {
+        color: #0086b3;
+      }
+      .language-bash .token.keyword {
+        color: #0086b3;
+      }
+      pre[data-line] {
+        position: relative;
+        padding: 1em 0 1em 3em;
+      }
+      pre[data-line] .line-highlight-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: transparent;
+        display: block;
+        width: 100%;
+      }
+      pre[data-line] .line-highlight {
+        position: absolute;
+        left: 0;
+        right: 0;
+        padding: inherit 0;
+        margin-top: 1em;
+        background: hsla(24, 20%, 50%, 0.08);
+        background: linear-gradient(
+          to right,
+          hsla(24, 20%, 50%, 0.1) 70%,
+          hsla(24, 20%, 50%, 0)
+        );
+        pointer-events: none;
+        line-height: inherit;
+        white-space: pre;
+      }
+      pre[data-line] .line-highlight:before,
+      pre[data-line] .line-highlight[data-end]:after {
+        content: attr(data-start);
+        position: absolute;
+        top: 0.4em;
+        left: 0.6em;
+        min-width: 1em;
+        padding: 0 0.5em;
+        background-color: hsla(24, 20%, 50%, 0.4);
+        color: #f4f1ef;
+        font: bold 65%/1.5 sans-serif;
+        text-align: center;
+        vertical-align: 0.3em;
+        border-radius: 999px;
+        text-shadow: none;
+        box-shadow: 0 1px #fff;
+      }
+      pre[data-line] .line-highlight[data-end]:after {
+        content: attr(data-end);
+        top: auto;
+        bottom: 0.4em;
+      }
+      html body {
+        font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans,
+          sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        color: #333;
+        background-color: #fff;
+        overflow: initial;
+        box-sizing: border-box;
+        word-wrap: break-word;
+      }
+      html body > :first-child {
+        margin-top: 0;
+      }
+      html body h1,
+      html body h2,
+      html body h3,
+      html body h4,
+      html body h5,
+      html body h6 {
+        line-height: 1.2;
+        margin-top: 1em;
+        margin-bottom: 16px;
+        color: #000;
+      }
+      html body h1 {
+        font-size: 2.25em;
+        font-weight: 300;
+        padding-bottom: 0.3em;
+      }
+      html body h2 {
+        font-size: 1.75em;
+        font-weight: 400;
+        padding-bottom: 0.3em;
+      }
+      html body h3 {
+        font-size: 1.5em;
+        font-weight: 500;
+      }
+      html body h4 {
+        font-size: 1.25em;
+        font-weight: 600;
+      }
+      html body h5 {
+        font-size: 1.1em;
+        font-weight: 600;
+      }
+      html body h6 {
+        font-size: 1em;
+        font-weight: 600;
+      }
+      html body h1,
+      html body h2,
+      html body h3,
+      html body h4,
+      html body h5 {
+        font-weight: 600;
+      }
+      html body h5 {
+        font-size: 1em;
+      }
+      html body h6 {
+        color: #5c5c5c;
+      }
+      html body strong {
+        color: #000;
+      }
+      html body del {
+        color: #5c5c5c;
+      }
+      html body a:not([href]) {
+        color: inherit;
+        text-decoration: none;
+      }
+      html body a {
+        color: #08c;
+        text-decoration: none;
+      }
+      html body a:hover {
+        color: #00a3f5;
+        text-decoration: none;
+      }
+      html body img {
+        max-width: 100%;
+      }
+      html body > p {
+        margin-top: 0;
+        margin-bottom: 16px;
+        word-wrap: break-word;
+      }
+      html body > ol,
+      html body > ul {
+        margin-bottom: 16px;
+      }
+      html body ol,
+      html body ul {
+        padding-left: 2em;
+      }
+      html body ol.no-list,
+      html body ul.no-list {
+        padding: 0;
+        list-style-type: none;
+      }
+      html body ol ol,
+      html body ol ul,
+      html body ul ol,
+      html body ul ul {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      html body li {
+        margin-bottom: 0;
+      }
+      html body li.task-list-item {
+        list-style: none;
+      }
+      html body li > p {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      html body .task-list-item-checkbox {
+        margin: 0 0.2em 0.25em -1.8em;
+        vertical-align: middle;
+      }
+      html body .task-list-item-checkbox:hover {
+        cursor: pointer;
+      }
+      html body blockquote {
+        margin: 16px 0;
+        font-size: inherit;
+        padding: 0 15px;
+        color: #5c5c5c;
+        background-color: #f0f0f0;
+        border-left: 4px solid #d6d6d6;
+      }
+      html body blockquote > :first-child {
+        margin-top: 0;
+      }
+      html body blockquote > :last-child {
+        margin-bottom: 0;
+      }
+      html body hr {
+        height: 4px;
+        margin: 32px 0;
+        background-color: #d6d6d6;
+        border: 0 none;
+      }
+      html body table {
+        margin: 10px 0 15px 0;
+        border-collapse: collapse;
+        border-spacing: 0;
+        display: block;
+        width: 100%;
+        overflow: auto;
+        word-break: normal;
+        word-break: keep-all;
+      }
+      html body table th {
+        font-weight: 700;
+        color: #000;
+      }
+      html body table td,
+      html body table th {
+        border: 1px solid #d6d6d6;
+        padding: 6px 13px;
+      }
+      html body dl {
+        padding: 0;
+      }
+      html body dl dt {
+        padding: 0;
+        margin-top: 16px;
+        font-size: 1em;
+        font-style: italic;
+        font-weight: 700;
+      }
+      html body dl dd {
+        padding: 0 16px;
+        margin-bottom: 16px;
+      }
+      html body code {
+        font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+        font-size: 0.85em;
+        color: #000;
+        background-color: #f0f0f0;
+        border-radius: 3px;
+        padding: 0.2em 0;
+      }
+      html body code::after,
+      html body code::before {
+        letter-spacing: -0.2em;
+        content: "\00a0";
+      }
+      html body pre > code {
+        padding: 0;
+        margin: 0;
+        word-break: normal;
+        white-space: pre;
+        background: 0 0;
+        border: 0;
+      }
+      html body .highlight {
+        margin-bottom: 16px;
+      }
+      html body .highlight pre,
+      html body pre {
+        padding: 1em;
+        overflow: auto;
+        line-height: 1.45;
+        border: #d6d6d6;
+        border-radius: 3px;
+      }
+      html body .highlight pre {
+        margin-bottom: 0;
+        word-break: normal;
+      }
+      html body pre code,
+      html body pre tt {
+        display: inline;
+        max-width: initial;
+        padding: 0;
+        margin: 0;
+        overflow: initial;
+        line-height: inherit;
+        word-wrap: normal;
+        background-color: transparent;
+        border: 0;
+      }
+      html body pre code:after,
+      html body pre code:before,
+      html body pre tt:after,
+      html body pre tt:before {
+        content: normal;
+      }
+      html body blockquote,
+      html body dl,
+      html body ol,
+      html body p,
+      html body pre,
+      html body ul {
+        margin-top: 0;
+        margin-bottom: 16px;
+      }
+      html body kbd {
+        color: #000;
+        border: 1px solid #d6d6d6;
+        border-bottom: 2px solid #c7c7c7;
+        padding: 2px 4px;
+        background-color: #f0f0f0;
+        border-radius: 3px;
+      }
+      @media print {
+        html body {
+          background-color: #fff;
+        }
+        html body h1,
+        html body h2,
+        html body h3,
+        html body h4,
+        html body h5,
+        html body h6 {
+          color: #000;
+          page-break-after: avoid;
+        }
+        html body blockquote {
+          color: #5c5c5c;
+        }
+        html body pre {
+          page-break-inside: avoid;
+        }
+        html body table {
+          display: table;
+        }
+        html body img {
+          display: block;
+          max-width: 100%;
+          max-height: 100%;
+        }
+        html body code,
+        html body pre {
+          word-wrap: break-word;
+          white-space: pre;
+        }
+      }
+      .markdown-preview {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+      }
+      .markdown-preview ul {
+        list-style: disc;
+      }
+      .markdown-preview ul ul {
+        list-style: circle;
+      }
+      .markdown-preview ul ul ul {
+        list-style: square;
+      }
+      .markdown-preview ol {
+        list-style: decimal;
+      }
+      .markdown-preview ol ol,
+      .markdown-preview ul ol {
+        list-style-type: lower-roman;
+      }
+      .markdown-preview ol ol ol,
+      .markdown-preview ol ul ol,
+      .markdown-preview ul ol ol,
+      .markdown-preview ul ul ol {
+        list-style-type: lower-alpha;
+      }
+      .markdown-preview .newpage,
+      .markdown-preview .pagebreak {
+        page-break-before: always;
+      }
+      .markdown-preview pre.line-numbers {
+        position: relative;
+        padding-left: 3.8em;
+        counter-reset: linenumber;
+      }
+      .markdown-preview pre.line-numbers > code {
+        position: relative;
+      }
+      .markdown-preview pre.line-numbers .line-numbers-rows {
+        position: absolute;
+        pointer-events: none;
+        top: 1em;
+        font-size: 100%;
+        left: 0;
+        width: 3em;
+        letter-spacing: -1px;
+        border-right: 1px solid #999;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      .markdown-preview pre.line-numbers .line-numbers-rows > span {
+        pointer-events: none;
+        display: block;
+        counter-increment: linenumber;
+      }
+      .markdown-preview pre.line-numbers .line-numbers-rows > span:before {
+        content: counter(linenumber);
+        color: #999;
+        display: block;
+        padding-right: 0.8em;
+        text-align: right;
+      }
+      .markdown-preview .mathjax-exps .MathJax_Display {
+        text-align: center !important;
+      }
+      .markdown-preview:not([data-for="preview"])
+        .code-chunk
+        .code-chunk-btn-group {
+        display: none;
+      }
+      .markdown-preview:not([data-for="preview"]) .code-chunk .status {
+        display: none;
+      }
+      .markdown-preview:not([data-for="preview"]) .code-chunk .output-div {
+        margin-bottom: 16px;
+      }
+      .markdown-preview .md-toc {
+        padding: 0;
+      }
+      .markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link {
+        display: inline;
+        padding: 0.25rem 0;
+      }
+      .markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,
+      .markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p {
+        display: inline;
+      }
+      .markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link {
+        font-weight: 800;
+      }
+      .scrollbar-style::-webkit-scrollbar {
+        width: 8px;
+      }
+      .scrollbar-style::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background-color: transparent;
+      }
+      .scrollbar-style::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background-color: rgba(150, 150, 150, 0.66);
+        border: 4px solid rgba(150, 150, 150, 0.66);
+        background-clip: content-box;
+      }
+      html body[for="html-export"]:not([data-presentation-mode]) {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        overflow: auto;
+      }
+      html
+        body[for="html-export"]:not([data-presentation-mode])
+        .markdown-preview {
+        position: relative;
+        top: 0;
+        min-height: 100vh;
+      }
+      @media screen and (min-width: 914px) {
+        html
+          body[for="html-export"]:not([data-presentation-mode])
+          .markdown-preview {
+          padding: 1em calc(50% - 757px + 2em);
+        }
+      }
+      @media screen and (max-width: 914px) {
+        html
+          body[for="html-export"]:not([data-presentation-mode])
+          .markdown-preview {
+          padding: 2em;
+        }
+      }
+      @media screen and (max-width: 450px) {
+        html
+          body[for="html-export"]:not([data-presentation-mode])
+          .markdown-preview {
+          font-size: 14px !important;
+          padding: 1em;
+        }
+      }
+      @media print {
+        html
+          body[for="html-export"]:not([data-presentation-mode])
+          #sidebar-toc-btn {
+          display: none;
+        }
+      }
+      html
+        body[for="html-export"]:not([data-presentation-mode])
+        #sidebar-toc-btn {
+        position: fixed;
+        bottom: 8px;
+        left: 8px;
+        font-size: 28px;
+        cursor: pointer;
+        color: inherit;
+        z-index: 99;
+        width: 32px;
+        text-align: center;
+        opacity: 0.4;
+      }
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        #sidebar-toc-btn {
+        opacity: 1;
+      }
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        .md-sidebar-toc {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 100%;
+        padding: 32px 0 48px 0;
+        font-size: 14px;
+        box-shadow: 0 0 4px rgba(150, 150, 150, 0.33);
+        box-sizing: border-box;
+        overflow: auto;
+        background-color: inherit;
+      }
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        .md-sidebar-toc::-webkit-scrollbar {
+        width: 8px;
+      }
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        .md-sidebar-toc::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background-color: transparent;
+      }
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        .md-sidebar-toc::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background-color: rgba(150, 150, 150, 0.66);
+        border: 4px solid rgba(150, 150, 150, 0.66);
+        background-clip: content-box;
+      }
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        .md-sidebar-toc
+        a {
+        text-decoration: none;
+      }
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        .md-sidebar-toc
+        .md-toc {
+        padding: 0 16px;
+      }
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        .md-sidebar-toc
+        .md-toc
+        .md-toc-link-wrapper
+        .md-toc-link {
+        display: inline;
+        padding: 0.25rem 0;
+      }
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        .md-sidebar-toc
+        .md-toc
+        .md-toc-link-wrapper
+        .md-toc-link
+        div,
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        .md-sidebar-toc
+        .md-toc
+        .md-toc-link-wrapper
+        .md-toc-link
+        p {
+        display: inline;
+      }
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        .md-sidebar-toc
+        .md-toc
+        .md-toc-link-wrapper.highlighted
+        .md-toc-link {
+        font-weight: 800;
+      }
+      html
+        body[for="html-export"]:not(
+          [data-presentation-mode]
+        )[html-show-sidebar-toc]
+        .markdown-preview {
+        left: 300px;
+        width: calc(100% - 300px);
+        padding: 2em calc(50% - 457px - 300px / 2);
+        margin: 0;
+        box-sizing: border-box;
+      }
+      @media screen and (max-width: 1274px) {
+        html
+          body[for="html-export"]:not(
+            [data-presentation-mode]
+          )[html-show-sidebar-toc]
+          .markdown-preview {
+          padding: 2em;
+        }
+      }
+      @media screen and (max-width: 450px) {
+        html
+          body[for="html-export"]:not(
+            [data-presentation-mode]
+          )[html-show-sidebar-toc]
+          .markdown-preview {
+          width: 100%;
+        }
+      }
+      html
+        body[for="html-export"]:not([data-presentation-mode]):not(
+          [html-show-sidebar-toc]
+        )
+        .markdown-preview {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      html
+        body[for="html-export"]:not([data-presentation-mode]):not(
+          [html-show-sidebar-toc]
+        )
+        .md-sidebar-toc {
+        display: none;
+      }
+      /* Please visit the URL below for more information: */
+      /*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+    </style>
+    <!-- The content below will be included at the end of the <head> element. -->
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function () {
+        // your code here
+      });
+    </script>
+  </head>
+  <body for="html-export">
+    <div class="crossnote markdown-preview">
+      <h1 id="prime-surgical">Prime Surgical</h1>
+      <h2 id="knowledge--training">Knowledge &amp; Training</h2>
+      <h3 id="zimmer-biomet-portfolio">Zimmer Biomet Portfolio</h3>
+      <h3 id="table-of-contents">Table of Contents</h3>
+      <ol>
+        <li>Resources</li>
+        <li>CV Foundational Review</li>
+        <li>
+          Portfolio Overview
+          <ol>
+            <li>
+              Sternal Plating
+              <ol>
+                <li>Sternalock Blu</li>
+                <li>Sternalock XP</li>
+                <li>Sternalock 360</li>
+                <li>Sternalock EZ</li>
+              </ol>
+            </li>
+            <li>Single-Use Items</li>
+          </ol>
+        </li>
+      </ol>
+      <h3 id="resources">Resources</h3>
+      <p>
+        <code>path to icloud zb root directory</code><br />
+        <code>airtable zb base</code><br />
+        <code>loop</code><br />
+        <code>key zimmer contacts</code><br />
+        <code>zb billing process &amp; contacts</code>
+      </p>
+      <h2 id="cv">CV</h2>
+      <p>
+        A large part of the Zimmer portfolio comes from the broader category of
+        <code>sternal closure</code>, which is the process of closing the
+        sternum after a sternotomy. A sternotomy is a surgical procedure that
+        involves cutting through the sternum (breastbone) to access the thoracic
+        cavity. This is a common procedure for heart surgery, and is the most
+        commonly done with a CABG (coronary artery bypass grafting).
+      </p>
+      <p>
+        Traditionally, cardiac surgeons used stainless steel sternal wires to
+        close the sternum. More recently, new technologies have been released to
+        optimize the patients recovery, and reduce the risk of complications.
+        These new technologies include <code>sternal plating systems</code>,
+        <code>sternal cable systems</code>, and <code>double wire</code>.
+      </p>
+      <p>
+        Additionaly, the growing portfolio includes a number of single-use
+        items, such as <code>atrial and ventricular pacing wires</code>,
+        <code>temporary pacing cables</code>, and a <code>punch</code>.
+      </p>
+      <h3 id="sternal-closure">Sternal Closure</h3>
+      <h5 id="key-concept-cardiothoracic-surgical-access">
+        Key Concept: <strong>Cardiothoracic Surgical Access</strong>
+      </h5>
+      <p>
+        Cardiothoracic surgical access refers to the methods and approaches used
+        by surgeons to gain access to the heart and surrounding structures
+        within the thoracic cavity. The choice of surgical access is determined
+        by various factors, including the type of cardiac surgery being
+        performed, the patient's anatomy, and the surgeon's expertise. Below are
+        some of the common approaches used in cardiothoracic surgery:
+      </p>
+      <p>
+        <img src="../../static/img/cardiac_approaches.png" alt="approaches" />
+      </p>
+      <p><strong>1. Sternotomy</strong></p>
+      <ul>
+        <li>
+          <p>
+            <strong>Process:</strong> A full sternotomy involves making a
+            vertical incision along the midline of the chest, followed by the
+            division of the sternum, to provide wide access to the heart and
+            lungs.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Usage:</strong> This approach is commonly used for various
+            cardiac surgeries, such as coronary artery bypass grafting (CABG),
+            valve replacements, and heart transplants.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Advantages:</strong> It provides extensive visibility and
+            access to the thoracic structures.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Disadvantages:</strong> It involves a larger incision and
+            can be associated with more pain and a longer recovery period
+            post-surgery.
+          </p>
+          <p>
+            <img
+              src="../../static/img/full_sternotomy.png"
+              alt="Full Sternotomy"
+            /><br />
+            <img
+              src="../../static/img/full_sternotomy_2.png"
+              alt="Sternotomy"
+            />
+          </p>
+        </li>
+      </ul>
+      <p>
+        In a standard procedure, following the sternotomy, the sternum is
+        divided using a sternal saw. The sternum is then retracted using a
+        sternal retractor. The surgeon dissects down to the pericardium, which
+        is a fibrous sac that surrounds the heart. The pericardium is opened and
+        retracted using a "stay" suture (<em>seen in image below</em>) for
+        visaibility and access to the heart. The surgeon then performs the
+        surgical procedure on the heart. Following the procedure, the
+        pericardium is closed, the sternum is approximated, and the sternum is
+        closed using sternal closure wires, cables, or plates.
+      </p>
+      <p>
+        <img src="../../static/img/full_sternotomy_3.png" alt="Sternotomy" />
+      </p>
+      <p><strong>2. Partial or Mini-Sternotomy:</strong></p>
+      <ul>
+        <li>
+          <p>
+            <strong>Process:</strong> A partial or mini-sternotomy involves
+            making a smaller incision and dividing only a portion of the
+            sternum, either the upper or lower part.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Usage:</strong> It is often utilized for minimally invasive
+            valve surgery or CABG.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Advantages:</strong> It is associated with less pain,
+            reduced blood loss, and a shorter recovery period compared to a full
+            sternotomy.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Disadvantages:</strong> It may provide limited visibility
+            and access compared to a full sternotomy.
+          </p>
+        </li>
+        <li>
+          <p><strong>Types:</strong></p>
+          <p>
+            <img
+              src="../../static/img/mini_sternotomy.png"
+              alt="Mini Sternotomy"
+            />
+          </p>
+        </li>
+      </ul>
+      <p><strong>3. Mini-Thoracotomy</strong></p>
+      <ul>
+        <li>
+          <p>
+            <strong>Process:</strong> A mini-thoracotomy involves making a small
+            incision between the ribs, without dividing the sternum, to access
+            the heart.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Usage:</strong> This approach is commonly used for minimally
+            invasive valve surgeries, particularly for the aortic and mitral
+            valves.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Advantages:</strong> It is associated with less pain and a
+            quicker recovery compared to a sternotomy. It also avoids the need
+            to divide the sternum.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Disadvantages:</strong> It provides limited access and
+            visibility, and may not be suitable for more complex cardiac
+            procedures.
+          </p>
+          <p>
+            <img
+              src="../../static/img/mini_approaches.png"
+              alt="Mini Thoracotomy"
+            />
+          </p>
+        </li>
+      </ul>
+      <p><strong>Considerations for Surgical Access</strong></p>
+      <ul>
+        <li>
+          <strong>Patient Factors:</strong> The patient’s anatomy, medical
+          history, and the presence of any co-morbidities are considered when
+          choosing the surgical approach.
+        </li>
+        <li>
+          <strong>Surgical Factors:</strong> The type of surgery, the need for
+          visibility and access, and the surgeon’s expertise influence the
+          choice of access.
+        </li>
+        <li>
+          <strong>Recovery:</strong> Minimally invasive approaches tend to be
+          associated with less pain and a quicker recovery, but are not suitable
+          for all types of surgeries.
+        </li>
+      </ul>
+      <p>
+        In conclusion, the choice of cardiothoracic surgical access is
+        multifaceted and tailored to each individual patient and surgical
+        procedure. The surgeon will weigh the benefits and drawbacks of each
+        approach to determine the most suitable method of access.
+      </p>
+      <h5 id="key-concept-anatomy-of-the-sternum">
+        Key Concept: <strong>Anatomy of the Sternum</strong>
+      </h5>
+      <p>
+        The sternum, also known as the breastbone, is a flat bone that forms the
+        anterior portion of the chest wall. It is a T-shaped bone that is
+        divided into three parts: the manubrium, the body, and the xiphoid
+        process.
+      </p>
+      <p>
+        <img
+          src="../../static/img/sternum_anterior_overview.png"
+          alt="stenrum"
+        />
+      </p>
+      <p><strong>Manubrium</strong></p>
+      <p>
+        The manubrium is the broad, superior segment of the sternum. It
+        articulates with the clavicles at the sternoclavicular joints and with
+        the costal cartilages of the first pair of ribs. The manubrium also has
+        a number of important landmarks, including the jugular notch, which is
+        located at the superior margin of the manubrium and lies between the two
+        clavicles.
+      </p>
+      <p>
+        <img
+          src="../../static/img/sternum_side_profile.png"
+          alt="sternum manubrium anatomy"
+        />
+      </p>
+      <p><strong>Body</strong></p>
+      <p>
+        The body of the sternum is the middle portion of the bone. It
+        articulates with the costal cartilages of the second to seventh pairs of
+        ribs. The body of the sternum is also the site of attachment for a
+        number of muscles, including the pectoralis major, pectoralis minor, and
+        sternocleidomastoid muscles.
+      </p>
+      <p>
+        <img
+          src="../../static/img/sternum_with_ribs.png"
+          alt="sternum with ribs"
+        />
+      </p>
+      <p><strong>Xiphoid process</strong></p>
+      <p>
+        The xiphoid process is the narrow, inferior segment of the sternum. It
+        is a cartilaginous structure in children and young adults, but it
+        ossifies (hardens) with age. The xiphoid process is the site of
+        attachment for the diaphragm and the rectus abdominis muscles.
+      </p>
+      <p>[Image of Xiphoid process anatomy]</p>
+      <p><strong>Functions of the sternum</strong></p>
+      <p>The sternum has a number of important functions, including:</p>
+      <ul>
+        <li>
+          <strong>Protection:</strong> The sternum helps to protect the vital
+          organs of the chest, including the heart, lungs, and major blood
+          vessels.
+        </li>
+        <li>
+          <strong>Support:</strong> The sternum provides support for the rib
+          cage and helps to maintain the shape of the chest.
+        </li>
+        <li>
+          <strong>Muscle attachment:</strong> The sternum is the site of
+          attachment for a number of important muscles, including the pectoralis
+          major, pectoralis minor, sternocleidomastoid, diaphragm, and rectus
+          abdominis muscles.
+        </li>
+      </ul>
+      <p><strong>Common injuries of the sternum</strong></p>
+      <ul>
+        <li>
+          <strong>Fracture:</strong> A fracture of the sternum can occur due to
+          a traumatic injury, such as a car accident or a fall from a height.
+        </li>
+      </ul>
+      <h4 id="key-concept-sternal-closure-in-cardiac-surgery">
+        Key Concept: <strong>Sternal Closure in Cardiac Surgery</strong>
+      </h4>
+      <p>
+        Sternal closure is a critical phase in cardiac surgery, following
+        intrathoracic procedures, where the sternum, which has been surgically
+        divided or entered, is securely closed to ensure stability, promote
+        healing, and prevent complications. This process is vital for protecting
+        underlying structures like the heart and lungs and providing structural
+        integrity during the recovery period.
+      </p>
+      <p>
+        <img src="../../static/img/wire_v_plates.png" alt="Sternal Closure" />
+      </p>
+      <p><strong>Procedure of Sternal Closure</strong></p>
+      <ol>
+        <li>
+          <p><strong>Alignment (Approximation):</strong></p>
+          <ul>
+            <li>
+              <strong>Positioning:</strong> The two halves of the sternum are
+              aligned accurately to ensure proper healing and to minimize the
+              risk of non-union or malunion.
+            </li>
+            <li>
+              <strong>Stability:</strong> Ensuring that the sternum is stable
+              and that there is no excessive movement at the closure site.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Fixation:</strong></p>
+          <ul>
+            <li>
+              <strong>Wire Placement:</strong> Traditional method. Stainless
+              steel wires are commonly used to approximate and stabilize the
+              sternum. The wires are passed around the sternum and tightened to
+              secure the two halves together.
+            </li>
+            <li>
+              <strong>Sternal Plating:</strong> More recently, additional
+              fixation devices like sternal plates may be used, especially in
+              patients with associated risk factors.
+            </li>
+          </ul>
+        </li>
+      </ol>
+      <h5 id="benefits-of-sternal-plates-in-cardiac-surgery">
+        Benefits of Sternal Plates in Cardiac Surgery
+      </h5>
+      <p>
+        Sternal plates are utilized in cardiac surgery as a method for sternal
+        closure and stabilization, particularly in situations where traditional
+        wire closure may not be optimal. These plates, often made from titanium,
+        are designed to provide rigid fixation of the sternum, facilitating
+        healing and providing stability. Here are some of the notable benefits
+        of using sternal plates:
+      </p>
+      <h5 id="1-enhanced-stability">1. Enhanced Stability</h5>
+      <ul>
+        <li>
+          <strong>Rigid Fixation:</strong> Sternal plates provide a more rigid
+          fixation compared to wires, reducing sternal micromotion.
+        </li>
+        <li>
+          <strong>Support:</strong> They offer robust structural support,
+          especially in patients with compromised bone quality.
+        </li>
+      </ul>
+      <h5 id="2-improved-healing">2. Improved Healing</h5>
+      <ul>
+        <li>
+          <strong>Alignment:</strong> Plates ensure accurate alignment of the
+          sternal edges, promoting optimal healing.
+        </li>
+        <li>
+          <strong>Reduced Stress:</strong> By providing stable fixation, sternal
+          plates may reduce stress on the healing bone, minimizing the risk of
+          non-union or malunion.
+        </li>
+      </ul>
+      <h5 id="3-reduced-post-operative-pain">3. Reduced Post-Operative Pain</h5>
+      <ul>
+        <li>
+          <strong>Stability Minimizes Pain:</strong> The stability offered by
+          sternal plates can potentially minimize post-operative pain caused by
+          sternal instability.
+        </li>
+        <li>
+          <strong>Improved Respiratory Mechanics:</strong> Reduced pain may
+          facilitate better respiratory mechanics, enabling patients to breathe
+          deeply and cough more effectively after surgery, which is crucial for
+          preventing post-operative pneumonia.
+        </li>
+      </ul>
+      <h5 id="4-beneficial-in-high-risk-populations">
+        4. Beneficial in High-Risk Populations
+      </h5>
+      <ul>
+        <li>
+          <strong>Osteoporotic Patients:</strong> In patients with osteoporosis
+          or poor bone quality, sternal plates can provide enhanced stability
+          and support.
+        </li>
+        <li>
+          <strong>Obese Patients:</strong> In obese patients, where increased
+          mechanical stress is placed on the sternum, plates can offer
+          additional stability.
+        </li>
+        <li>
+          <strong>Re-Operations:</strong> In cases of re-operation, where the
+          sternum may be compromised, sternal plates can provide secure closure.
+        </li>
+      </ul>
+      <h5 id="5-potential-for-reduced-complications">
+        5. Potential for Reduced Complications
+      </h5>
+      <ul>
+        <li>
+          <strong>Decreased Risk of Sternal Dehiscence:</strong> The rigid
+          fixation provided by sternal plates may reduce the risk of sternal
+          dehiscence.
+        </li>
+        <li>
+          <strong>Lower Infection Rates:</strong> Some studies suggest that the
+          use of sternal plates may be associated with lower rates of deep
+          sternal wound infections, particularly in high-risk populations.
+        </li>
+      </ul>
+      <h5 id="6-facilitation-of-early-mobilization">
+        6. Facilitation of Early Mobilization
+      </h5>
+      <ul>
+        <li>
+          <strong>Confidence in Movement:</strong> The stability provided by
+          sternal plates may give patients confidence in moving and mobilizing
+          early post-operation.
+        </li>
+        <li>
+          <strong>Physical Therapy:</strong> It may facilitate physical therapy
+          and rehabilitation by providing a stable sternum, allowing patients to
+          engage more effectively in exercises and activities.
+        </li>
+      </ul>
+      <h5 id="conclusion">Conclusion</h5>
+      <p>
+        While sternal plates offer numerous benefits, especially in specific
+        patient populations, it's crucial to weigh these against the potential
+        risks and costs associated with their use. The decision to utilize
+        sternal plates should be based on a comprehensive assessment of the
+        patient’s risk factors, the surgical context, and the potential
+        advantages they offer in each specific case.
+      </p>
+      <p>
+        <img src="../../static/img/wire_cerclage.png" alt="Wire Fixation" />
+      </p>
+      <h2 id="vs">VS</h2>
+      <p><img src="../../static/img/slb_v_xp.png" alt="Sternal Plate" /></p>
+      <p>
+        Dr. Marc Gerdisch, cariothoracic surgeon, and industry consultant giving
+        a presentation on the merits of sternal plating.
+      </p>
+      <iframe
+        width="700"
+        height="450"
+        src="https://www.youtube.com/embed/nNE9mnJwq0k"
+        frameborder="0"
+        allowfullscreen=""
+      ></iframe>
+      <hr />
+      <h3 id="clinical-evidence-review">Clinical Evidence Review</h3>
+      <h5 id="highlighting-the-sternalock-blu-study--the-restore-study">
+        Highlighting the Sternalock Blu Study &amp; the Restore Study:
+      </h5>
+      <iframe
+        src="https://drive.google.com/file/d/10XfX_wBaqIW4KGB7PkiVHGwT4ze9ctFJ/preview"
+        width="600"
+        height="800"
+        allow="autoplay"
+      ></iframe>
+      <iframe
+        src="https://drive.google.com/file/d/10TmZ1qkoyax3idLkBmY8u6qQu58DOJ9H/preview"
+        width="600"
+        height="800"
+        allow="autoplay"
+      ></iframe>
+      <h5 id="comparing-the-studies">Comparing the studies:</h5>
+      <iframe
+        src="https://drive.google.com/file/d/10TngR2xS_vlizMvcapOa3OqT6uOS1nlA/preview"
+        width="600"
+        height="800"
+        allow="autoplay"
+      ></iframe>
+      <hr />
+      <h3 id="portfolio-overview">Portfolio Overview</h3>
+      <h3 id="sternal-plating">Sternal Plating</h3>
+      <p>
+        <code>sternal plating</code> is the largest single category of the
+        portfolio. Roughly <code>$</code> 1.45 Million of the <code>$</code> 2.2
+        Million in Zimmer Biomet expectedd revenue will come from that product
+        category.
+      </p>
+      <p>
+        We are very well penetrated in our market. That said there are still
+        multiple vectors to outpace our expected level of growth. This will be
+        subject to change, but expect a 12-15% growth target.
+      </p>
+      <p><strong>Growth Vectors:</strong></p>
+      <ol>
+        <li>
+          New Business
+          <ol>
+            <li>competitive conversions</li>
+            <li>method conversions (wires -&gt; plates, etc.)</li>
+          </ol>
+        </li>
+        <li>
+          Technology Progression
+          <ol>
+            <li>Steralock Blu -&gt; Sternalock EZ</li>
+            <li>Sternalock XP (new tech conversions)</li>
+          </ol>
+        </li>
+        <li>
+          Increased Utilization Rates
+          <ol>
+            <li>Core Relationship Management (Surgeons, OR Staff, etc.)</li>
+            <li>
+              Increased Sales Bandwidth
+              <ol>
+                <li>Scale with new business (new team members)</li>
+                <li>
+                  specialized roles (project management, implant logistics,
+                  etc.)
+                </li>
+                <li>
+                  developed processes (airTable Bill Only Protocol, Inventory
+                  &amp; Tray Management, etc.)
+                </li>
+                <li>effective operations (resource management)</li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>
+          Cross-Selling
+          <ol>
+            <li>
+              Sternal Closure - <code>sternal wires</code>
+              <code>double wire</code> <code>sternal cable</code>
+            </li>
+            <li>
+              Temporary Pacing - <code>tempoarary pacing cables</code>
+              <code
+                >atrial pacing wires (monopolar)``atrial pacing wires
+                (bipolar)</code
+              >
+              <code>ventricular pacing wires (bipolar)</code>
+              <code>ventricular pacing wires (monopolar)</code>
+            </li>
+            <li>Proximal Coronary Anastamosis - <code>punch</code></li>
+            <li>The rest of the Prime Surgical CV Portfolio</li>
+          </ol>
+        </li>
+      </ol>
+      <p>
+        If we are maximally effective, Prime Surgical will serve as a proxy for
+        quality products in the cardiovascular space. We'll be known for
+        delivering outstanding service, and in time becoming a trusted parter of
+        the surgeons and teams that we work with. As we integrate further into
+        the programs we serve, we'll be able to provide more value when the
+        right opportunities present themselves. We're then able to sell that
+        added value upstream to strategic device manufacturer parters to further
+        drive our growth. I believe we can acheive this flywheel, and deliver
+        value to all stakeholders.
+      </p>
+      <p>
+        This next section will lay out the various products that make up our
+        cardiac portfolio with Zimmer Biomet. We will then transtion to our
+        framework on the sales process. High-level categories include (1)
+        <strong>Targeting</strong>, (2)
+        <strong>Sales Pipeline Execution</strong>, (3)
+        <strong>Account Management</strong>, and (4)
+        <strong>Processes &amp; Operations</strong>.
+      </p>
+      <p>
+        We have 4 different sternal plating systems to position and sell,
+        depending on the preference profile(s) of the stakeholders across each
+        opportunity. Each of our systems have individual attributes that dictate
+        which is the optimal system to position with a potential customer.
+        Although it is fine to influence the process, the correct product needs
+        to be presented to the correct surgeon if clearly deduced.
+      </p>
+      <p>
+        Our systems fall into two primary categories: (1)
+        <strong>Anterior Rigid Fixation</strong> and (2)
+        <strong>Rigid Fixation with Integrated Cerclage</strong>.
+      </p>
+      <h4 id="sternalock-blu">Sternalock Blu</h4>
+      <p><strong>Anterior Rigid Fixation</strong></p>
+      <p>
+        Sternalock Blu is the original sternal plating product of Zimmer Biomer.
+        This is the system that was utilizied in both the Restore Study and the
+        Sternalock Blu Study. This tray also serves as the base tray and system
+        for Sternalock 360 (covered below).
+      </p>
+      <p>
+        Our other systems have attributres likely to speak to surgeon
+        preferences. Sternalock Blu is the most basic system, and is the most
+        likely to be utilized by a surgeon who is most concerned on pricing.
+      </p>
+      <h5 id="technicial-prodcut-specifics">Technicial Prodcut Specifics</h5>
+      <iframe
+        src="https://drive.google.com/file/d/10a-C3crsP1WwplgvGx1SqJqNqNzVI8KF/preview"
+        width="600"
+        height="500"
+        allow="autoplay"
+      ></iframe>
+      <iframe
+        src="https://drive.google.com/file/d/10GsO84_3nwC3HsTLCzO4XLpvkWFFena6/preview"
+        width="600"
+        height="500"
+        allow="autoplay"
+      ></iframe>
+      <h5 id="video-demo">Video Demo</h5>
+      <iframe
+        width="700"
+        height="450"
+        src="https://www.youtube.com/embed/DrVLPeDLZn0"
+        frameborder="0"
+        allowfullscreen=""
+      ></iframe>
+      <h5 id="primary-brochures">Primary Brochures</h5>
+      <iframe
+        src="https://drive.google.com/file/d/10oWHtoo9b8eONFqmmtwJ0dgs4FZ9vCAS/preview"
+        width="600"
+        height="800"
+        allow="autoplay"
+      ></iframe>
+      <h5 id="the-procedure">The Procedure</h5>
+      <p>
+        <img src="../../static/img/slb_procedure.png" alt="procedure" /><br />
+        <img src="../../static/img/measure_screw.png" alt="procedure" /><br />
+        <img src="../../static/img/reduce_sternum.png" alt="procedure" /><br />
+        <img src="../../static/img/select.png" alt="procedure" />
+      </p>
+      <iframe
+        width="750"
+        height="450"
+        src="https://www.youtube.com/embed/woWLR2T3vuc"
+        frameborder="0"
+        allowfullscreen=""
+      ></iframe>
+      <h5 id="charge-sheet">Charge Sheet</h5>
+      <iframe
+        src="https://drive.google.com/file/d/10kr6YqFoUGNfU-t3rJ5TF9s_RMzKXW4l/preview"
+        width="600"
+        height="800"
+        allow="autoplay"
+      ></iframe>
+      <h4 id="sternalock-ez-previously-jace">
+        Sternalock EZ (previously Jace)
+      </h4>
+      <p><strong>Anterior Rigid Fixation</strong></p>
+      <p>
+        Sternalock EZ focused on making the procedure fast and streamlined. It
+        utilized a carteridge with a preloaded plate and associated screws. This
+        system is the most likely to be utilized by a surgeon who is most
+        concerned on speed and efficiency.
+      </p>
+      <h5 id="technicial-prodcut-specifics-1">Technicial Prodcut Specifics</h5>
+      <iframe
+        src="https://drive.google.com/file/d/10q4F63LMz5uwpWyDdgBWpn-i38Wl0eRf/preview"
+        width="600"
+        height="500"
+        allow="autoplay"
+      ></iframe>
+      <h5 id="video-demo-1">Video Demo</h5>
+      <iframe
+        width="700"
+        height="450"
+        src="https://www.youtube.com/embed/Svi1YhPjl40"
+        frameborder="0"
+        allowfullscreen=""
+      ></iframe>
+      <h5 id="primary-brochures-1">Primary Brochures</h5>
+      <iframe
+        src="https://drive.google.com/file/d/10H40eglo4PwLbmElrJw7txwsi7K9ruxq/preview"
+        width="600"
+        height="500"
+        allow="autoplay"
+      ></iframe>
+      <h5 id="charge-sheet-1">Charge Sheet</h5>
+      <iframe
+        src="https://drive.google.com/file/d/1RUmg_wwqSONQjH-JnY05Z0_ANa2zL7bs/preview"
+        width="600"
+        height="800"
+        allow="autoplay"
+      ></iframe>
+      <hr />
+      <h3 id="south-florida">South Florida</h3>
+      <h4 id="performance--overview">Performance &amp; Overview</h4>
+      <h4 id="prefence-profiles">Prefence Profiles</h4>
+      <iframe
+        class="airtable-embed"
+        src="https://airtable.com/embed/appOR68ajLjMOe0Wq/shrPu5WOHVDWBemCf?backgroundColor=green&viewControls=on""
+        frameborder="0"
+        onmousewheel=""
+        width="100%"
+        height="700"
+        style="background: transparent; border: 1px solid #ccc"
+      ></iframe>
+      <script type='module' src='https://tableau.zimmerbiomet.com/javascripts/api/tableau.embedding.3.latest.min.js'></script><tableau-viz id='tableau-viz' src='https://tableau.zimmerbiomet.com/t/USCommercialSales/views/CMFTDailySalesTerritoryLeadership2023/SalesPerformance' width='1600' height='1050' toolbar='bottom' ></tableau-viz>
+      <script type='module' src='https://tableau.zimmerbiomet.com/javascripts/api/tableau.embedding.3.latest.min.js'></script><tableau-viz id='tableau-viz' src='https://tableau.zimmerbiomet.com/t/USCommercialSales/views/CMFTDailySalesTerritoryLeadership2023/DailyPOItemSearch' width='1600' height='1050' toolbar='bottom' ></tableau-viz>
+    </div>
+  </body>
+</html>

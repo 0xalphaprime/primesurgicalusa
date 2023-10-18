@@ -18,7 +18,6 @@
 
 ### Resources
 
-`path to icloud zb root directory`
 `airtable zb base`
 `loop`
 `key zimmer contacts`
