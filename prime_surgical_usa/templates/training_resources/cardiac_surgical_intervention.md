@@ -149,8 +149,6 @@ The body of the sternum is the middle portion of the bone. It articulates with t
 
 The xiphoid process is the narrow, inferior segment of the sternum. It is a cartilaginous structure in children and young adults, but it ossifies (hardens) with age. The xiphoid process is the site of attachment for the diaphragm and the rectus abdominis muscles.
 
-[Image of Xiphoid process anatomy]
-
 **Functions of the sternum**
 
 The sternum has a number of important functions, including:
@@ -159,9 +157,9 @@ The sternum has a number of important functions, including:
 * **Support:** The sternum provides support for the rib cage and helps to maintain the shape of the chest.
 * **Muscle attachment:** The sternum is the site of attachment for a number of important muscles, including the pectoralis major, pectoralis minor, sternocleidomastoid, diaphragm, and rectus abdominis muscles.
 
-**Common injuries of the sternum**
+**Sternal Healing**
 
-* **Fracture:** A fracture of the sternum can occur due to a traumatic injury, such as a car accident or a fall from a height.
+![sternal healing](../../static/img/sternal_healing.png)
 
 
 ___
@@ -561,6 +559,30 @@ Temporary pacing is used in cardiac surgery to maintain a normal heart rate duri
 **Ventricular Pacing Wires** - are typically placed in the myocardium of the right ventricle. They are used to pace the ventricle, which is the lower chamber of the heart. Ventricular pacing wires are used to maintain a normal heart rate during and after surgery. Ventricular pacing is more commonly used than atrial pacing, as it is more effective at maintaining a normal heart rate.
 
 ![ventricular pacing](../../static/img/ventricular_pacing.png)
+
+##### Monopolar vs. Bipolar Pacing:
+
+In order to complete an electrical circuit, pacing wires require two electrodes. There are two types of pacing wires, monopolar and bipolar, which differ in the number of electrodes they have.
+
+A monopolar wire implies the use of two individual wires for each chamber of the heart (atrium and ventricle). At least one wire is placed in the heart (or epicardially on the heart). The second electrode can also be placed in the heart or on the patients skin, in order to complete the circuit. The electrical current travels from the wire in the heart, through the heart muscle, to the second electrode, which is either on the skin or in the heart.
+
+The picture below shows four monopolar wires placed in the heart. The wires on the left are placed on the right atrium, and the wires on the right are placed in the right ventricle. The two wires in the right atrium create the necessary bipolar circuit for atrial pacing. The two wires in the right ventricle create the necessary bipolar circuit for ventricular pacing.
+
+![monopolar pacing](../../static/img/monopolar_pacing.png)
+
+A bipolar wire implies the use of a single wire with two electrodes. The wire is placed in the heart (or epicardially on the heart), and the two electrodes are placed in the heart. The electrical current travels from the wire in the heart, through the heart muscle, to the two electrodes, which are also in the heart.
+
+![bipolar pacing](../../static/img/bipolar.png)
+Below we show an image of the above wire placed in the right ventricle, with both electrodes in the myocardium.
+![ventricular pacing](../../static/img/ventricular_pacing.png)
+
+##### Temporary Pacing Cables:
+
+Temporary pacing cables are used to connect the pacing wires to the temporary pacemaker. Typically, teams will use the white cable for ventircular pacing, and the blue cable for atrial pacing. 
+
+![temporary pacing cables](../../static/img/myo_lead.png)
+![temporary pacing cables](../../static/img/myo_lead_2.png)
+![temporary pacing cables](../../static/img/pacing.png)
 ____
 #### Key Concept: Hemostasis Products used in Cardiac Surgery
 
@@ -682,27 +704,7 @@ While sternal plates offer numerous benefits, especially in specific patient pop
 ## VS
 ![Sternal Plate](../../static/img/slb_v_xp.png)
 
-
-<iframe
-        src="https://drive.google.com/file/d/10XfX_wBaqIW4KGB7PkiVHGwT4ze9ctFJ/preview"
-        width="600"
-        height="800"
-        allow="autoplay"
-      ></iframe>
-
-**Challenges and Risks**
-
-- **Infection:** Sternal wound infections are a significant concern and can have serious implications.
-- **Non-Union:** Inadequate closure or patient factors may lead to non-union of the sternum, requiring further intervention.
-- **Chronic Pain:** Some patients may experience chronic pain at the sternal closure site.
-
-**Considerations**
-
-- **Patient Factors:** Considering factors like diabetes, obesity, and osteoporosis which may affect healing and stability.
-- **Technique:** Ensuring that the closure technique is appropriate for the patient and the procedure.
-- **Post-Operative Care:** Providing adequate pain management, monitoring for signs of infection, and ensuring stability of the sternum during recovery.
-
-In essence, sternal closure is a fundamental component of cardiac surgery, providing both a protective barrier for intrathoracic structures and structural stability during the post-operative period. The technique demands execution and thorough post-operative care to minimize complications and optimize patient recovery and outcomes.
+<iframe width="700" height="450" src="https://www.youtube.com/embed/nNE9mnJwq0k" frameborder="0" allowfullscreen></iframe>
 
 
 ___

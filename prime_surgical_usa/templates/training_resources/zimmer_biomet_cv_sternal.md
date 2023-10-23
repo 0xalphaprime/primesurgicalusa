@@ -5,23 +5,26 @@
 
 ### Table of Contents
 
+
+`<action> - need to add links throughout the document to assist with navigation. start with TOC => individual sections, and include "back to top" links at the bottom of each section.`
 1. Resources
 2. CV Foundational Review
-3. Portfolio Overview
+3. Clinical Review
+4. Portfolio Overview
    1. Sternal Plating
       1. Sternalock Blu
-      2. Sternalock XP
+      2. Sternalock EZ
       3. Sternalock 360
-      4. Sternalock EZ
+      4. Sternalock XP
    2. Single-Use Items
   
 
 ### Resources
 
-`airtable zb base`
-`loop`
-`key zimmer contacts`
-`zb billing process & contacts`
+`airtable zb base` - we'll be inlcuding our most popular bases for training and reference.
+`loop` - repository for ZB focused material. We will be incorporating select documents, videos, and other resources into this document, but loop will serve as a more comprehensive collection.
+`key zimmer contacts` - internal document with key contacts at Zimmer Biomet.
+`zb billing process & contacts` - internal document with billing process and contacts for each respective ZB implant account. 
 
 ## CV
 
@@ -107,8 +110,6 @@ The body of the sternum is the middle portion of the bone. It articulates with t
 
 The xiphoid process is the narrow, inferior segment of the sternum. It is a cartilaginous structure in children and young adults, but it ossifies (hardens) with age. The xiphoid process is the site of attachment for the diaphragm and the rectus abdominis muscles.
 
-[Image of Xiphoid process anatomy]
-
 **Functions of the sternum**
 
 The sternum has a number of important functions, including:
@@ -117,15 +118,15 @@ The sternum has a number of important functions, including:
 * **Support:** The sternum provides support for the rib cage and helps to maintain the shape of the chest.
 * **Muscle attachment:** The sternum is the site of attachment for a number of important muscles, including the pectoralis major, pectoralis minor, sternocleidomastoid, diaphragm, and rectus abdominis muscles.
 
-**Common injuries of the sternum**
-
-* **Fracture:** A fracture of the sternum can occur due to a traumatic injury, such as a car accident or a fall from a height.
+![sternal healing](../../static/img/sternal_healing.png)
 
 #### Key Concept: **Sternal Closure in Cardiac Surgery**
 
 Sternal closure is a critical phase in cardiac surgery, following intrathoracic procedures, where the sternum, which has been surgically divided or entered, is securely closed to ensure stability, promote healing, and prevent complications. This process is vital for protecting underlying structures like the heart and lungs and providing structural integrity during the recovery period.
 
 ![Sternal Closure](../../static/img/wire_v_plates.png)
+
+
 
 **Procedure of Sternal Closure**
 
@@ -187,14 +188,14 @@ ____
 
 <iframe
         src="https://drive.google.com/file/d/10XfX_wBaqIW4KGB7PkiVHGwT4ze9ctFJ/preview"
-        width="600"
+        width="700"
         height="800"
         allow="autoplay"
       ></iframe>
 
 <iframe
         src="https://drive.google.com/file/d/10TmZ1qkoyax3idLkBmY8u6qQu58DOJ9H/preview"
-        width="600"
+        width="700"
         height="800"
         allow="autoplay"
       ></iframe>
@@ -202,7 +203,7 @@ ____
 ##### Comparing the studies:
 <iframe
         src="https://drive.google.com/file/d/10TngR2xS_vlizMvcapOa3OqT6uOS1nlA/preview"
-        width="600"
+        width="700"
         height="800"
         allow="autoplay"
       ></iframe>
@@ -212,38 +213,46 @@ ____
 
 ### Portfolio Overview 
 
-### Sternal Plating
+### Sternal Closure
 
-`sternal plating` is the largest single category of the portfolio. Roughly `$` 1.45 Million  of the `$` 2.2 Million in Zimmer Biomet expectedd revenue will come from that product category. 
+`sternal plating` is the largest category of the portfolio. Roughly 1.45M of the  2.2M in Zimmer Biomet revenue (2023 expected) will come from the sternal plating product category. 
 
-We are very well penetrated in our market. That said there are still multiple vectors to outpace our expected level of growth. This will be subject to change, but expect a 12-15% growth target. 
+We are very well penetrated in our market. That said there are still multiple vectors to outpace the national growth rate. This will be subject to change, but expect a 12-15% growth target for the CV bucket of our Zimmer Biomet portfolio. 
+
+**Annual Sternal Closure Revenue:**
+
+<iframe
+        src="https://docs.google.com/spreadsheets/d/1acwZHZ0JmoPFnmanLvslJ36a6xSQyUo73u8yvZhh3Hg/edit?usp=sharing#gid=427071414"
+        width="900"
+        height="800"
+        allow="autoplay"
+      ></iframe>
 
 **Growth Vectors:**
 
 1. New Business 
-   1. competitive conversions
-   2. method conversions (wires -> plates, etc.)
+   1. competitive conversions (for example, converting JFK Medical Center from Synthes -> EZ)
+   2. method conversions (wires -> plates, etc. - for example, a new sureon we have moving down to CCF Indian River who has used our plates)
 2. Technology Progression 
    1. Steralock Blu -> Sternalock EZ
-   2. Sternalock XP (new tech conversions)
+   2. Sternalock XP (anterior fixation -> rigid fixation with integrated cerclage)
 3. Increased Utilization Rates
    1. Core Relationship Management (Surgeons, OR Staff, etc.)
    2. Increased Sales Bandwidth 
       1. Scale with new business (new team members)
-      2. specialized roles (project management, implant logistics, etc.)
-      3. developed processes (airTable Bill Only Protocol, Inventory & Tray Management, etc.)
-      4. effective operations (resource management)
+      2. specialized roles (seperate mission driven roles from function/process driven roles)
+      3. effective operations (resource management, process improvement, etc.)
 4. Cross-Selling
    1. Sternal Closure - `sternal wires` `double wire` `sternal cable` 
    2. Temporary Pacing - `tempoarary pacing cables` `atrial pacing wires (monopolar)``atrial pacing wires (bipolar)` `ventricular pacing wires (bipolar)` `ventricular pacing wires (monopolar)` 
    3. Proximal Coronary Anastamosis - `punch`
    4. The rest of the Prime Surgical CV Portfolio
 
-If we are maximally effective, Prime Surgical will serve as a proxy for quality products in the cardiovascular space. We'll be known for delivering outstanding service, and in time becoming a trusted parter of the surgeons and teams that we work with. As we integrate further into the programs we serve, we'll be able to provide more value when the right opportunities present themselves. We're then able to sell that added value upstream to strategic device manufacturer parters to further drive our growth. I believe we can acheive this flywheel, and deliver value to all stakeholders. 
+If we are maximally effective, Prime Surgical will serve as a proxy for quality products in the cardiovascular space. We will deliver outstanding service, and grow to become a trusted parter of the surgeons and teams that we work with. As we integrate further into the programs we serve we'll be able to (1) capitalize on new opportunities while (2) continuing to provide more value to our customers. We're then able to project these sucesses and relationships upstream as we see fit. 
 
-This next section will lay out the various products that make up our cardiac portfolio with Zimmer Biomet. We will then transtion to our framework on the sales process. High-level categories include (1) **Targeting**, (2) **Sales Pipeline Execution**, (3) **Account Management**, and (4) **Processes & Operations**.
+I believe we can acheive this flywheel, and continue to deliver more value to all stakeholders. 
 
-We have 4 different sternal plating systems to position and sell, depending on the preference profile(s) of the stakeholders across each opportunity. Each of our systems have individual attributes that dictate which is the optimal system to position with a potential customer. Although it is fine to influence the process, the correct product needs to be presented to the correct surgeon if clearly deduced. 
+This next section will lay out the various products that make up our sternal closure portfolio with Zimmer Biomet. We have 4 different sternal plating systems to position and sell. The preference profiles of the individual surgeons we work with will be intentionally scrutinized. Each of our systems have individual attributes that often dictate which system is optiomal in a given situation. Our obective is to understand the surgeon's preferences, and to position the system that is most likely to be utilized.
 
 Our systems fall into two primary categories: (1) **Anterior Rigid Fixation** and (2) **Rigid Fixation with Integrated Cerclage**.
 
@@ -253,7 +262,9 @@ Our systems fall into two primary categories: (1) **Anterior Rigid Fixation** an
 
 Sternalock Blu is the original sternal plating product of Zimmer Biomer. This is the system that was utilizied in both the Restore Study and the Sternalock Blu Study. This tray also serves as the base tray and system for Sternalock 360 (covered below).
 
-Our other systems have attributres likely to speak to surgeon preferences. Sternalock Blu is the most basic system, and is the most likely to be utilized by a surgeon who is most concerned on pricing. 
+Sternalock Blu is the most basic system, and is the most likely to be utilized by a surgeon who is most concerned on pricing. 
+
+The surgeon could also be a long-term sternal plate user, who developed their technique with Sternalock Blu years ago, and is comfortable with the system. 
 
 
 ##### Technicial Prodcut Specifics
@@ -262,14 +273,14 @@ Our other systems have attributres likely to speak to surgeon preferences. Stern
 
 <iframe
         src="https://drive.google.com/file/d/10a-C3crsP1WwplgvGx1SqJqNqNzVI8KF/preview"
-        width="600"
+        width="700"
         height="500"
         allow="autoplay"
       ></iframe>
 
 <iframe
         src="https://drive.google.com/file/d/10GsO84_3nwC3HsTLCzO4XLpvkWFFena6/preview"
-        width="600"
+        width="700"
         height="500"
         allow="autoplay"
       ></iframe>
@@ -284,7 +295,7 @@ Our other systems have attributres likely to speak to surgeon preferences. Stern
 
 <iframe
         src="https://drive.google.com/file/d/10oWHtoo9b8eONFqmmtwJ0dgs4FZ9vCAS/preview"
-        width="600"
+        width="700"
         height="800"
         allow="autoplay"
       ></iframe>
@@ -307,17 +318,30 @@ Our other systems have attributres likely to speak to surgeon preferences. Stern
         allow="autoplay"
       ></iframe>
 
+**Emergent Re-Entry**
+![re-entry](../../static/img/slb_entry.png)
+
+___
+
 #### Sternalock EZ (previously Jace)
 
 **Anterior Rigid Fixation**
 
 Sternalock EZ focused on making the procedure fast and streamlined. It utilized a carteridge with a preloaded plate and associated screws. This system is the most likely to be utilized by a surgeon who is most concerned on speed and efficiency.
 
+![ez](../../static/img/ez.png)
+![ez](../../static/img/ez_1.png)
+![ez](../../static/img/ez_2.png)
+![ez](../../static/img/ez_3.png)
+![ez](../../static/img/ez_4.png)
+![ez](../../static/img/ez_5.png)
+![ez](../../static/img/ez_6.png)
+
 ##### Technicial Prodcut Specifics
 
 <iframe
         src="https://drive.google.com/file/d/10q4F63LMz5uwpWyDdgBWpn-i38Wl0eRf/preview"
-        width="600"
+        width="800"
         height="500"
         allow="autoplay"
       ></iframe>
@@ -330,8 +354,8 @@ Sternalock EZ focused on making the procedure fast and streamlined. It utilized 
 
 <iframe
         src="https://drive.google.com/file/d/10H40eglo4PwLbmElrJw7txwsi7K9ruxq/preview"
-        width="600"
-        height="500"
+        width="800"
+        height="600"
         allow="autoplay"
       ></iframe>
 
@@ -344,7 +368,215 @@ Sternalock EZ focused on making the procedure fast and streamlined. It utilized 
         allow="autoplay"
       ></iframe>
 
+
+**Emergent Re-Entry**
+
+<iframe width="700" height="450" src="https://app.looplxp.com/external-view/b37c26ba-f0a7-4a03-b1eb-69bfc115cdc2" frameborder="0" allowfullscreen></iframe>
+
+
 ____
+
+### Sternalock 360
+
+**Rigid Fixation with Integrated Cerclage**
+
+Sternalock 360 builds off of the Sternalock Blu system, utilizing the same tray and screws. The plates come in a kit of 3 plates, which is packaged sterile. 
+
+The system integrates a 360 degree cerclage, by engineering a titanium band into the plate. The system is optimized for patients with poor bone quality. The band diffuses the force across a larger surgace area, reducing the risk of sternal complications (like a wire tearing through the sturnum in recovery).
+
+There are two additional instruments to be kept in the tray. These instruments are for the manubrium plate, specifically to punch through the manubrium, and to guide the needle from the posterior side of the sternum through to the anterior side. 
+
+##### Video Animation Demo:
+
+<iframe width="700" height="450" src="https://www.youtube.com/embed/4Qm2CmSLQNc" frameborder="0" allowfullscreen></iframe>
+
+<iframe
+        src="https://drive.google.com/file/d/18uuWd1IfA5FRGpFfxX4cF7Zmg1j2Vb-8/preview"
+        width="700"
+        height="800"
+        allow="autoplay"
+      ></iframe>
+
+
+![360](../../static/img/360_ov.png)
+
+![360](../../static/img/360_components.png)
+![360](../../static/img/360_components_2.png)
+
+![360](../../static/img/360_three_plates.png)
+
+![360](../../static/img/360_process.png)
+![360](../../static/img/360_process_2.png)
+
+
+![360](../../static/img/360_packaging.png)
+
+**Charge Sheet - Bill Only**
+<iframe
+        src="https://drive.google.com/file/d/191kiMh6NhjsSq14Bp8KZGefpumopcGTW/preview"
+        width="700"
+        height="800"
+        allow="autoplay"
+      ></iframe>
+
+**Emergent Re-Entry**
+
+<iframe
+        src="https://drive.google.com/file/d/191zRSazqTgFM3dqC2uM9e77Tcx4BR8tm/preview"
+        width="700"
+        height="800"
+        allow="autoplay"
+      ></iframe>
+
+___
+### Sternalock XP
+
+**Rigid Fixation with Integrated Cerclage**
+
+Sternalock XP (formerly known as Thorecon) is our second system that integrates a cerclage into the plate. This system integrates an amorphous cable, which is designed to pass through the sternum and wrap around the posterior side of the sternum as a normal cable would. When the cable is tensioned the amorphous cable spreads out, widening the covered surface area and further diffusing the force. The cable passes through an open lumen in the plate, and is tensioned with a ratcheting mechanism. Once the sternum is approximated the set screw is tightened, locking the cable in place. The remaining cable is then cut off, and the plate is secured with the remaining screws.
+
+XP comes with a variety of plates, which are selected a la carte. The plates are packaged sterile, and come in a kit with the required screws and instrumentation. The surgeon selects their desired configuration, and the relevent products are opened. 
+
+![xp plates](../../static/img/xp_selection.png)
+![xp plates](../../static/img/xp_contents.png)
+![xp plates](../../static/img/xp_driver.png)![xp plates](../../static/img/xp_tensioner.png)
+**Screw Cartridge:**
+![xp plates](../../static/img/xp_screws.png)
+
+##### Video Animation Demo:
+
+<iframe width="700" height="450" src="https://app.looplxp.com/external-view/ff1d58af-3ece-4e52-9c45-7508e6fdd4ea" frameborder="0" allowfullscreen></iframe>
+
+##### Surgical Technique Brochure:
+<iframe
+        src="https://drive.google.com/file/d/18vRcyS2NxFLfLPl_sqiO7h0nDcqV09nV/preview"
+        width="800"
+        height="600"
+        allow="autoplay"
+      ></iframe>
+
+##### Example XP Plate Selection Team Walk Through (Delray Medical Center):
+
+Here is an example of documentation we put together for the team at Delray Medical Center. This is a walk through of the plate selection process, and the associated charge sheet. We have color coordinated stickers on the implants we keep on the shelves, and walk the team through what they need to have ready for each respective surgoen. 
+
+<iframe
+        src="https://drive.google.com/file/d/19GHLCuaI8HVxTIilhwCZFdjOzLIP7YXB/preview"
+        width="800"
+        height="600"
+        allow="autoplay"
+      ></iframe>
+
+
+##### Live XP Case Video:
+
+
+<iframe
+        src="https://drive.google.com/file/d/12XtPujHYc7h_sq32M9VKY88rC4JpWyMH/preview"
+        width="800"
+        height="600"
+        allow="autoplay"
+      ></iframe>
+
+**Emergent Re-Entry**
+
+
+<iframe
+        src="https://drive.google.com/file/d/1_DecjrDxax3N0k0Bv6kp8cJzrFGAV6Rk/preview"
+        width="800"
+        height="600"
+        allow="autoplay"
+      ></iframe>
+
+____
+
+### ZB Single-Use Portfolio
+
+`sternal wire (single wire)`
+`sternal wire (double wire)`
+`sternal cable`
+`temporary pacing cables (MYO/Lead)`
+`atrial pacing wires (monopolar)`
+`atrial pacing wires (bipolar)`
+`ventricular pacing wires (bipolar)`
+`ventricular pacing wires (monopolar)`
+`punch`
+
+___
+
+#### Sternal Wires (Single Wire)
+
+Our sternal wires come in both pediatric (Sizes 1-2) and adult (Sizes 5-7) sizes. The wires are packaged sterile, and come in a variety of packaging options. The wires are made of stainless steel, and are designed to be passed around the sternum and twisted together to approximate the sternum. Our wires come with most needle types, which are included below.
+
+![wire](../../static/img/wires.png)
+![wire](../../static/img/needles.png)
+
+**Options:**
+
+![wire](../../static/img/sw.png)
+![wire](../../static/img/sw_2.png)
+
+<iframe
+        src="https://drive.google.com/file/d/1_DecjrDxax3N0k0Bv6kp8cJzrFGAV6Rk/preview"
+        width="800"
+        height="600"
+        allow="autoplay"
+      ></iframe>
+
+___
+
+#### Sternal Wires (Double Wire)
+
+Double wire is by far our best performing single-use item in the ZB protfolio, with business at Delray Medical Center, JFK Medical Center, Palm Beach Gardens Medical Center, Jupiter Medical Center, Lawnwood Regional Medical Center, & CCF Indian River Medical Center.
+
+<iframe width="700" height="450" src="https://www.youtube.com/embed/JmgSuVkebkU" frameborder="0" allowfullscreen></iframe>
+
+![dw](../../static/img/dw.png)
+![dw](../../static/img/dw_1.png)
+![dw](../../static/img/dw_2.png)
+![dw](../../static/img/dw_3.png)
+![dw](../../static/img/dw_4.png)
+![dw](../../static/img/dw_5.png)
+![dw](../../static/img/dw_6.png)
+
+<iframe
+        src="https://drive.google.com/file/d/1_DecjrDxax3N0k0Bv6kp8cJzrFGAV6Rk/preview"
+        width="800"
+        height="600"
+        allow="autoplay"
+      ></iframe>
+___
+
+#### Sternal Cable
+
+The sternal cable system uses stainless steel cables rather than wires for a stronger close. The cables are passed around the sternum, and are tensioned with a ratcheting mechanism. The cables are then locked in place with a crimp. The remaining cable is then cut off. 
+
+This system can also be used in conjunction with our anterior sternal plating systems.
+
+<iframe width="700" height="450" src="https://www.youtube.com/embed/gNEWRWWH22A" frameborder="0" allowfullscreen></iframe>
+
+![cable](../../static/img/cable.png)
+![cable](../../static/img/cable_2.png)
+![cable](../../static/img/cable_3.png)
+![cable](../../static/img/cable_4.png)
+![cable](../../static/img/cable_5.png)
+![cable](../../static/img/cable_6.png)
+![cable](../../static/img/cable_7.png)
+![cable](../../static/img/cable_8.png)
+![cable](../../static/img/cable_9.png)
+![cable](../../static/img/cable_10.png)
+![cable](../../static/img/cable_11.png)
+
+<iframe
+        src="https://drive.google.com/file/d/109IiOKn2qDJqKOUK6xN3P09uFKVvIcM6/preview"
+        width="800"
+        height="800"
+        allow="autoplay"
+      ></iframe>
+
+___
+
+___
+
 
 ### South Florida
 
