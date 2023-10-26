@@ -83,3 +83,7 @@ with open("requirements_pip.txt", "w") as f:
         else:
             f.write(line)
 ```
+
+
+
+- 102623 - messing with some of the formatting of the html to optimize for mobile. Need to review using base.html for the future. 
