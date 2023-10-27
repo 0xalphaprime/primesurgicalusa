@@ -20,3 +20,18 @@ def zb_cv_portfolio(request):
 
 def intro_videos(request):
     return render(request, 'training_resources/anatomy_videos.html')
+
+def zb_slb_portfolio(request):
+    return render(request, 'training_resources/zb_slb.html')
+
+def zb_ez_portfolio(request):
+    return render(request, 'training_resources/zb_ez.html')
+
+def zb_360_portfolio(request):
+    return render(request, 'training_resources/zb_360.html')
+
+def zb_xp_portfolio(request):
+    return render(request, 'training_resources/zb_xp.html')
+
+def zb_wire_cable_portfolio(request):
+    return render(request, 'training_resources/zb_wires_and_cables.html')

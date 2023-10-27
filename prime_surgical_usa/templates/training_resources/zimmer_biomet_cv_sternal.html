@@ -5,10 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      href="file:////Users/alphaprime/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.8.8/crossnote/dependencies/katex/katex.min.css"
-    />
+   
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -26,7 +23,7 @@
         overflow: initial;
         box-sizing: border-box;
         word-wrap: break-word;
-        padding: 3.5em;
+        padding: 0.5em;
       }
       html body > :first-child {
         margin-top: 0;
@@ -54,6 +51,7 @@
         font-weight: 400;
         padding-bottom: 0.3em;
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        margin-right: 5px;
       }
       html body h3 {
         font-size: 1.5em;
@@ -77,7 +75,7 @@
       }
       html body h1#prime-surgical {
         margin-top: 0;
-        padding-top: 0.25em; /* You can also remove padding if needed */
+        padding-top: 0.35em; /* You can also remove padding if needed */
       }
 
       nav.navbar {
@@ -298,7 +296,124 @@
         I believe we can acheive this flywheel, and continue to deliver more
         value to all stakeholders.
       </p>
+       <hr />
+      <p><a href="#table-of-contents">Back to Top</a></p>
       
+      <h3 id="sternal-closure">Sternal Closure - Portfolio Technical Specifics</h3>
+      <p>
+        This section will lay out the various products that make up our
+        sternal closure portfolio with Zimmer Biomet. We have 4 different
+        sternal plating systems to position and sell. The preference profiles of
+        the individual surgeons we work with will be intentionally scrutinized.
+        Each of our systems have individual attributes that often dictate which
+        system is optiomal in a given situation. Our obective is to understand
+        the surgeon's preferences, and to position the system that is most
+        likely to be utilized.
+      </p>
+      <p>
+        Our systems fall into two primary categories: (1)
+        <strong>Anterior Rigid Fixation</strong> and (2)
+        <strong>Rigid Fixation with Integrated Cerclage</strong>.
+      </p>
+
+      <p><strong>Products:</strong></p>
+      <code>sternalock blu</code> <br />
+      <code>sternalock ez</code> <br />
+      <code>sternalock 360</code> <br />
+      <code>sternalock XP</code> <br />
+      <code>sternal wire (single wire)</code> <br />
+      <code>sternal wire (double wire)</code> <br />
+
+     
+      <br />
+     <br />
+            <!-- First row of cards -->
+      <div class="row">
+          <!-- Sternalock Blu Card -->
+          <div class="col-md-3">
+              <div class="card">
+                  <img src="../../static/img/slb_card.png" class="card-img-top" alt="Sternalock Blu Image" height="300px">
+                  <div class="card-body">
+                      <h5 class="card-title">Sternalock Blu</h5>
+                      <p class="card-text">Anterior Rigid Fixation </p>
+                      <a href="{% url 'training_resources:zbslb' %}">Explore Product</a>
+                  </div>
+              </div>
+          </div>
+          <!-- Sternalock Ez Card -->
+          <div class="col-md-3">
+              <div class="card">
+                  <img src="../../static/img/ez_card_alt.png" class="card-img-top" alt="Sternalock Ez Image" height="300px">
+                  <div class="card-body">
+                      <h5 class="card-title">Sternalock Ez</h5>
+                      <p class="card-text">Anterior Rigid Fixation </p>
+                      <a href="{% url 'training_resources:zbez' %}">Explore Product</a>
+                  </div>
+              </div>
+          </div>
+          <!-- Sternalock 360 Card -->
+          <div class="col-md-3">
+              <div class="card">
+                  <img src="../../static/img/360_card.png" class="card-img-top" alt="Sternalock 360 Image" height="300px">
+                  <div class="card-body">
+                      <h5 class="card-title">Sternalock 360</h5>
+                      <p class="card-text">Rigid Fixation Integrated Cerclage </p>
+              
+                      <a href="{% url 'training_resources:zb360' %}">Explore Product</a>
+                  </div>
+              </div>
+          </div>
+          <!-- Sternalock XP Card -->
+          <div class="col-md-3">
+              <div class="card">
+                  <img src="../../static/img/xp_card_alt.png" class="card-img-top" alt="Sternalock XP Image" height="300px">
+                  <div class="card-body">
+                      <h5 class="card-title">Sternalock XP</h5>
+                      <p class="card-text">Rigid Fixation Integrated Cerclage </p>
+                      <a href="{% url 'training_resources:zbxp' %}"">Explore Product</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- Second row of cards -->
+      <div class="row mt-4">
+          <!-- Sternal Wire (Single Wire) Card -->
+          <div class="col-md-4">
+              <div class="card">
+                  
+                  <div class="card-body">
+                      <h5 class="card-title">Sternal Wire (Single Wire)</h5>
+                  
+                      <a href="{% url 'training_resources:zbwires' %}">Explore Product</a>
+                  </div>
+              </div>
+          </div>
+          <!-- Sternal Wire (Double Wire) Card -->
+          <div class="col-md-4">
+              <div class="card">
+                  
+                  <div class="card-body">
+                      <h5 class="card-title">Sternal Wire (Double Wire)</h5>
+                      
+                      <a href="{% url 'training_resources:zbwires' %}">Explore Product</a>
+                  </div>
+              </div>
+          </div>
+          <!-- Another Product Card -->
+          <div class="col-md-4">
+              <div class="card">
+                  
+                  <div class="card-body">
+                      <h5 class="card-title">Sternal Cable</h5>
+                     
+                      <a href="{% url 'training_resources:zbwires' %}">Explore Product</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <br />
       <hr />
       <p><a href="#table-of-contents">Back to Top</a></p>
       <h3 id="foundational-review">Foundational Review</h3>
@@ -314,7 +429,7 @@
         some of the common approaches used in cardiothoracic surgery:
       </p>
       <p>
-        <img src="../../static/img/cardiac_approaches.png" alt="approaches" />
+        <img src="../../static/img/cardiac_approaches.png" alt="approaches" width="70%"/>
       </p>
       <p><strong>1. Sternotomy</strong></p>
       <ul>
@@ -342,8 +457,9 @@
         <img
           src="../../static/img/full_sternotomy.png"
           alt="Full Sternotomy"
+          width="70%"
         /><br />
-        <img src="../../static/img/full_sternotomy_2.png" alt="Sternotomy" />
+        <img src="../../static/img/full_sternotomy_2.png" alt="Sternotomy" width="70%"/>
       </p>
       <p>
         In a standard procedure, following the sternotomy, the sternum is
@@ -357,7 +473,7 @@
         closed using sternal closure wires, cables, or plates.
       </p>
       <p>
-        <img src="../../static/img/full_sternotomy_3.png" alt="Sternotomy" />
+        <img src="../../static/img/full_sternotomy_3.png" alt="Sternotomy" width="50%"/>
       </p>
       <p><strong>2. Partial or Mini-Sternotomy:</strong></p>
       <ul>
@@ -382,7 +498,7 @@
         <li><strong>Types:</strong></li>
       </ul>
       <p>
-        <img src="../../static/img/mini_sternotomy.png" alt="Mini Sternotomy" />
+        <img src="../../static/img/mini_sternotomy.png" alt="Mini Sternotomy" width="70%"/>
       </p>
       <p><strong>3. Mini-Thoracotomy</strong></p>
       <ul>
@@ -417,6 +533,7 @@
             <img
               src="../../static/img/mini_approaches.png"
               alt="Mini Thoracotomy"
+              width="70%"
             />
           </p>
         </li>
@@ -462,6 +579,7 @@
         <img
           src="../../static/img/sternum_anterior_overview.png"
           alt="stenrum"
+          width="70%"
         />
       </p>
       <p><strong>Manubrium</strong></p>
@@ -477,6 +595,7 @@
         <img
           src="../../static/img/sternum_side_profile.png"
           alt="sternum manubrium anatomy"
+          width="70%"
         />
       </p>
       <p><strong>Body</strong></p>
@@ -491,6 +610,7 @@
         <img
           src="../../static/img/sternum_with_ribs.png"
           alt="sternum with ribs"
+          width="70%"
         />
       </p>
       <p><strong>Xiphoid process</strong></p>
@@ -682,13 +802,13 @@
         <img src="../../static/img/wire_cerclage.png" alt="Wire Fixation" />
       </p>
       <h2 id="vs">VS</h2>
-      <p><img src="../../static/img/slb_v_xp.png" alt="Sternal Plate" /></p>
+      <p><img src="../../static/img/slb_v_xp.png" alt="Sternal Plate" width="70%"/></p>
       <p>
         Dr. Marc Gerdisch, cariothoracic surgeon, and industry consultant giving
         a presentation on the merits of sternal plating.
       </p>
       <iframe
-        width="700"
+        width="70%"
         height="450"
         src="https://www.youtube.com/embed/nNE9mnJwq0k"
         frameborder="0"
@@ -703,20 +823,20 @@
       </h5>
       <iframe
         src="https://drive.google.com/file/d/10XfX_wBaqIW4KGB7PkiVHGwT4ze9ctFJ/preview"
-        width="700"
+        width="85%"
         height="800"
         allow="autoplay"
       ></iframe>
       <iframe
         src="https://drive.google.com/file/d/10TmZ1qkoyax3idLkBmY8u6qQu58DOJ9H/preview"
-        width="700"
+        width="85%"
         height="800"
         allow="autoplay"
       ></iframe>
       <h5 id="comparing-the-studies">Comparing the studies:</h5>
       <iframe
         src="https://drive.google.com/file/d/10TngR2xS_vlizMvcapOa3OqT6uOS1nlA/preview"
-        width="700"
+        width="85%"
         height="800"
         allow="autoplay"
       ></iframe>
@@ -724,417 +844,8 @@
       <button id="return-to-table-of-contents-button" style="display: none;">Return to Table of Contents</button>
 
 
-      <hr />
-      <p><a href="#table-of-contents">Back to Top</a></p>
-      
-      <h3 id="sternal-closure">Sternal Closure - Portfolio Technical Specifics</h3>
-      <p>
-        This section will lay out the various products that make up our
-        sternal closure portfolio with Zimmer Biomet. We have 4 different
-        sternal plating systems to position and sell. The preference profiles of
-        the individual surgeons we work with will be intentionally scrutinized.
-        Each of our systems have individual attributes that often dictate which
-        system is optiomal in a given situation. Our obective is to understand
-        the surgeon's preferences, and to position the system that is most
-        likely to be utilized.
-      </p>
-      <p>
-        Our systems fall into two primary categories: (1)
-        <strong>Anterior Rigid Fixation</strong> and (2)
-        <strong>Rigid Fixation with Integrated Cerclage</strong>.
-      </p>
+     
 
-      <p><strong>Products:</strong></p>
-      <code>sternalock blu</code> <br />
-      <code>sternalock ez</code> <br />
-      <code>sternalock 360</code> <br />
-      <code>sternalock XP</code> <br />
-      <code>sternal wire (single wire)</code> <br />
-      <code>sternal wire (double wire)</code> <br />
-
-
-      <h4 id="slb">Sternalock Blu</h4>
-      <p><strong>Anterior Rigid Fixation</strong></p>
-      <p>
-        Sternalock Blu is the original sternal plating product of Zimmer Biomer.
-        This is the system that was utilizied in both the Restore Study and the
-        Sternalock Blu Study. This tray also serves as the base tray and system
-        for Sternalock 360 (covered below).
-      </p>
-      <p>
-        Sternalock Blu is the most basic system, and is the most likely to be
-        utilized by a surgeon who is most concerned on pricing.
-      </p>
-      <p>
-        The surgeon could also be a long-term sternal plate user, who developed
-        their technique with Sternalock Blu years ago, and is comfortable with
-        the system.
-      </p>
-      <h5 id="technicial-prodcut-specifics">Technicial Prodcut Specifics</h5>
-      <iframe
-        src="https://drive.google.com/file/d/10a-C3crsP1WwplgvGx1SqJqNqNzVI8KF/preview"
-        width="700"
-        height="500"
-        allow="autoplay"
-      ></iframe>
-      <iframe
-        src="https://drive.google.com/file/d/10GsO84_3nwC3HsTLCzO4XLpvkWFFena6/preview"
-        width="700"
-        height="500"
-        allow="autoplay"
-      ></iframe>
-      <h5 id="video-demo">Video Demo</h5>
-      <iframe
-        width="700"
-        height="450"
-        src="https://www.youtube.com/embed/DrVLPeDLZn0"
-        frameborder="0"
-        allowfullscreen=""
-      ></iframe>
-      <h5 id="primary-brochures">Primary Brochures</h5>
-      <iframe
-        src="https://drive.google.com/file/d/10oWHtoo9b8eONFqmmtwJ0dgs4FZ9vCAS/preview"
-        width="700"
-        height="800"
-        allow="autoplay"
-      ></iframe>
-      <h5 id="the-procedure">The Procedure</h5>
-      <p>
-        <img src="../../static/img/slb_procedure.png" alt="procedure" /><br />
-        <img src="../../static/img/measure_screw.png" alt="procedure" /><br />
-        <img src="../../static/img/reduce_sternum.png" alt="procedure" /><br />
-        <img src="../../static/img/select.png" alt="procedure" />
-      </p>
-      <iframe
-        width="750"
-        height="450"
-        src="https://www.youtube.com/embed/woWLR2T3vuc"
-        frameborder="0"
-        allowfullscreen=""
-      ></iframe>
-      <h5 id="charge-sheet">Charge Sheet</h5>
-      <iframe
-        src="https://drive.google.com/file/d/10kr6YqFoUGNfU-t3rJ5TF9s_RMzKXW4l/preview"
-        width="600"
-        height="800"
-        allow="autoplay"
-      ></iframe>
-      <p>
-        <strong>Emergent Re-Entry</strong><br />
-        <img src="../../static/img/slb_entry.png" alt="re-entry" />
-      </p>
-      
-
-      <hr />
-      <p><a href="#table-of-contents">Back to Top</a></p>
-      <h4 id="ez">
-        Sternalock EZ (previously Jace)
-      </h4>
-      <p><strong>Anterior Rigid Fixation</strong></p>
-      <p>
-        Sternalock EZ focused on making the procedure fast and streamlined. It
-        utilized a carteridge with a preloaded plate and associated screws. This
-        system is the most likely to be utilized by a surgeon who is most
-        concerned on speed and efficiency.
-      </p>
-      <p>
-        <img src="../../static/img/ez.png" alt="ez" /><br />
-        <img src="../../static/img/ez_1.png" alt="ez" /><br />
-        <img src="../../static/img/ez_2.png" alt="ez" /><br />
-        <img src="../../static/img/ez_3.png" alt="ez" /><br />
-        <img src="../../static/img/ez_4.png" alt="ez" /><br />
-        <img src="../../static/img/ez_5.png" alt="ez" /><br />
-        <img src="../../static/img/ez_6.png" alt="ez" />
-      </p>
-      <h5 id="technicial-prodcut-specifics-1">Technicial Prodcut Specifics</h5>
-      <iframe
-        src="https://drive.google.com/file/d/10q4F63LMz5uwpWyDdgBWpn-i38Wl0eRf/preview"
-        width="800"
-        height="500"
-        allow="autoplay"
-      ></iframe>
-      <h5 id="video-demo-1">Video Demo</h5>
-      <iframe
-        width="700"
-        height="450"
-        src="https://www.youtube.com/embed/Svi1YhPjl40"
-        frameborder="0"
-        allowfullscreen=""
-      ></iframe>
-      <h5 id="primary-brochures-1">Primary Brochures</h5>
-      <iframe
-        src="https://drive.google.com/file/d/10H40eglo4PwLbmElrJw7txwsi7K9ruxq/preview"
-        width="800"
-        height="600"
-        allow="autoplay"
-      ></iframe>
-      <h5 id="charge-sheet-1">Charge Sheet</h5>
-      <iframe
-        src="https://drive.google.com/file/d/1RUmg_wwqSONQjH-JnY05Z0_ANa2zL7bs/preview"
-        width="600"
-        height="800"
-        allow="autoplay"
-      ></iframe>
-      <p><strong>Emergent Re-Entry</strong></p>
-      <iframe
-        width="700"
-        height="450"
-        src="https://app.looplxp.com/external-view/b37c26ba-f0a7-4a03-b1eb-69bfc115cdc2"
-        frameborder="0"
-        allowfullscreen=""
-      ></iframe>
-      
-
-      <hr />
-      <p><a href="#table-of-contents">Back to Top</a></p>
-      <h3 id="360">Sternalock 360</h3>
-      <p><strong>Rigid Fixation with Integrated Cerclage</strong></p>
-      <p>
-        Sternalock 360 builds off of the Sternalock Blu system, utilizing the
-        same tray and screws. The plates come in a kit of 3 plates, which is
-        packaged sterile.
-      </p>
-      <p>
-        The system integrates a 360 degree cerclage, by engineering a titanium
-        band into the plate. The system is optimized for patients with poor bone
-        quality. The band diffuses the force across a larger surgace area,
-        reducing the risk of sternal complications (like a wire tearing through
-        the sturnum in recovery).
-      </p>
-      <p>
-        There are two additional instruments to be kept in the tray. These
-        instruments are for the manubrium plate, specifically to punch through
-        the manubrium, and to guide the needle from the posterior side of the
-        sternum through to the anterior side.
-      </p>
-      <h5 id="video-animation-demo">Video Animation Demo:</h5>
-      <iframe
-        width="700"
-        height="450"
-        src="https://www.youtube.com/embed/4Qm2CmSLQNc"
-        frameborder="0"
-        allowfullscreen=""
-      ></iframe>
-      <br />
-      <iframe
-        src="https://drive.google.com/file/d/18uuWd1IfA5FRGpFfxX4cF7Zmg1j2Vb-8/preview"
-        width="800"
-        height="800"
-        allow="autoplay"
-      ></iframe>
-      <p><img src="../../static/img/360_ov.png" alt="360" width="50%" /></p>
-      <p>
-        <img src="../../static/img/360_components.png" alt="360" width="50%" /><br />
-        <img src="../../static/img/360_components_2.png" alt="360" width="50%"/>
-      </p>
-      <p><img src="../../static/img/360_three_plates.png" alt="360" width="50%" /></p>
-      <p>
-        <img src="../../static/img/360_process.png" alt="360" width="50%"/><br />
-        <img src="../../static/img/360_process_2.png" alt="360" width="50%"/>
-      </p>
-      <p><img src="../../static/img/360_packaging.png" alt="360" width="50%"/></p>
-      <p><strong>Charge Sheet - Bill Only</strong></p>
-      <iframe
-        src="https://drive.google.com/file/d/191kiMh6NhjsSq14Bp8KZGefpumopcGTW/preview"
-        width="700"
-        height="800"
-        allow="autoplay"
-      ></iframe>
-      <p><strong>Emergent Re-Entry</strong></p>
-      <iframe
-        src="https://drive.google.com/file/d/191zRSazqTgFM3dqC2uM9e77Tcx4BR8tm/preview"
-        width="700"
-        height="800"
-        allow="autoplay"
-      ></iframe>
-      
-      <hr />
-      <p><a href="#table-of-contents">Back to Top</a></p>
-      <h3 id="xp">Sternalock XP</h3>
-      <p><strong>Rigid Fixation with Integrated Cerclage</strong></p>
-      <p>
-        Sternalock XP (formerly known as Thorecon) is our second system that
-        integrates a cerclage into the plate. This system integrates an
-        amorphous cable, which is designed to pass through the sternum and wrap
-        around the posterior side of the sternum as a normal cable would. When
-        the cable is tensioned the amorphous cable spreads out, widening the
-        covered surface area and further diffusing the force. The cable passes
-        through an open lumen in the plate, and is tensioned with a ratcheting
-        mechanism. Once the sternum is approximated the set screw is tightened,
-        locking the cable in place. The remaining cable is then cut off, and the
-        plate is secured with the remaining screws.
-      </p>
-      <p>
-        XP comes with a variety of plates, which are selected a la carte. The
-        plates are packaged sterile, and come in a kit with the required screws
-        and instrumentation. The surgeon selects their desired configuration,
-        and the relevent products are opened.
-      </p>
-      <p>
-        <img src="../../static/img/xp_selection.png" alt="xp plates" width="70%"/><br />
-        <img src="../../static/img/xp_contents.png" alt="xp plates" width="70%"/><br />
-        <img src="../../static/img/xp_driver.png" alt="xp plates" width="70%"/><img
-          src="../../static/img/xp_tensioner.png"
-          alt="xp plates"
-        /><br />
-        <strong>Screw Cartridge:</strong><br />
-        <img src="../../static/img/xp_screws.png" alt="xp plates" width="70%"/>
-      </p>
-      <h5 id="video-animation-demo-1">Video Animation Demo:</h5>
-      <iframe
-        width="700"
-        height="450"
-        src="https://app.looplxp.com/external-view/ff1d58af-3ece-4e52-9c45-7508e6fdd4ea"
-        frameborder="0"
-        allowfullscreen=""
-      ></iframe>
-      <h5 id="surgical-technique-brochure">Surgical Technique Brochure:</h5>
-      <iframe
-        src="https://drive.google.com/file/d/18vRcyS2NxFLfLPl_sqiO7h0nDcqV09nV/preview"
-        width="800"
-        height="600"
-        allow="autoplay"
-      ></iframe>
-      <h5
-        id="example-xp-plate-selection-team-walk-through-delray-medical-center"
-      >
-        Example XP Plate Selection Team Walk Through (Delray Medical Center):
-      </h5>
-      <p>
-        Here is an example of documentation we put together for the team at
-        Delray Medical Center. This is a walk through of the plate selection
-        process, and the associated charge sheet. We have color coordinated
-        stickers on the implants we keep on the shelves, and walk the team
-        through what they need to have ready for each respective surgoen.
-      </p>
-      <iframe
-        src="https://drive.google.com/file/d/19GHLCuaI8HVxTIilhwCZFdjOzLIP7YXB/preview"
-        width="800"
-        height="600"
-        allow="autoplay"
-      ></iframe>
-      <h5 id="live-xp-case-video">Live XP Case Video:</h5>
-      <iframe
-        src="https://drive.google.com/file/d/12XtPujHYc7h_sq32M9VKY88rC4JpWyMH/preview"
-        width="800"
-        height="600"
-        allow="autoplay"
-      ></iframe>
-      <p><strong>Emergent Re-Entry</strong></p>
-      <iframe
-        src="https://drive.google.com/file/d/1_DecjrDxax3N0k0Bv6kp8cJzrFGAV6Rk/preview"
-        width="800"
-        height="600"
-        allow="autoplay"
-      ></iframe>
-      
-      <hr />
-      <p><a href="#table-of-contents">Back to Top</a></p>
-      <h3 id="zb-single-use-portfolio">ZB Single-Use Sternal Closure Portfolio</h3>
-      <p>
-        <code>sternal wire (single wire)</code><br />
-        <code>sternal wire (double wire)</code><br />
-        <code>sternal cable</code><br />
-        
-      </p>
-      
-      <hr />
-      <p><a href="#table-of-contents">Back to Top</a></p>
-      <h4 id="sternal-wires-single-wire">Sternal Wires (Single Wire)</h4>
-      <p>
-        Our sternal wires come in both pediatric (Sizes 1-2) and adult (Sizes
-        5-7) sizes. The wires are packaged sterile, and come in a variety of
-        packaging options. The wires are made of stainless steel, and are
-        designed to be passed around the sternum and twisted together to
-        approximate the sternum. Our wires come with most needle types, which
-        are included below.
-      </p>
-      <p>
-        <img src="../../static/img/wires.png" alt="wire" /><br />
-        <img src="../../static/img/needles.png" alt="wire" />
-      </p>
-      <p><strong>Options:</strong></p>
-      <p>
-        <img src="../../static/img/sw.png" alt="wire" width="70%"/><br />
-        <img src="../../static/img/sw_2.png" alt="wire" width="70%"/>
-      </p>
-      <iframe
-        src="https://drive.google.com/file/d/1_DecjrDxax3N0k0Bv6kp8cJzrFGAV6Rk/preview"
-        width="800"
-        height="600"
-        allow="autoplay"
-      ></iframe>
-      
-      <hr />
-      <p><a href="#table-of-contents">Back to Top</a></p>
-      <h4 id="sternal-wires-double-wire">Sternal Wires (Double Wire)</h4>
-      <p>
-        Double wire is by far our best performing single-use item in the ZB
-        protfolio, with business at Delray Medical Center, JFK Medical Center,
-        Palm Beach Gardens Medical Center, Jupiter Medical Center, Lawnwood
-        Regional Medical Center, &amp; CCF Indian River Medical Center.
-      </p>
-      <iframe
-        width="700"
-        height="450"
-        src="https://www.youtube.com/embed/JmgSuVkebkU"
-        frameborder="0"
-        allowfullscreen=""
-      ></iframe>
-      <p>
-        <img src="../../static/img/dw.png" alt="dw" /><br />
-        <img src="../../static/img/dw_1.png" alt="dw" /><br />
-        <img src="../../static/img/dw_2.png" alt="dw" /><br />
-        <img src="../../static/img/dw_3.png" alt="dw" /><br />
-        <img src="../../static/img/dw_4.png" alt="dw" width="70%"/><br />
-        <img src="../../static/img/dw_5.png" alt="dw" width="70%"/><br />
-        <img src="../../static/img/dw_6.png" alt="dw" width="70%" />
-      </p>
-      <iframe
-        src="https://drive.google.com/file/d/1_DecjrDxax3N0k0Bv6kp8cJzrFGAV6Rk/preview"
-        width="800"
-        height="600"
-        allow="autoplay"
-      ></iframe>
-      <hr />
-      <p><a href="#table-of-contents">Back to Top</a></p>
-      <h4 id="sternal-cable">Sternal Cable</h4>
-      <p>
-        The sternal cable system uses stainless steel cables rather than wires
-        for a stronger close. The cables are passed around the sternum, and are
-        tensioned with a ratcheting mechanism. The cables are then locked in
-        place with a crimp. The remaining cable is then cut off.
-      </p>
-      <p>
-        This system can also be used in conjunction with our anterior sternal
-        plating systems.
-      </p>
-      <iframe
-        width="700"
-        height="450"
-        src="https://www.youtube.com/embed/gNEWRWWH22A"
-        frameborder="0"
-        allowfullscreen=""
-      ></iframe>
-      <p>
-        <img src="../../static/img/cable.png" alt="cable" width="50%"/><br />
-        <img src="../../static/img/cable_2.png" alt="cable" width="50%"/><br />
-        <img src="../../static/img/cable_3.png" alt="cable" width="50%"/><br />
-        <img src="../../static/img/cable_4.png" alt="cable" width="50%"/><br />
-        <img src="../../static/img/cable_5.png" alt="cable" width="50%"/><br />
-        <img src="../../static/img/cable_6.png" alt="cable" width="50%"/><br />
-        <img src="../../static/img/cable_7.png" alt="cable" width="50%"/><br />
-        <img src="../../static/img/cable_8.png" alt="cable" width="50%"/><br />
-        <img src="../../static/img/cable_9.png" alt="cable" width="50%"/><br />
-        <img src="../../static/img/cable_10.png" alt="cable" width="50%"/><br />
-        <img src="../../static/img/cable_11.png" alt="cable" width="50%"/>
-      </p>
-      <iframe
-        src="https://drive.google.com/file/d/109IiOKn2qDJqKOUK6xN3P09uFKVvIcM6/preview"
-        width="800"
-        height="800"
-        allow="autoplay"
-      ></iframe>
      <p><a href="#table-of-contents">Back to Top</a></p>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
