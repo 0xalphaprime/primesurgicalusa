@@ -35,3 +35,12 @@ def zb_xp_portfolio(request):
 
 def zb_wire_cable_portfolio(request):
     return render(request, 'training_resources/zb_wires_and_cables.html')
+
+def zb_rf_ssrf_portfolio(request):
+    return render(request, 'training_resources/zb_ssrf.html')
+
+def zb_ssrf_advantage(request):
+    return render(request, 'training_resources/zb_rf_advantage.html')
+
+def zb_ssrf_blu(request):
+    return render(request, 'training_resources/zb_rf_blu.html')

@@ -15,5 +15,8 @@ urlpatterns = [
     path("zbez/", views.zb_ez_portfolio, name="zbez"),
     path("zb360/", views.zb_360_portfolio, name="zb360"),
     path("zbxp/", views.zb_xp_portfolio, name="zbxp"),
-    path("zbwires/", views.zb_wire_cable_portfolio, name="zbwires")
+    path("zbwires/", views.zb_wire_cable_portfolio, name="zbwires"),
+    path("zbrfssrf/", views.zb_rf_ssrf_portfolio, name="zbrfssrf"),
+    path("zbrfadvantage/", views.zb_ssrf_advantage, name="zbrfadvantage"),
+    path("zbrfblu/", views.zb_ssrf_blu, name="zbrfblu"),
 ]
