@@ -22,11 +22,7 @@
         font-size: 16px;
         line-height: 1.6;
         color: #333;
-        background: linear-gradient(
-          to right,
-          #2c3e50,
-          #4a6fa5
-        ); /* gradient from dark grey to navy */
+        background: linear-gradient(to right, #283542, #1e375c); /* Gradient from dark grey to navy blue */
         overflow: initial;
         box-sizing: border-box;
         word-wrap: break-word;
@@ -142,12 +138,26 @@
 
 <h5 id="quota">2023 Quota (Monthly, Quarterly, Yearly):</h3>   
 
-<iframe
-        src="https://docs.google.com/spreadsheets/d/1Djcy8VcmmDdfLemoUW8qb0zS9Nhf995HjRuPGCliY_0/edit?usp=sharing"
-        width="100%"
-        height="450"
-        allow="autoplay"
-      ></iframe>
+<div class="row">
+            <!-- 1st iframe -->
+            <div class="col-md-4">
+                <h5>2023 Annual Quota:</h5>
+                <iframe src="https://docs.google.com/spreadsheets/d/1Djcy8VcmmDdfLemoUW8qb0zS9Nhf995HjRuPGCliY_0/edit#gid=0&range=A7:D10" width="100%" height="320" allow="autoplay"></iframe>
+            </div>
+            <!-- Second iframe -->
+            <div class="col-md-4">
+                <h5>2023 Qtr Quota:</h5>
+                <iframe src="https://docs.google.com/spreadsheets/d/1Djcy8VcmmDdfLemoUW8qb0zS9Nhf995HjRuPGCliY_0/edit#gid=0&range=U7:X10" width="100%" height=320" allow="autoplay"></iframe>
+            </div>
+            <!-- Thirdiframe -->
+            <div class="col-md-4">
+                <h5>2023 Monthly Quota:</h5>
+                <iframe src="https://docs.google.com/spreadsheets/d/1Djcy8VcmmDdfLemoUW8qb0zS9Nhf995HjRuPGCliY_0/edit#gid=0&range=AC2:AE5" width="100%" height="320" allow="autoplay"></iframe>
+            </div>
+           
+        </div>
+
+
 
 <br />
 <h5 id="rolling-category">2023 Rolling Sales by Category:</h5>
