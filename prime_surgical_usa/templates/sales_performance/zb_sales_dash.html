@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Prime Surgical - ZBH Rib</title>
+    <title>Prime Surgical - ZBH Sales Dashboard</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -97,11 +97,12 @@
           #e0e0e0
         ); /* Gradient from light gray to slightly darker gray */
       }
+     
     </style>
 
     <nav class="navbar border-bottom border-body">
       <div class="container-fluid">
-        <h1 id="prime-surgical">Prime Surgical - Sales Performance</h1>
+        <h1 id="prime-surgical">Prime Surgical - ZB Sales Performance</h1>
         <button
           class="navbar-toggler"
           type="button"
@@ -134,71 +135,95 @@
     <div class="crossnote markdown-preview">
      
 
-</body>
+<h5 id="daily">Tableau - Performance & Daily Posted Sales:</h5>
 
-<h5 id="daily">Daily Posted Sales:</h5>
+<div class="row">
+            <!-- 1st iframe -->
+            <div class="col-md-6" >
+                <script type='module' src='https://tableau.zimmerbiomet.com/javascripts/api/tableau.embedding.3.latest.min.js'></script><tableau-viz id='tableau-viz' src='https://tableau.zimmerbiomet.com/t/USCommercialSales/views/CMFTDailySalesTerritoryLeadership2023/SalesPerformance' width='95%' height='400' toolbar='bottom' device='default' ></tableau-viz>
+            </div>
+            <div class="col-md-6" >
+                <script type='module' src='https://tableau.zimmerbiomet.com/javascripts/api/tableau.embedding.3.latest.min.js'></script><tableau-viz id='tableau-viz' src='https://tableau.zimmerbiomet.com/t/USCommercialSales/views/CMFTDailySalesTerritoryLeadership2023/DailyPOItemSearch' width='95%' height='400' toolbar='bottom' device='default' ></tableau-viz>
+            </div>
+           
+           
+</div>
+
+<div class="row">
+            <!-- 1st iframe -->
+            <div class="col-md-6" style="margin: 0 auto;">
+                <h5>Trailing 30 Days Revenue</h5>
+                <iframe class="airtable-embed" src="https://airtable.com/embed/appv1JmBlIXtLS656/shrfhR0ZD3NrfTCOO?backgroundColor=green&viewControls=on" frameborder="0" onmousewheel="" width="95%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+            </div>
+            <!-- Second iframe -->
+            <div class="col-md-6" style="margin: 0 auto;">
+                <h5>Revenue - Current Month</h5>
+                <iframe class="airtable-embed" src="https://airtable.com/embed/appv1JmBlIXtLS656/shruKnjOgl355Z7Vj?backgroundColor=green&viewControls=on" frameborder="0" onmousewheel="" width="95%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+            </div>
+           
+
+</div>
 
 <div class="row">
             <!-- 1st iframe -->
             <div class="col-md-12">
-                <script type='module' src='https://tableau.zimmerbiomet.com/javascripts/api/tableau.embedding.3.latest.min.js'></script><tableau-viz id='tableau-viz' src='https://tableau.zimmerbiomet.com/t/USCommercialSales/views/CMFTDailySalesTerritoryLeadership2023/DailyPOItemSearch' width='100%' height='700' toolbar='bottom' ></tableau-viz>
+                <h5>Rolling Sales by Customer</h5>
+            <iframe src="https://docs.google.com/spreadsheets/d/1gMIPvuxT2tf6p9dzHXmxh_PMG7kF0UQyIwv2PyD8I6E/edit#gid=349676357" width="95%" height="720" allow="autoplay"></iframe>    
             </div>
-           
-           
-        </div>
+</div>    
 
 
-<div class="row">
-            <!-- 1st iframe -->
-            <div class="col-md-4">
-                <h5>2023 Annual Quota:</h5>
-                <iframe src="https://docs.google.com/spreadsheets/d/1Djcy8VcmmDdfLemoUW8qb0zS9Nhf995HjRuPGCliY_0/edit#gid=0&range=A7:D10" width="100%" height="320" allow="autoplay"></iframe>
-            </div>
-            <!-- Second iframe -->
-            <div class="col-md-4">
-                <h5>2023 Qtr Quota:</h5>
-                <iframe src="https://docs.google.com/spreadsheets/d/1Djcy8VcmmDdfLemoUW8qb0zS9Nhf995HjRuPGCliY_0/edit#gid=0&range=U7:X10" width="100%" height=320" allow="autoplay"></iframe>
-            </div>
-            <!-- Thirdiframe -->
-            <div class="col-md-4">
-                <h5>2023 Monthly Quota:</h5>
-                <iframe src="https://docs.google.com/spreadsheets/d/1Djcy8VcmmDdfLemoUW8qb0zS9Nhf995HjRuPGCliY_0/edit#gid=0&range=AC2:AE5" width="100%" height="320" allow="autoplay"></iframe>
-            </div>
-           
-        </div>
 
 
 <div class="row">
             <!-- 1st iframe -->
             <div class="col-md-6">
                 <h5>2023 Rolling Sales by Category:</h5>
-                <iframe src="https://docs.google.com/spreadsheets/d/1Wk9wNRjP82A1XDe1eEEu5pxBXS1ojB6gEf2yI9d8Ees/edit?usp=sharing" width="100%" height="600" allow="autoplay"></iframe>
+                <iframe src="https://docs.google.com/spreadsheets/d/1Wk9wNRjP82A1XDe1eEEu5pxBXS1ojB6gEf2yI9d8Ees/edit?usp=sharing" width="95%" height="600" allow="autoplay"></iframe>
             </div>
             <!-- Second iframe -->
             <div class="col-md-6">
                 <h5>2023 Sales by Category & Customer</h5>
-                <iframe src="https://docs.google.com/spreadsheets/d/1LDiuNNBsdJDvsGaejyeRlVRX11EAnMlkwMbsqYqopMQ/edit?usp=sharingange=A1:L20" width="100%" height=600" allow="autoplay"></iframe>
+                <iframe src="https://docs.google.com/spreadsheets/d/1LDiuNNBsdJDvsGaejyeRlVRX11EAnMlkwMbsqYqopMQ/edit?usp=sharingange=A1:L20" width="95%" height=600" allow="autoplay"></iframe>
             </div>
            
         </div>
 
 
 
-<br />
 
 
 <div class="row">
             <!-- 1st iframe -->
             <div class="col-md-6">
                 <h5>Booked Revenue by Day (Implants Only)</h5>
-                <iframe class="airtable-embed" src="https://airtable.com/embed/appEefKcDFpK8E1BZ/shrbnXCL8L1QOIttu?backgroundColor=blue&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+                <iframe class="airtable-embed" src="https://airtable.com/embed/appEefKcDFpK8E1BZ/shrbnXCL8L1QOIttu?backgroundColor=blue&viewControls=on" frameborder="0" onmousewheel="" width="95%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
             </div>
             <!-- Second iframe -->
             <div class="col-md-6">
                 <h5>Booked Pending PO</h5>
-                <iframe class="airtable-embed" src="https://airtable.com/embed/appEefKcDFpK8E1BZ/shrP7ZF4fykwYo5UK?backgroundColor=blue&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+                <iframe class="airtable-embed" src="https://airtable.com/embed/appEefKcDFpK8E1BZ/shrP7ZF4fykwYo5UK?backgroundColor=blue&viewControls=on" frameborder="0" onmousewheel="" width="95%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
             </div>
            
+           
+        </div>
+
+<div class="row">
+            <!-- 1st iframe -->
+            <div class="col-md-4">
+                <h5>2023 Annual Quota:</h5>
+                <iframe src="https://docs.google.com/spreadsheets/d/1Djcy8VcmmDdfLemoUW8qb0zS9Nhf995HjRuPGCliY_0/edit#gid=0&range=A7:D10" width="95%" height="320" allow="autoplay"></iframe>
+            </div>
+            <!-- Second iframe -->
+            <div class="col-md-4">
+                <h5>2023 Qtr Quota:</h5>
+                <iframe src="https://docs.google.com/spreadsheets/d/1Djcy8VcmmDdfLemoUW8qb0zS9Nhf995HjRuPGCliY_0/edit#gid=0&range=U7:X10" width="95%" height=320" allow="autoplay"></iframe>
+            </div>
+            <!-- Thirdiframe -->
+            <div class="col-md-4">
+                <h5>2023 Monthly Quota:</h5>
+                <iframe src="https://docs.google.com/spreadsheets/d/1Djcy8VcmmDdfLemoUW8qb0zS9Nhf995HjRuPGCliY_0/edit#gid=0&range=AC2:AE5" width="95%" height="320" allow="autoplay"></iframe>
+            </div>
            
         </div>
 
