@@ -1,5 +1,5 @@
 from django.urls import path
-
+from django.views.generic.base import RedirectView
 
 from . import views
 
@@ -7,7 +7,7 @@ app_name = "training_resources"
 
 urlpatterns = [
     path("", views.index, name="training"),
-    path("heart/", views.anatomy_fundamentals, name="heart"),
+    path("heart/", RedirectView.as_view(url='https://literate-geography-48e.notion.site/1-Foundational-Anatomy-482b5a67d93d4acbaa26b05f0688f629'), name="heart"),
     path("surgery/", views.cardiac_surgical_intervention, name="surgery"),
     path("zbcv/", views.zb_cv_portfolio, name="zbcv"),
     path("videos/", views.intro_videos, name="videos"),
