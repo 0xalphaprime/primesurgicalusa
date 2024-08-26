@@ -8,8 +8,8 @@ def index(request):
     return render(request, 'training_resources/new_teammate_training.html')
 
 #@login_required
-def anatomy_fundamentals(request):
-    return render(request, 'training_resources/anatomy_fundamentals.html')
+def product_training(request):
+    return render(request, 'training_resources/product_training.html')
 
 #@login_required
 def cardiac_surgical_intervention(request):

@@ -19,4 +19,5 @@ urlpatterns = [
     path("zbrfssrf/", views.zb_rf_ssrf_portfolio, name="zbrfssrf"),
     path("zbrfadvantage/", views.zb_ssrf_advantage, name="zbrfadvantage"),
     path("zbrfblu/", views.zb_ssrf_blu, name="zbrfblu"),
+    path("product_training/", views.product_training, name="product_training")
 ]
