@@ -59,7 +59,7 @@
       }
       html body h3 {
         font-size: 1.5em;
-        font-weight:"95%;
+        font-weight:700;
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
       }
       html body h4 {
@@ -86,6 +86,34 @@
         margin-top: 0;
         padding-top: 0; /* You can also remove padding if needed */
       }
+        /* Container for the videos to make them responsive */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+        }
+
+        /* Iframe styles */
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .video-container {
+                padding-bottom: 75%; /* Adjust for different aspect ratio on smaller screens */
+            }
+        }
+
+       
+
     </style>
 
     <nav class="navbar border-bottom border-body">
@@ -141,16 +169,16 @@
       <ul>
         <li>Meet the heart:</li>
       </ul>
+      <div class="video-container">
       <iframe
-        width="95%"
-        height="500"
         src="https://www.youtube.com/embed/Vi1JK6IYVt8"
-        frameborder="0"
-        allowfullscreen=""
+        allowfullscreen
       ></iframe>
+    </div>
       <ul>
         <li>Flow through the heart:</li>
       </ul>
+      <div class="video-container">
       <iframe
         width="95%"
         height="500"
@@ -158,9 +186,11 @@
         frameborder="0"
         allowfullscreen=""
       ></iframe>
+    </div>
       <ul>
         <li>Two circulations through the body:</li>
       </ul>
+      <div class="video-container">
       <iframe
         width="95%"
         height="500"
@@ -168,9 +198,11 @@
         frameborder="0"
         allowfullscreen=""
       ></iframe>
+    </div>
       <ul>
         <li>Parts of the heart:</li>
       </ul>
+      <div class="video-container">
       <iframe
         width="95%"
         height="500"
@@ -178,9 +210,11 @@
         frameborder="0"
         allowfullscreen=""
       ></iframe>
+    </div>
       <ul>
         <li>Lub dub:</li>
       </ul>
+      <div class="video-container">
       <iframe
         width="95%"
         height="500"
@@ -188,9 +222,11 @@
         frameborder="0"
         allowfullscreen=""
       ></iframe>
+    </div>
       <ul>
         <li>Arteries vs. veins - what's the difference?:</li>
       </ul>
+      <div class="video-container">
       <iframe
         width="95%"
         height="500"
@@ -198,9 +234,11 @@
         frameborder="0"
         allowfullscreen=""
       ></iframe>
+    </div>
       <ul>
         <li>Arteries, arterioles, venules, and veins:</li>
       </ul>
+      <div class="video-container">
       <iframe
         width="95%"
         height="500"
@@ -208,9 +246,11 @@
         frameborder="0"
         allowfullscreen=""
       ></iframe>
+    </div>
       <ul>
         <li>Thermoregulation in the circulatory system:</li>
       </ul>
+      <div class="video-container">
       <iframe
         width="95%"
         height="500"
@@ -218,12 +258,14 @@
         frameborder="0"
         allowfullscreen=""
       ></iframe>
+    </div>
       <h5 id="heart-dieseases-and-heart-attacks">
         Heart Dieseases and Heart Attacks
       </h5>
       <ul>
         <li>Heart disease and heart attacks:</li>
       </ul>
+      <div class="video-container">
       <iframe
         width="95%"
         height="500"
@@ -231,9 +273,11 @@
         frameborder="0"
         allowfullscreen=""
       ></iframe>
+    </div>
       <ul>
         <li>Stenosis, ischemia and heart failure:</li>
       </ul>
+      <div class="video-container">
       <iframe
         width="95%"
         height="500"
@@ -241,9 +285,11 @@
         frameborder="0"
         allowfullscreen=""
       ></iframe>
+    </div>
       <ul>
         <li>Thromboemboli and thromboembolisms:</li>
       </ul>
+      <div class="video-container">
       <iframe
         width="95%"
         height="500"
@@ -251,9 +297,11 @@
         frameborder="0"
         allowfullscreen=""
       ></iframe>
+    </div>
       <ul>
         <li>What is coronary artery disease?:</li>
       </ul>
+      <div class="video-container">
       <iframe
         width="95%"
         height="500"
@@ -261,9 +309,11 @@
         frameborder="0"
         allowfullscreen=""
       ></iframe>
+    </div>
       <ul>
         <li>Risk factors for coronary artery disease:</li>
       </ul>
+      <div class="video-container">
       <iframe
         width="95%"
         height="500"
@@ -271,9 +321,11 @@
         frameborder="0"
         allowfullscreen=""
       ></iframe>
+    </div>
       <ul>
         <li>Atherosclerosis:</li>
       </ul>
+      <div class="video-container">
       <iframe
         width="95%"
         height="500"
@@ -281,9 +333,11 @@
         frameborder="0"
         allowfullscreen=""
       ></iframe>
+    </div>
       <ul>
         <li>Heart attack (myocardial infarction) pathophysiology:</li>
       </ul>
+      <div class="video-container">
       <iframe
         width="95%"
         height="500"
@@ -291,9 +345,11 @@
         frameborder="0"
         allowfullscreen=""
       ></iframe>
+    </div>
       <ul>
         <li>Heart attack (myocardial infarct) diagnosis:</li>
       </ul>
+      <div class="video-container">
       <iframe
         width="95%"
         height="500"
@@ -301,9 +357,11 @@
         frameborder="0"
         allowfullscreen=""
       ></iframe>
+    </div>
       <ul>
         <li>Heart attack (myocardial infarct) medications:</li>
       </ul>
+      <div class="video-container">
       <iframe
         width="95%"
         height="500"
@@ -311,11 +369,13 @@
         frameborder="0"
         allowfullscreen=""
       ></iframe>
+    </div>
       <ul>
         <li>
           Heart attack (myocardial infarction) interventions and treatment:
         </li>
       </ul>
+      <div class="video-container">
       <iframe
         width="95%"
         height="500"
@@ -323,6 +383,7 @@
         frameborder="0"
         allowfullscreen=""
       ></iframe>
+    </div>
       <h5 id="section-11-heart-valve-disease">
         Section 11: Heart valve disease
       </h5>
@@ -334,6 +395,8 @@
           <p>What is valvular heart disease?:</p>
         </li>
       </ul>
+      <div class="video-container">
+      
       <iframe
         width="95%"
         height="500"
@@ -341,9 +404,11 @@
         frameborder="0"
         allowfullscreen=""
       ></iframe>
+    </div>
       <ul>
         <li>Valvular heart disease causes:</li>
       </ul>
+      <div class="video-container">
       <iframe
         width="95%"
         height="500"
@@ -351,9 +416,11 @@
         frameborder="0"
         allowfullscreen=""
       ></iframe>
+    </div>
       <ul>
         <li>How to identify murmurs:</li>
       </ul>
+      <div class="video-container">
       <iframe
         width="95%"
         height="500"
@@ -361,11 +428,13 @@
         frameborder="0"
         allowfullscreen=""
       ></iframe>
+    </div>
       <ul>
         <li>
           Systolic murmurs, diastolic murmurs, and extra heart sounds - Part 1:
         </li>
       </ul>
+      <div class="video-container">
       <iframe
         width="95%"
         height="500"
@@ -373,11 +442,13 @@
         frameborder="0"
         allowfullscreen=""
       ></iframe>
+    </div>
       <ul>
         <li>
           Systolic murmurs, diastolic murmurs, and extra heart sounds - Part 2:
         </li>
       </ul>
+      <div class="video-container">
       <iframe
         width="95%"
         height="500"
@@ -385,9 +456,11 @@
         frameborder="0"
         allowfullscreen=""
       ></iframe>
+    </div>
       <ul>
         <li>Aortic stenosis and aortic regurgitation:</li>
       </ul>
+      <div class="video-container">
       <iframe
         width="95%"
         height="500"
@@ -395,9 +468,11 @@
         frameborder="0"
         allowfullscreen=""
       ></iframe>
+    </div>
       <ul>
         <li>Mitral valve regurgitation and mitral valve prolapse:</li>
       </ul>
+      <div class="video-container">
       <iframe
         width="95%"
         height="500"
@@ -405,9 +480,11 @@
         frameborder="0"
         allowfullscreen=""
       ></iframe>
+    </div>
       <ul>
         <li>Mitral Stenosis:</li>
       </ul>
+      <div class="video-container">
       <iframe
         width="95%"
         height="500"
@@ -415,9 +492,11 @@
         frameborder="0"
         allowfullscreen=""
       ></iframe>
+    </div>
       <ul>
         <li>Valvular heart disease diagnosis and treatment:</li>
       </ul>
+      <div class="video-container">
       <iframe
         width="95%"
         height="500"
@@ -425,6 +504,7 @@
         frameborder="0"
         allowfullscreen=""
       ></iframe>
+    </div>
       <h4 id="nerd-ninja">Nerd Ninja</h4>
       <ul>
         <li>
@@ -437,6 +517,7 @@
           >)
         </li>
       </ul>
+      <div class="video-container">
       <iframe
         width="95%"
         height="500"
@@ -444,6 +525,7 @@
         frameborder="0"
         allowfullscreen=""
       ></iframe>
+    </div>
       <ul>
         <li>
           ischemic heart disease (heart attacks) (<a
@@ -452,6 +534,7 @@
           >)
         </li>
       </ul>
+      <div class="video-container">
       <iframe
         width="95%"
         height="500"
@@ -459,6 +542,7 @@
         frameborder="0"
         allowfullscreen=""
       ></iframe>
+    </div>
       <ul>
         <li>
           the aortic valve - (<a
@@ -467,6 +551,7 @@
           >)
         </li>
       </ul>
+      <div class="video-container">
       <iframe
         width="95%"
         height="500"
@@ -474,6 +559,7 @@
         frameborder="0"
         allowfullscreen=""
       ></iframe>
+    </div>
       <ul>
         <li>
           the mitral valve - (<a
@@ -482,6 +568,7 @@
           >)
         </li>
       </ul>
+      <div class="video-container">
       <iframe
         width="95%"
         height="500"
@@ -489,6 +576,7 @@
         frameborder="0"
         allowfullscreen=""
       ></iframe>
+    </div>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
