@@ -6,230 +6,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link
-      rel="stylesheet"
-      href="file:////Users/alphaprime/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.8.8/crossnote/dependencies/katex/katex.min.css"
-    />
-    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
     <style>
-      html body {
-        font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans,
-          sans-serif;
+      html, body {
+        font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
         font-size: 16px;
         line-height: 1.6;
-        color: #333;
-        background: #283542;
+        color: #ffffff;
+        background: #000000;
         overflow: initial;
         box-sizing: border-box;
         word-wrap: break-word;
         padding: 0.5em;
+        margin: 0; /* Remove the white line at the top */
       }
-      html body > :first-child {
-        margin-top: 0;
-      }
-      html body h1,
-      html body h2,
-      html body h3,
-      html body h4,
-      html body h5,
-      html body h6 {
+
+      h1, h2, h3, h4, h5, h6 {
         line-height: 1.2;
         margin-top: 1em;
         margin-bottom: 16px;
+        padding-left: 0.5em; /* Ensure consistent left padding */
         color: #89cff0;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
       }
-      html body h1 {
+
+      h1 {
         font-size: 2.25em;
         font-weight: 600;
         padding-bottom: 0.3em;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        color: #89cff0;
       }
-      html body h2 {
+
+      h2 {
         font-size: 1.75em;
         font-weight: 800;
-        padding-bottom: 0.3em;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-        margin-left: 0.5em;
       }
-      html body h3 {
+
+      h3 {
         font-size: 1.5em;
         font-weight: 600;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-        margin-left: 0.5em;
-      }
-      html body h4 {
-        font-size: 1.25em;
-        font-weight: 600;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-      }
-      html body h5 {
-        font-size: 1.1em;
-        font-weight: 600;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-      }
-      html body h6 {
-        font-size: 1em;
-        font-weight: 600;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-      }
-      html body h1#prime-surgical {
-        margin-top: 0;
-        padding-top: 0.35em; /* You can also remove padding if needed */
       }
 
       nav.navbar {
-        margin-top: 0;
-        padding-top: 0; /* You can also remove padding if needed */
+        margin-bottom: 1em;
+        padding-left: 0.5em; /* Align navbar with headlines */
       }
-      /* Custom CSS to add spacing between the cards */
-      .card-spacing {
-        margin-right: 1em; /* Add space to the right of the first card */
+
+      .table-container {
+        padding: 1em;
       }
-      .custom-card {
-        background: linear-gradient(
-          to right,
-          #f5f5f5,
-          #e0e0e0
-        ); /* Gradient from light gray to slightly darker gray */
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1em;
+        background-color: #1c1c1c; /* Darker background for the table */
       }
-     
+
+      table th, table td {
+        padding: 0.75em;
+        text-align: left;
+        border: 1px solid #333333; /* Darker border for table cells */
+      }
+
+      table th {
+        background-color: #444444; /* Darker background for headers */
+        color: #ffffff;
+        font-weight: bold;
+      }
+
+      table td {
+        color: #cccccc;
+      }
+
+      /* Add hover effect on table rows */
+      table tbody tr:hover {
+        background-color: #333333;
+      }
+      .navbar-nav .nav-link {
+          color: #ffffff; /* Set the default text color for navbar links */
+      }
+
+      .navbar-nav .nav-link:hover,
+      .navbar-nav .nav-link:focus {
+          color: #89cff0; /* Optional: Set the color when hovering over or focusing on the links */
+      }
+
+      .navbar-nav .dropdown-menu {
+          background-color: #000000; /* Ensure the dropdown background matches your theme */
+          border-color: #444444; /* Optional: Add a border to match the rest of the design */
+      }
+
+      .navbar-nav .dropdown-item {
+          color: #ffffff; /* Set the text color for dropdown items */
+      }
+
+      .navbar-nav .dropdown-item:hover,
+      .navbar-nav .dropdown-item:focus {
+          color: #89cff0; /* Optional: Change color on hover/focus */
+          background-color: #333333; /* Optional: Change background color on hover/focus */
+      }
+
     </style>
 
-    <nav class="navbar border-bottom border-body">
-      <div class="container-fluid">
-        <h1 id="prime-surgical">Prime Surgical - ZB Sales Performance</h1>
-        
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-          </ul>
-        </div>
+  <body>
+    <div class="container">
+      <h1>Zimmer Biomet Daily Sales Snapshot</h1>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              {% if data %}
+                {% for key in data.0.keys %}
+                  <th>{{ key }}</th>
+                {% endfor %}
+              {% endif %}
+            </tr>
+          </thead>
+          <tbody>
+            {% for row in data %}
+              <tr>
+                {% for value in row.values %}
+                  <td>{{ value }}</td>
+                {% endfor %}
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
       </div>
-    </nav>
-  </head>
-</html>
-<body for="html-export">
-    <div class="crossnote markdown-preview">
-     
+    </div>
 
-<h5 id="daily">Tableau - Performance & Daily Posted Sales:</h5>
-
-<div class="row">
-            <!-- 1st iframe -->
-            <div class="col-md-6" >
-                <script type='module' src='https://tableau.zimmerbiomet.com/javascripts/api/tableau.embedding.3.latest.min.js'></script><tableau-viz id='tableau-viz' src='https://tableau.zimmerbiomet.com/t/USCommercialSales/views/CMFTDailySalesTerritoryLeadership2023/SalesPerformance' width='95%' height='400' toolbar='bottom' device='default' ></tableau-viz>
-            </div>
-            <div class="col-md-6" >
-                <script type='module' src='https://tableau.zimmerbiomet.com/javascripts/api/tableau.embedding.3.latest.min.js'></script><tableau-viz id='tableau-viz' src='https://tableau.zimmerbiomet.com/t/USCommercialSales/views/CMFTDailySalesTerritoryLeadership2023/DailyPOItemSearch' width='95%' height='400' toolbar='bottom' device='default' ></tableau-viz>
-            </div>
-           
-           
-</div>
-
-<div class="row">
-            <!-- 1st iframe -->
-            <div class="col-md-6" style="margin: 0 auto;">
-                <h5>Trailing 30 Days Revenue</h5>
-                <iframe class="airtable-embed" src="https://airtable.com/embed/appv1JmBlIXtLS656/shrfhR0ZD3NrfTCOO?backgroundColor=green&viewControls=on" frameborder="0" onmousewheel="" width="95%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
-            </div>
-            <!-- Second iframe -->
-            <div class="col-md-6" style="margin: 0 auto;">
-                <h5>Revenue - Current Month</h5>
-                <iframe class="airtable-embed" src="https://airtable.com/embed/appv1JmBlIXtLS656/shruKnjOgl355Z7Vj?backgroundColor=green&viewControls=on" frameborder="0" onmousewheel="" width="95%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
-            </div>
-           
-
-</div>
-
-<div class="row">
-            <!-- 1st iframe -->
-            <div class="col-md-12">
-                <h5>Rolling Sales by Customer</h5>
-            <iframe src="https://docs.google.com/spreadsheets/d/1gMIPvuxT2tf6p9dzHXmxh_PMG7kF0UQyIwv2PyD8I6E/edit#gid=349676357" width="95%" height="720" allow="autoplay"></iframe>    
-            </div>
-</div>    
-
-
-
-
-<div class="row">
-            <!-- 1st iframe -->
-            <div class="col-md-6">
-                <h5>2023 Rolling Sales by Category:</h5>
-                <iframe src="https://docs.google.com/spreadsheets/d/1Wk9wNRjP82A1XDe1eEEu5pxBXS1ojB6gEf2yI9d8Ees/edit?usp=sharing" width="95%" height="600" allow="autoplay"></iframe>
-            </div>
-            <!-- Second iframe -->
-            <div class="col-md-6">
-                <h5>2023 Sales by Category & Customer</h5>
-                <iframe src="https://docs.google.com/spreadsheets/d/1LDiuNNBsdJDvsGaejyeRlVRX11EAnMlkwMbsqYqopMQ/edit?usp=sharingange=A1:L20" width="95%" height=600" allow="autoplay"></iframe>
-            </div>
-           
-        </div>
-
-
-
-
-
-<div class="row">
-            <!-- 1st iframe -->
-            <div class="col-md-6">
-                <h5>Booked Revenue by Day (Implants Only)</h5>
-                <iframe class="airtable-embed" src="https://airtable.com/embed/appEefKcDFpK8E1BZ/shrbnXCL8L1QOIttu?backgroundColor=blue&viewControls=on" frameborder="0" onmousewheel="" width="95%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
-            </div>
-            <!-- Second iframe -->
-            <div class="col-md-6">
-                <h5>Booked Pending PO</h5>
-                <iframe class="airtable-embed" src="https://airtable.com/embed/appEefKcDFpK8E1BZ/shrP7ZF4fykwYo5UK?backgroundColor=blue&viewControls=on" frameborder="0" onmousewheel="" width="95%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
-            </div>
-           
-           
-        </div>
-
-<div class="row">
-            <!-- 1st iframe -->
-            <div class="col-md-4">
-                <h5>2023 Annual Quota:</h5>
-                <iframe src="https://docs.google.com/spreadsheets/d/1Djcy8VcmmDdfLemoUW8qb0zS9Nhf995HjRuPGCliY_0/edit#gid=0&range=A7:D10" width="95%" height="320" allow="autoplay"></iframe>
-            </div>
-            <!-- Second iframe -->
-            <div class="col-md-4">
-                <h5>2023 Qtr Quota:</h5>
-                <iframe src="https://docs.google.com/spreadsheets/d/1Djcy8VcmmDdfLemoUW8qb0zS9Nhf995HjRuPGCliY_0/edit#gid=0&range=U7:X10" width="95%" height=320" allow="autoplay"></iframe>
-            </div>
-            <!-- Thirdiframe -->
-            <div class="col-md-4">
-                <h5>2023 Monthly Quota:</h5>
-                <iframe src="https://docs.google.com/spreadsheets/d/1Djcy8VcmmDdfLemoUW8qb0zS9Nhf995HjRuPGCliY_0/edit#gid=0&range=AC2:AE5" width="95%" height="320" allow="autoplay"></iframe>
-            </div>
-           
-        </div>
-
-
-<script
+    <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
       crossorigin="anonymous"
