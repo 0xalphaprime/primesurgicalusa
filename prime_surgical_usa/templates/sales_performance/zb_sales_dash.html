@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Prime Surgical - ZBH Sales Dashboard</title>
+    <title>αℙ Prime Surgical - ZBH Sales Dashboard</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -55,60 +55,51 @@
         padding-left: 0.5em; /* Align navbar with headlines */
       }
 
-      .table-container {
-        padding: 1em;
-      }
-
+      /* General table styling */
       table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 1em;
-        background-color: #1c1c1c; /* Darker background for the table */
+          width: 100%;
+          border-collapse: collapse;
+          margin-top: 1em;
+          background-color: #1c1c1c; /* Darker background for the table */
       }
 
-      table th, table td {
-        padding: 0.75em;
-        text-align: left;
-        border: 1px solid #333333; /* Darker border for table cells */
-      }
-
+      /* Header styling */
       table th {
-        background-color: #444444; /* Darker background for headers */
-        color: #ffffff;
-        font-weight: bold;
+          background-color: #444444; /* Darker background for headers */
+          color: #ffffff;
+          font-weight: bold;
+          padding: 10px;
+          text-align: center;
+          border: 1px solid #555555;
       }
 
+      /* Row label styling */
+      table td.row-label {
+          background-color: #333333; /* Slightly different color for row labels */
+          color: #89cff0;
+          font-weight: bold;
+          padding: 10px;
+          text-align: left;
+          border: 1px solid #555555;
+      }
+
+      /* Data cell styling */
       table td {
-        color: #cccccc;
+          color: #cccccc;
+          padding: 10px;
+          text-align: right;
+          border: 1px solid #555555;
       }
 
-      /* Add hover effect on table rows */
+      /* Zebra striping for rows */
+      table tbody tr:nth-child(odd) {
+          background-color: #2a2a2a;
+      }
+
       table tbody tr:hover {
-        background-color: #333333;
-      }
-      .navbar-nav .nav-link {
-          color: #ffffff; /* Set the default text color for navbar links */
+          background-color: #333333;
       }
 
-      .navbar-nav .nav-link:hover,
-      .navbar-nav .nav-link:focus {
-          color: #89cff0; /* Optional: Set the color when hovering over or focusing on the links */
-      }
-
-      .navbar-nav .dropdown-menu {
-          background-color: #000000; /* Ensure the dropdown background matches your theme */
-          border-color: #444444; /* Optional: Add a border to match the rest of the design */
-      }
-
-      .navbar-nav .dropdown-item {
-          color: #ffffff; /* Set the text color for dropdown items */
-      }
-
-      .navbar-nav .dropdown-item:hover,
-      .navbar-nav .dropdown-item:focus {
-          color: #89cff0; /* Optional: Change color on hover/focus */
-          background-color: #333333; /* Optional: Change background color on hover/focus */
-      }
 
     </style>
 

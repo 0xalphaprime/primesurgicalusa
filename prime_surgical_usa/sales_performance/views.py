@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .gsheets import get_google_sheet_data  # Import the function that pulls data from Google Sheets
+from .gsheets_daily_zb import get_google_sheet_data  # Import the function that pulls data from Google Sheets
 
 
 # Create your views here.
