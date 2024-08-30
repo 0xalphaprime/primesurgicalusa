@@ -9,7 +9,7 @@ def sheet_data_view(request):
     data = get_google_sheet_data()
 
     # Pass the data to the template context
-    return render(request, 'sales_performance\zb_sales_dash.html', {'data': data})
+    return render(request, 'sales_performance/zb_sales_dash.html', {'data': data})
 
 def index(request):
     return render(request, 'sales_performance/sales_performance.html')
