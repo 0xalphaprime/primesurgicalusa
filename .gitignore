@@ -4,3 +4,5 @@ node_modules
 
 prime_surgical_usa/staticfiles
 prime_surgical_usa/.env
+venv
+primesurgicalusa-gsheets-7769eb79312f.json
