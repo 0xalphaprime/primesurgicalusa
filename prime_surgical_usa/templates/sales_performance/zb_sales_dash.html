@@ -74,6 +74,7 @@
         border-collapse: collapse;
         margin-top: 1em;
         background-color: #1c1c1c;
+        min-width: 600px; /* Ensures a minimum width for the table */
       }
 
       table th, table td {
@@ -131,6 +132,7 @@
         const tableContainer = document.querySelector('.table-container');
         const currentScale = parseFloat(getComputedStyle(tableContainer).transform.split(',')[0].slice(7)) || 1;
         tableContainer.style.transform = `scale(${currentScale + 0.1})`;
+        tableContainer.style.width = `${(100 / (currentScale + 0.1))}%`;  /* Adjust width to fill the screen */
       }
 
       function zoomOut() {
@@ -138,6 +140,7 @@
         const currentScale = parseFloat(getComputedStyle(tableContainer).transform.split(',')[0].slice(7)) || 1;
         if (currentScale > 0.5) {
           tableContainer.style.transform = `scale(${currentScale - 0.1})`;
+          tableContainer.style.width = `${(100 / (currentScale - 0.1))}%`;  /* Adjust width to fill the screen */
         }
       }
     </script>
