@@ -41,8 +41,33 @@
       }
 
       .table-container {
-        overflow-x: auto; /* Allows table to scroll horizontally on small screens */
         margin-top: 1em;
+        width: 100%;
+        overflow-x: auto; /* Enables horizontal scrolling */
+        transform-origin: top left; /* Ensures zooming starts from top left */
+        transform: scale(0.9); /* Adjust initial scale to make the table fit better */
+        transition: transform 0.3s ease; /* Smooth transition on zoom */
+      }
+
+      /* Zoom buttons container */
+      .zoom-controls {
+        margin-bottom: 1em;
+        display: flex;
+        justify-content: flex-start; /* Align buttons to the left */
+      }
+
+      /* Zoom buttons */
+      .zoom-button {
+        background-color: #89cff0;
+        color: #000;
+        padding: 8px 12px; /* Equal padding for consistency */
+        margin-right: 5px; /* Space between buttons */
+        border: none;
+        cursor: pointer;
+        border-radius: 3px;
+        font-size: 1em;
+        width: 50px; /* Ensure consistent button size */
+        text-align: center; /* Center text inside button */
       }
 
       table {
@@ -50,7 +75,7 @@
         border-collapse: collapse;
         margin-top: 1em;
         background-color: #1c1c1c;
-        table-layout: auto; /* Ensures the table is responsive */
+        table-layout: auto;
       }
 
       table th, table td {
@@ -89,12 +114,37 @@
           font-size: 0.85em;
           padding: 5px;
         }
+        .zoom-button {
+          font-size: 0.85em;
+          padding: 4px 8px;
+          width: 40px; /* Adjust size for smaller screens */
+        }
       }
     </style>
+
+    <script>
+      function zoomIn() {
+        const tableContainer = document.querySelector('.table-container');
+        const currentScale = parseFloat(getComputedStyle(tableContainer).transform.split(',')[0].slice(7)) || 1;
+        tableContainer.style.transform = `scale(${currentScale + 0.1})`;
+      }
+
+      function zoomOut() {
+        const tableContainer = document.querySelector('.table-container');
+        const currentScale = parseFloat(getComputedStyle(tableContainer).transform.split(',')[0].slice(7)) || 1;
+        if (currentScale > 0.5) {
+          tableContainer.style.transform = `scale(${currentScale - 0.1})`;
+        }
+      }
+    </script>
   </head>
   <body>
     <div class="container">
       <h1>Zimmer Biomet Daily Sales Snapshot</h1>
+      <div class="zoom-controls">
+        <button class="zoom-button" onclick="zoomOut()">-</button>
+        <button class="zoom-button" onclick="zoomIn()">+</button>
+      </div>
       <div class="table-container">
         <table>
           <thead>
