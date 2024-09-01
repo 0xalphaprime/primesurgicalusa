@@ -18,91 +18,80 @@
         line-height: 1.6;
         color: #ffffff;
         background: #000000;
-        overflow: initial;
+        margin: 0;
+        padding: 0;
         box-sizing: border-box;
-        word-wrap: break-word;
-        padding: 0.5em;
-        margin: 0; /* Remove the white line at the top */
       }
 
       h1, h2, h3, h4, h5, h6 {
         line-height: 1.2;
         margin-top: 1em;
         margin-bottom: 16px;
-        padding-left: 0.5em; /* Ensure consistent left padding */
         color: #89cff0;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
       }
 
       h1 {
-        font-size: 2.25em;
-        font-weight: 600;
-        padding-bottom: 0.3em;
-      }
-
-      h2 {
         font-size: 1.75em;
-        font-weight: 800;
-      }
-
-      h3 {
-        font-size: 1.5em;
         font-weight: 600;
       }
 
-      nav.navbar {
-        margin-bottom: 1em;
-        padding-left: 0.5em; /* Align navbar with headlines */
+      .container {
+        padding: 1em;
       }
 
-      /* General table styling */
+      .table-container {
+        overflow-x: auto; /* Allows table to scroll horizontally on small screens */
+        margin-top: 1em;
+      }
+
       table {
-          width: 100%;
-          border-collapse: collapse;
-          margin-top: 1em;
-          background-color: #1c1c1c; /* Darker background for the table */
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1em;
+        background-color: #1c1c1c;
+        table-layout: auto; /* Ensures the table is responsive */
       }
 
-      /* Header styling */
+      table th, table td {
+        padding: 8px 10px;
+        text-align: center;
+        border: 1px solid #555555;
+        color: #ffffff;
+      }
+
       table th {
-          background-color: #444444; /* Darker background for headers */
-          color: #ffffff;
-          font-weight: bold;
-          padding: 10px;
-          text-align: center;
-          border: 1px solid #555555;
+        background-color: #444444;
+        font-weight: bold;
       }
 
-      /* Row label styling */
       table td.row-label {
-          background-color: #333333; /* Slightly different color for row labels */
-          color: #89cff0;
-          font-weight: bold;
-          padding: 10px;
-          text-align: left;
-          border: 1px solid #555555;
+        background-color: #333333;
+        color: #89cff0;
+        font-weight: bold;
+        text-align: left;
       }
 
-      /* Data cell styling */
-      table td {
-          color: #cccccc;
-          padding: 10px;
-          text-align: right;
-          border: 1px solid #555555;
-      }
-
-      /* Zebra striping for rows */
       table tbody tr:nth-child(odd) {
-          background-color: #2a2a2a;
+        background-color: #2a2a2a;
       }
 
       table tbody tr:hover {
-          background-color: #333333;
+        background-color: #333333;
       }
 
-
+      /* Responsive styling for smaller screens */
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 1.5em;
+        }
+        table th, table td {
+          font-size: 0.85em;
+          padding: 5px;
+        }
+      }
     </style>
-
+  </head>
   <body>
     <div class="container">
       <h1>Zimmer Biomet Daily Sales Snapshot</h1>
