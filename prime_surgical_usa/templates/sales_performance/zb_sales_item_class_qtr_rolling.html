@@ -104,7 +104,7 @@
       .zoom-container {
         margin-bottom: 10px;
         display: flex;
-        justify-content: left;
+        justify-content: center;
         gap: 10px;
       }
 
@@ -120,16 +120,29 @@
       .zoom-container button:hover {
         background-color: #555555;
       }
+
+      /* Ensure the container resizes with zoom */
+      .table-responsive {
+        overflow: auto;
+      }
+
+      /* Make sure the table container fills the screen */
+      .container {
+        max-width: 100%;
+      }
+
     </style>
+
   </head>
-  
   <body>
     <div class="container">
       <h1>Zimmer Biomet - Revenue by Item Class - QTR Rolling - 2020-Present</h1>
       <div class="zoom-container">
-        <button onclick="zoomTable(1.5)">Zoom In</button>
-        <button onclick="zoomTable(1)">Reset Zoom</button>
-        <button onclick="zoomTable(0.75)">Zoom Out</button>
+        <button onclick="zoomTable(1.5)">150%</button>
+        <button onclick="zoomTable(1.25)">125%</button>
+        <button onclick="zoomTable(1)">100%</button>
+        <button onclick="zoomTable(0.75)">75%</button>
+        <button onclick="zoomTable(0.5)">50%</button>
       </div>
       <div class="table-responsive">
         {{ pivot_table_html|safe }}
@@ -141,6 +154,7 @@
         const tableContainer = document.querySelector('.table-responsive');
         tableContainer.style.transform = `scale(${scale})`;
         tableContainer.style.transformOrigin = 'top left';
+        tableContainer.style.width = `${100 / scale}%`;
       }
     </script>
 
