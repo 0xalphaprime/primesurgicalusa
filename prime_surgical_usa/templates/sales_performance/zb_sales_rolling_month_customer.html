@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>αℙ Prime Surgical - Rolling Month Customer Sales</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      html, body {
+        font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        color: #ffffff;
+        background: #000000;
+        overflow: initial;
+        box-sizing: border-box;
+        word-wrap: break-word;
+        padding: 0.5em;
+        margin: 0; /* Remove the white line at the top */
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        line-height: 1.2;
+        margin-top: 1em;
+        margin-bottom: 16px;
+        padding-left: 0.5em; /* Ensure consistent left padding */
+        color: #89cff0;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      h1 {
+        font-size: 2.25em;
+        font-weight: 600;
+        padding-bottom: 0.3em;
+      }
+
+      h2 {
+        font-size: 1.75em;
+        font-weight: 800;
+      }
+
+      h3 {
+        font-size: 1.5em;
+        font-weight: 600;
+      }
+
+      nav.navbar {
+        margin-bottom: 1em;
+        padding-left: 0.5em; /* Align navbar with headlines */
+      }
+
+      /* General table styling */
+      table {
+          width: 100%;
+          border-collapse: collapse;
+          margin-top: 1em;
+          background-color: #1c1c1c; /* Darker background for the table */
+      }
+
+      /* Header styling */
+      table th {
+          background-color: #444444; /* Darker background for headers */
+          color: #ffffff;
+          font-weight: bold;
+          padding: 10px;
+          text-align: center;
+          border: 1px solid #555555;
+      }
+
+      /* Row label styling */
+      table td.row-label {
+          background-color: #333333; /* Slightly different color for row labels */
+          color: #89cff0;
+          font-weight: bold;
+          padding: 10px;
+          text-align: left;
+          border: 1px solid #555555;
+      }
+
+      /* Data cell styling */
+      table td {
+          color: #cccccc;
+          padding: 10px;
+          text-align: right;
+          border: 1px solid #555555;
+      }
+
+      /* Zebra striping for rows */
+      table tbody tr:nth-child(odd) {
+          background-color: #2a2a2a;
+      }
+
+      table tbody tr:hover {
+          background-color: #333333;
+      }
+
+      /* Zoom control buttons */
+      .zoom-container {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .zoom-container button {
+        padding: 6px 12px;
+        background-color: #444444;
+        color: #ffffff;
+        border: 1px solid #555555;
+        cursor: pointer;
+        font-size: 14px;
+      }
+
+      .zoom-container button:hover {
+        background-color: #555555;
+      }
+
+      /* Ensure the container resizes with zoom */
+      .table-responsive {
+        overflow: auto;
+      }
+
+      /* Make sure the table container fills the screen */
+      .container {
+        max-width: 100%;
+      }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+      <h1>Zimmer Biomet - Rolling Month Customer Sales</h1>
+      <div class="zoom-container">
+        <button onclick="zoomTable(1.5)">150%</button>
+        <button onclick="zoomTable(1.25)">125%</button>
+        <button onclick="zoomTable(1)">100%</button>
+        <button onclick="zoomTable(0.75)">75%</button>
+        <button onclick="zoomTable(0.5)">50%</button>
+      </div>
+      <div class="table-responsive">
+        <table>
+          <thead>
+            <tr>
+              {% if data %}
+                {% for key in data.0.keys %}
+                  <th>{{ key }}</th>
+                {% endfor %}
+              {% endif %}
+            </tr>
+          </thead>
+          <tbody>
+            {% for row in data %}
+              <tr>
+                {% for value in row.values %}
+                  <td>{{ value }}</td>
+                {% endfor %}
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script>
+      function zoomTable(scale) {
+        const tableContainer = document.querySelector('.table-responsive');
+        tableContainer.style.transform = `scale(${scale})`;
+        tableContainer.style.transformOrigin = 'top left';
+        tableContainer.style.width = `${100 / scale}%`;
+      }
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>

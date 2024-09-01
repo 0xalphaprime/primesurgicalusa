@@ -1,7 +1,9 @@
 from django.shortcuts import render
 from .gsheets import get_google_sheet_data  # Import the function that pulls data from Google Sheets
 from .gsheets_item_class_rolling_qtr import gsheet_data_item_class_rolling_qtr
+from .gsheets_rolling_zb import get_rolling_month_customer_data
 import pandas as pd
+from datetime import datetime
 
 # Create your views here.
 
@@ -12,6 +14,12 @@ def sheet_data_view(request):
 
     # Pass the data to the template context
     return render(request, 'sales_performance/zb_sales_dash.html', {'data': data})
+
+def rolling_month_customer(request):
+    # Fetch the data from Google Sheets & convert to pandas dataframe
+    data = get_rolling_month_customer_data()
+
+    return render(request, 'sales_performance/zb_sales_rolling_month_customer.html', {'data': data})
 
 def item_class_rolling_qtr(request):
     # Fetch the data from Google Sheets & convert to pandas dataframe
