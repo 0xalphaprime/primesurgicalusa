@@ -100,16 +100,49 @@
           background-color: #333333;
       }
 
+      /* Zoom control buttons */
+      .zoom-container {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: left;
+        gap: 10px;
+      }
 
+      .zoom-container button {
+        padding: 6px 12px;
+        background-color: #444444;
+        color: #ffffff;
+        border: 1px solid #555555;
+        cursor: pointer;
+        font-size: 14px;
+      }
+
+      .zoom-container button:hover {
+        background-color: #555555;
+      }
     </style>
-
+  </head>
+  
   <body>
     <div class="container">
       <h1>Zimmer Biomet - Revenue by Item Class - QTR Rolling - 2020-Present</h1>
+      <div class="zoom-container">
+        <button onclick="zoomTable(1.5)">Zoom In</button>
+        <button onclick="zoomTable(1)">Reset Zoom</button>
+        <button onclick="zoomTable(0.75)">Zoom Out</button>
+      </div>
       <div class="table-responsive">
         {{ pivot_table_html|safe }}
+      </div>
     </div>
-    </div>
+
+    <script>
+      function zoomTable(scale) {
+        const tableContainer = document.querySelector('.table-responsive');
+        tableContainer.style.transform = `scale(${scale})`;
+        tableContainer.style.transformOrigin = 'top left';
+      }
+    </script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
