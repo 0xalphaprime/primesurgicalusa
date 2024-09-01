@@ -43,10 +43,9 @@
       .table-container {
         margin-top: 1em;
         width: 100%;
-        overflow-x: auto; /* Enables horizontal scrolling */
-        transform-origin: top left; /* Ensures zooming starts from top left */
-        transform: scale(0.9); /* Adjust initial scale to make the table fit better */
-        transition: transform 0.3s ease; /* Smooth transition on zoom */
+        overflow-x: auto;
+        transform-origin: top left;
+        transition: transform 0.3s ease;
       }
 
       /* Zoom buttons container */
@@ -60,14 +59,14 @@
       .zoom-button {
         background-color: #89cff0;
         color: #000;
-        padding: 8px 12px; /* Equal padding for consistency */
-        margin-right: 5px; /* Space between buttons */
+        padding: 8px 12px;
+        margin-right: 5px;
         border: none;
         cursor: pointer;
         border-radius: 3px;
         font-size: 1em;
         width: 50px; /* Ensure consistent button size */
-        text-align: center; /* Center text inside button */
+        text-align: center;
       }
 
       table {
@@ -75,7 +74,6 @@
         border-collapse: collapse;
         margin-top: 1em;
         background-color: #1c1c1c;
-        table-layout: auto;
       }
 
       table th, table td {
@@ -110,14 +108,20 @@
         h1 {
           font-size: 1.5em;
         }
+
         table th, table td {
           font-size: 0.85em;
-          padding: 5px;
+          padding: 6px;
         }
+
         .zoom-button {
-          font-size: 0.85em;
+          font-size: 0.75em;
           padding: 4px 8px;
-          width: 40px; /* Adjust size for smaller screens */
+          width: 40px;
+        }
+
+        .table-container {
+          padding-bottom: 1em; /* Added padding for a better mobile experience */
         }
       }
     </style>
