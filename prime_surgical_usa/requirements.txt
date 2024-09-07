@@ -32,3 +32,8 @@ tensorflow-intel==2.17.0
 scikit-learn==1.5.1
 scipy==1.14.1
 seaborn==0.13.2
+pandas 
+psycopg2
+openpyxl
+Django==4.2.2
+django-environ

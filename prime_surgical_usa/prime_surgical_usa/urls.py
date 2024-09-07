@@ -25,4 +25,5 @@ urlpatterns = [
     path("", TemplateView.as_view(template_name="index.html"), name="index"),
     path("login/", auth_views.LoginView.as_view(template_name='registration/login.html'), name='login'),
     path("sales/", include("sales_performance.urls")),
+    path('pricing_search/', include('pricing_search.urls')),
 ]

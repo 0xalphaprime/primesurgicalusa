@@ -12,9 +12,9 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 import os
+import environ
 
 
-import django_heroku
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -30,11 +30,20 @@ SECRET_KEY = "django-insecure-=^rm@k-yyn*e4+am5=31r!d34pzo0b6+0o0q*x@dczedn18d+v
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['alexpaino.pythonanywhere.com', 'primesurgicalusa.com']
+ALLOWED_HOSTS = ['alexpaino.pythonanywhere.com', 'primesurgicalusa.com', '127.0.0.1',
+    'localhost',]
 
 
 LOGIN_URL = 'login'
 # Application definition
+
+# Initialize environment variables
+env = environ.Env(
+    # Set casting, default value
+    DEBUG=(bool, False)
+)
+# Read .env file
+environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 
 INSTALLED_APPS = [
     "django.contrib.admin",
@@ -45,6 +54,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "training_resources",
     "sales_performance",
+    "pricing_search",
 ]
 
 MIDDLEWARE = [
@@ -83,9 +93,13 @@ WSGI_APPLICATION = "prime_surgical_usa.wsgi.application"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': env('DB_NAME'),
+        'USER': env('DB_USER'),
+        'PASSWORD': env('DB_PASSWORD'),
+        'HOST': env('DB_HOST'),
+        'PORT': env('DB_PORT'),
     }
 }
 
@@ -136,4 +150,3 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 
-django_heroku.settings(locals())
