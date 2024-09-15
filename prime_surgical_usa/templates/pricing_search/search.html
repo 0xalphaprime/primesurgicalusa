@@ -1,4 +1,4 @@
-<!-- pricing_search/templates/pricing_search/search.html -->
+<!-- prime_surgical_usa/templates/pricing_search/search.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +23,6 @@
             line-height: 1.2;
             margin-top: 1em;
             margin-bottom: 16px;
-            padding-left: 0.5em; /* Ensure consistent left padding */
             color: #89cff0;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
@@ -46,7 +45,6 @@
 
         nav.navbar {
             margin-bottom: 1em;
-            padding-left: 0.5em; /* Align navbar with headlines */
         }
 
         /* General table styling */
@@ -154,7 +152,12 @@
             background-color: #555555;
         }
 
+        /* Mobile specific adjustments */
         @media (max-width: 600px) {
+            .container {
+                padding: 1rem;
+            }
+
             table, th, td {
                 font-size: 0.875rem;
             }
@@ -185,7 +188,6 @@
                         <th>Item Number</th>
                         <th>Account Name</th>
                         <th>Price</th>
-                        <th>UOM</th>
                         <th>Description</th>
                     </tr>
                 </thead>
@@ -195,7 +197,6 @@
                             <td>{{ record.item_number }}</td>
                             <td class="row-label">{{ record.account_name }}</td>
                             <td>${{ record.price|floatformat:2 }}</td>
-                            <td>{{ record.uom }}</td>
                             <td>{{ record.description }}</td>
                         </tr>
                     {% endfor %}
