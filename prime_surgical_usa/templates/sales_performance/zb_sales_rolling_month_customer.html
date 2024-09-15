@@ -132,9 +132,22 @@
         max-width: 100%;
       }
 
+      @media (max-width: 600px) {
+            .container {
+                padding: 1rem;
+            }
+            table, th, td {
+                font-size: 0.875rem;
+            }
+          }
+
     </style>
 
 </head>
+  <!-- Return Home Button -->
+  <button onclick="location.href='/'">Return Home</button>
+  <!-- Link to Sales Performance Main Page -->
+  <button onclick="location.href='/sales/'">Sales Performance Main</button>
 <body>
     <div class="container">
       <h1>Zimmer Biomet - Rolling Month Customer Sales</h1>
