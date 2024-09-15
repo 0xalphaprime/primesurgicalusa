@@ -10,6 +10,6 @@ def get_rolling_month_customer_data():
         r'C:\Users\0xalp\projects\primesurgicalusa\primesurgicalusa-gsheets-7769eb79312f.json', scope
     )
     client = gspread.authorize(creds)
-    sheet = client.open("L66_zb_sales_report").get_worksheet(4)
+    sheet = client.open("L66_zb_sales_report").get_worksheet(3)
     data = sheet.get_all_records(head=2)
     return data
